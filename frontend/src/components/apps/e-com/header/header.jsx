@@ -182,7 +182,7 @@ const Header = () => {
         </Link>
       </ListItem>
       <ListItem button onClick={handleClose}>
-        <Link to="/order" style={{ textDecoration: "none", color: "inherit" }}>
+        <Link to="buyer/order/list" style={{ textDecoration: "none", color: "inherit" }}>
           <ListItemText primary="Orders" />
         </Link>
       </ListItem>
@@ -272,7 +272,7 @@ const Header = () => {
                   </MenuItem>
                   <MenuItem onClick={handleClose}>
                     <Link
-                      to="/order"
+                      to="/buyer/order/list/"
                       style={{ textDecoration: "none", color: "inherit" }}
                     >
                       Orders

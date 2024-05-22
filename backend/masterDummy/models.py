@@ -119,6 +119,7 @@ class Order(models.Model):
     seller_id = models.TextField(default=0, unique=False)
     order_delivered = models.BooleanField(default=False)
     order_shipped = models.BooleanField(default=False)
+    order_placed_by_buyer = models.BooleanField(default=False)
 
     def save(self, *args, **kwargs):
         if not self.order_id:
@@ -150,6 +151,8 @@ class Order(models.Model):
         order_handle_by_seller.created_at = self.created_at
         order_handle_by_seller.updated_at = self.updated_at
         order_handle_by_seller.seller_user = self.seller_user
+        order_handle_by_seller.order_placed_by_buyer = self.order_placed_by_buyer
+        
         order_handle_by_seller.order_delivered = self.order_delivered
         order_handle_by_seller.order_shipped = self.order_shipped
         order_handle_by_seller.mode_of_payment =  models.CharField(max_length=255, default="Cash on Delivery")
@@ -195,6 +198,7 @@ class Order_Handle_By_Seller(models.Model):
     order_delivered = models.BooleanField(default=False)
     order_shipped = models.BooleanField(default=False)
     order_cancelled = models.BooleanField(default=False)
+    order_placed_by_buyer = models.BooleanField(default=False)
     
     order_returned = models.BooleanField(default=False)
     order_returned_reason = models.TextField(blank=True)

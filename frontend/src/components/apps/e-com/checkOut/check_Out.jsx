@@ -252,6 +252,7 @@ export default function CheckOut() {
       order_delivered: false,
       order_pending: true,
       order_shipped: false,
+      order_placed_by_buyer: true,
     };
 
     console.log(convertedOrderDetails);

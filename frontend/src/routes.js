@@ -23,6 +23,7 @@ import CartDetails from "./components/apps/e-com/cart/cartDetails";
 import CheckOut from "./components/apps/e-com/checkOut/check_Out";
 import UserProfileMaster from "./components/apps/apiFetcher/fetchUserApi";
 import AutoLocationInput from "./components/apps/e-com/location/autoComplete_Location";
+import BuyersOrdersList from "./components/apps/e-com/orders/buyers/list/buyerOrder_list";
 
 const MainRouter = () => {
   return (
@@ -48,6 +49,7 @@ const MainRouter = () => {
         <Route path="/master-user/profile/" element={<UserProfileMaster />} />
 
         <Route path="/auto-locator/" element={<AutoLocationInput />} />
+        <Route path="/buyer/order/list/" element={<BuyersOrdersList/>}/>
         {/* <Route path="/product/review/edit?:id/" element={<EditReview />} /> */}
         {/* <Route path="/seller/product/edit" element={<SellerProductEdit />} /> */}
     
