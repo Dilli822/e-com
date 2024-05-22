@@ -101,13 +101,13 @@ class Order(models.Model):
     buyer_full_name = models.CharField(max_length=255, null=True, blank=True)
     buyer_email = models.CharField(max_length=255, null=True, blank=True)
     
-    product_name = models.CharField(max_length=255, blank=True)
+    product_name = models.TextField( blank=True)
     product_description = models.TextField(blank=True)
-    product_price = models.DecimalField(max_digits=10, decimal_places=2, default=0.00, blank=True)
+    product_price = models.TextField(default=0.00, blank=True)
     product_total_price = models.DecimalField(max_digits=10, decimal_places=2, default=0.00, blank=True)
     product_total_unit = models.BigIntegerField(blank=True, default=0)
     product_category = models.CharField(max_length=255, blank=True, default=0)
-    product_category_name = models.CharField(max_length=255, blank=True)
+    product_category_name = models.TextField( blank=True)
     delivery_fee = models.DecimalField(max_digits=10, decimal_places=2, default=0.00, blank=True)
     mode_of_payment =  models.CharField(max_length=255, default="Cash on Delivery")
 
@@ -116,7 +116,7 @@ class Order(models.Model):
     updated_at = models.DateTimeField(auto_now=True, null=True)
     
     seller_user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name='sold_orders', null=True)
-    seller_id = models.BigIntegerField(default=0, unique=False)
+    seller_id = models.TextField(default=0, unique=False)
     order_delivered = models.BooleanField(default=False)
     order_shipped = models.BooleanField(default=False)
 
@@ -179,11 +179,11 @@ class Order_Handle_By_Seller(models.Model):
     
     product_name = models.CharField(max_length=255, blank=True)
     product_description = models.TextField(blank=True)
-    product_price = models.DecimalField(max_digits=10, decimal_places=2, default=0.00, blank=True)
+    product_price = models.TextField(default=0.00, blank=True)
     product_total_price = models.DecimalField(max_digits=10, decimal_places=2, default=0.00, blank=True)
     product_total_unit = models.BigIntegerField(blank=True, default=0)
-    product_category = models.CharField(max_length=255, blank=True, default=0)
-    product_category_name = models.CharField(max_length=255, blank=True)
+    product_category = models.TextField(blank=True, default=0)
+    product_category_name = models.TextField( blank=True)
     delivery_fee = models.DecimalField(max_digits=10, decimal_places=2, default=0.00, blank=True)
     mode_of_payment =  models.CharField(max_length=255, default="Cash on Delivery")
     # Timestamp fields
@@ -191,7 +191,7 @@ class Order_Handle_By_Seller(models.Model):
     updated_at = models.DateTimeField(auto_now=True, null=True)
     
     seller_user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name='handled_orders', null=True)
-    seller_id = models.BigIntegerField(default=0, unique=False)
+    seller_id = models.TextField(default=0, unique=False)
     order_delivered = models.BooleanField(default=False)
     order_shipped = models.BooleanField(default=False)
     order_cancelled = models.BooleanField(default=False)
