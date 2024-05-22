@@ -130,7 +130,7 @@ const UserProfileMaster = () => {
             </>
           ) : isBuyer ? (
             <>
-              Buyer ID: #{userData.buyer.buyer_id}
+           Buyer ID: #  <span id="buyerID"> {userData.buyer.buyer_id}  </span>
               <br />
               Name: {userData.user.username} <br />
               Email: {userData.user.email} <br />

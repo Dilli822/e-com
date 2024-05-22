@@ -32,6 +32,7 @@ export default function CheckOut() {
   const [openModal, setOpenModal] = useState(false);
   const [confirmation, setConfirmation] = useState(false);
   const [cartTotalItems, setCartTotalItems] = useState("");
+  const [finalOrderDetails, setfinalOrderDetails] = useState({});
   const navigate = useNavigate();
   useEffect(() => {
     if (!localStorage.getItem("accessToken")) {
@@ -81,6 +82,142 @@ export default function CheckOut() {
 
   console.log(uniqueSellers);
   const accessToken = localStorage.getItem("accessToken");
+
+
+  const placeFinalOrder = () => {
+    // Calculate totalPrice here to ensure it's initialized before accessing
+    const subtotal = checkOutItems.reduce(
+      (acc, item) => acc + parseFloat(item.product.price) * item.quantity,
+      0
+    );
+    const deliveryFee = 110; // Example delivery fee
+    const totalPrice = subtotal + deliveryFee;
+  
+    
+  
+    // Seller information
+    const sellerInfo = `Seller Details/Shipped By:\n`;
+    const sellerDetails = Object.keys(uniqueSellers)
+      .map((key) => {
+        const seller = uniqueSellers[key];
+        return `Id: #${seller.seller}\nSeller Name: ${
+          seller.seller_name
+        }\nCompany Name: ${seller.seller_company_name || "N/A"}\nAddress: ${
+          seller.seller_address
+        }\nContact: +${seller.seller_phone_number}\n`;
+      })
+      .join("\n");
+  
+    // Shipping details
+    const shippingDetails = `Shipping Details:\nOrdered Date: ${new Date(
+      new Date().setDate(new Date().getDate())
+    ).toDateString()}\nExpected Delivery Date: ${new Date(
+      new Date().setDate(new Date().getDate() + 4)
+    ).toDateString()}\nMode of Payment: ${paymentMethod}`;
+  
+    // Items details
+    const itemsDetails = `Items Details:\n`;
+    const items = checkOutItems
+      .map((item, index) => {
+        return `${index + 1}. Product Name: ${
+          item.product.product_name
+        }, Description: ${item.product.description}, Price: $${
+          item.product.price
+        }, Quantity: ${item.quantity}, Total: $${(
+          parseFloat(item.product.price) * parseInt(item.quantity)
+        ).toFixed(2)}`;
+      })
+      .join("\n");
+  
+    // Total price
+    const totalPriceInfo = `Total Price: $${totalPrice.toFixed(
+      2
+    )}, Delivery Fee: $${deliveryFee.toFixed(2)}, Total Amount: $${(
+      totalPrice + deliveryFee
+    ).toFixed(2)}`;
+  
+    const orderDetailsJSONFormatter = {
+      seller: {
+        info: "Seller Details/Shipped By:",
+        details: Object.keys(uniqueSellers).map((key) => {
+          const seller = uniqueSellers[key];
+          return {
+            id: seller.seller,
+            name: seller.seller_name,
+            companyName: seller.seller_company_name || "N/A",
+            address: seller.seller_address,
+            contact: seller.seller_phone_number,
+          };
+        }),
+      },
+      shipping: {
+        details: {
+          orderedDate: new Date(
+            new Date().setDate(new Date().getDate())
+          ).toDateString(),
+          expectedDeliveryDate: new Date(
+            new Date().setDate(new Date().getDate() + 4)
+          ).toDateString(),
+          modeOfPayment: paymentMethod,
+        },
+      },
+      items: checkOutItems.map((item, index) => {
+        return {
+          productName: item.product.product_name,
+          description: item.product.description,
+          price: parseFloat(item.product.price),
+          quantity: parseInt(item.quantity),
+          total: (
+            parseFloat(item.product.price) * parseInt(item.quantity)
+          ).toFixed(2),
+        };
+      }),
+      totalPrice: {
+        subtotal: subtotal.toFixed(2),
+        deliveryFee: deliveryFee.toFixed(2),
+        totalAmount: (totalPrice + deliveryFee).toFixed(2),
+      },
+    };
+  
+    // Convert orderDetails to JSON format
+    const orderDetailsJSON = JSON.stringify(orderDetailsJSONFormatter);
+    console.log(orderDetailsJSON);
+    setfinalOrderDetails(orderDetailsJSON);
+  
+    // Extracted information
+    const { seller, shipping, items: extractedItems } = orderDetailsJSONFormatter;
+
+    const buyer_ID = document.getElementById("buyerID").textContent;
+    
+
+    // Construct the desired JSON format
+    const convertedOrderDetails = {
+      "buyer_id": buyer_ID,
+      "buyer_delivery_address": "",
+      "buyer_contact": "",
+      "buyer_full_name": "", // Assuming the buyer's username is their full name
+      "buyer_email": "",
+  
+      "product_name": extractedItems.filter(item => item.productName).map(item => item.productName).join(", "),
+      "product_description": extractedItems.filter(item => item.description).map(item => item.description).join(", "),
+      "product_price": extractedItems.filter(item => item.price).map(item => item.price.toFixed(2)).join(", "),
+      "product_units": extractedItems.filter(item => item.quantity).map(item => item.quantity).join(", "),
+      "product_total_price": totalPrice.totalAmount,
+      "product_total_unit": extractedItems.reduce((total, item) => total + (item.quantity || 0), 0),
+      "product_category_name": "", // This information is not available in the finalOrderDetails object
+      "product_category": "", // This information is not available in the finalOrderDetails object
+      "delivery_fee": deliveryFee,
+      "mode_of_payment": shipping.details.modeOfPayment,
+      "seller_id": seller.details.map(seller => seller.id).join(" "),
+      "order_delivered": false,
+      "order_pending": true,
+      "order_shipped": false
+    };
+  
+    console.log(convertedOrderDetails);
+  };
+
+
   return (
     <>
       {accessToken ? <Header /> : <HeaderPublic />}
@@ -433,6 +570,7 @@ export default function CheckOut() {
                 variant="outlined"
                 color="secondary"
                 className="hide-print"
+                onClick={placeFinalOrder}
               >
                 Confirm Order
               </Button>
