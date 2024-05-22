@@ -1,0 +1,2125 @@
+2024-05-13 00:36:20,368 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-13 00:37:21,269 +0545 [INFO] "OPTIONS /account/user/details/ HTTP/1.1" 200 0
+2024-05-13 00:37:21,269 +0545 [INFO] "OPTIONS /account/user/details/ HTTP/1.1" 200 0
+2024-05-13 00:37:21,274 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-13 00:37:21,277 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-13 00:37:21,294 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 00:37:21,298 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 00:38:23,325 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-13 00:38:23,332 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 00:38:23,333 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-13 00:38:23,337 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 00:38:23,797 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-13 00:38:23,810 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-13 00:38:23,812 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 00:38:23,818 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 00:44:04,495 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-13 00:44:04,497 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 00:44:04,505 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-13 00:44:04,507 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 00:44:31,342 +0545 [INFO] "OPTIONS /e-com/api/products/ HTTP/1.1" 200 0
+2024-05-13 00:44:31,364 +0545 [WARNING] Not Found: /e-com/api/products/
+2024-05-13 00:44:31,364 +0545 [WARNING] "POST /e-com/api/products/ HTTP/1.1" 404 3378
+2024-05-13 00:45:04,510 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-13 00:45:04,515 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 00:45:07,201 +0545 [INFO] "OPTIONS /e-com/api/%20products/upload/ HTTP/1.1" 200 0
+2024-05-13 00:45:07,211 +0545 [WARNING] Not Found: /e-com/api/ products/upload/
+2024-05-13 00:45:07,212 +0545 [WARNING] "POST /e-com/api/%20products/upload/ HTTP/1.1" 404 3404
+2024-05-13 00:45:28,738 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-13 00:45:28,745 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 00:45:33,420 +0545 [WARNING] Unauthorized: /e-com/api/products/upload/
+2024-05-13 00:45:33,420 +0545 [WARNING] "GET /e-com/api/products/upload/ HTTP/1.1" 401 3817
+2024-05-13 00:45:33,498 +0545 [INFO] "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1152
+2024-05-13 00:45:33,499 +0545 [INFO] "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+2024-05-13 00:45:33,500 +0545 [INFO] "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3796
+2024-05-13 00:45:33,502 +0545 [INFO] "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3426
+2024-05-13 00:45:33,506 +0545 [INFO] "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 39680
+2024-05-13 00:45:33,506 +0545 [INFO] "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1793
+2024-05-13 00:45:33,507 +0545 [INFO] "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+2024-05-13 00:45:33,508 +0545 [INFO] "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+2024-05-13 00:45:33,509 +0545 [INFO] "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 200 87533
+2024-05-13 00:45:33,510 +0545 [INFO] "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 200 59
+2024-05-13 00:45:33,510 +0545 [INFO] "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+2024-05-13 00:45:33,523 +0545 [INFO] "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+2024-05-13 00:45:33,612 +0545 [WARNING] Not Found: /favicon.ico
+2024-05-13 00:45:33,612 +0545 [WARNING] "GET /favicon.ico HTTP/1.1" 404 2455
+2024-05-13 00:45:36,017 +0545 [INFO] "OPTIONS /e-com/api/products/upload/ HTTP/1.1" 200 0
+2024-05-13 00:45:36,159 +0545 [WARNING] Bad Request: /e-com/api/products/upload/
+2024-05-13 00:45:36,159 +0545 [WARNING] "POST /e-com/api/products/upload/ HTTP/1.1" 400 85
+2024-05-13 00:46:06,735 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-13 00:46:06,739 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 00:46:12,441 +0545 [WARNING] Bad Request: /e-com/api/products/upload/
+2024-05-13 00:46:12,442 +0545 [WARNING] "POST /e-com/api/products/upload/ HTTP/1.1" 400 44
+2024-05-13 00:46:27,261 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 00:46:27,267 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-13 00:46:27,275 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 00:46:27,279 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-13 00:48:54,758 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-13 00:48:54,766 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 00:48:54,768 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-13 00:48:54,773 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 00:50:44,882 +0545 [INFO] "POST /e-com/api/products/upload/ HTTP/1.1" 201 461
+2024-05-13 00:51:38,203 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 00:51:38,216 +0545 [INFO] "OPTIONS /account/seller-profile/2/ HTTP/1.1" 200 0
+2024-05-13 00:51:38,218 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 00:51:38,222 +0545 [INFO] "GET /account/seller-profile/2/ HTTP/1.1" 200 184
+2024-05-13 00:51:38,238 +0545 [INFO] "GET /media/seller/profile_images/e-commerce_RDMS_Diagram.png HTTP/1.1" 200 31349
+2024-05-13 00:53:56,784 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 00:53:56,795 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 00:53:56,814 +0545 [INFO] "GET /account/seller-profile/2/ HTTP/1.1" 200 184
+2024-05-13 00:54:03,379 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 00:54:03,400 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 00:54:03,404 +0545 [INFO] "GET /account/seller-profile/2/ HTTP/1.1" 200 184
+2024-05-13 00:54:43,736 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 00:54:43,781 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 00:54:43,785 +0545 [INFO] "GET /account/seller-profile/2/ HTTP/1.1" 200 184
+2024-05-13 00:54:45,420 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-13 00:54:45,445 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-13 00:54:45,447 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 00:54:45,457 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 00:54:47,487 +0545 [INFO] "GET /account/seller-profile/2/ HTTP/1.1" 200 184
+2024-05-13 00:54:59,815 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 00:54:59,836 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 00:54:59,846 +0545 [INFO] "GET /account/seller-profile/2/ HTTP/1.1" 200 184
+2024-05-13 00:56:03,769 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-13 00:56:03,777 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 00:56:03,782 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-13 00:56:03,789 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 00:56:05,777 +0545 [INFO] "GET /account/seller-profile/2/ HTTP/1.1" 200 184
+2024-05-13 00:56:08,022 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-13 00:56:08,041 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-13 00:56:08,047 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 00:56:08,058 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 01:01:55,521 +0545 [INFO] "GET /account/seller-profile/2/ HTTP/1.1" 200 184
+2024-05-13 01:01:55,599 +0545 [INFO] "GET /account/seller-profile/2/ HTTP/1.1" 200 184
+2024-05-13 01:01:55,609 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 01:01:55,910 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-13 01:01:55,990 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 01:01:56,004 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-13 01:01:56,037 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 01:01:56,097 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 01:01:56,098 +0545 [INFO] "GET /account/seller-profile/2/ HTTP/1.1" 200 184
+2024-05-13 01:01:56,118 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 01:01:56,243 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 01:01:56,260 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 01:01:56,274 +0545 [INFO] "GET /account/seller-profile/2/ HTTP/1.1" 200 184
+2024-05-13 01:02:13,650 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 01:02:13,660 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 01:02:13,663 +0545 [INFO] "GET /account/seller-profile/2/ HTTP/1.1" 200 184
+2024-05-13 01:02:15,166 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-13 01:02:15,175 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-13 01:02:15,204 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 01:02:15,206 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 01:03:01,640 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 01:03:01,646 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 01:03:01,652 +0545 [INFO] "GET /account/seller-profile/2/ HTTP/1.1" 200 184
+2024-05-13 01:03:04,326 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-13 01:03:04,333 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 01:03:04,340 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-13 01:03:04,349 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 01:04:07,637 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-13 01:04:07,639 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 01:04:07,647 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 01:04:07,648 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-13 01:05:27,319 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-13 01:05:27,330 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 01:05:27,333 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-13 01:05:27,337 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 01:05:39,194 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 01:05:39,199 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 01:05:39,205 +0545 [INFO] "GET /account/seller-profile/2/ HTTP/1.1" 200 184
+2024-05-13 01:05:40,751 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-13 01:05:40,764 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 01:05:40,770 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-13 01:05:40,776 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 02:14:45,793 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 02:14:45,807 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 02:14:45,815 +0545 [INFO] "GET /account/seller-profile/2/ HTTP/1.1" 200 184
+2024-05-13 02:14:47,331 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-13 02:14:47,336 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 02:14:47,340 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-13 02:14:47,347 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 02:14:53,798 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 02:14:53,822 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 02:14:53,826 +0545 [INFO] "GET /account/seller-profile/2/ HTTP/1.1" 200 184
+2024-05-13 02:14:57,721 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-13 02:14:57,725 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 02:14:57,731 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-13 02:14:57,737 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 02:15:26,376 +0545 [INFO] "GET /account/seller-profile/2/ HTTP/1.1" 200 184
+2024-05-13 02:15:28,267 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 02:15:28,286 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 02:15:28,288 +0545 [INFO] "GET /account/seller-profile/2/ HTTP/1.1" 200 184
+2024-05-13 02:15:29,507 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-13 02:15:29,527 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 02:15:29,531 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-13 02:15:29,545 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 02:15:55,097 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-13 02:15:55,101 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 02:16:00,459 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-13 02:16:00,460 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 02:16:03,913 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-13 02:16:03,917 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 02:16:09,465 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-13 02:16:09,469 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 02:16:12,899 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-13 02:16:12,902 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 02:16:17,461 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-13 02:16:17,466 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 02:16:20,334 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-13 02:16:20,342 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 02:16:21,892 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-13 02:16:21,894 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 02:16:30,919 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-13 02:16:30,929 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 02:16:37,906 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-13 02:16:37,912 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 02:16:42,924 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-13 02:16:42,927 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 02:16:49,462 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-13 02:16:49,467 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 02:16:54,886 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-13 02:16:54,888 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 02:16:57,284 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 02:16:57,312 +0545 [INFO] "GET /account/seller-profile/2/ HTTP/1.1" 200 184
+2024-05-13 02:16:57,312 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 02:17:03,043 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-13 02:17:03,050 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 02:17:03,051 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-13 02:17:03,058 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 02:17:26,727 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 463
+2024-05-13 02:19:38,065 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-13 02:19:38,067 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 02:19:38,072 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-13 02:19:38,074 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 02:20:15,288 +0545 [INFO] "POST /e-com/api/products/upload/ HTTP/1.1" 201 530
+2024-05-13 02:20:17,548 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-13 02:20:17,555 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 02:20:17,558 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-13 02:20:17,570 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 02:20:33,025 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-13 02:20:36,694 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 994
+2024-05-13 02:24:06,279 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/models.py changed, reloading.
+2024-05-13 02:24:06,832 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-13 02:24:12,202 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/models.py changed, reloading.
+2024-05-13 02:24:12,501 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-13 02:25:39,764 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/models.py changed, reloading.
+2024-05-13 02:25:40,201 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-13 02:25:48,651 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/models.py changed, reloading.
+2024-05-13 02:25:48,941 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-13 02:25:50,116 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/models.py changed, reloading.
+2024-05-13 02:25:50,398 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-13 02:25:55,722 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/models.py changed, reloading.
+2024-05-13 02:25:56,058 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-13 02:26:38,752 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/models.py changed, reloading.
+2024-05-13 02:26:39,212 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-13 02:26:50,631 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/models.py changed, reloading.
+2024-05-13 02:26:50,980 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-13 02:26:58,245 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/models.py changed, reloading.
+2024-05-13 02:26:58,525 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-13 02:26:59,702 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/models.py changed, reloading.
+2024-05-13 02:27:00,002 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-13 02:27:59,318 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/models.py changed, reloading.
+2024-05-13 02:27:59,720 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-13 02:28:01,909 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/models.py changed, reloading.
+2024-05-13 02:28:02,233 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-13 02:28:25,133 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/models.py changed, reloading.
+2024-05-13 02:28:25,456 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-13 02:28:26,672 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/models.py changed, reloading.
+2024-05-13 02:28:26,971 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-13 02:29:09,723 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-13 02:29:09,729 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-13 02:29:09,749 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 02:29:09,756 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 02:29:37,501 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-13 02:29:37,508 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-13 02:29:37,513 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 02:29:37,521 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 02:29:40,845 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-13 02:29:40,861 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-13 02:29:40,861 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 02:29:40,870 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 02:30:10,767 +0545 [WARNING] Bad Request: /e-com/api/products/upload/
+2024-05-13 02:30:10,767 +0545 [WARNING] "POST /e-com/api/products/upload/ HTTP/1.1" 400 96
+2024-05-13 02:30:25,341 +0545 [WARNING] Bad Request: /e-com/api/products/upload/
+2024-05-13 02:30:25,342 +0545 [WARNING] "POST /e-com/api/products/upload/ HTTP/1.1" 400 96
+2024-05-13 02:33:56,789 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/models.py changed, reloading.
+2024-05-13 02:33:57,240 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-13 02:33:58,426 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/models.py changed, reloading.
+2024-05-13 02:33:58,734 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-13 02:36:44,759 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/account/migrations/__init__.py changed, reloading.
+2024-05-13 02:36:45,068 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-13 02:37:29,508 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/account/migrations/0001_initial.py changed, reloading.
+2024-05-13 02:37:29,887 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-13 02:38:18,248 +0545 [INFO] "OPTIONS /account/auth/register/ HTTP/1.1" 200 0
+2024-05-13 02:38:18,543 +0545 [INFO] "POST /account/auth/register/ HTTP/1.1" 200 290
+2024-05-13 02:38:28,228 +0545 [INFO] "OPTIONS /account/auth/login/ HTTP/1.1" 200 0
+2024-05-13 02:38:28,510 +0545 [INFO] "POST /account/auth/login/ HTTP/1.1" 200 483
+2024-05-13 02:38:28,543 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 02:38:28,549 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 02:38:33,070 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 02:38:33,077 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 02:38:33,088 +0545 [INFO] "OPTIONS /account/seller-profile/1/ HTTP/1.1" 200 0
+2024-05-13 02:38:33,094 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 97
+2024-05-13 02:38:34,282 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 2
+2024-05-13 02:38:34,287 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 02:38:34,289 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 2
+2024-05-13 02:38:34,293 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 02:38:37,762 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 02:38:37,771 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 02:40:04,515 +0545 [INFO] "OPTIONS /e-com/api/categories/ HTTP/1.1" 200 0
+2024-05-13 02:40:04,527 +0545 [INFO] "POST /e-com/api/categories/ HTTP/1.1" 201 160
+2024-05-13 02:40:22,931 +0545 [INFO] "POST /e-com/api/categories/ HTTP/1.1" 201 187
+2024-05-13 02:40:27,251 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 02:40:27,268 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 02:40:27,278 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 97
+2024-05-13 02:40:28,450 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 350
+2024-05-13 02:40:28,457 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 02:40:28,461 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 350
+2024-05-13 02:40:28,466 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 02:40:49,497 +0545 [WARNING] Bad Request: /e-com/api/products/upload/
+2024-05-13 02:40:49,498 +0545 [WARNING] "POST /e-com/api/products/upload/ HTTP/1.1" 400 96
+2024-05-13 02:40:50,498 +0545 [WARNING] Bad Request: /e-com/api/products/upload/
+2024-05-13 02:40:50,499 +0545 [WARNING] "POST /e-com/api/products/upload/ HTTP/1.1" 400 96
+2024-05-13 02:41:20,408 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/models.py changed, reloading.
+2024-05-13 02:41:20,986 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-13 02:41:24,278 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/models.py changed, reloading.
+2024-05-13 02:41:24,568 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-13 02:41:26,755 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/models.py changed, reloading.
+2024-05-13 02:41:27,051 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-13 02:41:59,456 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/models.py changed, reloading.
+2024-05-13 02:41:59,861 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-13 02:42:02,053 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/models.py changed, reloading.
+2024-05-13 02:42:02,390 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-13 02:42:03,375 +0545 [INFO] "POST /e-com/api/products/upload/ HTTP/1.1" 201 562
+2024-05-13 02:42:27,658 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 02:42:27,693 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 02:42:27,698 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 97
+2024-05-13 02:42:32,438 +0545 [INFO] "PUT /account/seller-profile/1/ HTTP/1.1" 200 130
+2024-05-13 02:42:49,141 +0545 [INFO] "PUT /account/seller-profile/1/ HTTP/1.1" 200 184
+2024-05-13 02:42:57,308 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 350
+2024-05-13 02:42:57,319 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 02:42:57,323 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 350
+2024-05-13 02:42:57,327 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 02:43:31,461 +0545 [ERROR] Internal Server Error: /e-com/api/products/upload/
+Traceback (most recent call last):
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/sqlite3/base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: UNIQUE constraint failed: masterDummy_product.category_name
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/generics.py", line 194, in post
+    return self.create(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/Users/dilli/Desktop/e-com/backend/masterDummy/views.py", line 23, in perform_create
+    serializer.save(seller=self.request.user)
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 208, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 989, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 679, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/Users/dilli/Desktop/e-com/backend/masterDummy/models.py", line 60, in save
+    super().save(*args, **kwargs)
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/base.py", line 822, in save
+    self.save_base(
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/base.py", line 1067, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/base.py", line 1108, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/sqlite3/base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: UNIQUE constraint failed: masterDummy_product.category_name
+2024-05-13 02:43:31,465 +0545 [ERROR] "POST /e-com/api/products/upload/ HTTP/1.1" 500 230328
+2024-05-13 02:43:33,432 +0545 [ERROR] Internal Server Error: /e-com/api/products/upload/
+Traceback (most recent call last):
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/sqlite3/base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: UNIQUE constraint failed: masterDummy_product.category_name
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/generics.py", line 194, in post
+    return self.create(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/Users/dilli/Desktop/e-com/backend/masterDummy/views.py", line 23, in perform_create
+    serializer.save(seller=self.request.user)
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 208, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 989, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 679, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/Users/dilli/Desktop/e-com/backend/masterDummy/models.py", line 60, in save
+    super().save(*args, **kwargs)
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/base.py", line 822, in save
+    self.save_base(
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/base.py", line 1067, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/base.py", line 1108, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/sqlite3/base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: UNIQUE constraint failed: masterDummy_product.category_name
+2024-05-13 02:43:33,435 +0545 [ERROR] "POST /e-com/api/products/upload/ HTTP/1.1" 500 230400
+2024-05-13 02:44:09,297 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/models.py changed, reloading.
+2024-05-13 02:44:09,835 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-13 02:44:10,579 +0545 [ERROR] Internal Server Error: /e-com/api/products/upload/
+Traceback (most recent call last):
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/sqlite3/base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: UNIQUE constraint failed: masterDummy_product.category_name
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/generics.py", line 194, in post
+    return self.create(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/Users/dilli/Desktop/e-com/backend/masterDummy/views.py", line 23, in perform_create
+    serializer.save(seller=self.request.user)
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 208, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 989, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 679, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/Users/dilli/Desktop/e-com/backend/masterDummy/models.py", line 60, in save
+    super().save(*args, **kwargs)
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/base.py", line 822, in save
+    self.save_base(
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/base.py", line 1067, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/base.py", line 1108, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/sqlite3/base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: UNIQUE constraint failed: masterDummy_product.category_name
+2024-05-13 02:44:10,583 +0545 [ERROR] "POST /e-com/api/products/upload/ HTTP/1.1" 500 230400
+2024-05-13 02:44:10,974 +0545 [ERROR] Internal Server Error: /e-com/api/products/upload/
+Traceback (most recent call last):
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/sqlite3/base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: UNIQUE constraint failed: masterDummy_product.category_name
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/generics.py", line 194, in post
+    return self.create(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/Users/dilli/Desktop/e-com/backend/masterDummy/views.py", line 23, in perform_create
+    serializer.save(seller=self.request.user)
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 208, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 989, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 679, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/Users/dilli/Desktop/e-com/backend/masterDummy/models.py", line 60, in save
+    super().save(*args, **kwargs)
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/base.py", line 822, in save
+    self.save_base(
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/base.py", line 1067, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/base.py", line 1108, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/sqlite3/base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: UNIQUE constraint failed: masterDummy_product.category_name
+2024-05-13 02:44:10,977 +0545 [ERROR] "POST /e-com/api/products/upload/ HTTP/1.1" 500 230400
+2024-05-13 02:44:39,951 +0545 [ERROR] Internal Server Error: /e-com/api/products/upload/
+Traceback (most recent call last):
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/sqlite3/base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: UNIQUE constraint failed: masterDummy_product.category_name
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/generics.py", line 194, in post
+    return self.create(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/Users/dilli/Desktop/e-com/backend/masterDummy/views.py", line 23, in perform_create
+    serializer.save(seller=self.request.user)
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 208, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 989, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 679, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/Users/dilli/Desktop/e-com/backend/masterDummy/models.py", line 60, in save
+    super().save(*args, **kwargs)
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/base.py", line 822, in save
+    self.save_base(
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/base.py", line 1067, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/base.py", line 1108, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/sqlite3/base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: UNIQUE constraint failed: masterDummy_product.category_name
+2024-05-13 02:44:39,954 +0545 [ERROR] "POST /e-com/api/products/upload/ HTTP/1.1" 500 230400
+2024-05-13 02:45:09,754 +0545 [INFO] "POST /e-com/api/products/upload/ HTTP/1.1" 201 700
+2024-05-13 02:45:34,593 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 1265
+2024-05-13 02:50:01,498 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/serializers.py changed, reloading.
+2024-05-13 02:50:02,023 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-13 02:50:02,751 +0545 [ERROR] Internal Server Error: /e-com/api/products/public/list/
+Traceback (most recent call last):
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/generics.py", line 203, in get
+    return self.list(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/mixins.py", line 46, in list
+    return Response(serializer.data)
+                    ^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 795, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 249, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 714, in to_representation
+    self.child.to_representation(item) for item in iterable
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Desktop/e-com/backend/masterDummy/serializers.py", line 15, in to_representation
+    representation = super().to_representation(instance)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 523, in to_representation
+    for field in fields:
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 384, in _readable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 372, in fields
+    for key, value in self.get_fields().items():
+                      ^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 1103, in get_fields
+    field_class, field_kwargs = self.build_field(
+                                ^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 1249, in build_field
+    return self.build_unknown_field(field_name, model_class)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 1367, in build_unknown_field
+    raise ImproperlyConfigured(
+django.core.exceptions.ImproperlyConfigured: Field name `name` is not valid for model `Product` in `masterDummy.serializers.ProductSerializer`.
+2024-05-13 02:50:02,753 +0545 [ERROR] "GET /e-com/api/products/public/list/ HTTP/1.1" 500 150945
+2024-05-13 02:50:21,853 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/serializers.py changed, reloading.
+2024-05-13 02:50:22,287 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-13 02:50:26,609 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/serializers.py changed, reloading.
+2024-05-13 02:50:26,913 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-13 02:50:33,228 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/serializers.py changed, reloading.
+2024-05-13 02:50:33,527 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-13 02:50:36,787 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/serializers.py changed, reloading.
+2024-05-13 02:50:37,077 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-13 02:50:39,567 +0545 [ERROR] Internal Server Error: /e-com/api/products/public/list/
+Traceback (most recent call last):
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/generics.py", line 203, in get
+    return self.list(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/mixins.py", line 46, in list
+    return Response(serializer.data)
+                    ^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 795, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 249, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 714, in to_representation
+    self.child.to_representation(item) for item in iterable
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Desktop/e-com/backend/masterDummy/serializers.py", line 15, in to_representation
+    representation = super().to_representation(instance)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 523, in to_representation
+    for field in fields:
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 384, in _readable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 372, in fields
+    for key, value in self.get_fields().items():
+                      ^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 1103, in get_fields
+    field_class, field_kwargs = self.build_field(
+                                ^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 1249, in build_field
+    return self.build_unknown_field(field_name, model_class)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 1367, in build_unknown_field
+    raise ImproperlyConfigured(
+django.core.exceptions.ImproperlyConfigured: Field name `name` is not valid for model `Product` in `masterDummy.serializers.ProductSerializer`.
+2024-05-13 02:50:39,570 +0545 [ERROR] "GET /e-com/api/products/public/list/ HTTP/1.1" 500 150945
+2024-05-13 02:50:50,704 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/serializers.py changed, reloading.
+2024-05-13 02:50:51,106 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-13 02:50:52,426 +0545 [ERROR] Internal Server Error: /e-com/api/products/public/list/
+Traceback (most recent call last):
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/generics.py", line 203, in get
+    return self.list(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/mixins.py", line 46, in list
+    return Response(serializer.data)
+                    ^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 795, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 249, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 714, in to_representation
+    self.child.to_representation(item) for item in iterable
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Desktop/e-com/backend/masterDummy/serializers.py", line 15, in to_representation
+    representation = super().to_representation(instance)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 523, in to_representation
+    for field in fields:
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 384, in _readable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 372, in fields
+    for key, value in self.get_fields().items():
+                      ^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 1103, in get_fields
+    field_class, field_kwargs = self.build_field(
+                                ^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 1249, in build_field
+    return self.build_unknown_field(field_name, model_class)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 1367, in build_unknown_field
+    raise ImproperlyConfigured(
+django.core.exceptions.ImproperlyConfigured: Field name `name` is not valid for model `Product` in `masterDummy.serializers.ProductSerializer`.
+2024-05-13 02:50:52,428 +0545 [ERROR] "GET /e-com/api/products/public/list/ HTTP/1.1" 500 150945
+2024-05-13 02:51:05,840 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/serializers.py changed, reloading.
+2024-05-13 02:51:06,268 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-13 02:51:24,400 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 1265
+2024-05-13 02:52:45,189 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/serializers.py changed, reloading.
+2024-05-13 02:52:45,700 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-13 02:52:47,378 +0545 [ERROR] Internal Server Error: /e-com/api/products/public/list/
+Traceback (most recent call last):
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/generics.py", line 203, in get
+    return self.list(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/mixins.py", line 46, in list
+    return Response(serializer.data)
+                    ^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 795, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 249, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 714, in to_representation
+    self.child.to_representation(item) for item in iterable
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Desktop/e-com/backend/masterDummy/serializers.py", line 16, in to_representation
+    representation = super().to_representation(instance)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 523, in to_representation
+    for field in fields:
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 384, in _readable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 372, in fields
+    for key, value in self.get_fields().items():
+                      ^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 1103, in get_fields
+    field_class, field_kwargs = self.build_field(
+                                ^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 1249, in build_field
+    return self.build_unknown_field(field_name, model_class)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 1367, in build_unknown_field
+    raise ImproperlyConfigured(
+django.core.exceptions.ImproperlyConfigured: Field name `name` is not valid for model `Product` in `masterDummy.serializers.ProductSerializer`.
+2024-05-13 02:52:47,381 +0545 [ERROR] "GET /e-com/api/products/public/list/ HTTP/1.1" 500 151322
+2024-05-13 02:53:19,107 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/serializers.py changed, reloading.
+2024-05-13 02:53:19,580 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-13 02:53:21,767 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/serializers.py changed, reloading.
+2024-05-13 02:53:22,089 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-13 02:53:22,329 +0545 [ERROR] Internal Server Error: /e-com/api/products/public/list/
+Traceback (most recent call last):
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/generics.py", line 203, in get
+    return self.list(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/mixins.py", line 46, in list
+    return Response(serializer.data)
+                    ^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 795, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 249, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 714, in to_representation
+    self.child.to_representation(item) for item in iterable
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Desktop/e-com/backend/masterDummy/serializers.py", line 41, in to_representation
+    representation = super().to_representation(instance)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 523, in to_representation
+    for field in fields:
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 384, in _readable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 372, in fields
+    for key, value in self.get_fields().items():
+                      ^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 1103, in get_fields
+    field_class, field_kwargs = self.build_field(
+                                ^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 1249, in build_field
+    return self.build_unknown_field(field_name, model_class)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 1367, in build_unknown_field
+    raise ImproperlyConfigured(
+django.core.exceptions.ImproperlyConfigured: Field name `product_name` is not valid for model `Product` in `masterDummy.serializers.ProductSerializer`.
+2024-05-13 02:53:22,331 +0545 [ERROR] "GET /e-com/api/products/public/list/ HTTP/1.1" 500 151515
+2024-05-13 02:53:29,489 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/serializers.py changed, reloading.
+2024-05-13 02:53:29,844 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-13 02:53:55,914 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/serializers.py changed, reloading.
+2024-05-13 02:53:56,379 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-13 02:53:57,532 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/serializers.py changed, reloading.
+2024-05-13 02:53:57,817 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-13 02:53:59,182 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 1269
+2024-05-13 02:54:57,724 +0545 [ERROR] Internal Server Error: /e-com/api/products/upload/
+Traceback (most recent call last):
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/sqlite3/base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: NOT NULL constraint failed: masterDummy_product.category_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/generics.py", line 194, in post
+    return self.create(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/Users/dilli/Desktop/e-com/backend/masterDummy/views.py", line 23, in perform_create
+    serializer.save(seller=self.request.user)
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 208, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 989, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 679, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/Users/dilli/Desktop/e-com/backend/masterDummy/models.py", line 60, in save
+    super().save(*args, **kwargs)
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/base.py", line 822, in save
+    self.save_base(
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/base.py", line 1067, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/base.py", line 1108, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/sqlite3/base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: NOT NULL constraint failed: masterDummy_product.category_id
+2024-05-13 02:54:57,729 +0545 [ERROR] "POST /e-com/api/products/upload/ HTTP/1.1" 500 227542
+2024-05-13 02:54:59,256 +0545 [ERROR] Internal Server Error: /e-com/api/products/upload/
+Traceback (most recent call last):
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/sqlite3/base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: NOT NULL constraint failed: masterDummy_product.category_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/generics.py", line 194, in post
+    return self.create(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/Users/dilli/Desktop/e-com/backend/masterDummy/views.py", line 23, in perform_create
+    serializer.save(seller=self.request.user)
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 208, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 989, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 679, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/Users/dilli/Desktop/e-com/backend/masterDummy/models.py", line 60, in save
+    super().save(*args, **kwargs)
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/base.py", line 822, in save
+    self.save_base(
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/base.py", line 1067, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/base.py", line 1108, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/sqlite3/base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: NOT NULL constraint failed: masterDummy_product.category_id
+2024-05-13 02:54:59,258 +0545 [ERROR] "POST /e-com/api/products/upload/ HTTP/1.1" 500 227614
+2024-05-13 02:55:03,510 +0545 [ERROR] Internal Server Error: /e-com/api/products/upload/
+Traceback (most recent call last):
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/sqlite3/base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: NOT NULL constraint failed: masterDummy_product.category_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/generics.py", line 194, in post
+    return self.create(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/Users/dilli/Desktop/e-com/backend/masterDummy/views.py", line 23, in perform_create
+    serializer.save(seller=self.request.user)
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 208, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 989, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 679, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/Users/dilli/Desktop/e-com/backend/masterDummy/models.py", line 60, in save
+    super().save(*args, **kwargs)
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/base.py", line 822, in save
+    self.save_base(
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/base.py", line 1067, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/base.py", line 1108, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/sqlite3/base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: NOT NULL constraint failed: masterDummy_product.category_id
+2024-05-13 02:55:03,512 +0545 [ERROR] "POST /e-com/api/products/upload/ HTTP/1.1" 500 227614
+2024-05-13 02:55:17,463 +0545 [ERROR] Internal Server Error: /e-com/api/products/upload/
+Traceback (most recent call last):
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/sqlite3/base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: NOT NULL constraint failed: masterDummy_product.category_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/generics.py", line 194, in post
+    return self.create(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/Users/dilli/Desktop/e-com/backend/masterDummy/views.py", line 23, in perform_create
+    serializer.save(seller=self.request.user)
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 208, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 989, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 679, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/Users/dilli/Desktop/e-com/backend/masterDummy/models.py", line 60, in save
+    super().save(*args, **kwargs)
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/base.py", line 822, in save
+    self.save_base(
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/base.py", line 1067, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/base.py", line 1108, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/sqlite3/base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: NOT NULL constraint failed: masterDummy_product.category_id
+2024-05-13 02:55:17,466 +0545 [ERROR] "POST /e-com/api/products/upload/ HTTP/1.1" 500 227614
+2024-05-13 02:55:52,001 +0545 [ERROR] Internal Server Error: /e-com/api/products/upload/
+Traceback (most recent call last):
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/sqlite3/base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: NOT NULL constraint failed: masterDummy_product.category_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/generics.py", line 194, in post
+    return self.create(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/Users/dilli/Desktop/e-com/backend/masterDummy/views.py", line 23, in perform_create
+    serializer.save(seller=self.request.user)
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 208, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 989, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 679, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/Users/dilli/Desktop/e-com/backend/masterDummy/models.py", line 60, in save
+    super().save(*args, **kwargs)
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/base.py", line 822, in save
+    self.save_base(
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/base.py", line 1067, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/base.py", line 1108, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/sqlite3/base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: NOT NULL constraint failed: masterDummy_product.category_id
+2024-05-13 02:55:52,003 +0545 [ERROR] "POST /e-com/api/products/upload/ HTTP/1.1" 500 227614
+2024-05-13 02:56:04,807 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/serializers.py changed, reloading.
+2024-05-13 02:56:05,299 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-13 02:56:06,012 +0545 [ERROR] Internal Server Error: /e-com/api/products/upload/
+Traceback (most recent call last):
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/sqlite3/base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: NOT NULL constraint failed: masterDummy_product.category_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/generics.py", line 194, in post
+    return self.create(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/Users/dilli/Desktop/e-com/backend/masterDummy/views.py", line 23, in perform_create
+    serializer.save(seller=self.request.user)
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 208, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 989, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 679, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/Users/dilli/Desktop/e-com/backend/masterDummy/models.py", line 60, in save
+    super().save(*args, **kwargs)
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/base.py", line 822, in save
+    self.save_base(
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/base.py", line 1067, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/base.py", line 1108, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/sqlite3/base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: NOT NULL constraint failed: masterDummy_product.category_id
+2024-05-13 02:56:06,016 +0545 [ERROR] "POST /e-com/api/products/upload/ HTTP/1.1" 500 227614
+2024-05-13 02:56:46,183 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 02:56:46,211 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 02:56:46,220 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 184
+2024-05-13 02:56:47,590 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 350
+2024-05-13 02:56:47,594 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 02:56:47,603 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 350
+2024-05-13 02:56:47,622 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 02:57:12,686 +0545 [ERROR] Internal Server Error: /e-com/api/products/upload/
+Traceback (most recent call last):
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/sqlite3/base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: NOT NULL constraint failed: masterDummy_product.category_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/generics.py", line 194, in post
+    return self.create(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/Users/dilli/Desktop/e-com/backend/masterDummy/views.py", line 23, in perform_create
+    serializer.save(seller=self.request.user)
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 208, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 989, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 679, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/Users/dilli/Desktop/e-com/backend/masterDummy/models.py", line 60, in save
+    super().save(*args, **kwargs)
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/base.py", line 822, in save
+    self.save_base(
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/base.py", line 1067, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/base.py", line 1108, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/sqlite3/base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: NOT NULL constraint failed: masterDummy_product.category_id
+2024-05-13 02:57:12,689 +0545 [ERROR] "POST /e-com/api/products/upload/ HTTP/1.1" 500 227633
+2024-05-13 02:57:51,637 +0545 [ERROR] Internal Server Error: /e-com/api/products/upload/
+Traceback (most recent call last):
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/sqlite3/base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: NOT NULL constraint failed: masterDummy_product.category_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/generics.py", line 194, in post
+    return self.create(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/Users/dilli/Desktop/e-com/backend/masterDummy/views.py", line 23, in perform_create
+    serializer.save(seller=self.request.user)
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 208, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 989, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 679, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/Users/dilli/Desktop/e-com/backend/masterDummy/models.py", line 60, in save
+    super().save(*args, **kwargs)
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/base.py", line 822, in save
+    self.save_base(
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/base.py", line 1067, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/base.py", line 1108, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/sqlite3/base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: NOT NULL constraint failed: masterDummy_product.category_id
+2024-05-13 02:57:51,640 +0545 [ERROR] "POST /e-com/api/products/upload/ HTTP/1.1" 500 227633
+2024-05-13 02:57:53,949 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 02:57:53,980 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 02:57:53,992 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 184
+2024-05-13 02:57:56,006 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 350
+2024-05-13 02:57:56,015 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 02:57:56,019 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 350
+2024-05-13 02:57:56,025 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 02:58:18,382 +0545 [ERROR] Internal Server Error: /e-com/api/products/upload/
+Traceback (most recent call last):
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/sqlite3/base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: NOT NULL constraint failed: masterDummy_product.category_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/generics.py", line 194, in post
+    return self.create(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/Users/dilli/Desktop/e-com/backend/masterDummy/views.py", line 23, in perform_create
+    serializer.save(seller=self.request.user)
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 208, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 989, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 679, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/Users/dilli/Desktop/e-com/backend/masterDummy/models.py", line 60, in save
+    super().save(*args, **kwargs)
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/base.py", line 822, in save
+    self.save_base(
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/base.py", line 1067, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/base.py", line 1108, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/backends/sqlite3/base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: NOT NULL constraint failed: masterDummy_product.category_id
+2024-05-13 02:58:18,385 +0545 [ERROR] "POST /e-com/api/products/upload/ HTTP/1.1" 500 227380
+2024-05-13 02:58:35,893 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/serializers.py changed, reloading.
+2024-05-13 02:58:36,367 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-13 02:58:39,573 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/serializers.py changed, reloading.
+2024-05-13 02:58:39,894 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-13 02:58:47,486 +0545 [INFO] "POST /e-com/api/products/upload/ HTTP/1.1" 201 697
+2024-05-13 02:58:51,525 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 1963
+2024-05-13 02:59:30,879 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/views.py changed, reloading.
+2024-05-13 02:59:31,389 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-13 02:59:31,771 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2004
+2024-05-13 03:02:04,199 +0545 [WARNING] Not Found: /e-com/api/products/edit/
+2024-05-13 03:02:04,200 +0545 [WARNING] "GET /e-com/api/products/edit/ HTTP/1.1" 404 3392
+2024-05-13 03:02:10,722 +0545 [WARNING] Unauthorized: /e-com/api/products/edit/2/
+2024-05-13 03:02:10,723 +0545 [WARNING] "GET /e-com/api/products/edit/2/ HTTP/1.1" 401 58
+2024-05-13 03:02:13,860 +0545 [WARNING] Unauthorized: /e-com/api/products/edit/2/
+2024-05-13 03:02:13,861 +0545 [WARNING] "POST /e-com/api/products/edit/2/ HTTP/1.1" 401 58
+2024-05-13 03:02:33,722 +0545 [INFO] "POST /account/auth/login/ HTTP/1.1" 200 483
+2024-05-13 03:02:42,948 +0545 [WARNING] Bad Request: /e-com/api/products/upload/
+2024-05-13 03:02:42,950 +0545 [WARNING] "POST /e-com/api/products/upload/ HTTP/1.1" 400 194
+2024-05-13 03:02:55,251 +0545 [WARNING] Method Not Allowed: /e-com/api/products/edit/2/
+2024-05-13 03:02:55,252 +0545 [WARNING] "POST /e-com/api/products/edit/2/ HTTP/1.1" 405 41
+2024-05-13 03:02:58,584 +0545 [WARNING] Bad Request: /e-com/api/products/edit/2/
+2024-05-13 03:02:58,584 +0545 [WARNING] "PUT /e-com/api/products/edit/2/ HTTP/1.1" 400 194
+2024-05-13 03:03:04,898 +0545 [WARNING] Not Found: /e-com/api/products/edit/4/
+2024-05-13 03:03:04,899 +0545 [WARNING] "PUT /e-com/api/products/edit/4/ HTTP/1.1" 404 48
+2024-05-13 03:03:18,510 +0545 [WARNING] Bad Request: /e-com/api/products/edit/3/
+2024-05-13 03:03:18,511 +0545 [WARNING] "PUT /e-com/api/products/edit/3/ HTTP/1.1" 400 194
+2024-05-13 03:04:17,881 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2004
+2024-05-13 03:04:24,504 +0545 [WARNING] Bad Request: /e-com/api/products/edit/3/
+2024-05-13 03:04:24,505 +0545 [WARNING] "PUT /e-com/api/products/edit/3/ HTTP/1.1" 400 40
+2024-05-13 03:04:41,794 +0545 [INFO] "PUT /e-com/api/products/edit/3/ HTTP/1.1" 200 709
+2024-05-13 03:04:57,794 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 03:04:57,821 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 03:04:57,823 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 184
+2024-05-13 03:05:05,297 +0545 [INFO] "GET /e-com/api/products/edit/3/ HTTP/1.1" 200 709
+2024-05-13 03:06:55,675 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/views.py changed, reloading.
+2024-05-13 03:06:56,228 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-13 03:07:00,570 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/views.py changed, reloading.
+2024-05-13 03:07:00,871 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-13 03:07:15,531 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/urls.py changed, reloading.
+2024-05-13 03:07:15,947 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-13 03:07:17,180 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/urls.py changed, reloading.
+2024-05-13 03:07:17,484 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-13 03:09:19,433 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/views.py changed, reloading.
+2024-05-13 03:09:19,916 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-13 03:09:30,294 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/views.py changed, reloading.
+2024-05-13 03:09:30,997 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-13 03:09:49,872 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/urls.py changed, reloading.
+2024-05-13 03:09:50,314 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-13 03:09:53,504 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/urls.py changed, reloading.
+2024-05-13 03:09:53,862 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-13 03:09:54,983 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/urls.py changed, reloading.
+2024-05-13 03:09:55,266 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-13 03:09:58,521 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/urls.py changed, reloading.
+2024-05-13 03:09:58,827 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-13 03:10:04,151 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/urls.py changed, reloading.
+2024-05-13 03:10:04,455 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-13 03:10:06,694 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/urls.py changed, reloading.
+2024-05-13 03:10:07,010 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-13 03:10:32,053 +0545 [WARNING] Not Found: /e-com/api/products/seller/products/edit/
+2024-05-13 03:10:32,056 +0545 [WARNING] "GET /e-com/api/products/seller/products/edit/ HTTP/1.1" 404 3663
+2024-05-13 03:10:39,004 +0545 [WARNING] Not Found: /e-com/api/seller/products/edit/
+2024-05-13 03:10:39,004 +0545 [WARNING] "GET /e-com/api/seller/products/edit/ HTTP/1.1" 404 3636
+2024-05-13 03:10:51,221 +0545 [WARNING] Not Found: /e-com/api/seller/products/edit/2/
+2024-05-13 03:10:51,221 +0545 [WARNING] "GET /e-com/api/seller/products/edit/2/ HTTP/1.1" 404 48
+2024-05-13 03:10:56,079 +0545 [WARNING] Not Found: /e-com/api/seller/products/edit/3/
+2024-05-13 03:10:56,080 +0545 [WARNING] "GET /e-com/api/seller/products/edit/3/ HTTP/1.1" 404 48
+2024-05-13 03:11:17,912 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/views.py changed, reloading.
+2024-05-13 03:11:18,385 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-13 03:11:21,662 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/views.py changed, reloading.
+2024-05-13 03:11:21,974 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-13 03:11:29,294 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/views.py changed, reloading.
+2024-05-13 03:11:29,594 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-13 03:11:30,714 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/views.py changed, reloading.
+2024-05-13 03:11:31,005 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-13 03:11:31,898 +0545 [WARNING] Unauthorized: /e-com/api/seller/products/edit/3/
+2024-05-13 03:11:31,900 +0545 [WARNING] "POST /e-com/api/seller/products/edit/3/ HTTP/1.1" 401 58
+2024-05-13 03:11:42,602 +0545 [WARNING] Method Not Allowed: /e-com/api/seller/products/edit/3/
+2024-05-13 03:11:42,603 +0545 [WARNING] "POST /e-com/api/seller/products/edit/3/ HTTP/1.1" 405 41
+2024-05-13 03:11:45,911 +0545 [INFO] "GET /e-com/api/seller/products/edit/3/ HTTP/1.1" 200 709
+2024-05-13 03:11:48,278 +0545 [WARNING] Not Found: /e-com/api/seller/products/edit/4/
+2024-05-13 03:11:48,278 +0545 [WARNING] "GET /e-com/api/seller/products/edit/4/ HTTP/1.1" 404 48
+2024-05-13 03:11:50,027 +0545 [WARNING] Not Found: /e-com/api/seller/products/edit/
+2024-05-13 03:11:50,027 +0545 [WARNING] "GET /e-com/api/seller/products/edit/ HTTP/1.1" 404 3636
+2024-05-13 03:11:52,233 +0545 [INFO] "GET /e-com/api/seller/products/edit/2/ HTTP/1.1" 200 700
+2024-05-13 03:11:56,033 +0545 [INFO] "GET /e-com/api/seller/products/edit/3/ HTTP/1.1" 200 709
+2024-05-13 03:12:13,585 +0545 [INFO] "POST /account/auth/register/ HTTP/1.1" 200 290
+2024-05-13 03:12:18,475 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-13 03:13:02,396 +0545 [INFO] "POST /account/auth/login/ HTTP/1.1" 200 483
+2024-05-13 03:13:51,939 +0545 [WARNING] Not Found: /e-com/api/seller/products/edit/3/
+2024-05-13 03:13:51,940 +0545 [WARNING] "GET /e-com/api/seller/products/edit/3/ HTTP/1.1" 404 48
+2024-05-13 03:13:54,504 +0545 [WARNING] Not Found: /e-com/api/seller/products/edit/2/
+2024-05-13 03:13:54,505 +0545 [WARNING] "GET /e-com/api/seller/products/edit/2/ HTTP/1.1" 404 48
+2024-05-13 03:13:56,932 +0545 [WARNING] Not Found: /e-com/api/seller/products/edit/1/
+2024-05-13 03:13:56,932 +0545 [WARNING] "GET /e-com/api/seller/products/edit/1/ HTTP/1.1" 404 48
+2024-05-13 03:14:24,284 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/views.py changed, reloading.
+2024-05-13 03:14:24,736 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-13 03:15:34,612 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/views.py changed, reloading.
+2024-05-13 03:15:35,138 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-13 03:15:38,430 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/views.py changed, reloading.
+2024-05-13 03:15:38,738 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-13 03:16:29,960 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/views.py changed, reloading.
+2024-05-13 03:16:30,448 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-13 03:16:49,275 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/urls.py changed, reloading.
+2024-05-13 03:16:49,821 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-13 03:16:50,956 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/urls.py changed, reloading.
+2024-05-13 03:16:51,254 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-13 03:16:55,546 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/urls.py changed, reloading.
+2024-05-13 03:16:55,863 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-13 03:16:58,104 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/urls.py changed, reloading.
+2024-05-13 03:16:58,411 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-13 03:17:06,855 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/urls.py changed, reloading.
+2024-05-13 03:17:07,166 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-13 03:17:11,467 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/urls.py changed, reloading.
+2024-05-13 03:17:11,784 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-13 03:17:14,007 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/urls.py changed, reloading.
+2024-05-13 03:17:14,305 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-13 03:17:15,513 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/urls.py changed, reloading.
+2024-05-13 03:17:15,801 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-13 03:17:27,242 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/urls.py changed, reloading.
+2024-05-13 03:17:27,546 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-13 03:17:30,813 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/urls.py changed, reloading.
+2024-05-13 03:17:31,109 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-13 03:17:50,941 +0545 [WARNING] Unauthorized: /e-com/api/seller/products/list/
+2024-05-13 03:17:50,943 +0545 [WARNING] "GET /e-com/api/seller/products/list/ HTTP/1.1" 401 58
+2024-05-13 03:17:59,786 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2
+2024-05-13 03:18:08,656 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2
+2024-05-13 03:18:19,175 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 1975
+2024-05-13 03:18:58,573 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2
+2024-05-13 03:19:05,309 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2016

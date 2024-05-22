@@ -1,0 +1,138 @@
+2024-05-20 09:59:50,123 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-20 10:00:36,383 +0545 [INFO] "OPTIONS /account/user/details/ HTTP/1.1" 200 0
+2024-05-20 10:00:36,384 +0545 [INFO] "OPTIONS /account/user/details/ HTTP/1.1" 200 0
+2024-05-20 10:00:36,388 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2
+2024-05-20 10:00:36,392 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2
+2024-05-20 10:00:36,403 +0545 [WARNING] Unauthorized: /account/user/details/
+2024-05-20 10:00:36,403 +0545 [WARNING] "GET /account/user/details/ HTTP/1.1" 401 51
+2024-05-20 10:00:36,405 +0545 [WARNING] Unauthorized: /account/user/details/
+2024-05-20 10:00:36,406 +0545 [WARNING] "GET /account/user/details/ HTTP/1.1" 401 51
+2024-05-20 10:00:38,194 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2
+2024-05-20 10:00:38,201 +0545 [WARNING] Unauthorized: /account/user/details/
+2024-05-20 10:00:38,202 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2
+2024-05-20 10:00:38,202 +0545 [WARNING] "GET /account/user/details/ HTTP/1.1" 401 51
+2024-05-20 10:00:38,206 +0545 [WARNING] Unauthorized: /account/user/details/
+2024-05-20 10:00:38,206 +0545 [WARNING] "GET /account/user/details/ HTTP/1.1" 401 51
+2024-05-20 10:00:54,885 +0545 [INFO] "PUT /e-com/api/sellers/orders/1/ HTTP/1.1" 200 744
+2024-05-20 10:01:01,913 +0545 [INFO] "GET /e-com/api/sellers/orders/ HTTP/1.1" 200 1185
+2024-05-20 10:08:57,715 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/models.py changed, reloading.
+2024-05-20 10:08:58,350 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-20 10:09:13,676 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/models.py changed, reloading.
+2024-05-20 10:09:14,037 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-20 10:09:15,206 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/models.py changed, reloading.
+2024-05-20 10:09:15,492 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-20 10:10:45,620 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/models.py changed, reloading.
+2024-05-20 10:10:46,491 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-20 10:13:59,474 +0545 [INFO] "POST /e-com/api/sellers/orders/ HTTP/1.1" 201 574
+2024-05-20 10:16:04,449 +0545 [INFO] "POST /e-com/api/sellers/orders/ HTTP/1.1" 201 679
+2024-05-20 10:16:08,572 +0545 [ERROR] Internal Server Error: /e-com/api/sellers/orders/1/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Seller_Order_CRUD_View.get() got an unexpected keyword argument 'pk'
+2024-05-20 10:16:08,574 +0545 [ERROR] "GET /e-com/api/sellers/orders/1/ HTTP/1.1" 500 86008
+2024-05-20 10:16:29,207 +0545 [INFO] "GET /e-com/api/sellers/orders/ HTTP/1.1" 200 1112
+2024-05-20 10:16:58,587 +0545 [WARNING] Unauthorized: /e-com/api/sellers/orders/1/
+2024-05-20 10:16:58,588 +0545 [WARNING] "GET /e-com/api/sellers/orders/1/ HTTP/1.1" 401 58
+2024-05-20 10:17:07,349 +0545 [ERROR] Internal Server Error: /e-com/api/sellers/orders/1/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Seller_Order_CRUD_View.get() got an unexpected keyword argument 'pk'
+2024-05-20 10:17:07,351 +0545 [ERROR] "GET /e-com/api/sellers/orders/1/ HTTP/1.1" 500 85999
+2024-05-20 10:17:10,689 +0545 [INFO] "GET /e-com/api/sellers/orders/ HTTP/1.1" 200 1112
+2024-05-20 10:17:53,932 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/views.py changed, reloading.
+2024-05-20 10:17:54,386 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-20 10:22:29,628 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/views.py changed, reloading.
+2024-05-20 10:22:30,180 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-20 10:22:38,583 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/views.py changed, reloading.
+2024-05-20 10:22:39,015 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-20 10:23:00,892 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/urls.py changed, reloading.
+2024-05-20 10:23:01,368 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-20 10:23:04,644 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/urls.py changed, reloading.
+2024-05-20 10:23:04,942 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-20 10:23:06,140 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/urls.py changed, reloading.
+2024-05-20 10:23:06,427 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-20 10:23:13,770 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/urls.py changed, reloading.
+2024-05-20 10:23:14,086 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-20 10:23:20,410 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/urls.py changed, reloading.
+2024-05-20 10:23:20,726 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-20 10:23:23,142 +0545 [ERROR] Internal Server Error: /e-com/api/sellers/orders/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Desktop/e-com/backend/masterDummy/views.py", line 247, in get
+    serializer = OrderForSellerSerializer(orders, many=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'OrderForSellerSerializer' is not defined. Did you mean: 'OrderSellerSerializer'?
+2024-05-20 10:23:23,144 +0545 [ERROR] "GET /e-com/api/sellers/orders/ HTTP/1.1" 500 90272
+2024-05-20 10:23:38,534 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/serializers.py changed, reloading.
+2024-05-20 10:23:38,940 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-20 10:23:42,653 +0545 [INFO] "GET /e-com/api/sellers/orders/ HTTP/1.1" 200 2397
+2024-05-20 10:23:52,339 +0545 [WARNING] Not Found: /e-com/api/sellers/orders/1/
+2024-05-20 10:23:52,340 +0545 [WARNING] "PUT /e-com/api/sellers/orders/1/ HTTP/1.1" 404 27
+2024-05-20 10:24:09,069 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/views.py changed, reloading.
+2024-05-20 10:24:09,499 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-20 10:24:11,738 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/views.py changed, reloading.
+2024-05-20 10:24:12,089 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-20 10:24:15,617 +0545 [INFO] "GET /e-com/api/orders/ HTTP/1.1" 200 1256

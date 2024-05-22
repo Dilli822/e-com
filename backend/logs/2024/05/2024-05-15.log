@@ -1,0 +1,1705 @@
+2024-05-15 00:31:46,609 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-15 00:31:50,056 +0545 [INFO] "OPTIONS /account/auth/login/ HTTP/1.1" 200 0
+2024-05-15 00:31:50,327 +0545 [INFO] "POST /account/auth/login/ HTTP/1.1" 200 483
+2024-05-15 00:31:50,355 +0545 [INFO] "OPTIONS /account/user/details/ HTTP/1.1" 200 0
+2024-05-15 00:31:50,358 +0545 [INFO] "OPTIONS /account/user/details/ HTTP/1.1" 200 0
+2024-05-15 00:31:50,366 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 00:31:50,371 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 00:31:58,195 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 00:31:58,206 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 00:31:58,209 +0545 [INFO] "OPTIONS /account/seller-profile/1/ HTTP/1.1" 200 0
+2024-05-15 00:31:58,214 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 184
+2024-05-15 00:31:58,226 +0545 [INFO] "GET /media/seller/profile_images/e-commerce_RDMS_Diagram.png HTTP/1.1" 200 31349
+2024-05-15 00:31:59,679 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 350
+2024-05-15 00:31:59,681 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 00:31:59,686 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 350
+2024-05-15 00:31:59,691 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 00:32:01,873 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 00:32:01,883 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 00:32:07,256 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 00:32:07,265 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 00:32:07,270 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 184
+2024-05-15 00:32:12,083 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 350
+2024-05-15 00:32:12,097 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 00:32:12,117 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 350
+2024-05-15 00:32:12,125 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 00:32:16,608 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 00:32:16,616 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 00:33:04,570 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2131
+2024-05-15 00:36:45,087 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2131
+2024-05-15 00:36:45,099 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2131
+2024-05-15 00:36:45,100 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 00:36:45,116 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 00:36:45,117 +0545 [INFO] "GET /media/seller/product_images/n6_KBnMTeA.jpg HTTP/1.1" 200 48579
+2024-05-15 00:36:45,118 +0545 [INFO] "GET /media/seller/product_images/dell_monitor_AngHyoj.jpeg HTTP/1.1" 200 105816
+2024-05-15 00:36:45,121 +0545 [INFO] "GET /media/seller/product_images/cg.png HTTP/1.1" 200 678927
+2024-05-15 00:38:18,082 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 00:38:20,934 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2131
+2024-05-15 00:38:20,940 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2131
+2024-05-15 00:38:47,059 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2131
+2024-05-15 00:38:47,063 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2131
+2024-05-15 00:38:57,156 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2131
+2024-05-15 00:38:57,162 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2131
+2024-05-15 00:39:12,051 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2131
+2024-05-15 00:39:15,048 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2131
+2024-05-15 00:39:18,062 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2131
+2024-05-15 00:39:18,068 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2131
+2024-05-15 00:39:23,046 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2131
+2024-05-15 00:39:24,525 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2131
+2024-05-15 00:39:31,049 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2131
+2024-05-15 00:41:47,152 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2131
+2024-05-15 00:41:47,164 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2131
+2024-05-15 00:41:54,566 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2131
+2024-05-15 00:42:16,520 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2131
+2024-05-15 00:42:16,523 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2131
+2024-05-15 00:42:45,036 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2131
+2024-05-15 00:42:47,515 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2131
+2024-05-15 00:42:49,957 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2131
+2024-05-15 00:42:49,963 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2131
+2024-05-15 00:43:00,040 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2131
+2024-05-15 00:43:02,034 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2131
+2024-05-15 00:43:04,458 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2131
+2024-05-15 00:43:09,414 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2131
+2024-05-15 00:43:19,164 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2131
+2024-05-15 00:43:56,034 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2131
+2024-05-15 00:43:58,172 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2131
+2024-05-15 00:43:58,180 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2131
+2024-05-15 00:44:06,540 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2131
+2024-05-15 00:44:14,033 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2131
+2024-05-15 00:44:15,864 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2131
+2024-05-15 00:44:30,594 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2131
+2024-05-15 00:44:35,028 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2131
+2024-05-15 00:44:37,030 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2131
+2024-05-15 00:44:42,438 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2131
+2024-05-15 00:44:44,739 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2131
+2024-05-15 00:44:44,745 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2131
+2024-05-15 00:44:57,490 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2131
+2024-05-15 00:45:02,497 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2131
+2024-05-15 00:45:12,469 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2131
+2024-05-15 00:45:20,000 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2131
+2024-05-15 00:45:20,469 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2131
+2024-05-15 00:45:26,496 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2131
+2024-05-15 00:45:33,460 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2131
+2024-05-15 00:45:39,028 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2131
+2024-05-15 00:45:40,473 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2131
+2024-05-15 00:45:47,502 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2131
+2024-05-15 00:45:53,356 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2131
+2024-05-15 00:46:10,587 +0545 [INFO] "POST /account/auth/login/ HTTP/1.1" 200 483
+2024-05-15 00:46:10,623 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2131
+2024-05-15 00:46:10,632 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 00:46:10,634 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2131
+2024-05-15 00:46:10,639 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 00:46:17,867 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 00:46:17,874 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 00:46:17,887 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 184
+2024-05-15 00:46:51,982 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 350
+2024-05-15 00:46:51,985 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 00:46:51,989 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 350
+2024-05-15 00:46:51,995 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 00:46:54,255 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2131
+2024-05-15 00:46:54,259 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 00:46:54,269 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2131
+2024-05-15 00:46:54,272 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 00:46:58,745 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 00:46:58,754 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 00:46:58,763 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 184
+2024-05-15 00:47:01,018 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 350
+2024-05-15 00:47:01,022 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 00:47:01,025 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 350
+2024-05-15 00:47:01,030 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 00:47:03,005 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2131
+2024-05-15 00:47:03,018 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 00:47:03,018 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2131
+2024-05-15 00:47:03,025 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 00:48:35,363 +0545 [INFO] "OPTIONS /e-com/api/seller/products/list/ HTTP/1.1" 200 0
+2024-05-15 00:48:35,374 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2090
+2024-05-15 00:48:35,394 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2090
+2024-05-15 00:48:35,399 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2090
+2024-05-15 00:48:35,406 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2090
+2024-05-15 00:49:21,031 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2090
+2024-05-15 00:49:23,023 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2090
+2024-05-15 00:49:26,023 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2090
+2024-05-15 00:49:40,713 +0545 [INFO] "OPTIONS /e-com/api/seller/products/edit/2/ HTTP/1.1" 200 0
+2024-05-15 00:49:40,736 +0545 [INFO] "PUT /e-com/api/seller/products/edit/2/ HTTP/1.1" 200 697
+2024-05-15 00:49:46,226 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 00:49:46,233 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 00:49:46,239 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 00:49:46,244 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 00:51:11,671 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 00:51:11,680 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 00:51:11,682 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 184
+2024-05-15 00:51:13,775 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 350
+2024-05-15 00:51:13,781 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 00:51:13,783 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 350
+2024-05-15 00:51:13,791 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 00:51:16,855 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 00:51:16,861 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 00:51:16,867 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 00:51:16,872 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 00:51:29,978 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 00:51:29,988 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 00:51:29,992 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 184
+2024-05-15 00:51:55,583 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 00:51:55,601 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 00:51:55,604 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 184
+2024-05-15 02:10:24,184 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:10:24,195 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:10:24,197 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 184
+2024-05-15 02:10:51,212 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 184
+2024-05-15 02:10:51,213 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:11:00,690 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 184
+2024-05-15 02:11:00,690 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:11:02,729 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:11:02,750 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:11:02,752 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 184
+2024-05-15 02:11:12,199 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 184
+2024-05-15 02:11:12,200 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:11:14,659 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:11:14,677 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:11:14,679 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 184
+2024-05-15 02:12:27,653 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 184
+2024-05-15 02:12:27,653 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:12:28,365 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 350
+2024-05-15 02:12:28,366 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:12:28,375 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:12:28,377 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 350
+2024-05-15 02:12:28,381 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:12:28,384 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:12:28,389 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:12:28,405 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:12:40,181 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:12:40,186 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:12:40,191 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:12:41,587 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:12:44,418 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 02:12:44,425 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:12:44,429 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 02:12:44,436 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:12:46,353 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:12:46,361 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:12:46,372 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 184
+2024-05-15 02:12:48,303 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 350
+2024-05-15 02:12:48,309 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:12:48,309 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:12:48,315 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 350
+2024-05-15 02:12:48,321 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:12:48,322 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:12:48,348 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:12:48,353 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:13:51,183 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:13:51,188 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:13:51,191 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 184
+2024-05-15 02:14:02,191 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:14:02,198 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:14:02,200 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 184
+2024-05-15 02:14:16,193 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 184
+2024-05-15 02:14:16,194 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:14:41,876 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:14:41,888 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:14:41,889 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 184
+2024-05-15 02:15:19,131 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:15:19,143 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:15:19,146 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 184
+2024-05-15 02:15:21,163 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:15:21,170 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:15:21,176 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:15:21,186 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:15:24,146 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:15:24,162 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:15:24,162 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 184
+2024-05-15 02:16:29,885 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:16:29,892 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:16:29,900 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:16:29,905 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:17:05,724 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:17:05,728 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:17:05,733 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:17:05,740 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:17:28,327 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:17:28,337 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:17:28,338 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 184
+2024-05-15 02:17:48,835 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:17:48,841 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:17:48,854 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:17:48,864 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:17:51,700 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:17:51,709 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:17:51,711 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 184
+2024-05-15 02:17:52,598 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 350
+2024-05-15 02:17:52,601 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:17:52,603 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 350
+2024-05-15 02:17:52,608 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:17:54,944 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:17:54,960 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 184
+2024-05-15 02:17:54,961 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:18:12,477 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:18:12,483 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:18:12,492 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:18:12,496 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:18:14,637 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 02:18:14,641 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:18:14,646 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 02:18:14,653 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:18:17,079 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:18:17,087 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:18:17,096 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 184
+2024-05-15 02:18:18,376 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:18:18,382 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:18:18,389 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:18:18,400 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:18:19,178 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:18:19,187 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:18:19,190 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 184
+2024-05-15 02:19:06,562 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:19:06,578 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:19:06,580 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 184
+2024-05-15 02:19:21,397 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:19:21,403 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:19:21,410 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:19:21,416 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:19:53,175 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:19:53,180 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:19:53,184 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:19:53,190 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:19:59,137 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:19:59,148 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:19:59,150 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 184
+2024-05-15 02:20:00,445 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:20:00,451 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:20:00,457 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:20:00,464 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:20:11,633 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:20:11,640 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:20:11,645 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:20:11,649 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:20:13,168 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:20:13,176 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:20:13,179 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 184
+2024-05-15 02:20:14,952 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:20:14,970 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:20:14,975 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 184
+2024-05-15 02:20:15,560 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:20:15,566 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:20:15,573 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:20:15,580 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:20:27,860 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:20:27,866 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:20:27,871 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:20:27,878 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:20:58,194 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:20:58,202 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:20:58,208 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:20:58,215 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:21:00,740 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:21:00,758 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:21:00,760 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 184
+2024-05-15 02:21:02,306 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:21:02,312 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:21:02,318 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:21:02,328 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:21:07,960 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 02:21:07,964 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:21:07,969 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 02:21:07,974 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:21:38,656 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:21:38,666 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:21:38,675 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:21:38,681 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:21:40,550 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 02:21:40,554 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:21:40,560 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 02:21:40,565 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:21:41,413 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:21:41,420 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:21:41,431 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 184
+2024-05-15 02:21:42,286 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:21:42,294 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:21:42,301 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:21:42,306 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:21:53,948 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 02:21:53,959 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 02:21:53,963 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:21:53,972 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:21:55,717 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 02:21:55,718 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:21:55,725 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 02:21:55,730 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:21:56,411 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:21:56,419 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:21:56,431 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 184
+2024-05-15 02:21:58,065 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:21:58,072 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:21:58,079 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:21:58,085 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:22:29,525 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 02:22:29,529 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:22:29,534 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 02:22:29,540 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:22:31,028 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:22:31,037 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:22:31,047 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 184
+2024-05-15 02:22:32,541 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:22:32,547 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:22:32,554 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:22:32,561 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:23:07,613 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:23:07,617 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:23:07,622 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:23:07,635 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:23:25,300 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:23:25,317 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:23:25,320 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 184
+2024-05-15 02:23:29,071 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 350
+2024-05-15 02:23:29,078 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 350
+2024-05-15 02:23:29,078 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:23:29,085 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:23:30,261 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:23:30,271 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:23:30,273 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 184
+2024-05-15 02:23:31,133 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:23:31,146 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:23:31,156 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:23:31,162 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:23:31,945 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:23:31,956 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:23:31,958 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 184
+2024-05-15 02:23:50,602 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:23:50,606 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:23:50,611 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:23:50,618 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:23:51,731 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:23:51,736 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:23:51,740 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 184
+2024-05-15 02:23:52,553 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 350
+2024-05-15 02:23:52,557 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:23:52,560 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 350
+2024-05-15 02:23:52,565 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:24:22,146 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 350
+2024-05-15 02:24:22,149 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:24:26,634 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 350
+2024-05-15 02:24:26,635 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:24:27,661 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:24:27,675 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:24:27,677 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 184
+2024-05-15 02:24:28,841 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 350
+2024-05-15 02:24:28,844 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:24:28,847 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 350
+2024-05-15 02:24:28,852 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:24:34,164 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:24:34,182 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:24:34,185 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 184
+2024-05-15 02:24:35,227 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:24:35,233 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:24:35,241 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:24:35,247 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:24:45,915 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:24:45,924 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:24:45,927 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 184
+2024-05-15 02:31:51,422 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 350
+2024-05-15 02:31:51,429 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:31:51,429 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 350
+2024-05-15 02:31:51,434 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:31:52,993 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:31:53,003 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:31:53,004 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 184
+2024-05-15 02:31:54,035 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:31:54,040 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:31:54,049 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:31:54,056 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:34:06,524 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:34:06,535 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:34:06,537 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 184
+2024-05-15 02:34:07,800 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 350
+2024-05-15 02:34:07,803 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:34:07,806 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 350
+2024-05-15 02:34:07,811 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:34:12,486 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:34:12,494 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:34:12,498 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 184
+2024-05-15 02:34:13,760 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 02:34:13,761 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:34:13,769 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 02:34:13,774 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:35:01,428 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:35:05,566 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:35:10,224 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:36:02,237 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 02:36:02,255 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 02:36:02,259 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:36:02,270 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:36:07,361 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:36:08,904 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 02:36:08,914 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:36:08,919 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 02:36:14,160 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 02:36:14,179 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 02:36:14,180 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:36:14,190 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:36:34,460 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 02:36:58,035 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:36:58,043 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:36:58,051 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 184
+2024-05-15 02:37:08,530 +0545 [INFO] "PUT /account/seller-profile/1/ HTTP/1.1" 200 184
+2024-05-15 02:37:11,497 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:37:11,518 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:37:11,522 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 184
+2024-05-15 02:37:13,919 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 350
+2024-05-15 02:37:13,923 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:37:13,924 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 350
+2024-05-15 02:37:13,931 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:38:19,217 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 350
+2024-05-15 02:38:19,220 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:38:55,942 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 350
+2024-05-15 02:38:55,947 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:39:00,624 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 02:39:00,635 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 02:39:00,635 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:39:00,652 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:43:25,597 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 02:43:25,608 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 02:43:25,610 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:43:25,621 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:46:45,019 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 02:46:45,026 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 02:46:50,975 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 02:46:50,985 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:46:50,985 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 02:46:50,991 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:47:18,153 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 350
+2024-05-15 02:47:18,157 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 350
+2024-05-15 02:51:39,913 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 02:51:39,917 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:51:39,921 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 02:51:39,925 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:51:42,298 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 02:51:42,309 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 02:51:42,310 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:51:42,317 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:52:49,238 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 02:52:49,242 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:52:49,249 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 02:52:49,253 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:52:50,944 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 02:52:50,950 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:52:50,953 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 02:52:50,960 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:52:53,674 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:52:53,695 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:52:53,698 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 184
+2024-05-15 02:52:56,739 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 350
+2024-05-15 02:52:56,741 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:52:56,746 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 350
+2024-05-15 02:52:56,750 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:52:58,650 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:52:58,656 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:52:58,659 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 184
+2024-05-15 02:53:00,011 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:53:00,017 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:53:00,023 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:53:00,033 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:53:12,041 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:53:12,049 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:53:12,051 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 184
+2024-05-15 02:53:13,726 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:53:13,731 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:53:13,737 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:53:13,741 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:53:34,965 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:53:34,970 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:53:34,973 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 184
+2024-05-15 02:53:35,981 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 350
+2024-05-15 02:53:35,986 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:53:35,988 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 350
+2024-05-15 02:53:35,993 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:53:38,613 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:53:38,619 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:53:38,623 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 184
+2024-05-15 02:53:39,723 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:53:39,730 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:53:39,738 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:53:39,742 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:53:45,947 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 02:53:45,956 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 02:53:45,956 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:53:45,962 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:53:46,250 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:53:46,259 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:53:46,263 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 184
+2024-05-15 02:53:47,590 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 02:53:47,595 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:53:47,600 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 02:53:47,604 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:53:50,750 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 02:53:50,757 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:53:50,764 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 02:53:50,767 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:53:52,907 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 02:53:52,910 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:53:52,918 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 02:53:52,922 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:53:57,192 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 02:53:57,197 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:53:57,202 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 02:53:57,207 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:54:05,997 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:54:06,010 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:54:06,011 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 184
+2024-05-15 02:54:11,016 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 02:54:11,017 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:54:11,027 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 02:54:11,032 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:54:16,450 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:54:16,464 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 184
+2024-05-15 02:54:16,467 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:54:18,863 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 02:54:18,864 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:54:18,869 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 02:54:18,875 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:54:21,411 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:54:21,423 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:54:21,425 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 184
+2024-05-15 02:54:22,551 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 350
+2024-05-15 02:54:22,559 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:54:22,560 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 350
+2024-05-15 02:54:22,565 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:54:23,963 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:54:23,984 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 184
+2024-05-15 02:54:23,985 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:54:24,821 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 350
+2024-05-15 02:54:24,835 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:54:24,836 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 350
+2024-05-15 02:54:24,844 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:54:26,518 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:54:26,541 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:54:26,543 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 184
+2024-05-15 02:54:27,510 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 350
+2024-05-15 02:54:27,512 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:54:27,516 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 350
+2024-05-15 02:54:27,521 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:54:28,593 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:54:28,602 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:54:28,605 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 184
+2024-05-15 02:54:29,576 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:54:29,582 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:54:29,589 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:54:29,598 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:54:31,038 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:54:31,044 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:54:31,047 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 184
+2024-05-15 02:54:32,312 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 02:54:32,321 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:54:32,325 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 02:54:32,334 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:55:42,328 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 02:55:42,333 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:55:42,337 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 02:55:42,343 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:55:46,572 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 02:55:46,573 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:55:46,582 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 02:55:46,585 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:55:51,193 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:55:51,209 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:55:51,210 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 184
+2024-05-15 02:55:52,444 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:55:52,449 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:55:52,454 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:55:52,459 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 2087
+2024-05-15 02:56:44,003 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:56:44,008 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:56:44,011 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 184
+2024-05-15 02:56:46,011 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 350
+2024-05-15 02:56:46,013 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:56:46,016 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 350
+2024-05-15 02:56:46,021 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:56:47,950 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:56:47,957 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 02:56:47,959 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 184
+2024-05-15 02:56:51,841 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 02:56:51,850 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 02:57:09,159 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 02:57:09,165 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 02:57:23,248 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 02:57:23,252 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 02:57:27,562 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 02:57:27,567 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 02:57:38,348 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 02:57:38,357 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 02:59:56,707 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 02:59:56,713 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 03:05:09,040 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 03:05:09,044 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 03:07:31,252 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 03:07:31,256 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 03:07:38,657 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 03:07:38,665 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 03:08:11,866 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 03:08:11,878 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 03:17:58,736 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/urls.py changed, reloading.
+2024-05-15 03:17:59,261 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-15 03:18:28,218 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/views.py changed, reloading.
+2024-05-15 03:18:28,664 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-15 03:18:29,909 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/views.py changed, reloading.
+2024-05-15 03:18:30,191 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-15 03:24:51,180 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/views.py changed, reloading.
+2024-05-15 03:24:51,757 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-15 04:11:25,930 +0545 [WARNING] Unauthorized: /e-com/api/reviews/
+2024-05-15 04:11:25,935 +0545 [WARNING] "GET /e-com/api/reviews/ HTTP/1.1" 401 58
+2024-05-15 04:11:33,916 +0545 [WARNING] Unauthorized: /e-com/api/reviews/
+2024-05-15 04:11:33,917 +0545 [WARNING] "GET /e-com/api/reviews/ HTTP/1.1" 401 58
+2024-05-15 04:16:09,446 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/views.py changed, reloading.
+2024-05-15 04:16:10,002 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-15 04:16:13,221 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/views.py changed, reloading.
+2024-05-15 04:16:13,517 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-15 04:16:48,942 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/views.py changed, reloading.
+2024-05-15 04:16:49,375 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-15 04:16:55,747 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/views.py changed, reloading.
+2024-05-15 04:16:56,051 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-15 04:17:07,495 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/views.py changed, reloading.
+2024-05-15 04:17:07,799 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-15 04:17:08,927 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/views.py changed, reloading.
+2024-05-15 04:17:09,229 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-15 04:17:40,264 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/views.py changed, reloading.
+2024-05-15 04:17:40,689 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-15 04:17:43,871 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/views.py changed, reloading.
+2024-05-15 04:17:44,173 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-15 04:27:46,155 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/models.py changed, reloading.
+2024-05-15 04:27:46,672 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-15 04:30:21,104 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/views.py changed, reloading.
+2024-05-15 04:30:21,539 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-15 04:30:23,704 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/views.py changed, reloading.
+2024-05-15 04:30:24,006 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-15 04:30:27,198 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/views.py changed, reloading.
+2024-05-15 04:30:27,478 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-15 04:30:33,750 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/views.py changed, reloading.
+2024-05-15 04:30:34,049 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-15 04:30:39,680 +0545 [WARNING] Unauthorized: /e-com/api/reviews/
+2024-05-15 04:30:39,681 +0545 [WARNING] "GET /e-com/api/reviews/ HTTP/1.1" 401 58
+2024-05-15 04:30:53,881 +0545 [WARNING] Forbidden: /e-com/api/reviews/
+2024-05-15 04:30:53,881 +0545 [WARNING] "GET /e-com/api/reviews/ HTTP/1.1" 403 44
+2024-05-15 04:31:03,678 +0545 [INFO] "POST /account/auth/login/ HTTP/1.1" 200 483
+2024-05-15 04:31:16,871 +0545 [WARNING] Forbidden: /e-com/api/reviews/
+2024-05-15 04:31:16,872 +0545 [WARNING] "GET /e-com/api/reviews/ HTTP/1.1" 403 44
+2024-05-15 04:31:31,924 +0545 [WARNING] Forbidden: /e-com/api/reviews/
+2024-05-15 04:31:31,925 +0545 [WARNING] "GET /e-com/api/reviews/ HTTP/1.1" 403 44
+2024-05-15 04:31:51,301 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/views.py changed, reloading.
+2024-05-15 04:31:51,753 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-15 04:31:53,937 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/views.py changed, reloading.
+2024-05-15 04:31:54,293 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-15 04:32:01,678 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/views.py changed, reloading.
+2024-05-15 04:32:01,976 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-15 04:32:10,633 +0545 [WARNING] Forbidden: /e-com/api/reviews/
+2024-05-15 04:32:10,634 +0545 [WARNING] "GET /e-com/api/reviews/ HTTP/1.1" 403 44
+2024-05-15 04:32:27,155 +0545 [WARNING] Forbidden: /e-com/api/reviews/
+2024-05-15 04:32:27,155 +0545 [WARNING] "GET /e-com/api/reviews/ HTTP/1.1" 403 44
+2024-05-15 04:32:29,995 +0545 [WARNING] Forbidden: /e-com/api/reviews/
+2024-05-15 04:32:29,996 +0545 [WARNING] "GET /e-com/api/reviews/ HTTP/1.1" 403 44
+2024-05-15 04:32:37,608 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/views.py changed, reloading.
+2024-05-15 04:32:37,941 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-15 04:32:56,710 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/views.py changed, reloading.
+2024-05-15 04:32:57,166 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-15 04:32:57,405 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 2
+2024-05-15 04:33:06,657 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/views.py changed, reloading.
+2024-05-15 04:33:07,111 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-15 04:33:24,016 +0545 [INFO] "POST /account/auth/register/ HTTP/1.1" 200 294
+2024-05-15 04:33:32,250 +0545 [INFO] "POST /account/auth/login/ HTTP/1.1" 200 483
+2024-05-15 04:33:41,578 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 2
+2024-05-15 04:34:02,696 +0545 [INFO] "POST /account/auth/login/ HTTP/1.1" 200 483
+2024-05-15 04:34:11,235 +0545 [WARNING] Forbidden: /e-com/api/reviews/
+2024-05-15 04:34:11,236 +0545 [WARNING] "GET /e-com/api/reviews/ HTTP/1.1" 403 44
+2024-05-15 04:34:51,574 +0545 [WARNING] Not Found: /e-com/api/reviews/1/
+2024-05-15 04:34:51,575 +0545 [WARNING] "GET /e-com/api/reviews/1/ HTTP/1.1" 404 47
+2024-05-15 04:35:54,859 +0545 [INFO] "POST /account/auth/login/ HTTP/1.1" 200 483
+2024-05-15 04:36:03,589 +0545 [WARNING] Unauthorized: /e-com/api/reviews/1/
+2024-05-15 04:36:03,589 +0545 [WARNING] "GET /e-com/api/reviews/1/ HTTP/1.1" 401 183
+2024-05-15 04:36:07,360 +0545 [WARNING] Unauthorized: /e-com/api/reviews/1/
+2024-05-15 04:36:07,361 +0545 [WARNING] "GET /e-com/api/reviews/1/ HTTP/1.1" 401 183
+2024-05-15 04:36:20,031 +0545 [WARNING] Not Found: /e-com/api/reviews/1/
+2024-05-15 04:36:20,032 +0545 [WARNING] "GET /e-com/api/reviews/1/ HTTP/1.1" 404 47
+2024-05-15 08:37:56,481 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-15 08:38:09,442 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 08:38:09,447 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 08:38:09,475 +0545 [INFO] "GET /media/seller/product_images/dell_monitor_AngHyoj.jpeg HTTP/1.1" 200 105816
+2024-05-15 08:38:09,475 +0545 [INFO] "GET /media/seller/product_images/n6_KBnMTeA.jpg HTTP/1.1" 200 48579
+2024-05-15 08:38:09,479 +0545 [INFO] "GET /media/seller/product_images/cg.png HTTP/1.1" 200 678927
+2024-05-15 08:42:22,582 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 2
+2024-05-15 08:44:25,905 +0545 [INFO] "OPTIONS /e-com/api/reviews/ HTTP/1.1" 200 0
+2024-05-15 08:44:25,905 +0545 [INFO] "OPTIONS /e-com/api/reviews/ HTTP/1.1" 200 0
+2024-05-15 08:44:25,910 +0545 [WARNING] Forbidden: /e-com/api/reviews/
+2024-05-15 08:44:25,911 +0545 [WARNING] "GET /e-com/api/reviews/ HTTP/1.1" 403 44
+2024-05-15 08:44:25,913 +0545 [WARNING] Forbidden: /e-com/api/reviews/
+2024-05-15 08:44:25,914 +0545 [WARNING] "GET /e-com/api/reviews/ HTTP/1.1" 403 44
+2024-05-15 08:44:28,962 +0545 [WARNING] Forbidden: /e-com/api/reviews/
+2024-05-15 08:44:28,962 +0545 [WARNING] "GET /e-com/api/reviews/ HTTP/1.1" 403 44
+2024-05-15 08:44:28,974 +0545 [WARNING] Forbidden: /e-com/api/reviews/
+2024-05-15 08:44:28,975 +0545 [WARNING] "GET /e-com/api/reviews/ HTTP/1.1" 403 44
+2024-05-15 08:46:32,121 +0545 [WARNING] Forbidden: /e-com/api/reviews/
+2024-05-15 08:46:32,123 +0545 [WARNING] "GET /e-com/api/reviews/ HTTP/1.1" 403 44
+2024-05-15 08:46:32,127 +0545 [WARNING] Forbidden: /e-com/api/reviews/
+2024-05-15 08:46:32,127 +0545 [WARNING] "GET /e-com/api/reviews/ HTTP/1.1" 403 44
+2024-05-15 08:47:13,024 +0545 [WARNING] Unauthorized: /e-com/api/reviews/
+2024-05-15 08:47:13,025 +0545 [WARNING] "GET /e-com/api/reviews/ HTTP/1.1" 401 183
+2024-05-15 08:47:24,028 +0545 [WARNING] Unauthorized: /e-com/api/reviews/
+2024-05-15 08:47:24,029 +0545 [WARNING] "GET /e-com/api/reviews/ HTTP/1.1" 401 107
+2024-05-15 08:47:38,878 +0545 [WARNING] Forbidden: /e-com/api/reviews/
+2024-05-15 08:47:38,880 +0545 [WARNING] "GET /e-com/api/reviews/ HTTP/1.1" 403 44
+2024-05-15 08:48:39,040 +0545 [WARNING] Forbidden: /e-com/api/reviews/
+2024-05-15 08:48:39,042 +0545 [WARNING] "GET /e-com/api/reviews/ HTTP/1.1" 403 44
+2024-05-15 08:49:30,325 +0545 [WARNING] Forbidden: /e-com/api/reviews/
+2024-05-15 08:49:30,326 +0545 [WARNING] "GET /e-com/api/reviews/ HTTP/1.1" 403 44
+2024-05-15 08:49:43,051 +0545 [WARNING] Forbidden: /e-com/api/reviews/
+2024-05-15 08:49:43,052 +0545 [WARNING] "GET /e-com/api/reviews/ HTTP/1.1" 403 44
+2024-05-15 08:49:43,056 +0545 [WARNING] Forbidden: /e-com/api/reviews/
+2024-05-15 08:49:43,056 +0545 [WARNING] "GET /e-com/api/reviews/ HTTP/1.1" 403 44
+2024-05-15 08:49:49,610 +0545 [WARNING] Forbidden: /e-com/api/reviews/
+2024-05-15 08:49:49,611 +0545 [WARNING] "GET /e-com/api/reviews/ HTTP/1.1" 403 44
+2024-05-15 08:49:54,529 +0545 [WARNING] Forbidden: /e-com/api/reviews/
+2024-05-15 08:49:54,529 +0545 [WARNING] "GET /e-com/api/reviews/ HTTP/1.1" 403 44
+2024-05-15 08:49:59,473 +0545 [WARNING] Forbidden: /e-com/api/reviews/
+2024-05-15 08:49:59,474 +0545 [WARNING] "GET /e-com/api/reviews/ HTTP/1.1" 403 44
+2024-05-15 08:50:13,586 +0545 [WARNING] Forbidden: /e-com/api/reviews/
+2024-05-15 08:50:13,587 +0545 [WARNING] "GET /e-com/api/reviews/ HTTP/1.1" 403 44
+2024-05-15 08:50:21,028 +0545 [WARNING] Forbidden: /e-com/api/reviews/
+2024-05-15 08:50:21,029 +0545 [WARNING] "GET /e-com/api/reviews/ HTTP/1.1" 403 44
+2024-05-15 08:55:17,660 +0545 [WARNING] Forbidden: /e-com/api/reviews/
+2024-05-15 08:55:17,661 +0545 [WARNING] "GET /e-com/api/reviews/ HTTP/1.1" 403 44
+2024-05-15 08:55:24,003 +0545 [WARNING] Forbidden: /e-com/api/reviews/
+2024-05-15 08:55:24,004 +0545 [WARNING] "GET /e-com/api/reviews/ HTTP/1.1" 403 44
+2024-05-15 08:56:15,044 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/urls.py changed, reloading.
+2024-05-15 08:56:15,616 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-15 08:56:46,810 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/views.py changed, reloading.
+2024-05-15 08:56:47,245 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-15 08:57:04,006 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 2
+2024-05-15 08:57:07,000 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 2
+2024-05-15 08:57:09,997 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 2
+2024-05-15 08:57:17,771 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 2
+2024-05-15 08:57:37,041 +0545 [WARNING] Unauthorized: /e-com/api/reviews/edit/1/
+2024-05-15 08:57:37,042 +0545 [WARNING] "POST /e-com/api/reviews/edit/1/ HTTP/1.1" 401 58
+2024-05-15 08:57:49,965 +0545 [WARNING] Method Not Allowed: /e-com/api/reviews/edit/1/
+2024-05-15 08:57:49,965 +0545 [WARNING] "POST /e-com/api/reviews/edit/1/ HTTP/1.1" 405 41
+2024-05-15 08:57:51,705 +0545 [WARNING] Method Not Allowed: /e-com/api/reviews/edit/1/
+2024-05-15 08:57:51,705 +0545 [WARNING] "POST /e-com/api/reviews/edit/1/ HTTP/1.1" 405 41
+2024-05-15 08:57:55,678 +0545 [WARNING] Not Found: /e-com/api/reviews/edit/1/
+2024-05-15 08:57:55,679 +0545 [WARNING] "PUT /e-com/api/reviews/edit/1/ HTTP/1.1" 404 47
+2024-05-15 08:58:12,313 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/views.py changed, reloading.
+2024-05-15 08:58:12,772 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-15 08:58:17,122 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/views.py changed, reloading.
+2024-05-15 08:58:17,447 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-15 08:58:20,706 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/views.py changed, reloading.
+2024-05-15 08:58:21,017 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-15 08:58:24,255 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/views.py changed, reloading.
+2024-05-15 08:58:24,564 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-15 08:58:27,823 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/views.py changed, reloading.
+2024-05-15 08:58:28,143 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-15 08:58:39,638 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/views.py changed, reloading.
+2024-05-15 08:58:39,940 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-15 08:58:43,211 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/views.py changed, reloading.
+2024-05-15 08:58:43,520 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-15 08:58:47,800 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/urls.py changed, reloading.
+2024-05-15 08:58:48,123 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-15 08:58:50,454 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 2
+2024-05-15 08:58:57,663 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/urls.py changed, reloading.
+2024-05-15 08:58:57,968 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-15 08:59:00,192 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/urls.py changed, reloading.
+2024-05-15 08:59:00,487 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-15 08:59:03,762 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/urls.py changed, reloading.
+2024-05-15 08:59:04,076 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-15 08:59:09,407 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/urls.py changed, reloading.
+2024-05-15 08:59:09,716 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-15 08:59:31,116 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 2
+2024-05-15 08:59:45,380 +0545 [WARNING] Unauthorized: /e-com/api/reviews/create/
+2024-05-15 08:59:45,381 +0545 [WARNING] "GET /e-com/api/reviews/create/ HTTP/1.1" 401 58
+2024-05-15 08:59:48,139 +0545 [WARNING] Unauthorized: /e-com/api/reviews/create/
+2024-05-15 08:59:48,140 +0545 [WARNING] "POST /e-com/api/reviews/create/ HTTP/1.1" 401 58
+2024-05-15 08:59:59,847 +0545 [WARNING] Method Not Allowed: /e-com/api/reviews/create/
+2024-05-15 08:59:59,847 +0545 [WARNING] "POST /e-com/api/reviews/create/ HTTP/1.1" 405 41
+2024-05-15 09:00:03,280 +0545 [WARNING] Method Not Allowed: /e-com/api/reviews/create/
+2024-05-15 09:00:03,281 +0545 [WARNING] "POST /e-com/api/reviews/create/ HTTP/1.1" 405 41
+2024-05-15 09:00:06,646 +0545 [ERROR] Internal Server Error: /e-com/api/reviews/create/
+Traceback (most recent call last):
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/generics.py", line 289, in put
+    return self.update(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/mixins.py", line 65, in update
+    instance = self.get_object()
+               ^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/generics.py", line 92, in get_object
+    assert lookup_url_kwarg in self.kwargs, (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Expected view ReviewDetailView to be called with a URL keyword argument named "pk". Fix your URL conf, or set the `.lookup_field` attribute on the view correctly.
+2024-05-15 09:00:06,648 +0545 [ERROR] "PUT /e-com/api/reviews/create/ HTTP/1.1" 500 98900
+2024-05-15 09:00:18,544 +0545 [WARNING] Method Not Allowed: /e-com/api/reviews/create/
+2024-05-15 09:00:18,546 +0545 [WARNING] "POST /e-com/api/reviews/create/ HTTP/1.1" 405 41
+2024-05-15 09:01:22,198 +0545 [WARNING] Method Not Allowed: /e-com/api/reviews/create/
+2024-05-15 09:01:22,201 +0545 [WARNING] "POST /e-com/api/reviews/create/ HTTP/1.1" 405 41
+2024-05-15 09:01:53,872 +0545 [ERROR] Internal Server Error: /e-com/api/reviews/create
+Traceback (most recent call last):
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/e-com/api/reviews/create/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2024-05-15 09:01:53,875 +0545 [ERROR] "POST /e-com/api/reviews/create HTTP/1.1" 500 67764
+2024-05-15 09:01:56,200 +0545 [WARNING] Method Not Allowed: /e-com/api/reviews/create/
+2024-05-15 09:01:56,200 +0545 [WARNING] "POST /e-com/api/reviews/create/ HTTP/1.1" 405 41
+2024-05-15 09:02:36,453 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/views.py changed, reloading.
+2024-05-15 09:02:36,940 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-15 09:02:40,126 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/views.py changed, reloading.
+2024-05-15 09:02:40,418 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-15 09:02:42,113 +0545 [WARNING] Method Not Allowed: /e-com/api/reviews/create/
+2024-05-15 09:02:42,115 +0545 [WARNING] "POST /e-com/api/reviews/create/ HTTP/1.1" 405 41
+2024-05-15 09:02:47,874 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/views.py changed, reloading.
+2024-05-15 09:02:48,217 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-15 09:02:53,535 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/urls.py changed, reloading.
+2024-05-15 09:02:53,857 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-15 09:02:54,277 +0545 [WARNING] Bad Request: /e-com/api/reviews/create/
+2024-05-15 09:02:54,278 +0545 [WARNING] "POST /e-com/api/reviews/create/ HTTP/1.1" 400 149
+2024-05-15 09:03:03,544 +0545 [WARNING] Bad Request: /e-com/api/reviews/create/
+2024-05-15 09:03:03,545 +0545 [WARNING] "POST /e-com/api/reviews/create/ HTTP/1.1" 400 149
+2024-05-15 09:03:08,420 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 2
+2024-05-15 09:03:08,435 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 2
+2024-05-15 09:04:01,583 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 2
+2024-05-15 09:04:48,483 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 2
+2024-05-15 09:05:47,009 +0545 [INFO] "GET /media/seller/profile_images/e-commerce_RDMS_Diagram.png HTTP/1.1" 200 31349
+2024-05-15 09:06:14,752 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 2
+2024-05-15 09:07:27,523 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 2
+2024-05-15 09:08:14,786 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 2
+2024-05-15 09:08:14,793 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 2
+2024-05-15 09:08:29,693 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 2
+2024-05-15 09:08:29,708 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 2
+2024-05-15 09:09:23,228 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 2
+2024-05-15 09:09:23,240 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 2
+2024-05-15 09:09:51,772 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 2
+2024-05-15 09:09:51,787 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 2
+2024-05-15 09:09:54,401 +0545 [INFO] "OPTIONS /account/user/details/ HTTP/1.1" 200 0
+2024-05-15 09:09:54,402 +0545 [INFO] "OPTIONS /account/user/details/ HTTP/1.1" 200 0
+2024-05-15 09:09:54,418 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 09:09:54,421 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 09:09:54,430 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 09:09:54,432 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 09:09:57,518 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 09:09:57,527 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 09:09:57,535 +0545 [INFO] "OPTIONS /account/seller-profile/1/ HTTP/1.1" 200 0
+2024-05-15 09:09:57,540 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 184
+2024-05-15 09:09:58,638 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 09:09:58,641 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 09:09:58,646 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 09:09:58,652 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 09:09:59,416 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 2
+2024-05-15 09:09:59,420 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 2
+2024-05-15 09:11:41,659 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 2
+2024-05-15 09:11:41,668 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 2
+2024-05-15 09:12:40,555 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 2
+2024-05-15 09:12:40,564 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 2
+2024-05-15 09:21:08,500 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 2
+2024-05-15 09:21:08,507 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 2
+2024-05-15 09:22:43,794 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/models.py changed, reloading.
+2024-05-15 09:22:44,511 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-15 09:30:06,536 +0545 [INFO] "POST /account/auth/login/ HTTP/1.1" 200 483
+2024-05-15 09:30:42,419 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 294
+2024-05-15 09:30:56,376 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 09:31:31,791 +0545 [INFO] "OPTIONS /e-com/api/reviews/create/ HTTP/1.1" 200 0
+2024-05-15 09:31:31,795 +0545 [WARNING] Unauthorized: /e-com/api/reviews/create/
+2024-05-15 09:31:31,796 +0545 [WARNING] "POST /e-com/api/reviews/create/ HTTP/1.1" 401 58
+2024-05-15 09:33:41,505 +0545 [INFO] "OPTIONS /account/auth/login/ HTTP/1.1" 200 0
+2024-05-15 09:33:41,779 +0545 [INFO] "POST /account/auth/login/ HTTP/1.1" 200 483
+2024-05-15 09:33:41,823 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 09:33:41,832 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 294
+2024-05-15 09:33:41,836 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 09:33:41,841 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 294
+2024-05-15 09:33:44,144 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 294
+2024-05-15 09:33:44,155 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 294
+2024-05-15 09:33:44,165 +0545 [INFO] "OPTIONS /account/buyer-profile/3/ HTTP/1.1" 200 0
+2024-05-15 09:33:44,172 +0545 [INFO] "GET /account/buyer-profile/3/ HTTP/1.1" 200 78
+2024-05-15 09:34:19,600 +0545 [WARNING] Unauthorized: /e-com/api/reviews/create/
+2024-05-15 09:34:19,601 +0545 [WARNING] "POST /e-com/api/reviews/create/ HTTP/1.1" 401 183
+2024-05-15 09:34:30,957 +0545 [WARNING] Unauthorized: /e-com/api/reviews/create/
+2024-05-15 09:34:30,958 +0545 [WARNING] "POST /e-com/api/reviews/create/ HTTP/1.1" 401 183
+2024-05-15 09:34:59,161 +0545 [WARNING] Bad Request: /e-com/api/reviews/create/
+2024-05-15 09:34:59,162 +0545 [WARNING] "POST /e-com/api/reviews/create/ HTTP/1.1" 400 45
+2024-05-15 09:35:23,818 +0545 [WARNING] Bad Request: /e-com/api/reviews/create/
+2024-05-15 09:35:23,819 +0545 [WARNING] "POST /e-com/api/reviews/create/ HTTP/1.1" 400 45
+2024-05-15 09:36:50,625 +0545 [WARNING] Bad Request: /e-com/api/reviews/create/
+2024-05-15 09:36:50,626 +0545 [WARNING] "POST /e-com/api/reviews/create/ HTTP/1.1" 400 64
+2024-05-15 09:37:00,912 +0545 [INFO] "POST /e-com/api/reviews/create/ HTTP/1.1" 201 105
+2024-05-15 09:37:08,751 +0545 [WARNING] Bad Request: /e-com/api/reviews/create/
+2024-05-15 09:37:08,752 +0545 [WARNING] "POST /e-com/api/reviews/create/ HTTP/1.1" 400 45
+2024-05-15 09:37:38,456 +0545 [WARNING] Bad Request: /e-com/api/reviews/create/
+2024-05-15 09:37:38,461 +0545 [WARNING] "POST /e-com/api/reviews/create/ HTTP/1.1" 400 45
+2024-05-15 09:38:21,737 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 09:38:21,744 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 09:38:24,081 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 107
+2024-05-15 09:38:24,085 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 107
+2024-05-15 09:38:26,446 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 107
+2024-05-15 09:38:26,454 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 107
+2024-05-15 09:38:54,613 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 107
+2024-05-15 09:39:03,920 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 107
+2024-05-15 09:39:07,918 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 107
+2024-05-15 09:39:13,386 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 107
+2024-05-15 09:39:22,917 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 107
+2024-05-15 09:39:25,917 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 107
+2024-05-15 09:39:30,918 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 107
+2024-05-15 09:39:32,916 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 107
+2024-05-15 09:39:39,439 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 107
+2024-05-15 09:40:00,738 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 107
+2024-05-15 09:40:13,919 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 107
+2024-05-15 09:40:20,914 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 107
+2024-05-15 09:40:23,977 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 107
+2024-05-15 09:40:26,950 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 107
+2024-05-15 09:40:26,966 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 107
+2024-05-15 09:40:35,403 +0545 [WARNING] Bad Request: /e-com/api/reviews/create/
+2024-05-15 09:40:35,404 +0545 [WARNING] "POST /e-com/api/reviews/create/ HTTP/1.1" 400 45
+2024-05-15 09:41:29,183 +0545 [INFO] "POST /e-com/api/reviews/create/ HTTP/1.1" 201 105
+2024-05-15 09:41:54,842 +0545 [INFO] "POST /e-com/api/reviews/create/ HTTP/1.1" 201 114
+2024-05-15 10:04:00,687 +0545 [WARNING] Bad Request: /e-com/api/reviews/create/
+2024-05-15 10:04:00,688 +0545 [WARNING] "POST /e-com/api/reviews/create/ HTTP/1.1" 400 156
+2024-05-15 10:05:06,234 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:05:06,242 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:05:47,920 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:05:49,417 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:06:08,451 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:06:15,580 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:06:27,467 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:06:33,041 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:06:37,474 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:06:37,477 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:06:43,071 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:06:43,075 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:07:12,474 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:07:20,041 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:07:25,386 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:07:38,441 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:07:54,041 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:08:00,038 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:08:08,464 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:08:24,498 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:08:47,841 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 10:08:47,848 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 10:08:48,847 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:08:48,851 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:08:57,393 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 10:09:22,062 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:09:22,067 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:09:23,853 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:09:23,867 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:19:25,497 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:19:25,507 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:23:39,230 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:23:39,250 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:24:15,685 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:24:29,411 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:27:08,320 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:28:10,853 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:28:10,857 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:29:05,857 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:29:25,802 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:31:08,581 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:31:08,587 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:31:10,975 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:31:11,012 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:31:34,868 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:31:38,878 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:31:38,889 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:31:58,453 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:31:58,458 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:32:00,705 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:32:00,727 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:32:28,844 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:32:31,831 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:32:34,830 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:32:42,830 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:32:45,364 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:32:51,280 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:32:56,831 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:33:35,837 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:34:53,840 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:34:53,848 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:35:05,826 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:35:05,831 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:35:18,828 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:35:23,262 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:35:32,830 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:35:46,826 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:35:51,827 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:35:56,830 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:36:04,827 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:36:06,826 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:36:09,826 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:36:19,827 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:36:20,824 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:36:26,244 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:36:32,828 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:36:50,824 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:36:53,823 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:36:57,254 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:37:27,827 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:37:31,325 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:37:41,248 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:37:47,825 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:38:44,847 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:38:57,827 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:38:59,828 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:39:00,831 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:39:04,268 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:39:17,831 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:39:26,830 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:39:28,250 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:39:37,428 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:39:44,823 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:39:48,033 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:39:48,062 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:39:53,301 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:40:02,827 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:40:04,823 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:40:05,255 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:40:11,827 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:40:16,826 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:40:19,826 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:40:23,354 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:40:30,256 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:40:38,832 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:40:41,299 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:40:49,828 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:40:55,830 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:40:57,258 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:41:07,385 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:41:07,412 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:41:23,737 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:41:38,829 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:41:40,820 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:41:43,265 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:42:00,363 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:42:14,329 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:42:21,828 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:42:24,831 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:42:33,825 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:42:35,824 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:42:38,823 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:42:42,323 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:42:49,309 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:42:49,332 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:43:24,544 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 10:43:24,555 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 10:43:26,425 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:43:26,429 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:43:41,613 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 10:43:41,620 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 10:43:43,188 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:43:43,193 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:43:57,047 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 10:43:57,053 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 10:44:02,087 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:44:02,111 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:44:08,412 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:44:08,433 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:45:06,830 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:45:09,828 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:45:12,272 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:45:22,823 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:46:59,339 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:48:11,809 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:48:55,800 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:49:01,794 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:49:10,790 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:49:24,807 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:49:44,089 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:49:44,097 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:49:49,232 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:49:49,261 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:51:13,802 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:51:13,809 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:51:19,794 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:51:21,784 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:51:21,787 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:51:27,301 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:51:27,310 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:51:51,256 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:51:51,277 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:52:24,811 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:53:23,816 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:53:30,791 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:53:40,359 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:53:40,365 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:54:12,808 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:54:12,811 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:55:14,729 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:55:14,738 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:55:33,331 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:56:19,058 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:56:29,587 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:57:42,263 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:57:42,269 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:58:09,431 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:58:17,785 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:58:17,788 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:59:11,852 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:59:14,368 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:59:14,384 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:59:34,986 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 10:59:35,002 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:00:02,806 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:00:56,821 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:00:56,832 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:01:01,968 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:01:01,981 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:01:16,798 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:01:16,801 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:01:20,627 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:01:20,642 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:01:52,791 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:01:55,979 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:01:55,994 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:02:18,804 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:02:26,780 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:02:52,792 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:02:56,935 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:02:56,949 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:03:09,811 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:03:12,334 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:03:12,348 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:03:35,816 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:03:35,833 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:05:28,957 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:05:28,969 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:06:17,757 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:06:17,761 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:06:57,745 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:06:57,748 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:07:06,171 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:07:06,186 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:07:15,760 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:07:15,764 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:07:35,917 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:07:35,936 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:07:52,741 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:08:30,829 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:08:30,840 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:08:51,747 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:08:51,751 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:08:58,478 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:08:58,481 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:09:06,130 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:09:06,135 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:09:20,733 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:09:25,491 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:09:28,150 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:09:28,166 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:09:43,939 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:09:50,548 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:10:00,725 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:10:04,349 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:11:21,039 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:12:04,730 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:12:04,734 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:12:07,511 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:12:07,526 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:12:41,377 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:14:17,723 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 11:14:17,723 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:14:17,727 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 11:22:02,212 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:22:02,216 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:23:34,161 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:23:34,165 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:23:36,686 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:23:36,703 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:23:47,705 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:23:47,711 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:24:08,990 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 11:24:08,991 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 294
+2024-05-15 11:24:08,995 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 11:24:09,000 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 294
+2024-05-15 11:24:10,400 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:24:10,404 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:24:49,897 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 11:24:49,910 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 11:24:49,911 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 294
+2024-05-15 11:24:49,921 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 294
+2024-05-15 11:25:29,019 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:25:29,033 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:26:00,629 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:26:00,636 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:27:30,833 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 11:30:32,310 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:30:32,313 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:30:35,777 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:30:35,793 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:30:37,292 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 11:30:37,299 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 294
+2024-05-15 11:30:37,304 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 11:30:37,309 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 294
+2024-05-15 11:30:38,870 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:30:38,874 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:30:56,921 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 11:30:56,930 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 294
+2024-05-15 11:30:56,930 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 11:30:56,936 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 294
+2024-05-15 11:31:02,777 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 11:32:08,630 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:32:08,636 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:32:25,777 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:32:35,772 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:32:36,777 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:32:48,066 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:33:40,102 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 11:33:40,106 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 294
+2024-05-15 11:33:40,106 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 11:33:40,111 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 294
+2024-05-15 11:33:40,853 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:33:40,857 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:33:42,661 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 11:33:42,667 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 294
+2024-05-15 11:33:42,673 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 11:33:42,678 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 294
+2024-05-15 11:33:43,402 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:33:43,406 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:33:45,262 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 11:33:45,268 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 294
+2024-05-15 11:33:45,277 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 11:33:45,279 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 294
+2024-05-15 11:33:47,904 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 11:33:47,910 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 11:33:48,882 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:33:48,886 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:36:30,634 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:36:30,639 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:37:16,189 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:37:16,203 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:43:03,789 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 11:43:03,796 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 11:43:05,695 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:43:05,709 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:43:19,157 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:43:19,169 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 11:43:19,177 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 11:43:45,301 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 11:43:45,302 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:43:45,309 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:43:45,310 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 11:43:45,776 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 11:43:47,806 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 11:43:47,828 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 11:43:47,831 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:43:47,835 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:43:59,775 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 11:43:59,780 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 11:44:53,705 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 11:44:53,710 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:44:53,717 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:44:53,721 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 11:44:53,791 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 11:44:55,774 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 11:44:55,798 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:44:55,813 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 11:44:55,820 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:45:16,932 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 11:45:17,817 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 11:46:10,368 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 11:46:10,821 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 11:46:13,004 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 11:46:13,017 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:46:13,027 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 11:46:13,031 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:46:24,819 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 11:46:24,825 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 11:46:28,432 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 11:46:28,817 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 11:46:28,960 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 11:46:29,828 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 11:46:36,330 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 11:46:36,476 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 11:46:36,484 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 11:46:36,817 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 11:46:38,595 +0545 [INFO] "OPTIONS /account/user/details/ HTTP/1.1" 200 0
+2024-05-15 11:46:38,596 +0545 [INFO] "OPTIONS /account/user/details/ HTTP/1.1" 200 0
+2024-05-15 11:46:40,319 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 11:46:40,320 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:46:40,339 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 11:46:40,341 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:47:02,822 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 11:47:02,828 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 11:47:08,248 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 11:47:08,818 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 11:47:56,274 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 11:47:56,305 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:47:56,356 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 11:47:56,362 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 11:48:04,675 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 11:48:22,542 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 12:13:26,726 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 12:13:26,781 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 12:13:26,830 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 12:13:26,846 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 12:13:30,941 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 12:13:30,969 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 12:13:30,992 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 12:13:31,023 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 12:13:41,198 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 12:14:27,772 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 12:14:27,773 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 12:14:27,800 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 12:14:27,839 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 12:15:56,193 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 12:15:56,203 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 294
+2024-05-15 12:15:56,211 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 12:15:56,264 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 294
+2024-05-15 12:16:33,056 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 12:16:33,058 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 294
+2024-05-15 12:16:33,118 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 294
+2024-05-15 12:16:33,120 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 12:16:48,117 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 12:16:48,120 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 294
+2024-05-15 12:16:48,138 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 12:16:48,152 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 294
+2024-05-15 12:16:49,654 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 12:16:50,111 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 12:16:50,121 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 12:16:50,575 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 12:17:03,967 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 12:17:03,969 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 294
+2024-05-15 12:17:03,979 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 12:17:04,007 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 294
+2024-05-15 12:17:04,105 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 12:17:21,731 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 12:17:21,739 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 294
+2024-05-15 12:17:21,752 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 12:17:21,774 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 294
+2024-05-15 12:17:22,592 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 12:17:22,601 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 12:17:22,617 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 12:17:22,624 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 12:17:44,715 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 12:17:44,748 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 12:17:44,749 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 294
+2024-05-15 12:17:44,771 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 294
+2024-05-15 12:17:45,553 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 12:17:45,555 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 12:17:45,568 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 12:17:45,575 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 12:17:48,285 +0545 [INFO] "GET /media/seller/product_images/dell_monitor_AngHyoj.jpeg HTTP/1.1" 200 105816
+2024-05-15 12:18:21,731 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 12:18:34,673 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 12:18:40,636 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 12:18:40,615 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 12:18:40,700 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 12:18:40,714 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 12:19:08,714 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 12:19:11,675 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 12:19:14,229 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 12:19:14,240 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 12:19:14,277 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 12:19:14,355 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 12:19:18,932 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 12:19:18,945 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 12:19:19,022 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 12:19:19,061 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 12:19:41,926 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 12:19:51,697 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 12:21:57,571 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 12:21:57,602 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 12:21:57,637 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 12:21:57,660 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 12:22:24,916 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 12:22:24,938 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 12:22:25,008 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 12:22:25,032 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 12:22:33,049 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 12:22:33,074 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 12:22:33,281 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 12:22:33,366 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 12:22:36,585 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 12:22:36,727 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 12:22:36,757 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 12:22:36,758 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 12:22:45,156 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 12:23:00,131 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 12:23:06,680 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 12:23:13,108 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 12:23:13,108 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 12:23:13,112 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 12:23:21,121 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 12:23:21,121 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 12:23:21,125 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 12:23:29,487 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 12:23:29,536 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 12:23:29,551 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 12:23:29,552 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 12:23:46,678 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 12:23:50,684 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 12:23:58,209 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 12:24:03,086 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 12:24:08,395 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 12:24:15,676 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 12:24:16,678 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 12:24:18,257 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 12:24:23,365 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 12:24:36,187 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 12:24:43,123 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 12:24:47,696 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 12:24:47,709 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 12:24:47,709 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 12:24:47,714 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 12:24:50,048 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 12:24:50,062 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 12:24:50,065 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 12:24:50,069 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 12:24:53,781 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 294
+2024-05-15 12:24:53,789 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 294
+2024-05-15 12:24:53,802 +0545 [INFO] "OPTIONS /account/buyer-profile/3/ HTTP/1.1" 200 0
+2024-05-15 12:24:53,813 +0545 [INFO] "GET /account/buyer-profile/3/ HTTP/1.1" 200 78
+2024-05-15 12:25:01,372 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 12:25:01,378 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 12:25:10,009 +0545 [INFO] "OPTIONS /account/auth/login/ HTTP/1.1" 200 0
+2024-05-15 12:25:10,289 +0545 [WARNING] Unauthorized: /account/auth/login/
+2024-05-15 12:25:10,289 +0545 [WARNING] "POST /account/auth/login/ HTTP/1.1" 401 63
+2024-05-15 12:25:14,589 +0545 [INFO] "POST /account/auth/login/ HTTP/1.1" 200 483
+2024-05-15 12:25:14,635 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 12:25:14,637 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 12:25:14,645 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2128
+2024-05-15 12:25:14,649 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 12:25:19,249 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 12:25:19,257 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 12:25:19,267 +0545 [INFO] "OPTIONS /account/seller-profile/1/ HTTP/1.1" 200 0
+2024-05-15 12:25:19,274 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 184
+2024-05-15 12:25:20,232 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 350
+2024-05-15 12:25:20,238 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 12:25:20,245 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 350
+2024-05-15 12:25:20,249 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 12:26:18,169 +0545 [INFO] "OPTIONS /e-com/api/products/upload/ HTTP/1.1" 200 0
+2024-05-15 12:26:18,375 +0545 [INFO] "POST /e-com/api/products/upload/ HTTP/1.1" 201 817
+2024-05-15 12:26:23,113 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 12:26:23,123 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 12:26:23,125 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 184
+2024-05-15 12:26:25,816 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2946
+2024-05-15 12:26:25,818 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 12:26:25,831 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2946
+2024-05-15 12:26:25,833 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 12:26:25,834 +0545 [INFO] "GET /media/seller/product_images/dfsd.jpeg HTTP/1.1" 200 126570
+2024-05-15 12:26:30,731 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2946
+2024-05-15 12:26:30,732 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 12:26:30,744 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2946
+2024-05-15 12:26:30,744 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 12:26:41,158 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2946
+2024-05-15 12:26:41,165 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 12:26:41,169 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2946
+2024-05-15 12:26:41,175 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 12:26:57,387 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2946
+2024-05-15 12:27:17,462 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2946
+2024-05-15 12:27:17,503 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2946
+2024-05-15 12:27:17,510 +0545 [INFO] "GET /media/seller/product_images/dfsd.jpeg HTTP/1.1" 304 0
+2024-05-15 12:27:17,518 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 12:27:17,553 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 12:28:13,868 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 12:28:13,876 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 12:28:13,892 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 184
+2024-05-15 12:28:15,168 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2946
+2024-05-15 12:28:15,175 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 12:28:15,180 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2946
+2024-05-15 12:28:15,186 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 12:28:16,265 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 12:28:16,275 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 12:28:16,285 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 184
+2024-05-15 12:28:17,441 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 350
+2024-05-15 12:28:17,447 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 12:28:17,448 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 350
+2024-05-15 12:28:17,456 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 12:29:08,123 +0545 [INFO] "POST /e-com/api/products/upload/ HTTP/1.1" 201 823
+2024-05-15 12:29:54,953 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/models.py changed, reloading.
+2024-05-15 12:29:55,467 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-15 12:30:11,843 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/models.py changed, reloading.
+2024-05-15 12:30:12,240 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-15 12:30:16,453 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/models.py changed, reloading.
+2024-05-15 12:30:16,761 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-15 12:30:24,171 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/models.py changed, reloading.
+2024-05-15 12:30:24,452 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-15 12:30:28,661 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/models.py changed, reloading.
+2024-05-15 12:30:28,951 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-15 12:30:33,227 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/models.py changed, reloading.
+2024-05-15 12:30:33,539 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-15 12:30:36,730 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/models.py changed, reloading.
+2024-05-15 12:30:37,034 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-15 12:30:38,263 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/models.py changed, reloading.
+2024-05-15 12:30:38,559 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-15 12:30:45,977 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/models.py changed, reloading.
+2024-05-15 12:30:46,306 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-15 12:31:36,683 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 350
+2024-05-15 12:31:36,698 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 12:33:20,572 +0545 [WARNING] Bad Request: /e-com/api/products/upload/
+2024-05-15 12:33:20,573 +0545 [WARNING] "POST /e-com/api/products/upload/ HTTP/1.1" 400 194
+2024-05-15 12:34:08,680 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 12:34:08,683 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 350
+2024-05-15 12:34:55,121 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 12:34:55,151 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 184
+2024-05-15 12:34:55,152 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 12:34:56,565 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 350
+2024-05-15 12:34:56,576 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 12:34:56,580 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 350
+2024-05-15 12:34:56,586 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 12:35:18,484 +0545 [INFO] "POST /e-com/api/products/upload/ HTTP/1.1" 201 856
+2024-05-15 12:35:31,306 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 4732
+2024-05-15 12:35:38,246 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 12:35:38,255 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 12:35:38,258 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 184
+2024-05-15 12:35:40,056 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 4732
+2024-05-15 12:35:40,059 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 12:35:40,063 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 4732
+2024-05-15 12:35:40,068 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 12:35:40,099 +0545 [INFO] "GET /media/seller/product_images/dfsd.jpeg HTTP/1.1" 304 0
+2024-05-15 12:35:40,113 +0545 [INFO] "GET /media/seller/product_images/71k6L1xp4iL._AC_UF8941000_QL80_.jpg HTTP/1.1" 200 61007
+2024-05-15 12:35:40,117 +0545 [INFO] "GET /media/seller/product_images/jbl_jblgo3redam_go_3_portable_bluetooth_1583010.jpg HTTP/1.1" 200 746225
+2024-05-15 12:36:01,765 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 4732
+2024-05-15 12:36:06,461 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 12:36:06,461 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 4732
+2024-05-15 12:36:06,471 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 12:36:06,472 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 4732
+2024-05-15 12:36:40,555 +0545 [INFO] "GET /media/seller/product_images/71k6L1xp4iL._AC_UF8941000_QL80_.jpg HTTP/1.1" 304 0
+2024-05-15 12:36:40,595 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 4732
+2024-05-15 12:36:40,598 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 12:36:40,611 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 4732
+2024-05-15 12:36:40,620 +0545 [INFO] "GET /media/seller/product_images/jbl_jblgo3redam_go_3_portable_bluetooth_1583010.jpg HTTP/1.1" 304 0
+2024-05-15 12:36:40,623 +0545 [INFO] "GET /media/seller/product_images/dfsd.jpeg HTTP/1.1" 304 0
+2024-05-15 12:36:40,623 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 12:36:42,323 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 4732
+2024-05-15 12:36:42,331 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 12:36:42,337 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 4732
+2024-05-15 12:36:42,344 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 12:36:43,320 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 12:36:43,325 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 4732
+2024-05-15 12:36:43,330 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 12:36:43,335 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 4732
+2024-05-15 12:36:46,112 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 4732
+2024-05-15 12:36:46,117 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 12:36:46,123 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 4732
+2024-05-15 12:36:46,129 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 12:37:12,240 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 12:37:12,243 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 4732
+2024-05-15 12:37:12,267 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 12:37:12,275 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 4732
+2024-05-15 12:37:14,874 +0545 [INFO] "GET /media/seller/product_images/71k6L1xp4iL._AC_UF8941000_QL80_.jpg HTTP/1.1" 304 0
+2024-05-15 12:37:14,922 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 4732
+2024-05-15 12:37:14,931 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 12:37:14,960 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 12:37:14,961 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 4732
+2024-05-15 12:37:29,102 +0545 [INFO] "GET /media/seller/product_images/jbl_jblgo3redam_go_3_portable_bluetooth_1583010.jpg HTTP/1.1" 304 0
+2024-05-15 12:37:54,999 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 4732
+2024-05-15 12:37:55,006 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 12:37:55,009 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 4732
+2024-05-15 12:37:55,016 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 12:37:56,063 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 4732
+2024-05-15 12:37:56,066 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 12:37:56,072 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 12:37:56,076 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 4732
+2024-05-15 12:37:58,908 +0545 [INFO] "GET /media/seller/product_images/dell_monitor_AngHyoj.jpeg HTTP/1.1" 200 105816
+2024-05-15 12:38:01,611 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 4732
+2024-05-15 12:38:01,616 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 12:38:01,622 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 4732
+2024-05-15 12:38:01,627 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 12:38:03,574 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 4732
+2024-05-15 12:38:03,575 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 12:38:03,586 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 4732
+2024-05-15 12:38:03,586 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 12:38:05,992 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 4732
+2024-05-15 12:38:06,016 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 4732
+2024-05-15 12:38:06,017 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 12:38:06,025 +0545 [INFO] "GET /media/seller/product_images/71k6L1xp4iL._AC_UF8941000_QL80_.jpg HTTP/1.1" 304 0
+2024-05-15 12:38:06,030 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 12:38:06,033 +0545 [INFO] "GET /media/seller/product_images/dfsd.jpeg HTTP/1.1" 304 0
+2024-05-15 12:38:08,648 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 4732
+2024-05-15 12:38:08,706 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 12:38:08,707 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 4732
+2024-05-15 12:38:08,712 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 12:38:13,191 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 4732
+2024-05-15 12:38:13,246 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 4732
+2024-05-15 12:38:13,246 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 12:38:13,263 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 12:38:26,670 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 4732
+2024-05-15 12:38:27,667 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 4732
+2024-05-15 12:38:30,665 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 4732
+2024-05-15 12:38:37,664 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 4732
+2024-05-15 12:38:43,122 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 4732
+2024-05-15 12:38:46,242 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 12:38:46,252 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 4732
+2024-05-15 12:38:46,267 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 4732
+2024-05-15 12:38:46,268 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 12:38:46,276 +0545 [INFO] "GET /media/seller/product_images/jbl_jblgo3redam_go_3_portable_bluetooth_1583010.jpg HTTP/1.1" 304 0
+2024-05-15 12:38:46,276 +0545 [INFO] "GET /media/seller/product_images/71k6L1xp4iL._AC_UF8941000_QL80_.jpg HTTP/1.1" 304 0
+2024-05-15 12:38:48,435 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 4732
+2024-05-15 12:38:48,467 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 12:38:48,468 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 4732
+2024-05-15 12:38:48,485 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 12:39:59,667 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 12:40:02,674 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 12:40:06,708 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 4732
+2024-05-15 12:40:06,720 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 12:40:06,724 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 4732
+2024-05-15 12:40:06,729 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 12:40:06,742 +0545 [INFO] "GET /media/seller/product_images/71k6L1xp4iL._AC_UF8941000_QL80_.jpg HTTP/1.1" 304 0
+2024-05-15 12:40:06,742 +0545 [INFO] "GET /media/seller/product_images/jbl_jblgo3redam_go_3_portable_bluetooth_1583010.jpg HTTP/1.1" 304 0
+2024-05-15 12:40:06,742 +0545 [INFO] "GET /media/seller/product_images/dfsd.jpeg HTTP/1.1" 304 0
+2024-05-15 12:41:40,662 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 4732
+2024-05-15 12:41:43,656 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 4732
+2024-05-15 12:42:01,138 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 4732
+2024-05-15 12:42:11,854 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 4732
+2024-05-15 12:42:18,052 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 4732
+2024-05-15 12:42:21,329 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 4732
+2024-05-15 12:42:21,355 +0545 [INFO] "GET /media/seller/product_images/jbl_jblgo3redam_go_3_portable_bluetooth_1583010.jpg HTTP/1.1" 304 0
+2024-05-15 12:42:21,357 +0545 [INFO] "GET /media/seller/product_images/dfsd.jpeg HTTP/1.1" 304 0
+2024-05-15 12:42:21,361 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 12:42:21,361 +0545 [INFO] "GET /media/seller/product_images/71k6L1xp4iL._AC_UF8941000_QL80_.jpg HTTP/1.1" 304 0
+2024-05-15 12:42:21,366 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 4732
+2024-05-15 12:42:21,373 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 12:42:30,526 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 4732
+2024-05-15 12:42:30,531 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 12:42:30,537 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 4732
+2024-05-15 12:42:30,540 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-15 12:42:33,280 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 4732
+2024-05-15 12:42:33,282 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 12:42:33,292 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 12:42:33,293 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 4732
+2024-05-15 12:42:55,658 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 4732
+2024-05-15 12:43:03,661 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 12:43:07,660 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 12:43:10,664 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 12:43:12,659 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 12:43:15,050 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 328
+2024-05-15 12:43:30,121 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 4732
+2024-05-15 12:43:35,051 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 4732
+2024-05-15 12:43:50,154 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 4732
+2024-05-15 12:43:56,657 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 4732
+2024-05-15 12:43:58,656 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 4732
+2024-05-15 12:44:03,655 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 4732
+2024-05-15 12:44:05,104 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 4732
+2024-05-15 12:44:10,934 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 4732
+2024-05-15 12:44:26,658 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 4732
+2024-05-15 12:44:30,657 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 4732
+2024-05-15 12:44:32,655 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 4732
+2024-05-15 12:44:36,078 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 4732

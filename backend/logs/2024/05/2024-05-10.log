@@ -1,0 +1,260 @@
+2024-05-10 19:16:15,293 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-10 19:16:30,844 +0545 [WARNING] Unauthorized: /account/auth/login/
+2024-05-10 19:16:30,845 +0545 [WARNING] "POST /account/auth/login/ HTTP/1.1" 401 63
+2024-05-10 19:16:54,083 +0545 [WARNING] Bad Request: /account/auth/register/
+2024-05-10 19:16:54,084 +0545 [WARNING] "POST /account/auth/register/ HTTP/1.1" 400 105
+2024-05-10 19:16:58,486 +0545 [WARNING] Bad Request: /account/auth/register/
+2024-05-10 19:16:58,487 +0545 [WARNING] "POST /account/auth/register/ HTTP/1.1" 400 105
+2024-05-10 19:17:05,188 +0545 [WARNING] Bad Request: /account/auth/register/
+2024-05-10 19:17:05,189 +0545 [WARNING] "POST /account/auth/register/ HTTP/1.1" 400 50
+2024-05-10 19:17:23,496 +0545 [INFO] "POST /account/auth/register/ HTTP/1.1" 200 301
+2024-05-10 19:17:34,598 +0545 [INFO] "POST /account/auth/login/ HTTP/1.1" 200 483
+2024-05-10 19:17:49,453 +0545 [WARNING] Not Found: /buyer/profile/details/
+2024-05-10 19:17:49,454 +0545 [WARNING] "GET /buyer/profile/details/ HTTP/1.1" 404 2362
+2024-05-10 19:18:08,045 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 301
+2024-05-10 19:18:17,871 +0545 [INFO] "PUT /account/user/details/ HTTP/1.1" 200 301
+2024-05-10 19:18:21,117 +0545 [INFO] "PUT /account/user/details/ HTTP/1.1" 200 301
+2024-05-10 19:18:29,548 +0545 [WARNING] Bad Request: /account/user/details/
+2024-05-10 19:18:29,549 +0545 [WARNING] "PUT /account/user/details/ HTTP/1.1" 400 110
+2024-05-10 19:18:38,255 +0545 [INFO] "PUT /account/user/details/ HTTP/1.1" 200 306
+2024-05-10 19:21:09,342 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/account/views.py changed, reloading.
+2024-05-10 19:21:09,918 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-10 19:21:13,210 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/account/views.py changed, reloading.
+2024-05-10 19:21:13,517 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-10 19:21:33,328 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/account/views.py changed, reloading.
+2024-05-10 19:21:33,788 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-10 19:21:57,719 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/account/views.py changed, reloading.
+2024-05-10 19:21:58,275 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-10 19:22:42,838 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/account/urls.py changed, reloading.
+2024-05-10 19:22:43,331 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-10 19:22:45,583 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/account/urls.py changed, reloading.
+2024-05-10 19:22:45,892 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-10 19:23:07,658 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/account/views.py changed, reloading.
+2024-05-10 19:23:08,121 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-10 19:23:12,430 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/account/views.py changed, reloading.
+2024-05-10 19:23:12,742 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-10 19:23:18,124 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/account/views.py changed, reloading.
+2024-05-10 19:23:18,488 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-10 19:23:19,734 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/account/views.py changed, reloading.
+2024-05-10 19:23:20,027 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-10 19:23:22,159 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/account/views.py changed, reloading.
+2024-05-10 19:23:22,528 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-10 19:23:23,760 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/account/views.py changed, reloading.
+2024-05-10 19:23:24,105 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-10 19:23:25,377 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/account/views.py changed, reloading.
+2024-05-10 19:23:25,666 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-10 19:23:27,797 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/account/views.py changed, reloading.
+2024-05-10 19:23:28,110 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-10 19:23:43,031 +0545 [WARNING] Not Found: /account/buyer/profile/
+2024-05-10 19:23:43,032 +0545 [WARNING] "PUT /account/buyer/profile/ HTTP/1.1" 404 4223
+2024-05-10 19:23:46,461 +0545 [WARNING] Not Found: /account/buyer/profile/
+2024-05-10 19:23:46,462 +0545 [WARNING] "GET /account/buyer/profile/ HTTP/1.1" 404 4223
+2024-05-10 19:23:52,882 +0545 [WARNING] Not Found: /account/buyer-profile/
+2024-05-10 19:23:52,883 +0545 [WARNING] "GET /account/buyer-profile/ HTTP/1.1" 404 4223
+2024-05-10 19:24:04,771 +0545 [INFO] "GET /account/buyer-profiles/ HTTP/1.1" 200 159
+2024-05-10 19:24:18,379 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/account/views.py changed, reloading.
+2024-05-10 19:24:18,872 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-10 19:24:21,122 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/account/views.py changed, reloading.
+2024-05-10 19:24:21,432 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-10 19:24:22,729 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/account/views.py changed, reloading.
+2024-05-10 19:24:23,025 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-10 19:24:25,173 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/account/views.py changed, reloading.
+2024-05-10 19:24:25,500 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-10 19:24:31,855 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/account/urls.py changed, reloading.
+2024-05-10 19:24:32,167 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-10 19:24:34,790 +0545 [INFO] "GET /account/buyer-profiles/ HTTP/1.1" 200 159
+2024-05-10 19:24:37,944 +0545 [INFO] "GET /account/buyer-profiles/ HTTP/1.1" 200 159
+2024-05-10 19:24:46,699 +0545 [WARNING] Not Found: /account/buyer-profiles/3/
+2024-05-10 19:24:46,700 +0545 [WARNING] "GET /account/buyer-profiles/3/ HTTP/1.1" 404 4231
+2024-05-10 19:24:52,362 +0545 [INFO] "GET /account/buyer-profile/3/ HTTP/1.1" 200 78
+2024-05-10 19:24:57,172 +0545 [WARNING] Unauthorized: /account/buyer-profile/3/
+2024-05-10 19:24:57,173 +0545 [WARNING] "GET /account/buyer-profile/3/ HTTP/1.1" 401 58
+2024-05-10 19:24:59,970 +0545 [INFO] "GET /account/buyer-profile/3/ HTTP/1.1" 200 78
+2024-05-10 19:25:02,833 +0545 [INFO] "GET /account/buyer-profile/4/ HTTP/1.1" 200 78
+2024-05-10 19:25:04,554 +0545 [INFO] "GET /account/buyer-profile/4/ HTTP/1.1" 200 78
+2024-05-10 19:25:07,639 +0545 [ERROR] Internal Server Error: /account/buyer-profile/5/
+Traceback (most recent call last):
+  File "/Users/dilli/Desktop/e-com/backend/account/views.py", line 176, in get_object
+    return BuyerProfile.objects.get(pk=pk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 649, in get
+    raise self.model.DoesNotExist(
+account.models.BuyerProfile.DoesNotExist: BuyerProfile matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Desktop/e-com/backend/account/views.py", line 181, in get
+    buyer_profile = self.get_object(pk)
+                    ^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Desktop/e-com/backend/account/views.py", line 178, in get_object
+    raise Http404
+          ^^^^^^^
+NameError: name 'Http404' is not defined
+2024-05-10 19:25:07,642 +0545 [ERROR] "GET /account/buyer-profile/5/ HTTP/1.1" 500 105323
+2024-05-10 19:25:10,943 +0545 [INFO] "GET /account/buyer-profile/4/ HTTP/1.1" 200 78
+2024-05-10 19:25:14,583 +0545 [INFO] "POST /account/auth/login/ HTTP/1.1" 200 483
+2024-05-10 19:25:25,878 +0545 [WARNING] Unauthorized: /account/buyer-profile/4/
+2024-05-10 19:25:25,879 +0545 [WARNING] "GET /account/buyer-profile/4/ HTTP/1.1" 401 183
+2024-05-10 19:25:32,568 +0545 [INFO] "GET /account/buyer-profile/4/ HTTP/1.1" 200 78
+2024-05-10 19:25:39,883 +0545 [INFO] "GET /account/buyer-profile/3/ HTTP/1.1" 200 78
+2024-05-10 19:25:59,315 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/account/views.py changed, reloading.
+2024-05-10 19:25:59,855 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-10 19:26:00,998 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/account/views.py changed, reloading.
+2024-05-10 19:26:01,309 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-10 19:27:06,664 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/account/views.py changed, reloading.
+2024-05-10 19:27:07,146 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-10 19:27:08,287 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/account/views.py changed, reloading.
+2024-05-10 19:27:08,589 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-10 19:27:32,378 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/account/urls.py changed, reloading.
+2024-05-10 19:27:32,863 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-10 19:27:35,926 +0545 [INFO] "GET /account/buyer-profile/4/ HTTP/1.1" 200 78
+2024-05-10 19:27:38,579 +0545 [INFO] "GET /account/buyer-profile/3/ HTTP/1.1" 200 78
+2024-05-10 19:27:40,899 +0545 [ERROR] Internal Server Error: /account/buyer-profile/2/
+Traceback (most recent call last):
+  File "/Users/dilli/Desktop/e-com/backend/account/views.py", line 161, in get_object
+    return BuyerProfile.objects.get(pk=pk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 649, in get
+    raise self.model.DoesNotExist(
+account.models.BuyerProfile.DoesNotExist: BuyerProfile matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Desktop/e-com/backend/account/views.py", line 166, in get
+    buyer_profile = self.get_object(pk)
+                    ^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Desktop/e-com/backend/account/views.py", line 163, in get_object
+    raise Http404
+          ^^^^^^^
+NameError: name 'Http404' is not defined
+2024-05-10 19:27:40,903 +0545 [ERROR] "GET /account/buyer-profile/2/ HTTP/1.1" 500 105211
+2024-05-10 19:27:43,539 +0545 [INFO] "GET /account/buyer-profile/3/ HTTP/1.1" 200 78
+2024-05-10 19:27:45,559 +0545 [ERROR] Internal Server Error: /account/buyer-profile/5/
+Traceback (most recent call last):
+  File "/Users/dilli/Desktop/e-com/backend/account/views.py", line 161, in get_object
+    return BuyerProfile.objects.get(pk=pk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 649, in get
+    raise self.model.DoesNotExist(
+account.models.BuyerProfile.DoesNotExist: BuyerProfile matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/dilli/Downloads/e-com/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Desktop/e-com/backend/account/views.py", line 166, in get
+    buyer_profile = self.get_object(pk)
+                    ^^^^^^^^^^^^^^^^^^^
+  File "/Users/dilli/Desktop/e-com/backend/account/views.py", line 163, in get_object
+    raise Http404
+          ^^^^^^^
+NameError: name 'Http404' is not defined
+2024-05-10 19:27:45,562 +0545 [ERROR] "GET /account/buyer-profile/5/ HTTP/1.1" 500 105211
+2024-05-10 19:27:47,797 +0545 [INFO] "GET /account/buyer-profile/3/ HTTP/1.1" 200 78
+2024-05-10 19:28:01,522 +0545 [WARNING] Forbidden: /account/buyer-profile/3/
+2024-05-10 19:28:01,523 +0545 [WARNING] "PUT /account/buyer-profile/3/ HTTP/1.1" 403 0
+2024-05-10 19:28:06,101 +0545 [WARNING] Bad Request: /account/buyer-profile/4/
+2024-05-10 19:28:06,102 +0545 [WARNING] "PUT /account/buyer-profile/4/ HTTP/1.1" 400 36
+2024-05-10 19:28:16,102 +0545 [INFO] "PUT /account/buyer-profile/4/ HTTP/1.1" 200 78
+2024-05-10 19:29:45,934 +0545 [WARNING] Unauthorized: /account/buyer-profile/4/
+2024-05-10 19:29:45,937 +0545 [WARNING] "GET /account/buyer-profile/4/ HTTP/1.1" 401 58
+2024-05-10 19:29:45,938 +0545 [WARNING] Unauthorized: /account/buyer-profile/4/
+2024-05-10 19:29:45,939 +0545 [WARNING] "GET /account/buyer-profile/4/ HTTP/1.1" 401 58
+2024-05-10 19:29:50,106 +0545 [WARNING] Unauthorized: /account/buyer-profile/4/
+2024-05-10 19:29:50,107 +0545 [WARNING] "GET /account/buyer-profile/4/ HTTP/1.1" 401 58
+2024-05-10 19:29:50,109 +0545 [WARNING] Unauthorized: /account/buyer-profile/4/
+2024-05-10 19:29:50,109 +0545 [WARNING] "GET /account/buyer-profile/4/ HTTP/1.1" 401 58
+2024-05-10 19:30:02,266 +0545 [INFO] "OPTIONS /account/buyer-profile/4/ HTTP/1.1" 200 0
+2024-05-10 19:30:02,273 +0545 [WARNING] Unauthorized: /account/buyer-profile/4/
+2024-05-10 19:30:02,280 +0545 [WARNING] "PUT /account/buyer-profile/4/ HTTP/1.1" 401 58
+2024-05-10 19:31:06,245 +0545 [INFO] "GET /account/buyer-profile/4/ HTTP/1.1" 200 78
+2024-05-10 19:31:06,249 +0545 [INFO] "GET /account/buyer-profile/4/ HTTP/1.1" 200 78
+2024-05-10 19:31:10,165 +0545 [INFO] "GET /account/buyer-profile/4/ HTTP/1.1" 200 78
+2024-05-10 19:31:10,170 +0545 [INFO] "GET /account/buyer-profile/4/ HTTP/1.1" 200 78
+2024-05-10 19:31:35,260 +0545 [WARNING] Bad Request: /account/buyer-profile/4/
+2024-05-10 19:31:35,261 +0545 [WARNING] "PUT /account/buyer-profile/4/ HTTP/1.1" 400 36
+2024-05-10 19:31:45,460 +0545 [WARNING] Bad Request: /account/buyer-profile/4/
+2024-05-10 19:31:45,461 +0545 [WARNING] "PUT /account/buyer-profile/4/ HTTP/1.1" 400 36
+2024-05-10 19:32:20,981 +0545 [WARNING] Bad Request: /account/buyer-profile/4/
+2024-05-10 19:32:20,982 +0545 [WARNING] "PUT /account/buyer-profile/4/ HTTP/1.1" 400 36
+2024-05-10 19:32:22,880 +0545 [INFO] "GET /account/buyer-profile/4/ HTTP/1.1" 200 78
+2024-05-10 19:32:22,889 +0545 [INFO] "GET /account/buyer-profile/4/ HTTP/1.1" 200 78
+2024-05-10 19:32:30,055 +0545 [INFO] "PUT /account/buyer-profile/4/ HTTP/1.1" 200 130
+2024-05-10 19:33:02,112 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/urls.py changed, reloading.
+2024-05-10 19:33:02,745 +0545 [INFO] Watching for file changes with StatReloader

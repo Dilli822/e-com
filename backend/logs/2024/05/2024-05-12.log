@@ -1,0 +1,246 @@
+2024-05-12 00:33:10,319 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-12 00:35:26,398 +0545 [WARNING] Not Found: /
+2024-05-12 00:35:26,398 +0545 [WARNING] "GET / HTTP/1.1" 404 2404
+2024-05-12 00:35:33,892 +0545 [WARNING] Unauthorized: /e-com/api/products/edit/1/
+2024-05-12 00:35:33,893 +0545 [WARNING] "GET /e-com/api/products/edit/1/ HTTP/1.1" 401 58
+2024-05-12 00:35:38,689 +0545 [WARNING] Not Found: /e-com/api/
+2024-05-12 00:35:38,690 +0545 [WARNING] "GET /e-com/api/ HTTP/1.1" 404 3148
+2024-05-12 00:35:44,388 +0545 [WARNING] Unauthorized: /e-com/api/categories/
+2024-05-12 00:35:44,389 +0545 [WARNING] "GET /e-com/api/categories/ HTTP/1.1" 401 58
+2024-05-12 00:35:51,210 +0545 [INFO] "POST /account/auth/login/ HTTP/1.1" 200 483
+2024-05-12 00:36:04,194 +0545 [WARNING] Method Not Allowed: /e-com/api/categories/
+2024-05-12 00:36:04,195 +0545 [WARNING] "GET /e-com/api/categories/ HTTP/1.1" 405 40
+2024-05-12 00:36:09,109 +0545 [WARNING] Method Not Allowed: /e-com/api/categories/
+2024-05-12 00:36:09,110 +0545 [WARNING] "PUT /e-com/api/categories/ HTTP/1.1" 405 40
+2024-05-12 00:36:12,872 +0545 [WARNING] Forbidden: /e-com/api/categories/
+2024-05-12 00:36:12,873 +0545 [WARNING] "POST /e-com/api/categories/ HTTP/1.1" 403 47
+2024-05-12 00:36:54,246 +0545 [INFO] "POST /account/auth/register/ HTTP/1.1" 200 293
+2024-05-12 00:37:06,976 +0545 [WARNING] Bad Request: /account/auth/register/
+2024-05-12 00:37:06,977 +0545 [WARNING] "POST /account/auth/register/ HTTP/1.1" 400 105
+2024-05-12 00:37:17,309 +0545 [INFO] "POST /account/auth/login/ HTTP/1.1" 200 483
+2024-05-12 00:37:25,461 +0545 [WARNING] Bad Request: /e-com/api/categories/
+2024-05-12 00:37:25,461 +0545 [WARNING] "POST /e-com/api/categories/ HTTP/1.1" 400 78
+2024-05-12 00:49:15,706 +0545 [INFO] "OPTIONS /e-com/api/categories/ HTTP/1.1" 200 0
+2024-05-12 00:49:15,724 +0545 [WARNING] Method Not Allowed: /e-com/api/categories/
+2024-05-12 00:49:15,724 +0545 [WARNING] "PUT /e-com/api/categories/ HTTP/1.1" 405 40
+2024-05-12 00:56:47,196 +0545 [WARNING] Method Not Allowed: /e-com/api/categories/
+2024-05-12 00:56:47,197 +0545 [WARNING] "PUT /e-com/api/categories/ HTTP/1.1" 405 40
+2024-05-12 00:59:14,137 +0545 [WARNING] Method Not Allowed: /e-com/api/categories/
+2024-05-12 00:59:14,138 +0545 [WARNING] "PUT /e-com/api/categories/ HTTP/1.1" 405 40
+2024-05-12 00:59:15,114 +0545 [WARNING] Method Not Allowed: /e-com/api/categories/
+2024-05-12 00:59:15,114 +0545 [WARNING] "PUT /e-com/api/categories/ HTTP/1.1" 405 40
+2024-05-12 00:59:15,295 +0545 [WARNING] Method Not Allowed: /e-com/api/categories/
+2024-05-12 00:59:15,296 +0545 [WARNING] "PUT /e-com/api/categories/ HTTP/1.1" 405 40
+2024-05-12 02:09:05,900 +0545 [WARNING] Method Not Allowed: /e-com/api/categories/
+2024-05-12 02:09:05,901 +0545 [WARNING] "PUT /e-com/api/categories/ HTTP/1.1" 405 40
+2024-05-12 02:09:17,582 +0545 [WARNING] Method Not Allowed: /e-com/api/categories/
+2024-05-12 02:09:17,583 +0545 [WARNING] "PUT /e-com/api/categories/ HTTP/1.1" 405 40
+2024-05-12 02:12:01,529 +0545 [WARNING] Method Not Allowed: /e-com/api/categories/
+2024-05-12 02:12:01,530 +0545 [WARNING] "PUT /e-com/api/categories/ HTTP/1.1" 405 40
+2024-05-12 02:12:21,811 +0545 [INFO] "POST /e-com/api/categories/ HTTP/1.1" 201 42
+2024-05-12 02:12:44,677 +0545 [INFO] "POST /e-com/api/categories/ HTTP/1.1" 201 65
+2024-05-12 02:14:04,321 +0545 [INFO] "POST /e-com/api/categories/ HTTP/1.1" 201 60
+2024-05-12 02:14:15,901 +0545 [INFO] "POST /e-com/api/categories/ HTTP/1.1" 201 55
+2024-05-12 02:14:49,072 +0545 [INFO] "POST /e-com/api/categories/ HTTP/1.1" 201 212
+2024-05-12 02:15:47,296 +0545 [INFO] "POST /e-com/api/categories/ HTTP/1.1" 201 62
+2024-05-12 02:16:09,203 +0545 [INFO] "POST /e-com/api/categories/ HTTP/1.1" 201 66
+2024-05-12 02:16:48,518 +0545 [INFO] "POST /e-com/api/categories/ HTTP/1.1" 201 61
+2024-05-12 02:16:59,965 +0545 [INFO] "POST /e-com/api/categories/ HTTP/1.1" 201 57
+2024-05-12 02:17:17,618 +0545 [INFO] "POST /e-com/api/categories/ HTTP/1.1" 201 67
+2024-05-12 02:17:33,292 +0545 [INFO] "POST /e-com/api/categories/ HTTP/1.1" 201 51
+2024-05-12 02:17:53,238 +0545 [INFO] "POST /e-com/api/categories/ HTTP/1.1" 201 64
+2024-05-12 02:18:58,254 +0545 [INFO] "GET /e-com/api/products/list/ HTTP/1.1" 200 2
+2024-05-12 02:19:13,323 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/urls.py changed, reloading.
+2024-05-12 02:19:13,968 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-12 02:19:23,538 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2
+2024-05-12 02:19:58,189 +0545 [WARNING] Unauthorized: /e-com/api/products/upload/
+2024-05-12 02:19:58,190 +0545 [WARNING] "GET /e-com/api/products/upload/ HTTP/1.1" 401 58
+2024-05-12 02:20:15,404 +0545 [WARNING] Method Not Allowed: /e-com/api/products/upload/
+2024-05-12 02:20:15,404 +0545 [WARNING] "GET /e-com/api/products/upload/ HTTP/1.1" 405 40
+2024-05-12 02:20:20,403 +0545 [WARNING] Bad Request: /e-com/api/products/upload/
+2024-05-12 02:20:20,404 +0545 [WARNING] "POST /e-com/api/products/upload/ HTTP/1.1" 400 229
+2024-05-12 02:21:39,651 +0545 [INFO] "POST /account/auth/login/ HTTP/1.1" 200 483
+2024-05-12 02:21:50,506 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-12 02:22:02,221 +0545 [WARNING] Bad Request: /e-com/api/products/upload/
+2024-05-12 02:22:02,222 +0545 [WARNING] "POST /e-com/api/products/upload/ HTTP/1.1" 400 229
+2024-05-12 02:22:11,547 +0545 [WARNING] Unauthorized: /account/auth/login/
+2024-05-12 02:22:11,548 +0545 [WARNING] "POST /account/auth/login/ HTTP/1.1" 401 63
+2024-05-12 02:22:49,296 +0545 [INFO] "POST /account/auth/login/ HTTP/1.1" 200 483
+2024-05-12 02:22:56,821 +0545 [WARNING] Bad Request: /e-com/api/products/upload/
+2024-05-12 02:22:56,822 +0545 [WARNING] "POST /e-com/api/products/upload/ HTTP/1.1" 400 229
+2024-05-12 02:23:00,344 +0545 [WARNING] Bad Request: /e-com/api/products/upload/
+2024-05-12 02:23:00,344 +0545 [WARNING] "POST /e-com/api/products/upload/ HTTP/1.1" 400 229
+2024-05-12 02:23:22,229 +0545 [INFO] "POST /account/auth/login/ HTTP/1.1" 200 483
+2024-05-12 02:23:30,457 +0545 [WARNING] Unauthorized: /e-com/api/products/upload/
+2024-05-12 02:23:30,457 +0545 [WARNING] "POST /e-com/api/products/upload/ HTTP/1.1" 401 58
+2024-05-12 02:23:32,506 +0545 [WARNING] Bad Request: /e-com/api/products/upload/
+2024-05-12 02:23:32,507 +0545 [WARNING] "POST /e-com/api/products/upload/ HTTP/1.1" 400 229
+2024-05-12 02:25:40,808 +0545 [WARNING] Bad Request: /e-com/api/products/upload/
+2024-05-12 02:25:40,810 +0545 [WARNING] "POST /e-com/api/products/upload/ HTTP/1.1" 400 38
+2024-05-12 02:26:06,705 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 298
+2024-05-12 02:26:20,249 +0545 [WARNING] Forbidden: /e-com/api/products/upload/
+2024-05-12 02:26:20,250 +0545 [WARNING] "POST /e-com/api/products/upload/ HTTP/1.1" 403 46
+2024-05-12 02:27:04,077 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/models.py changed, reloading.
+2024-05-12 02:27:04,535 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-12 02:27:13,789 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/models.py changed, reloading.
+2024-05-12 02:27:14,166 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-12 02:27:15,345 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/models.py changed, reloading.
+2024-05-12 02:27:15,661 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-12 02:27:20,981 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/models.py changed, reloading.
+2024-05-12 02:27:21,311 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-12 02:27:23,682 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/models.py changed, reloading.
+2024-05-12 02:27:23,984 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-12 02:30:28,239 +0545 [WARNING] Forbidden: /e-com/api/products/upload/
+2024-05-12 02:30:28,241 +0545 [WARNING] "POST /e-com/api/products/upload/ HTTP/1.1" 403 46
+2024-05-12 02:30:56,131 +0545 [INFO] "POST /account/auth/login/ HTTP/1.1" 200 483
+2024-05-12 02:31:09,182 +0545 [WARNING] Bad Request: /e-com/api/products/upload/
+2024-05-12 02:31:09,183 +0545 [WARNING] "POST /e-com/api/products/upload/ HTTP/1.1" 400 229
+2024-05-12 02:40:13,375 +0545 [INFO] "OPTIONS /account/auth/login/ HTTP/1.1" 200 0
+2024-05-12 02:40:13,657 +0545 [INFO] "POST /account/auth/login/ HTTP/1.1" 200 483
+2024-05-12 02:40:13,695 +0545 [INFO] "OPTIONS /account/user/details/ HTTP/1.1" 200 0
+2024-05-12 02:40:13,695 +0545 [INFO] "OPTIONS /account/user/details/ HTTP/1.1" 200 0
+2024-05-12 02:40:13,706 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 298
+2024-05-12 02:40:13,711 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 298
+2024-05-12 02:40:15,697 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 298
+2024-05-12 02:40:15,703 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 298
+2024-05-12 02:40:15,732 +0545 [INFO] "OPTIONS /account/buyer-profile/1/ HTTP/1.1" 200 0
+2024-05-12 02:40:15,738 +0545 [INFO] "GET /account/buyer-profile/1/ HTTP/1.1" 200 179
+2024-05-12 02:40:15,763 +0545 [INFO] "GET /media/user/profile_images/KB_PART_II_UlPc6Jj.png HTTP/1.1" 200 3502031
+2024-05-12 02:40:28,346 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 298
+2024-05-12 02:40:28,394 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 298
+2024-05-12 02:40:28,396 +0545 [INFO] "GET /account/buyer-profile/1/ HTTP/1.1" 200 179
+2024-05-12 02:44:56,151 +0545 [INFO] "POST /account/auth/login/ HTTP/1.1" 200 483
+2024-05-12 02:44:56,194 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-12 02:44:56,198 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-12 02:44:58,305 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-12 02:44:58,314 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-12 02:44:58,326 +0545 [INFO] "OPTIONS /account/seller-profile/2/ HTTP/1.1" 200 0
+2024-05-12 02:44:58,331 +0545 [INFO] "GET /account/seller-profile/2/ HTTP/1.1" 200 184
+2024-05-12 02:44:58,341 +0545 [INFO] "GET /media/seller/profile_images/e-commerce_RDMS_Diagram.png HTTP/1.1" 200 31349
+2024-05-12 02:45:55,455 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2
+2024-05-12 02:54:36,708 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/views.py changed, reloading.
+2024-05-12 02:54:37,178 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-12 02:54:45,625 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/urls.py changed, reloading.
+2024-05-12 02:54:45,946 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-12 02:54:47,177 +0545 [INFO] /Users/dilli/Desktop/e-com/backend/masterDummy/urls.py changed, reloading.
+2024-05-12 02:54:47,463 +0545 [INFO] Watching for file changes with StatReloader
+2024-05-12 02:55:04,813 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-12 03:00:23,851 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 7329
+2024-05-12 03:00:23,934 +0545 [INFO] "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+2024-05-12 03:00:23,935 +0545 [INFO] "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3796
+2024-05-12 03:00:23,936 +0545 [INFO] "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1152
+2024-05-12 03:00:23,938 +0545 [INFO] "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3426
+2024-05-12 03:00:23,939 +0545 [INFO] "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1793
+2024-05-12 03:00:23,941 +0545 [INFO] "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+2024-05-12 03:00:23,943 +0545 [INFO] "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 200 59
+2024-05-12 03:00:23,943 +0545 [INFO] "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 200 87533
+2024-05-12 03:00:23,944 +0545 [INFO] "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+2024-05-12 03:00:23,945 +0545 [INFO] "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+2024-05-12 03:00:23,947 +0545 [INFO] "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 39680
+2024-05-12 03:00:23,958 +0545 [INFO] "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+2024-05-12 03:00:24,074 +0545 [WARNING] Not Found: /favicon.ico
+2024-05-12 03:00:24,075 +0545 [WARNING] "GET /favicon.ico HTTP/1.1" 404 2455
+2024-05-12 03:01:00,632 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-12 03:01:00,639 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-12 03:32:26,847 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-12 03:32:26,854 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-12 03:33:41,237 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-12 03:34:35,223 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-12 03:34:44,208 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-12 03:34:46,204 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-12 03:35:36,839 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-12 03:35:36,843 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-12 03:35:50,215 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-12 03:35:56,219 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-12 03:36:01,669 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-12 03:36:01,677 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-12 03:36:53,904 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-12 03:37:11,209 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-12 03:37:14,201 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-12 03:37:19,214 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-12 03:37:23,221 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-12 03:37:32,118 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-12 03:37:33,702 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-12 03:37:43,212 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-12 03:37:49,214 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-12 03:37:51,228 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-12 03:38:14,211 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-12 03:38:18,204 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-12 03:38:22,817 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-12 03:38:30,211 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-12 03:39:14,215 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-12 03:39:18,207 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-12 03:41:58,204 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-12 03:42:27,195 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-12 03:43:17,405 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-12 03:43:17,413 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-12 03:44:33,637 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-12 03:44:33,645 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-12 03:45:03,197 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-12 03:45:05,753 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-12 03:45:08,098 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-12 03:45:08,110 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-12 03:45:11,677 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-12 03:45:26,195 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-12 03:45:29,198 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-12 03:45:30,195 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-12 03:45:37,692 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-12 03:45:51,205 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-12 03:45:53,764 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-12 03:46:58,594 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-12 03:46:58,599 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-12 03:47:46,363 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-12 03:47:46,367 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-12 03:48:03,203 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-12 03:48:09,192 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-12 03:48:12,069 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-12 03:48:12,077 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-12 03:48:17,699 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-12 03:48:23,750 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-12 03:48:25,870 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-12 03:48:25,879 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-12 03:48:30,199 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-12 03:48:37,772 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-12 03:48:45,783 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-12 03:48:48,437 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-12 03:48:48,452 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-12 03:49:22,206 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-12 03:49:23,138 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-12 03:49:25,535 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-12 03:49:25,547 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-12 03:49:35,336 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-12 03:49:37,592 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-12 03:49:37,622 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-12 03:49:50,733 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-12 03:50:04,278 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-12 03:50:08,905 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-12 03:50:11,192 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-12 03:50:11,202 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-12 03:50:47,278 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-12 03:50:50,278 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-12 03:50:55,669 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-12 03:51:04,237 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-12 03:51:51,278 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-12 03:51:54,329 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-12 03:51:54,340 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-12 03:52:21,274 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-12 03:52:32,267 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-12 03:52:34,266 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-12 03:52:36,272 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-12 03:52:39,274 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-12 03:52:42,267 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-12 03:52:45,273 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-12 03:52:47,495 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-12 03:52:55,082 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-12 03:53:11,841 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-12 03:53:21,279 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-12 03:54:54,023 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-12 03:54:55,022 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-12 03:55:08,584 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-12 03:55:14,616 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-12 03:55:47,990 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-12 03:55:48,801 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-12 04:00:06,040 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-12 04:00:06,047 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 875
+2024-05-12 04:00:06,070 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-05-12 04:00:06,089 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
