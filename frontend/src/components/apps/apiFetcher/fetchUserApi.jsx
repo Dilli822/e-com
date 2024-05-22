@@ -132,9 +132,9 @@ const UserProfileMaster = () => {
             <>
            Buyer ID: #  <span id="buyerID"> {userData.buyer.buyer_id}  </span>
               <br />
-              Name: {userData.user.username} <br />
-              Email: {userData.user.email} <br />
-              Phone Number: {userData.buyer.phone_number} <br />
+              Name: <span id="buyerUserName">{userData.user.username} </span><br />
+              Email: <span id="buyerEmail">{userData.user.email} </span> <br />
+              Phone Number: <span id="buyerContact">{userData.buyer.phone_number} </span><br />
               {tagAddress ? (
                 <span variant="h6">
                   Final Shipping Address: <b>{tagAddress}</b>
@@ -157,7 +157,7 @@ const UserProfileMaster = () => {
                   </Button>
                 </span>
               ) : (
-                <>Shipping Address: {userData.buyer.address}</>
+                <>Shipping Address: <span id="buyerDefaultAdress">{userData.buyer.address}</span></>
               )}
             </>
           ) : null}
