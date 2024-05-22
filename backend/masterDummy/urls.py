@@ -25,7 +25,8 @@ urlpatterns = [
 
     # Endpoint for listing and Creating orders
     path('orders/', OrderListView.as_view(), name='order-list-create'),
-    
+        path('orders/list/',   BuyerOrderList.as_view(), name='buyer-order-list'),
+
     # SELLER HANDLING THE ORDERS FOR THEMSELVES
     path('sellers/orders/', OrderHandleBySellerListCreate.as_view(), name='order-list-create'),
     path('sellers/orders/edit/<int:pk>/', OrderHandleBySellerDetail.as_view(), name='order-detail'),

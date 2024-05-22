@@ -206,6 +206,14 @@ class OrderHandleBySellerListCreate(generics.ListCreateAPIView):
             return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 
+class BuyerOrderList(generics.ListCreateAPIView):
+    serializer_class = OrderSerializer
+    permission_classes = [IsAuthenticated, IsBuyerPermission]
+
+    def get_queryset(self):
+        # Filter orders by the buyer_id of the authenticated user
+        return Order.objects.filter(buyer_id=self.request.user.id)
+
             
 class OrderHandleBySellerDetail(generics.RetrieveUpdateDestroyAPIView):
     serializer_class = OrderHandleBySellerSerializer
