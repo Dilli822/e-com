@@ -49,7 +49,6 @@ const StyledTableCell = styled(TableCell)(({ theme }) => ({
 }));
 
 const StyledTableRow = styled(TableRow)(({ theme }) => ({
-
   "&:nth-of-type(odd)": {
     backgroundColor: theme.palette.action.hover,
   },
@@ -74,7 +73,6 @@ function ManageSellersOrders() {
   useEffect(() => {
     fetchOrders();
   }, []);
-  
 
   const fetchOrders = async () => {
     try {
@@ -90,7 +88,7 @@ function ManageSellersOrders() {
       if (response.ok) {
         const data = await response.json();
         setOrders(data);
-        console.log(data)
+        console.log(data);
       } else {
         setError("Failed to fetch orders");
       }
@@ -101,30 +99,29 @@ function ManageSellersOrders() {
 
   return (
     <GlobalStyles>
-        <br />
+      <br />
       <>
         <Typography variant="h4" gutterBottom>
-         Sellers Orders Catalog
+          Sellers Orders Catalog
         </Typography>
         {error && <Typography color="error">{error}</Typography>}
         <StyledTableContainer component={Paper} elevation={3}>
           <Table aria-label="Orders table">
-            <TableHead >
+            <TableHead>
               <TableRow>
                 <StyledTableCell>Order ID</StyledTableCell>
                 <StyledTableCell>Delivery Address</StyledTableCell>
                 <StyledTableCell>Product Name</StyledTableCell>
                 <StyledTableCell>Products Price</StyledTableCell>
-                <StyledTableCell>Total Price</StyledTableCell>
-                <StyledTableCell>Total Units</StyledTableCell>
+                <StyledTableCell> Units</StyledTableCell>
 
                 <StyledTableCell>Delivery Fee</StyledTableCell>
                 <StyledTableCell>Mode of Payment</StyledTableCell>
-                <StyledTableCell style={{ minWidth: "10rem"}}>Ordered At</StyledTableCell>
-              
+                <StyledTableCell style={{ minWidth: "10rem" }}>
+                  Ordered At
+                </StyledTableCell>
                 <StyledTableCell>Order Shipped</StyledTableCell>
-
-                <StyledTableCell >Order Delivered</StyledTableCell>
+                <StyledTableCell>Order Delivered</StyledTableCell>
                 <StyledTableCell>Order Received</StyledTableCell>
                 <StyledTableCell>Order Cancelled </StyledTableCell>
               </TableRow>
@@ -144,13 +141,12 @@ function ManageSellersOrders() {
                   <StyledTableCellContent>
                     {order.product_price}
                   </StyledTableCellContent>
+                
+
                   <StyledTableCellContent>
-                    {order.product_total_price}
+                    {order.product_units}
                   </StyledTableCellContent>
-                  <StyledTableCellContent>
-                    {order.product_total_unit}
-                  </StyledTableCellContent>
-          
+
                   <StyledTableCellContent>
                     {order.delivery_fee}
                   </StyledTableCellContent>
@@ -221,14 +217,13 @@ function ManageSellersOrders() {
                       </Tooltip>
                     )}
                   </StyledTableCellContent>
-
                 </StyledTableRow>
               ))}
             </TableBody>
           </Table>
         </StyledTableContainer>
       </>
-      <br />      <br />      <br />
+      <br /> <br /> <br />
     </GlobalStyles>
   );
 }

@@ -68,3 +68,8 @@ class OrderSerializer(serializers.ModelSerializer):
     class Meta:
         model = Order
         fields = '__all__'
+        
+class OrderHandleBySellerSerializer(serializers.ModelSerializer):    
+    class Meta:
+        model = Order_For_Seller
+        fields = '__all__'

@@ -155,96 +155,11 @@ class ReviewDetailView(generics.RetrieveUpdateDestroyAPIView):
     permission_classes = [IsAuthenticated]
  
 
-# class OrderListView(APIView):
-#     def get(self, request):
-#         # Retrieve all orders from the database
-#         orders = Order.objects.all()
-#         # Serialize the orders
-#         serializer = OrderSerializer(orders, many=True)
-#         # Return the serialized data
-#         return Response(serializer.data)
+class IsSellerPermission(BasePermission):
+    message = "Only SELLERS can edit orders."
 
-#     def post(self, request):
-#         # Deserialize the request data
-#         serializer = OrderSerializer(data=request.data, many=isinstance(request.data, list))
-#         # Validate the data
-#         if serializer.is_valid():
-#             # Save the validated data
-#             serializer.save()
-#             # Return a success response
-#             return Response(serializer.data, status=status.HTTP_201_CREATED)
-#         # Return an error response if data is invalid
-#         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-    
-
-# class IsSellerPermission(BasePermission):
-#     message = "Only SELLERS can edit orders."
-
-#     def has_permission(self, request, view):
-#         return request.user and request.user.is_authenticated and request.user.is_seller 
-    
-
-# class OrderHandleBySellerListCreate(generics.ListCreateAPIView):
-#     serializer_class = OrderHandleBySellerSerializer
-#     # permission_classes = [IsAuthenticated, IsSellerPermission]
-
-#     def get_queryset(self):
-#         return Order_Handle_By_Seller.objects.filter(seller_user=self.request.user)
-
-#     def create(self, request, *args, **kwargs):
-#         # Handle bulk creation
-#         is_bulk = isinstance(request.data, list)
-#         if is_bulk:
-#             serializer = self.get_serializer(data=request.data, many=True)
-#         else:
-#             serializer = self.get_serializer(data=request.data)
-
-#         if serializer.is_valid():
-#             serializer.save(seller_user=self.request.user)
-#             return Response(serializer.data, status=status.HTTP_201_CREATED)
-#         else:
-#             return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-
-
-# class BuyerOrderList(generics.ListCreateAPIView):
-#     serializer_class = OrderSerializer
-#     # permission_classes = [IsAuthenticated, IsBuyerPermission]
-
-#     def get_queryset(self):
-#         # Filter orders by the buyer_id of the authenticated user
-#         return Order.objects.filter(buyer_id=self.request.user.id)
-
-            
-# class OrderHandleBySellerDetail(generics.RetrieveUpdateDestroyAPIView):
-#     serializer_class = OrderHandleBySellerSerializer
-#     # permission_classes = [IsAuthenticated, IsSellerPermission]
-
-#     def get_queryset(self):
-#         return Order_Handle_By_Seller.objects.filter(seller_user=self.request.user)
-
-#     def perform_update(self, serializer):
-#         # Handle bulk update
-#         is_bulk = isinstance(self.request.data, list)
-#         if is_bulk:
-#             updated_orders = []
-#             for order_data in self.request.data:
-#                 order_id = order_data.get('id')
-#                 if not order_id:
-#                     return Response({"error": "Order ID is required for each order."}, status=status.HTTP_400_BAD_REQUEST)
-#                 try:
-#                     order = Order_Handle_By_Seller.objects.get(id=order_id, seller_user=self.request.user)
-#                 except Order_Handle_By_Seller.DoesNotExist:
-#                     return Response({"error": f"Order with ID {order_id} not found or not owned by you."}, status=status.HTTP_404_NOT_FOUND)
-#                 for key, value in order_data.items():
-#                     setattr(order, key, value)
-#                 order.save()
-#                 updated_orders.append(OrderHandleBySellerSerializer(order).data)
-#             return Response(updated_orders, status=status.HTTP_200_OK)
-#         else:
-#             serializer.save(seller_user=self.request.user)
-
-#     def perform_destroy(self, instance):
-#         instance.delete()
+    def has_permission(self, request, view):
+        return request.user and request.user.is_authenticated and request.user.is_seller 
 
 
 class OrderListView(generics.ListCreateAPIView):
@@ -257,3 +172,16 @@ class OrderListView(generics.ListCreateAPIView):
             serializer.save()
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+    
+
+class SellerOrderListView(generics.ListCreateAPIView):
+    serializer_class = OrderHandleBySellerSerializer
+    permission_classes = [IsAuthenticated, IsSellerPermission]
+
+    def get_queryset(self):
+        # Filter orders to include only those belonging to the authenticated seller
+        return Order_For_Seller.objects.filter(seller_id=self.request.user.id)
+
+    def perform_create(self, serializer):
+        # Ensure that any order created through this view is associated with the authenticated seller
+        serializer.save(seller_id=self.request.user.id)

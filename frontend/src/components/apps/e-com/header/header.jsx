@@ -262,22 +262,25 @@ const Header = () => {
                     },
                   }}
                 >
-                  <MenuItem onClick={handleClose}>
-                    <Link
+                         <Link
                       to={profileLink}
                       style={{ textDecoration: "none", color: "inherit" }}
                     >
-                      Profile
-                    </Link>
-                  </MenuItem>
                   <MenuItem onClick={handleClose}>
+             
+                      Profile
+                      </MenuItem>
+                    </Link>
                     <Link
                       to="/buyer/order/list/"
                       style={{ textDecoration: "none", color: "inherit" }}
                     >
+                  <MenuItem onClick={handleClose}>
+               
                       Orders
-                    </Link>
+               
                   </MenuItem>
+                  </Link>
                 </Menu>
                 {isMobile && (
                   <IconButton

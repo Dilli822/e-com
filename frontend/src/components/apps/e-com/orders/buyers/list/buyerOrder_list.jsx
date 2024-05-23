@@ -21,7 +21,7 @@ const GlobalStyles = styled("div")({
   html: {
     margin: 0,
     padding: 0,
-    width: "100%",
+    width: "100%"
   },
   body: {
     margin: 0,
@@ -49,7 +49,6 @@ const StyledTableCell = styled(TableCell)(({ theme }) => ({
 }));
 
 const StyledTableRow = styled(TableRow)(({ theme }) => ({
-
   "&:nth-of-type(odd)": {
     backgroundColor: theme.palette.action.hover,
   },
@@ -78,7 +77,7 @@ function BuyersOrdersList() {
   const fetchOrders = async () => {
     try {
       const response = await fetch(
-        "http://127.0.0.1:8000/e-com/api/orders/list/",
+        "http://127.0.0.1:8000/e-com/api/orders/",
         {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("accessToken")}`,
@@ -99,15 +98,15 @@ function BuyersOrdersList() {
 
   return (
     <GlobalStyles>
-        <br />
+      <br />
       <FullPageContainer>
         <Typography variant="h4" gutterBottom>
           Buyers Orders Catalog
         </Typography>
-        
+
         {error && <Typography color="error">{error}</Typography>}
         <StyledTableContainer component={Paper} elevation={3}>
-          <Table aria-label="Orders table">
+          <Table aria-label="Orders table" style={{ cursor: "pointer"}}>
             <TableHead>
               <TableRow>
                 <StyledTableCell>Order ID</StyledTableCell>

@@ -235,20 +235,20 @@ export default function CheckOut() {
         .join(", "),
       product_total_price: product_total_price,
 
-      product_total_unit: extractedItems.reduce(
+      product_total_units: extractedItems.reduce(
         (total, item) => total + (item.quantity || 0),
         0
       ),
 
       product_category_name: checkOutItems
         .map((item) => item.product.category_name)
-        .join(","),
+        .join(", "),
       product_category: checkOutItems
         .map((item) => item.product.category)
-        .join(","),
+        .join(", "),
       delivery_fee: deliveryFee,
       mode_of_payment: shipping.details.modeOfPayment,
-      seller_user: seller.details.map((seller) => seller.id).join(","),
+      seller_id: seller.details.map((seller) => seller.id).join(", "),
       order_delivered: false,
       order_pending: true,
       order_shipped: false,
