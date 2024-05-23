@@ -208,3 +208,7 @@ def copy_order_to_order_for_seller(sender, instance, created, **kwargs):
                 order_pending=instance.order_pending,
                 order_shipped=instance.order_shipped,
             )
+
+
+
+

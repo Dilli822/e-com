@@ -29,6 +29,6 @@ urlpatterns = [
 
     # # SELLER HANDLING THE ORDERS FOR THEMSELVES
     path('sellers/orders/', SellerOrderListView.as_view(), name='order-list-create'),
-    # path('sellers/orders/edit/<int:pk>/', OrderHandleBySellerDetail.as_view(), name='order-detail'),
+    path('sellers/orders/edit/bulk/', SellerOrderBulkUpdateDeleteView.as_view(), name='order-bulk'),
     
 ]

@@ -51,7 +51,6 @@ class SellerProductDetails(generics.RetrieveUpdateDestroyAPIView):
         # Delete the product
         instance.delete()
 
-
 class CategoryDetail(generics.CreateAPIView):
     queryset = Category.objects.all()
     serializer_class = CategorySerializer
@@ -67,7 +66,6 @@ class CategoryDetail(generics.CreateAPIView):
         # If the user is a seller, proceed with category creation
         return super().post(request, *args, **kwargs)
     
-
 class ProductList(generics.ListAPIView):
     permission_classes = []
     queryset = Product.objects.all()
@@ -165,7 +163,8 @@ class IsSellerPermission(BasePermission):
 class OrderListView(generics.ListCreateAPIView):
     queryset = Order.objects.all()
     serializer_class = OrderSerializer
-
+    permission_classes = [IsAuthenticated, IsBuyerPermission]
+    
     def post(self, request, *args, **kwargs):
         serializer = self.get_serializer(data=request.data)
         if serializer.is_valid():
@@ -182,6 +181,36 @@ class SellerOrderListView(generics.ListCreateAPIView):
         # Filter orders to include only those belonging to the authenticated seller
         return Order_For_Seller.objects.filter(seller_id=self.request.user.id)
 
-    def perform_create(self, serializer):
-        # Ensure that any order created through this view is associated with the authenticated seller
-        serializer.save(seller_id=self.request.user.id)
+        
+class SellerOrderBulkUpdateDeleteView(APIView):
+    permission_classes = [IsAuthenticated, IsSellerPermission]
+    serializer_class = OrderHandleBySellerSerializer
+
+    def put(self, request, *args, **kwargs):
+        if isinstance(request.data, list):
+            response_data = []
+            for data in request.data:
+                order_id = data.get('id')
+                if not order_id:
+                    continue
+                try:
+                    order = Order_For_Seller.objects.get(id=order_id, seller_id=request.user.id)
+                    serializer = self.serializer_class(order, data=data, partial=True)
+                    serializer.is_valid(raise_exception=True)
+                    serializer.save()
+                    response_data.append(serializer.data)
+                except Order_For_Seller.DoesNotExist:
+                    continue
+            return Response(response_data, status=status.HTTP_200_OK)
+        else:
+            return Response({"detail": "Expected a list of items to update."}, status=status.HTTP_400_BAD_REQUEST)
+
+    def delete(self, request, *args, **kwargs):
+        if isinstance(request.data, list):
+            order_ids = [item.get('id') for item in request.data if item.get('id')]
+            if not order_ids:
+                return Response({"detail": "No valid order IDs provided."}, status=status.HTTP_400_BAD_REQUEST)
+            deleted_count, _ = Order_For_Seller.objects.filter(id__in=order_ids, seller_id=request.user.id).delete()
+            return Response({"deleted": deleted_count}, status=status.HTTP_204_NO_CONTENT)
+        else:
+            return Response({"detail": "Expected a list of items to delete."}, status=status.HTTP_400_BAD_REQUEST)

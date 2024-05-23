@@ -181,11 +181,14 @@ const Header = () => {
           <ListItemText primary="Profile" />
         </Link>
       </ListItem>
-      <ListItem button onClick={handleClose}>
-        <Link to="buyer/order/list" style={{ textDecoration: "none", color: "inherit" }}>
+      {/* <ListItem button onClick={handleClose}>
+        <Link
+          to="buyer/order/list"
+          style={{ textDecoration: "none", color: "inherit" }}
+        >
           <ListItemText primary="Orders" />
         </Link>
-      </ListItem>
+      </ListItem> */}
     </List>
   );
 
@@ -203,7 +206,11 @@ const Header = () => {
                   to="/feed"
                   style={{ textDecoration: "none", color: "inherit" }}
                 >
-                   <img src={HeadLogo} alt="" style={{ width: "60px", borderRadius: "15%"}}/>
+                  <img
+                    src={HeadLogo}
+                    alt=""
+                    style={{ width: "60px", borderRadius: "15%" }}
+                  />
                 </Link>
               </Typography>
             </Grid>
@@ -219,7 +226,6 @@ const Header = () => {
                   id="masterSearchInput"
                 />
                 &nbsp;
-
                 {searchText && (
                   <IconButton
                     className={classes.closeIcon}
@@ -262,25 +268,18 @@ const Header = () => {
                     },
                   }}
                 >
-                         <Link
-                      to={profileLink}
-                      style={{ textDecoration: "none", color: "inherit" }}
-                    >
-                  <MenuItem onClick={handleClose}>
-             
-                      Profile
-                      </MenuItem>
-                    </Link>
-                    <Link
-                      to="/buyer/order/list/"
-                      style={{ textDecoration: "none", color: "inherit" }}
-                    >
-                  <MenuItem onClick={handleClose}>
-               
-                      Orders
-               
-                  </MenuItem>
+                  <Link
+                    to={profileLink}
+                    style={{ textDecoration: "none", color: "inherit" }}
+                  >
+                    <MenuItem onClick={handleClose}>Profile</MenuItem>
                   </Link>
+                  {/* <Link
+                    to="/buyer/order/list/"
+                    style={{ textDecoration: "none", color: "inherit" }}
+                  >
+                    <MenuItem onClick={handleClose}>Orders</MenuItem>
+                  </Link> */}
                 </Menu>
                 {isMobile && (
                   <IconButton
