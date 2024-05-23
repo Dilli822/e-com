@@ -248,7 +248,7 @@ export default function CheckOut() {
         .join(","),
       delivery_fee: deliveryFee,
       mode_of_payment: shipping.details.modeOfPayment,
-      seller_id: seller.details.map((seller) => seller.id).join(","),
+      seller_user: seller.details.map((seller) => seller.id).join(","),
       order_delivered: false,
       order_pending: true,
       order_shipped: false,

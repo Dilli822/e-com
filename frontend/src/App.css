@@ -20,3 +20,7 @@ li{
 #masterSearchInput{
   padding: 10px 8px!important;
 }
+
+.css-1oqqzyl-MuiContainer-root{
+  max-width: 100%!important;
+}

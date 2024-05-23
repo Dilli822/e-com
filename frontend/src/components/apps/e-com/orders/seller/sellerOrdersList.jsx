@@ -37,7 +37,7 @@ const FullPageContainer = styled(Container)({
   paddingTop: 0,
   paddingBottom: 0,
   margin: 0,
-  width: "100%",
+  width: "100%!important",
   display: "flex",
   flexDirection: "column",
   maxWidth: "100% !important", // Override any default maxWidth
@@ -67,18 +67,19 @@ const StyledTableCellContent = styled(TableCell)({
   wordBreak: "break-word",
 });
 
-function BuyersOrdersList() {
+function ManageSellersOrders() {
   const [orders, setOrders] = useState([]);
   const [error, setError] = useState(null);
 
   useEffect(() => {
     fetchOrders();
   }, []);
+  
 
   const fetchOrders = async () => {
     try {
       const response = await fetch(
-        "http://127.0.0.1:8000/e-com/api/orders/list/",
+        "http://127.0.0.1:8000/e-com/api/sellers/orders/",
         {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("accessToken")}`,
@@ -89,6 +90,7 @@ function BuyersOrdersList() {
       if (response.ok) {
         const data = await response.json();
         setOrders(data);
+        console.log(data)
       } else {
         setError("Failed to fetch orders");
       }
@@ -100,15 +102,14 @@ function BuyersOrdersList() {
   return (
     <GlobalStyles>
         <br />
-      <FullPageContainer>
+      <>
         <Typography variant="h4" gutterBottom>
-          Buyers Orders Catalog
+         Sellers Orders Catalog
         </Typography>
-        
         {error && <Typography color="error">{error}</Typography>}
         <StyledTableContainer component={Paper} elevation={3}>
           <Table aria-label="Orders table">
-            <TableHead>
+            <TableHead >
               <TableRow>
                 <StyledTableCell>Order ID</StyledTableCell>
                 <StyledTableCell>Delivery Address</StyledTableCell>
@@ -116,14 +117,16 @@ function BuyersOrdersList() {
                 <StyledTableCell>Products Price</StyledTableCell>
                 <StyledTableCell>Total Price</StyledTableCell>
                 <StyledTableCell>Total Units</StyledTableCell>
-                <StyledTableCell>Order Placed</StyledTableCell>
+
                 <StyledTableCell>Delivery Fee</StyledTableCell>
                 <StyledTableCell>Mode of Payment</StyledTableCell>
-                <StyledTableCell>Ordered At</StyledTableCell>
+                <StyledTableCell style={{ minWidth: "10rem"}}>Ordered At</StyledTableCell>
+              
                 <StyledTableCell>Order Shipped</StyledTableCell>
 
+                <StyledTableCell >Order Delivered</StyledTableCell>
                 <StyledTableCell>Order Received</StyledTableCell>
-                <StyledTableCell>Order Placed </StyledTableCell>
+                <StyledTableCell>Order Cancelled </StyledTableCell>
               </TableRow>
             </TableHead>
             <TableBody>
@@ -147,9 +150,7 @@ function BuyersOrdersList() {
                   <StyledTableCellContent>
                     {order.product_total_unit}
                   </StyledTableCellContent>
-                  <StyledTableCellContent>
-                    {order.order_placed_by_buyer ? "Yes" : "No"}
-                  </StyledTableCellContent>
+          
                   <StyledTableCellContent>
                     {order.delivery_fee}
                   </StyledTableCellContent>
@@ -204,14 +205,32 @@ function BuyersOrdersList() {
                       </Tooltip>
                     )}
                   </StyledTableCellContent>
+
+                  <StyledTableCellContent>
+                    {order.order_cancelled ? (
+                      <Tooltip title="Placed by Buyer">
+                        <IconButton>
+                          <CheckCircleIcon style={{ color: "green" }} />
+                        </IconButton>
+                      </Tooltip>
+                    ) : (
+                      <Tooltip title="Blocked">
+                        <IconButton>
+                          <CancelIcon color="error" />
+                        </IconButton>
+                      </Tooltip>
+                    )}
+                  </StyledTableCellContent>
+
                 </StyledTableRow>
               ))}
             </TableBody>
           </Table>
         </StyledTableContainer>
-      </FullPageContainer>
+      </>
+      <br />      <br />      <br />
     </GlobalStyles>
   );
 }
 
-export default BuyersOrdersList;
+export default ManageSellersOrders;
