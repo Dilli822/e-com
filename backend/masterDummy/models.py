@@ -2,10 +2,9 @@ from django.conf import settings
 from django.db import models 
 from account.models import SellerProfile, BuyerProfile, UserData
 import uuid
-from django.db.models.signals import pre_save
+from django.db.models.signals import pre_save,post_save
 from django.dispatch import receiver
 from django.utils import timezone
-
 
 class Category(models.Model):
     name = models.CharField(max_length=100, unique=True)
@@ -87,63 +86,198 @@ class Cart(models.Model):
 class CartItem(models.Model):
     pass 
 
-def generate_hex_uuid():
-    return uuid.uuid4().hex
-
 
 # class Order(models.Model):
 #     id = models.BigAutoField(primary_key=True)
-#     order_id = models.CharField(max_length=16, editable=False, default=uuid.uuid4().hex)
-#     product_name = models.TextField( blank=True)
-#     product_description = models.TextField(blank=True)
-#     product_price = models.TextField(default=0.00, blank=True)
-#     product_category = models.CharField(max_length=255, blank=True, default=0)
-#     product_category_name = models.TextField( blank=True)
-#     seller_id = models.TextField(default=0, unique=False)
-
+#     order_id = models.CharField(max_length=16, editable=False, default=uuid.uuid4().hex, unique=True)
     
+#     product_name = models.TextField()
+#     product_description = models.TextField()
+#     product_price = models.TextField()
+#     product_category = models.TextField()
+#     product_category_name = models.TextField()
+#     product_total_units = models.TextField()
+#     product_units = models.TextField()
+#     product_total_price = models.TextField()
 
+#     buyer_id = models.CharField(max_length=255)
+#     buyer_delivery_address= models.CharField(max_length=255)
+#     buyer_full_name = models.CharField(max_length=255)
+#     buyer_email = models.CharField(max_length=125)
+    
+    
+#     seller_id = models.TextField(default=0, unique=False)
+#     created_at = models.DateTimeField(auto_now_add=True)
+#     updated_at = models.DateTimeField(auto_now=True)
 
+#     delivery_fee = models.CharField(max_length=125)
+#     mode_of_payment = models.CharField(max_length=125, default="Cash on Delivery")
+    
+#     order_placed_by_buyer = models.BooleanField(default=True)
+#     order_delivered = models.BooleanField(default=False)
+#     order_pending = models.BooleanField(default=True)
+#     order_shipped = models.BooleanField(default=False)
+    
+#     def __str__(self):
+#         return f'Order {self.order_id} by {self.buyer_full_name}'
 
+#     class Meta:
+#         verbose_name = "Order"
+#         verbose_name_plural = "Orders"
+    
 # class Order_For_Seller(models.Model):
 #     id = models.BigAutoField(primary_key=True)
-#     order_id = models.CharField(max_length=16, editable=False, default=uuid.uuid4().hex)
-#     product_name = models.TextField( blank=True)
-#     product_description = models.TextField(blank=True)
-#     product_price = models.TextField(default=0.00, blank=True)
-#     product_category = models.CharField(max_length=255, blank=True, default=0)
-#     product_category_name = models.TextField( blank=True)
-#     seller_id = models.TextField(default=0, unique=False)
+#     order_id = models.CharField(max_length=16, editable=False, default=uuid.uuid4().hex, unique=False)
+    
+#     product_name = models.TextField()
+#     product_description = models.TextField()
+#     product_price = models.TextField()
+#     product_category = models.TextField()
+#     product_category_name = models.TextField()
+#     product_total_units = models.TextField()
+#     product_units = models.TextField()
+#     product_total_price = models.TextField()
 
+#     buyer_id = models.CharField(max_length=255)
+#     buyer_delivery_address= models.CharField(max_length=255)
+#     buyer_full_name = models.CharField(max_length=255)
+#     buyer_email = models.CharField(max_length=125)
+    
+    
+#     seller_id = models.TextField(default=0, unique=False)
+#     created_at = models.DateTimeField(auto_now_add=True)
+#     updated_at = models.DateTimeField(auto_now=True)
+
+#     delivery_fee = models.CharField(max_length=125)
+#     mode_of_payment = models.CharField(max_length=125, default="Cash on Delivery")
+    
+#     order_placed_by_buyer = models.BooleanField(default=True)
+#     order_delivered = models.BooleanField(default=False)
+#     order_pending = models.BooleanField(default=True)
+#     order_shipped = models.BooleanField(default=False)
+#     order_cancelled_by_seller = models.BooleanField(default=False)
+    
+#     def __str__(self):
+#         return f'Order {self.order_id} by {self.buyer_full_name}'
+
+#     class Meta:
+#         verbose_name = "Order"
+#         verbose_name_plural = "Orders"
+# # Signal to copy data from Order to Order_For_Seller based on seller_id
+# @receiver(post_save, sender=Order)
+# def copy_order_to_order_for_seller(sender, instance, created, **kwargs):
+#     if created:
+#         # Split seller_id if there are multiple ids
+#         seller_ids = str(instance.seller_id).split(', ')
+#         product_names = str(instance.product_name).split(', ')
+#         product_descriptions = str(instance.product_description).split(', ')
+#         product_prices = str(instance.product_price).split(', ')
+#         product_categories = str(instance.product_category).split(', ')
+#         product_category_names = str(instance.product_category_name).split(', ')
+        
+#         for i, seller_id in enumerate(seller_ids):
+#             Order_For_Seller.objects.create(
+#                 order_id=instance.order_id,
+#                 product_name=product_names[i].strip(),
+#                 product_description=product_descriptions[i].strip(),
+#                 product_price=product_prices[i].strip(),
+#                 product_category=product_categories[i].strip(),
+#                 product_category_name=product_category_names[i].strip(),
+#                 seller_id=seller_id.strip()
+#             )
+
+
+
+import uuid
 from django.db import models
-from django.db.models.signals import post_save
+from django.db.models.signals import pre_save
 from django.dispatch import receiver
 
 class Order(models.Model):
     id = models.BigAutoField(primary_key=True)
-    order_id = models.BigIntegerField(editable=False, null=True)
-    product_name = models.TextField(blank=True)
-    product_description = models.TextField(blank=True)
-    product_price = models.TextField(blank=True)
-    product_category = models.TextField(blank=True, default=0)
-    product_category_name = models.TextField(blank=True)
+    order_id = models.CharField(max_length=16, editable=False)
+    
+    product_name = models.TextField()
+    product_description = models.TextField()
+    product_price = models.TextField()
+    product_category = models.TextField()
+    product_category_name = models.TextField()
+    product_total_units = models.TextField()
+    product_units = models.TextField()
+    product_total_price = models.TextField()
+
+    buyer_id = models.CharField(max_length=255)
+    buyer_delivery_address = models.CharField(max_length=255)
+    buyer_full_name = models.CharField(max_length=255)
+    buyer_email = models.CharField(max_length=125)
+    
     seller_id = models.TextField(default=0, unique=False)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    delivery_fee = models.CharField(max_length=125)
+    mode_of_payment = models.CharField(max_length=125, default="Cash on Delivery")
+    
+    order_placed_by_buyer = models.BooleanField(default=True)
+    order_delivered = models.BooleanField(default=False)
+    order_pending = models.BooleanField(default=True)
+    order_shipped = models.BooleanField(default=False)
+    
+    def __str__(self):
+        return f'Order {self.order_id} by {self.buyer_full_name}'
+
+    class Meta:
+        verbose_name = "Order"
+        verbose_name_plural = "Orders"
 
 class Order_For_Seller(models.Model):
     id = models.BigAutoField(primary_key=True)
-    order_id = models.BigIntegerField(editable=False, null=True)
-    product_name = models.TextField(blank=True)
-    product_description = models.TextField(blank=True)
-    product_price = models.TextField(blank=True)
-    product_category = models.TextField(blank=True, default=0)
-    product_category_name = models.TextField(blank=True)
+    order_id = models.CharField(max_length=16, editable=False)
+    
+    product_name = models.TextField()
+    product_description = models.TextField()
+    product_price = models.TextField()
+    product_category = models.TextField()
+    product_category_name = models.TextField()
+    product_total_units = models.TextField()
+    product_units = models.TextField()
+    product_total_price = models.TextField()
+
+    buyer_id = models.CharField(max_length=255)
+    buyer_delivery_address = models.CharField(max_length=255)
+    buyer_full_name = models.CharField(max_length=255)
+    buyer_email = models.CharField(max_length=125)
+    
     seller_id = models.TextField(default=0, unique=False)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    delivery_fee = models.CharField(max_length=125)
+    mode_of_payment = models.CharField(max_length=125, default="Cash on Delivery")
+    
+    order_placed_by_buyer = models.BooleanField(default=True)
+    order_delivered = models.BooleanField(default=False)
+    order_pending = models.BooleanField(default=True)
+    order_shipped = models.BooleanField(default=False)
+    order_cancelled_by_seller = models.BooleanField(default=False)
+    
+    def __str__(self):
+        return f'Order {self.order_id} by {self.buyer_full_name}'
+
+    class Meta:
+        verbose_name = "Order for Seller"
+        verbose_name_plural = "Orders for Sellers"
+
+# Signal to generate a unique UUID for order_id before saving
+@receiver(pre_save, sender=Order)
+def generate_order_id(sender, instance, **kwargs):
+    if not instance.order_id:
+        instance.order_id = uuid.uuid4().hex
 
 # Signal to copy data from Order to Order_For_Seller based on seller_id
 @receiver(post_save, sender=Order)
 def copy_order_to_order_for_seller(sender, instance, created, **kwargs):
     if created:
-        # Split seller_id if there are multiple ids
         seller_ids = str(instance.seller_id).split(', ')
         product_names = str(instance.product_name).split(', ')
         product_descriptions = str(instance.product_description).split(', ')
@@ -154,10 +288,23 @@ def copy_order_to_order_for_seller(sender, instance, created, **kwargs):
         for i, seller_id in enumerate(seller_ids):
             Order_For_Seller.objects.create(
                 order_id=instance.order_id,
-                product_name=product_names[i].strip(),
-                product_description=product_descriptions[i].strip(),
-                product_price=product_prices[i].strip(),
-                product_category=product_categories[i].strip(),
-                product_category_name=product_category_names[i].strip(),
-                seller_id=seller_id.strip()
+                product_name=product_names[i].strip() if i < len(product_names) else '',
+                product_description=product_descriptions[i].strip() if i < len(product_descriptions) else '',
+                product_price=product_prices[i].strip() if i < len(product_prices) else '',
+                product_category=product_categories[i].strip() if i < len(product_categories) else '',
+                product_category_name=product_category_names[i].strip() if i < len(product_category_names) else '',
+                product_total_units=instance.product_total_units,
+                product_units=instance.product_units,
+                product_total_price=instance.product_total_price,
+                buyer_id=instance.buyer_id,
+                buyer_delivery_address=instance.buyer_delivery_address,
+                buyer_full_name=instance.buyer_full_name,
+                buyer_email=instance.buyer_email,
+                seller_id=seller_id.strip(),
+                delivery_fee=instance.delivery_fee,
+                mode_of_payment=instance.mode_of_payment,
+                order_placed_by_buyer=instance.order_placed_by_buyer,
+                order_delivered=instance.order_delivered,
+                order_pending=instance.order_pending,
+                order_shipped=instance.order_shipped,
             )
