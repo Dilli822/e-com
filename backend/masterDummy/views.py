@@ -214,3 +214,11 @@ class SellerOrderBulkUpdateDeleteView(APIView):
             return Response({"deleted": deleted_count}, status=status.HTTP_204_NO_CONTENT)
         else:
             return Response({"detail": "Expected a list of items to delete."}, status=status.HTTP_400_BAD_REQUEST)
+        
+        
+from django.http import HttpResponse
+from .tasks import extract_and_store_orders  # Import the extraction function
+
+def trigger_extraction(request):
+    extract_and_store_orders()
+    return HttpResponse("Orders have been extracted and stored.")

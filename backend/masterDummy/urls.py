@@ -30,5 +30,5 @@ urlpatterns = [
     # # SELLER HANDLING THE ORDERS FOR THEMSELVES
     path('sellers/orders/', SellerOrderListView.as_view(), name='order-list-create'),
     path('sellers/orders/edit/bulk/', SellerOrderBulkUpdateDeleteView.as_view(), name='order-bulk'),
-    
+     path('trigger_extraction/', trigger_extraction, name='trigger_extraction'),
 ]

@@ -127,6 +127,12 @@ class Order(models.Model):
     class Meta:
         verbose_name = "Order"
         verbose_name_plural = "Orders"
+        
+# Signal to generate a unique UUID for order_id before saving
+@receiver(pre_save, sender=Order)
+def generate_order_id(sender, instance, **kwargs):
+    if not instance.order_id:
+        instance.order_id = uuid.uuid4().hex
 
 class Order_For_Seller(models.Model):
     id = models.BigAutoField(primary_key=True)
@@ -166,12 +172,6 @@ class Order_For_Seller(models.Model):
         verbose_name = "Order for Seller"
         verbose_name_plural = "Orders for Sellers"
 
-# Signal to generate a unique UUID for order_id before saving
-@receiver(pre_save, sender=Order)
-def generate_order_id(sender, instance, **kwargs):
-    if not instance.order_id:
-        instance.order_id = uuid.uuid4().hex
-
 # Signal to copy data from Order to Order_For_Seller based on seller_id
 @receiver(post_save, sender=Order)
 def copy_order_to_order_for_seller(sender, instance, created, **kwargs):
@@ -208,7 +208,36 @@ def copy_order_to_order_for_seller(sender, instance, created, **kwargs):
                 order_pending=instance.order_pending,
                 order_shipped=instance.order_shipped,
             )
+            
 
+class OrderArchive(models.Model):
+    id = models.BigAutoField(primary_key=True)
+    order_id = models.CharField(max_length=16, editable=False)
+    product_names = models.TextField(null=True, blank=True)
+    product_descriptions = models.TextField(null=True, blank=True)
+    product_prices = models.TextField(null=True, blank=True)
+    product_categories = models.TextField(null=True, blank=True)
+    product_category_names = models.TextField(null=True, blank=True)
+    product_total_units = models.TextField(null=True, blank=True)
+    product_units = models.TextField(null=True, blank=True)
+    product_total_price = models.TextField(null=True, blank=True)
 
+    buyer_id = models.CharField(max_length=2555, null=True, blank=True)
+    buyer_delivery_address = models.CharField(max_length=255, null=True, blank=True)
+    buyer_full_name = models.CharField(max_length=255, null=True, blank=True)
+    buyer_email = models.CharField(max_length=125, null=True, blank=True)
+    
+    seller_id = models.TextField(default=0, unique=False)
+    created_at = models.DateTimeField(auto_now_add=True,null=True, blank=True)
+    updated_at = models.DateTimeField(auto_now=True,null=True, blank=True)
 
+    delivery_fee = models.CharField(max_length=125,null=True, blank=True)
+    mode_of_payment = models.CharField(max_length=125, default="Cash on Delivery")
+    
+    order_placed_by_buyer = models.BooleanField(default=True)
+    order_delivered = models.BooleanField(default=False)
+    order_pending = models.BooleanField(default=True)
+    order_shipped = models.BooleanField(default=False)
 
+    def __str__(self):
+        return f"Archived Order {self.order_id}"
