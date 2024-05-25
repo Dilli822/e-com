@@ -190,7 +190,7 @@ const Header = () => {
         <Container>
           <Grid
             container
-            style={{ display: "flex", alignItems: "center", padding: "5px 0" }}
+            style={{ display: "flex", alignItems: "center", padding: "3px 0" }}
           >
             <Grid item xs={3} md={3}>
               <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>

@@ -13,7 +13,9 @@ import {
   TextField,
 } from "@material-ui/core";
 import AppFooter from "../../footer/footer";
+import PublicHeader from "../../header/headerPublic";
 import AppHeader from "../../header/header";
+
 import ReviewList from "../../reviews/list/reviewList";
 import CartDetails from "../../cart/cartDetails";
 
@@ -46,10 +48,10 @@ export default function ProductDetails() {
     </Container>
     ;
   }
-
+  const accessToeken = localStorage.getItem("accessToken");
   return (
     <>
-      <AppHeader />
+  {accessToeken ? <AppHeader /> : <PublicHeader />}
       <br />
       <Container>
         <Grid container spacing={1}>

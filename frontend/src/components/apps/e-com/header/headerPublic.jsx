@@ -91,7 +91,7 @@ const HeaderPublic = () => {
   const location = useLocation();
   // Check if current route is /login or /signup
   const isAuthPage =
-    location.pathname === "/login" || location.pathname === "/signup";
+    location.pathname === "/login" || location.pathname === "/signup" || location.pathname === "/forgot-password";
 
   const navigate = useNavigate();
   const [drawerOpen, setDrawerOpen] = useState(false);
@@ -202,7 +202,7 @@ const HeaderPublic = () => {
                   <img
                     src={HeadLogo}
                     alt=""
-                    style={{ width: "60px", borderRadius: "15%" }}
+                    style={{ width: "60px", borderRadius: "45%" }}
                   />
                 </Link>
               </Typography>

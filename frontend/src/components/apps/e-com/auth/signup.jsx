@@ -18,8 +18,7 @@ import { FormControl, InputLabel } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 
 import HeaderPublic from "../header/headerPublic";
-import AppFooter from '../footer/footer';
-
+import AppFooter from "../footer/footer";
 
 const theme = createTheme();
 
@@ -103,7 +102,7 @@ export default function SignUp() {
 
   return (
     <ThemeProvider theme={theme}>
-                  <HeaderPublic />
+      <HeaderPublic />
 
       <Container component="main" maxWidth="xs">
         <CssBaseline />
@@ -233,9 +232,9 @@ export default function SignUp() {
           )}
         </Box>
       </Container>
-      <br/>
-      <br/>
-      <AppFooter/>
+      <br />
+      <br />
+      <AppFooter />
     </ThemeProvider>
   );
 }

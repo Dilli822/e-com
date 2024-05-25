@@ -182,8 +182,8 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-EMAIL_HOST_USER = 'testingbot202424@gmail.com'
-EMAIL_HOST_PASSWORD = 'sngt apkk xtoj aagq'
+EMAIL_HOST_USER = 'f25836105@gmail.com'
+EMAIL_HOST_PASSWORD = 'bvjo jzkz jzae qvkn'
 
 
 # settings.py
@@ -274,4 +274,6 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media/'
 
 STATIC_ROOT = BASE_DIR / 'staticfiles'
+
+SSL_CERT_FILE = '/backend/cacert.pem'
 

@@ -60,7 +60,7 @@ const ForgotPassword = () => {
   return (
     <>
       <AppHeader />
-      <Container maxWidth="sm">
+      <Container maxWidth="sm" style={{ minHeight: "35vh"}}>
         <Box
           sx={{
             marginTop: 8,
