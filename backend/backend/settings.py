@@ -277,3 +277,11 @@ STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 SSL_CERT_FILE = '/backend/cacert.pem'
 
+
+
+import ssl
+import certifi
+
+# Create SSL context and load CA certs
+context = ssl.create_default_context(cafile=certifi.where())
+
