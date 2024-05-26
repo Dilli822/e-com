@@ -2,6 +2,7 @@ import AppFooter from "../../footer/footer";
 import Header from "../../header/header";
 import BuyerProfileUpdate from "./update_profile";
 import { makeStyles } from "@mui/styles";
+import { useLocation, useNavigate, Link } from "react-router-dom";
 import {
   Container,
   Card,
@@ -30,9 +31,38 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+
+
+
 export default function BuyerProfile() {
   const classes = useStyles();
-
+  const accessToken = localStorage.getItem("accessToken");
+  if (!accessToken) {
+    return (
+      <>
+        <Container>
+          <Typography
+            variant="h6"
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              justifyContent: "center",
+              height: "100vh",
+            }}
+          >
+            <span>You are not authorized to access this!</span>
+            <Link to={`/login`} style={{ color: "inherit", marginTop: "8px" }}>
+              <Button color="secondary" variant="contained">
+                <span>Please Login </span>
+              </Button>
+            </Link>
+          </Typography>
+        </Container>
+      </>
+    ); // Don't render form if there's no access token
+  }
+  
   return (
     <>
       <Header />

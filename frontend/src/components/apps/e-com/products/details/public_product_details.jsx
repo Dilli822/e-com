@@ -1,7 +1,5 @@
-
-
 import React, { useEffect } from "react";
-import { useLocation, useNavigate , Link} from "react-router-dom";
+import { useLocation, useNavigate, Link } from "react-router-dom";
 import {
   Typography,
   Grid,
@@ -35,23 +33,32 @@ export default function ProductDetails() {
   };
 
   if (!product) {
-    return <Container>
-    <Typography variant="h6" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '100vh' }}>
-      <span>No Product Selected! Something went wrong!!</span>
-      <Link to={`/`} style={{ color: 'inherit', marginTop: '8px' }}>
-        <Button color="secondary" variant="contained">
-        <span>Please Go Back</span>
-        </Button>
-  
-      </Link>
-    </Typography>
-    </Container>
-    ;
+    return (
+      <Container>
+        <Typography
+          variant="h6"
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            justifyContent: "center",
+            height: "100vh",
+          }}
+        >
+          <span>No Product Selected! Something went wrong!!</span>
+          <Link to={`/`} style={{ color: "inherit", marginTop: "8px" }}>
+            <Button color="secondary" variant="contained">
+              <span>Please Go Back</span>
+            </Button>
+          </Link>
+        </Typography>
+      </Container>
+    );
   }
   const accessToeken = localStorage.getItem("accessToken");
   return (
     <>
-  {accessToeken ? <AppHeader /> : <PublicHeader />}
+      {accessToeken ? <AppHeader /> : <PublicHeader />}
       <br />
       <Container>
         <Grid container spacing={1}>
@@ -71,7 +78,9 @@ export default function ProductDetails() {
             <Card>
               <CardContent>
                 <Typography variant="h5">{product.product_name}</Typography>
-                <Typography variant="body1">Product Id: #{product.id}</Typography>
+                <Typography variant="body1">
+                  Product Id: #{product.id}
+                </Typography>
                 <Typography variant="body1">{product.description}</Typography>
                 <br />
                 <Typography variant="body1">Stock: {product.stock}</Typography>
@@ -81,7 +90,6 @@ export default function ProductDetails() {
                 <br />
 
                 <Typography variant="h5">Price: ${product.price}</Typography>
-
 
                 <Button
                   variant="contained"

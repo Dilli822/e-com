@@ -4,10 +4,10 @@ import SellerProfileUpdate from "./update_seller_profile";
 import ProductForm from "../../products/seller/uploadProducts/uploadProducts";
 import AppFooter from "../../footer/footer";
 import { makeStyles } from "@mui/styles";
-import { Container, Card, Button, Grid } from "@mui/material";
+import { Container, Card, Button, Grid, Typography } from "@mui/material";
 import EditProductForm from "../../products/seller/editProducts/editProducts";
 import ManageSellersOrders from "../../orders/seller/sellerOrdersList";
-
+import { useLocation, useNavigate, Link } from "react-router-dom";
 const useStyles = makeStyles((theme) => ({
   root: {
     paddingTop: theme.spacing(4),
@@ -54,6 +54,34 @@ export default function SellerProfile() {
     setShowProfileUpdate(false);
     setShowManageOrders(true);
   }
+
+  const accessToken = localStorage.getItem("accessToken");
+  if (!accessToken) {
+    return (
+      <>
+        <Container>
+          <Typography
+            variant="h6"
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              justifyContent: "center",
+              height: "100vh",
+            }}
+          >
+            <span>You are not authorized to access this!</span>
+            <Link to={`/login`} style={{ color: "inherit", marginTop: "8px" }}>
+              <Button color="secondary" variant="contained">
+                <span>Please Login </span>
+              </Button>
+            </Link>
+          </Typography>
+        </Container>
+      </>
+    ); // Don't render form if there's no access token
+  }
+  
 
   return (
     <>

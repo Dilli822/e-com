@@ -40,16 +40,16 @@ const MainRouter = () => {
         <Route path="/e-com/reset-password/:token" element={<ResetPasswordConfirm />} />
         <Route path="/edit/category" element={<CRUDCategoryForm />} />
         <Route path="/product/upload" element={<UploadProductForm />} />
-        <Route path="/product/category/list" element={<CategoryOptions />} />
+        {/* <Route path="/product/category/list" element={<CategoryOptions />} /> */}
         <Route path="/product/:str/:id/:str" element={<ProductDetails />} />
         <Route path="/product/review/add/" element={<AddReview />} />
-        <Route path="/product/people-view/" element={<PeopleProductView />} />
+        {/* <Route path="/product/people-view/" element={<PeopleProductView />} /> */}
         <Route path="/cart/details/" element={<CartDetails />} />
         <Route path="/checkout/" element={<CheckOut />} />
-        <Route path="/master-user/profile/" element={<UserProfileMaster />} />
+        {/* <Route path="/master-user/profile/" element={<UserProfileMaster />} /> */}
 
-        <Route path="/auto-locator/" element={<AutoLocationInput />} />
-        <Route path="/buyer/order/list/" element={<BuyersOrdersList/>}/>
+        {/* <Route path="/auto-location/" element={<AutoLocationInput />} /> */}
+        {/* <Route path="/buyer/order/list/" element={<BuyersOrdersList/>}/> */}
         {/* <Route path="/product/review/edit?:id/" element={<EditReview />} /> */}
         {/* <Route path="/seller/product/edit" element={<SellerProductEdit />} /> */}
     

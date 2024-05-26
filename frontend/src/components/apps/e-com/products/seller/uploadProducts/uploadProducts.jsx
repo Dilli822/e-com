@@ -11,8 +11,10 @@ import {
   MenuItem,
   OutlinedInput,
   Grid,
+  Typography
 } from "@material-ui/core";
 import { Container } from "@mui/material";
+import { useLocation, useNavigate, Link } from "react-router-dom";
 
 const ProductForm = () => {
   const [formData, setFormData] = useState({
@@ -167,6 +169,35 @@ const ProductForm = () => {
   const handleCloseSnackbar = () => {
     setSnackbarOpen(false);
   };
+
+
+  const accessToken = localStorage.getItem("accessToken");
+  if (!accessToken) {
+    return (
+      <>
+        <Container>
+          <Typography
+            variant="h6"
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              justifyContent: "center",
+              height: "100vh",
+            }}
+          >
+            <span>You are not authorized to access this!</span>
+            <Link to={`/login`} style={{ color: "inherit", marginTop: "8px" }}>
+              <Button color="secondary" variant="contained">
+                <span>Please Login as Admin / Seller</span>
+              </Button>
+            </Link>
+          </Typography>
+        </Container>
+      </>
+    ); // Don't render form if there's no access token
+  }
+
 
   return (
     <Container>
