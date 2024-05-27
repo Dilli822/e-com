@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
 import CssBaseline from "@mui/material/CssBaseline";
@@ -99,6 +99,17 @@ export default function SignUp() {
       setLoading(false);
     }
   };
+
+
+
+
+  useEffect(() => {
+    const accessToken = localStorage.getItem("accessToken");
+    if (accessToken) {
+      navigate("/feed");
+    }
+  }, [navigate]);
+
 
   return (
     <ThemeProvider theme={theme}>

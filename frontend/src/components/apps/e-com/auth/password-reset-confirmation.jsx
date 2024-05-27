@@ -25,6 +25,8 @@ const ResetPasswordConfirm = () => {
     // Fetch additional data or perform any other side effects related to the token if needed
   }, [token]);
 
+
+  
   const handleSubmit = async (e) => {
     e.preventDefault();
 

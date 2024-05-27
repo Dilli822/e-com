@@ -201,7 +201,7 @@ const Header = () => {
                   <img
                     src={HeadLogo}
                     alt=""
-                    style={{ width: "60px", borderRadius: "15%" }}
+                    style={{ width: "50px", borderRadius: "15%" }}
                   />
                 </Link>
               </Typography>

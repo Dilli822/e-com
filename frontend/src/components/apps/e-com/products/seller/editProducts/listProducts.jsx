@@ -21,7 +21,7 @@ const API_URL = "http://127.0.0.1:8000/e-com/api/seller/products/list/";
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
-    padding: theme.spacing(2),
+    paddingTop: theme.spacing(2),
   },
   tableContainer: {
     maxHeight: 440,
@@ -189,7 +189,7 @@ const SellerProductsList = () => {
           <TableContainer
             component={Paper}
             className={classes.tableContainer}
-            style={{ maxHeight: "100%" }}
+            style={{ maxHeight: "100%"}}
           >
             <Table stickyHeader aria-label="seller products table">
               <TableHead>

@@ -46,7 +46,7 @@ const MainRouter = () => {
         {/* <Route path="/product/people-view/" element={<PeopleProductView />} /> */}
         <Route path="/cart/details/" element={<CartDetails />} />
         <Route path="/checkout/" element={<CheckOut />} />
-        {/* <Route path="/master-user/profile/" element={<UserProfileMaster />} /> */}
+        <Route path="/user/apiFetch/" element={<UserProfileMaster />} />
 
         {/* <Route path="/auto-location/" element={<AutoLocationInput />} /> */}
         {/* <Route path="/buyer/order/list/" element={<BuyersOrdersList/>}/> */}

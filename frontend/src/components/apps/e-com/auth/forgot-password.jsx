@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import AppHeader from "../header/headerPublic";
 import AppFooter from "../footer/footer";
@@ -52,10 +52,13 @@ const ForgotPassword = () => {
     }
   };
 
-  if (localStorage.getItem("accessToken")) {
-    navigate("/feed");
-    return null;
-  }
+
+  useEffect(() => {
+    const accessToken = localStorage.getItem("accessToken");
+    if (accessToken) {
+      navigate("/feed");
+    }
+  }, [navigate]);
 
   return (
     <>

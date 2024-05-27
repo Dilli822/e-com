@@ -20,9 +20,13 @@ export default function Banner() {
   ];
 
   const imageUrls = [
-    "https://icms-image.slatic.net/images/ims-web/7984cebf-8a00-475d-bd27-7ef2d3207679.jpg_1200x1200.jpg",
-    "https://icms-image.slatic.net/images/ims-web/59a047d8-76f2-41b2-9fd8-ae810cbc4536.jpg",
-    "https://icms-image.slatic.net/images/ims-web/1776b263-6917-48cf-898f-3f132f9e3973.jpg",
+    // "https://icms-image.slatic.net/images/ims-web/7984cebf-8a00-475d-bd27-7ef2d3207679.jpg_1200x1200.jpg",
+    // "https://icms-image.slatic.net/images/ims-web/59a047d8-76f2-41b2-9fd8-ae810cbc4536.jpg",
+    // "https://icms-image.slatic.net/images/ims-web/1776b263-6917-48cf-898f-3f132f9e3973.jpg",
+    "https://unsplash.it/1080",
+    "https://unsplash.it/1085",
+    "https://unsplash.it/1089",
+    "https://unsplash.it/1090",
   ];
 
   useEffect(() => {

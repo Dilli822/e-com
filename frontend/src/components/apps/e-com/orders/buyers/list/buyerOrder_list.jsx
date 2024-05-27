@@ -21,7 +21,7 @@ const GlobalStyles = styled("div")({
   html: {
     margin: 0,
     padding: 0,
-    width: "100%"
+    width: "100%",
   },
   body: {
     margin: 0,
@@ -76,14 +76,11 @@ function BuyersOrdersList() {
 
   const fetchOrders = async () => {
     try {
-      const response = await fetch(
-        "http://127.0.0.1:8000/e-com/api/orders/",
-        {
-          headers: {
-            Authorization: `Bearer ${localStorage.getItem("accessToken")}`,
-          },
-        }
-      );
+      const response = await fetch("http://127.0.0.1:8000/e-com/api/orders/", {
+        headers: {
+          Authorization: `Bearer ${localStorage.getItem("accessToken")}`,
+        },
+      });
 
       if (response.ok) {
         const data = await response.json();
@@ -106,12 +103,13 @@ function BuyersOrdersList() {
 
         {error && <Typography color="error">{error}</Typography>}
         <StyledTableContainer component={Paper} elevation={3}>
-          <Table aria-label="Orders table" style={{ cursor: "pointer"}}>
+          <Table aria-label="Orders table" style={{ cursor: "pointer" }}>
             <TableHead>
               <TableRow>
                 <StyledTableCell>Order ID</StyledTableCell>
                 <StyledTableCell>Delivery Address</StyledTableCell>
                 <StyledTableCell>Product Name</StyledTableCell>
+                <StyledTableCell>Product Images</StyledTableCell>
                 <StyledTableCell>Products Price</StyledTableCell>
                 <StyledTableCell>Total Price</StyledTableCell>
                 <StyledTableCell>Total Units</StyledTableCell>
@@ -134,6 +132,19 @@ function BuyersOrdersList() {
                   <StyledTableCellContent>
                     {order.buyer_delivery_address}
                   </StyledTableCellContent>
+
+                  <StyledTableCellContent>
+                    <img
+                      src={order.product_images}
+                      alt={order.product_name}
+                      style={{
+                        width: "100px",
+                        height: "100px",
+                        objectFit: "cover",
+                      }}
+                    />
+                  </StyledTableCellContent>
+
                   <StyledTableCellContent>
                     {order.product_name}
                   </StyledTableCellContent>

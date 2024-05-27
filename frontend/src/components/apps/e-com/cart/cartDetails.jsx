@@ -24,7 +24,7 @@ import Header from "../header/header";
 import HeaderPublic from "../header/headerPublic";
 import AppFooter from "../footer/footer";
 
-export default function CartDetails({isBuyer}) {
+export default function CartDetails() {
   const location = useLocation();
   const navigate = useNavigate();
   const [cartItems, setCartItems] = useState([]);
@@ -132,10 +132,12 @@ export default function CartDetails({isBuyer}) {
 
   const handleConfirmOrder = () => {
     const accessToken = localStorage.getItem("accessToken");
-    if (!accessToken) {
+  
+    if (!accessToken || isSeller) {
       setMustLoginMessage(true);
       return;
     }
+
     const checkOutItems = selectedItems.map((index) => cartItems[index]);
     setOpenOrderDialog(false);
     navigate("/checkout", { state: { checkOutItems } });
@@ -150,21 +152,18 @@ export default function CartDetails({isBuyer}) {
     }, 0);
     return totalPrice.toFixed(2);
   };
-  
-  
+
   const accessToken = localStorage.getItem("accessToken");
-
-  console.log("isBuyer:", isBuyer);
-
+  const isSeller = document.getElementById ("isSellerI");
+  console.log(isSeller);
+  
   return (
     <>
       {accessToken ? <Header /> : <HeaderPublic />}
       <Container>
-             {/* Render cart details based on userType */}
-     
+        {/* Render cart details based on userType */}
         <br /> <br />
         <Typography variant="h5">Cart Items</Typography>
-  
         <br />
         <TableContainer component={Paper}>
           <Table>
@@ -210,30 +209,43 @@ export default function CartDetails({isBuyer}) {
                       <img src={item.product.image} alt="Product" width="70" />
                     </TableCell>
                     <TableCell>{item.product.description}</TableCell>
-                    <TableCell>${item.product.price}</TableCell>
-                    <TableCell>{item.product.stock}</TableCell>
                     <TableCell>
-                      <IconButton
-                        onClick={() => handleDecrementQuantity(index)}
-                      >
-                        <Remove />
-                      </IconButton>
-
-                      {!isNaN(item.quantity) ? item.quantity : "0"}
-                      <IconButton
-                        onClick={() => handleIncrementQuantity(index)}
-                      >
-                        <Add />
-                      </IconButton>
+                      <b> ${item.product.price}</b>
                     </TableCell>
                     <TableCell>
-                      {!isNaN(item.product.price * item.quantity)
-                        ? `$${(item.product.price * item.quantity).toFixed(2)}`
-                        : "$0.00"}
+                      <b>{item.product.stock}</b>
+                    </TableCell>
+                    <TableCell>
+                      <span style={{ display: "flex", alignItems: "center" }}>
+                        <IconButton
+                          color="secondary"
+                          onClick={() => handleDecrementQuantity(index)}
+                        >
+                          <Remove />
+                        </IconButton>
+
+                        <b> {!isNaN(item.quantity) ? item.quantity : "0"} </b>
+                        <IconButton
+                          onClick={() => handleIncrementQuantity(index)}
+                          style={{ color: "green" }}
+                        >
+                          <Add />
+                        </IconButton>
+                      </span>
+                    </TableCell>
+                    <TableCell>
+                      <b>
+                        {" "}
+                        {!isNaN(item.product.price * item.quantity)
+                          ? `$${(item.product.price * item.quantity).toFixed(
+                              2
+                            )}`
+                          : "$0.00"}
+                      </b>
                     </TableCell>
                     <TableCell>
                       <IconButton onClick={() => handleOpenDeleteDialog(index)}>
-                        <Delete />
+                        <Delete color="secondary" />
                       </IconButton>
                     </TableCell>
                   </TableRow>
@@ -245,6 +257,7 @@ export default function CartDetails({isBuyer}) {
         <Typography variant="h6">
           Total Price: ${!isNaN(getTotalPrice()) ? getTotalPrice() : "0"}
         </Typography>
+        <br />
         <Button
           variant="outlined"
           color="secondary"
@@ -285,7 +298,7 @@ export default function CartDetails({isBuyer}) {
                 <Link to="/signup">Sign up</Link>.
               </Typography>
             )}
-            
+
             {/* {isSeller && (
               <Typography variant="body2" color="error">
                 You are not authorized to Buy the product from the third party.{" "}

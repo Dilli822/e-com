@@ -8,6 +8,7 @@ import { Container, Card, Button, Grid, Typography } from "@mui/material";
 import EditProductForm from "../../products/seller/editProducts/editProducts";
 import ManageSellersOrders from "../../orders/seller/sellerOrdersList";
 import { useLocation, useNavigate, Link } from "react-router-dom";
+
 const useStyles = makeStyles((theme) => ({
   root: {
     paddingTop: theme.spacing(4),
@@ -143,7 +144,7 @@ export default function SellerProfile() {
                 color="secondary"
                 onClick={handleBackButtonClick}
               >
-                Back
+                Go Back
               </Button>
             )}
 

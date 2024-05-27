@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from "react";
 import {
   Container,
@@ -13,7 +12,10 @@ import {
   IconButton,
   Tooltip,
   Grid,
-  Button,Modal
+  Button,
+  Modal,
+  Snackbar,
+  Alert,
 } from "@mui/material";
 import LocalShippingIcon from "@mui/icons-material/LocalShipping";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
@@ -61,7 +63,7 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
 }));
 
 const StyledTableContainer = styled(TableContainer)({
-  flexGrow: 1, // Ensure the table container takes up remaining space
+  flexGrow: 2, // Ensure the table container takes up remaining space
   maxWidth: "100%", // Ensure the table stretches out
 });
 
@@ -72,8 +74,13 @@ const StyledTableCellContent = styled(TableCell)({
 function ManageSellersOrders() {
   const [orders, setOrders] = useState([]);
   const [error, setError] = useState(null);
-  const [confirmModalOpen,setConfirmModalOpen] = useState(false);
+  const [confirmModalOpen, setConfirmModalOpen] = useState(false);
   const [orderToShip, setOrderToShip] = useState(null); // State to store the order to be shipped
+  const [cancelModalOpen, setCancelModalOpen] = useState(false);
+  const [orderToCancel, setOrderToCancel] = useState(null); // State to store the order to be cancelled
+  const [snackbarOpen, setSnackbarOpen] = useState(false);
+  const [snackbarMessage, setSnackbarMessage] = useState("");
+  const [snackbarSeverity, setSnackbarSeverity] = useState("success"); // "success", "error", "warning", "info"
 
   useEffect(() => {
     fetchOrders();
@@ -102,88 +109,130 @@ function ManageSellersOrders() {
     }
   };
 
-
   const handleShipOrder = async (orderId) => {
-    setConfirmModalOpen(true)
     const order = orders.find((order) => order.id === orderId);
-       console.log("Order Details:", order); 
 
-       setOrderToShip(order);
- 
+    // Check if the order has already been canceled
+    if (order.order_cancelled_by_seller) {
+      setSnackbarMessage(
+        "This order has already been canceled and cannot be shipped."
+      );
+      setSnackbarSeverity("error");
+      setSnackbarOpen(true);
+      return; // Exit the function to prevent further execution
+    }
+
+    // If the order is not canceled, proceed to open the confirmation modal
+    setConfirmModalOpen(true);
+    setOrderToShip(order);
   };
 
   const handleConfirmShipOrder = async () => {
     if (orderToShip) {
-      // Clone the order object and update the required properties
       const updatedOrder = {
         ...orderToShip,
         order_shipped: true,
         order_pending: false,
       };
-  
+
       try {
         const response = await fetch(
           "http://127.0.0.1:8000/e-com/api/sellers/orders/edit/bulk/",
           {
-            method: "PUT", // Use POST method for updating data
+            method: "PUT",
             headers: {
-              "Content-Type": "application/json", // Specify content type as JSON
+              "Content-Type": "application/json",
               Authorization: `Bearer ${localStorage.getItem("accessToken")}`,
             },
-            body: JSON.stringify([updatedOrder]), // Convert the object to JSON string
+            body: JSON.stringify([updatedOrder]),
           }
         );
-  
+
         if (response.ok) {
-          // Update the orders state with the modified order
-          alert("Order Shipped Successfully")
           const updatedOrders = orders.map((order) =>
             order.id === updatedOrder.id ? updatedOrder : order
           );
           setOrders(updatedOrders);
-          // Close the confirmation modal
           setConfirmModalOpen(false);
+          setSnackbarMessage("Order shipped successfully");
+          setSnackbarSeverity("success");
+          setSnackbarOpen(true);
         } else {
-          // Handle error response here
           setError("Failed to update order");
+          setSnackbarMessage("Failed to update order");
+          setSnackbarSeverity("error");
+          setSnackbarOpen(true);
         }
       } catch (error) {
-        // Handle network or other errors
         setError("Error updating order");
+        setSnackbarMessage("Error updating order");
+        setSnackbarSeverity("error");
+        setSnackbarOpen(true);
       }
     } else {
       console.error("Order not found");
     }
   };
-  
-
 
   const handleCancelOrder = async (orderId) => {
-    try {
-      const response = await fetch(
-        `http://127.0.0.1:8000/e-com/api/sellers/orders/${orderId}/cancel/`,
-        {
-          method: "POST",
-          headers: {
-            Authorization: `Bearer ${localStorage.getItem("accessToken")}`,
-          },
-        }
-      );
+    setCancelModalOpen(true);
+    const order = orders.find((order) => order.id === orderId);
+    setOrderToCancel(order);
+  };
 
-      if (response.ok) {
-        fetchOrders(); // Refresh orders list after updating
-      } else {
-        setError("Failed to cancel the order");
+  const handleConfirmCancelOrder = async () => {
+    if (orderToCancel) {
+      const updatedOrder = {
+        ...orderToCancel,
+        order_shipped: false,
+        order_pending: true,
+        order_delivered: false,
+        order_placed_by_buyer: true,
+        order_cancelled_by_seller: true,
+      };
+
+      try {
+        const response = await fetch(
+          "http://127.0.0.1:8000/e-com/api/sellers/orders/edit/bulk/",
+          {
+            method: "PUT",
+            headers: {
+              "Content-Type": "application/json",
+              Authorization: `Bearer ${localStorage.getItem("accessToken")}`,
+            },
+            body: JSON.stringify([updatedOrder]),
+          }
+        );
+
+        if (response.ok) {
+          const updatedOrders = orders.map((order) =>
+            order.id === updatedOrder.id ? updatedOrder : order
+          );
+          setOrders(updatedOrders);
+          setCancelModalOpen(false);
+          setSnackbarMessage("Order cancelled successfully");
+          setSnackbarSeverity("success");
+          setSnackbarOpen(true);
+        } else {
+          setError("Failed to cancel the order");
+          setSnackbarMessage("Failed to cancel the order");
+          setSnackbarSeverity("error");
+          setSnackbarOpen(true);
+        }
+      } catch (error) {
+        setError("Error canceling the order");
+        setSnackbarMessage("Error canceling the order");
+        setSnackbarSeverity("error");
+        setSnackbarOpen(true);
       }
-    } catch (error) {
-      setError("Error canceling the order");
+    } else {
+      console.error("Order not found");
     }
   };
 
-
-
-
-  
+  const handleSnackbarClose = () => {
+    setSnackbarOpen(false);
+  };
 
   return (
     <GlobalStyles>
@@ -204,14 +253,14 @@ function ManageSellersOrders() {
                 <StyledTableCell>Units</StyledTableCell>
                 <StyledTableCell>Delivery Fee</StyledTableCell>
                 <StyledTableCell>Mode of Payment</StyledTableCell>
-                <StyledTableCell style={{ minWidth: "10rem" }}>
-                  Ordered At
-                </StyledTableCell>
+                <StyledTableCell>Ordered At</StyledTableCell>
                 <StyledTableCell>Order Shipped</StyledTableCell>
                 <StyledTableCell>Order Delivered</StyledTableCell>
                 <StyledTableCell>Order Received</StyledTableCell>
                 <StyledTableCell>Order Cancelled</StyledTableCell>
-                <StyledTableCell>Actions</StyledTableCell>
+                <StyledTableCell style={{ minWidth: "10em" }}>
+                  Actions
+                </StyledTableCell>
               </TableRow>
             </TableHead>
             <TableBody>
@@ -241,7 +290,9 @@ function ManageSellersOrders() {
                   <StyledTableCellContent>
                     {new Date(order.created_at).toLocaleString()}
                   </StyledTableCellContent>
+
                   <StyledTableCellContent>
+                  
                     {order.order_shipped ? (
                       <Tooltip title="Shipped">
                         <IconButton>
@@ -272,107 +323,175 @@ function ManageSellersOrders() {
                     )}
                   </StyledTableCellContent>
                   <StyledTableCellContent>
-                    {order.order_placed_by_buyer ? (
-                      <Tooltip title="Placed by Buyer">
-                        <IconButton>
-                          <CheckCircleIcon style={{ color: "green" }} />
-                        </IconButton>
-                      </Tooltip>
+                    {order.order_received ? (
+
+<Tooltip title="Not Received">
+<IconButton>
+  <CancelIcon color="error" />
+</IconButton>
+</Tooltip>
+                  
                     ) : (
-                      <Tooltip title="Not Placed by Buyer">
-                        <IconButton>
-                          <CancelIcon color="error" />
-                        </IconButton>
-                      </Tooltip>
+                      <Tooltip title="Received">
+                      <IconButton>
+                        <CheckCircleIcon style={{ color: "green" }} />
+                      </IconButton>
+                    </Tooltip>
                     )}
                   </StyledTableCellContent>
                   <StyledTableCellContent>
                     {order.order_cancelled_by_seller ? (
-                      <Tooltip title="Cancelled by Seller">
-                        <IconButton>
-                          <CancelIcon color="error" />
-                        </IconButton>
-                      </Tooltip>
+                              <Tooltip title="Not Cancelled">
+                              <IconButton>
+                                <CheckCircleIcon color="success" />
+                              </IconButton>
+                            </Tooltip>
                     ) : (
-                      <Tooltip title="Blocked">
-                        <IconButton>
-                          <CancelIcon color="error" />
-                        </IconButton>
-                      </Tooltip>
+
+                      <Tooltip title="Cancelled">
+                      <IconButton>
+                        <CancelIcon style={{ color: "red" }} />
+                      </IconButton>
+                    </Tooltip>
+ 
                     )}
                   </StyledTableCellContent>
+
                   <StyledTableCellContent>
-                    {!order.order_shipped && (
-                      <Button
-                        variant="contained"
-                        color="primary"
-                        onClick={() => handleShipOrder(order.id)}
-                      >
-                        Ship Order
-                      </Button>
-                    )}
-                    {!order.order_cancelled_by_seller && (
-                      <Button
-                        variant="contained"
-                        color="secondary"
-                        onClick={() => handleCancelOrder(order.id)}
-                      >
-                        Cancel Order
-                      </Button>
-                    )}
+                    <Grid container spacing={1}>
+                      <Grid item>
+                        <Button
+                          variant="contained"
+                          color="primary"
+                          onClick={() => handleShipOrder(order.id)}
+                          disabled={
+                            order.order_shipped ||
+                            order.order_cancelled_by_seller
+                          }
+                        >
+                          Ship
+                        </Button>
+                      </Grid>
+                      <Grid item>
+                        <Button
+                          variant="contained"
+                          color="secondary"
+                          onClick={() => handleCancelOrder(order.id)}
+                          disabled={order.order_cancelled_by_seller}
+                        >
+                          Cancel
+                        </Button>
+                      </Grid>
+                    </Grid>
+                    
                   </StyledTableCellContent>
                 </StyledTableRow>
+                
               ))}
             </TableBody>
           </Table>
         </StyledTableContainer>
-      </>
-      <br /> <br /> <br />
 
-    {/* Confirmation Modal */}
-    <Modal
-        open={confirmModalOpen}
-        onClose={() => setConfirmModalOpen(false)}
-        aria-labelledby="confirmation-modal"
-        aria-describedby="confirm-ship-order"
-        style={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-        }}
-      >
-        <Paper style={{ padding: "30px", minWidth: "700px" }}>
-          <Typography variant="h6" gutterBottom>
-            Confirm Shipping
-          </Typography>
-          <Typography variant="body1" gutterBottom>
-            Are you sure you want to ship this order?
-          </Typography>
-          <br />
-          <Grid container spacing={1}>
-  
-            <Grid item>
-              <Button
-                variant="contained"
-                color="primary"
-                onClick={handleConfirmShipOrder}
-              >
-                Confirm
-              </Button>
+        
+        <Modal
+          open={confirmModalOpen}
+          onClose={() => setConfirmModalOpen(false)}
+        >
+          {/* Shipment Confirmation Modal */}
+          <Paper
+            style={{
+              position: "absolute",
+              top: "50%",
+              left: "50%",
+              transform: "translate(-50%, -50%)",
+              padding: "2em",
+              width: "300px",
+              textAlign: "center",
+            }}
+          >
+            <Typography variant="h6" gutterBottom>
+              Confirm Shipment
+            </Typography>
+            <Typography variant="body1" gutterBottom>
+              Are you sure you want to mark this order as shipped?
+            </Typography>
+            <Grid container spacing={2} justifyContent="center">
+              <Grid item>
+                <Button
+                  variant="contained"
+                  color="primary"
+                  onClick={handleConfirmShipOrder}
+                >
+                  Yes
+                </Button>
+              </Grid>
+              <Grid item>
+                <Button
+                  variant="contained"
+                  color="secondary"
+                  onClick={() => setConfirmModalOpen(false)}
+                >
+                  No
+                </Button>
+              </Grid>
             </Grid>
-            <Grid item>
-              <Button
-                variant="contained"
-                color="secondary"
-                onClick={() => setConfirmModalOpen(false)}
-              >
-                Cancel
-              </Button>
+          </Paper>
+        </Modal>
+        <Modal open={cancelModalOpen} onClose={() => setCancelModalOpen(false)}>
+          {/* Cancellation Confirmation Modal */}
+          <Paper
+            style={{
+              position: "absolute",
+              top: "50%",
+              left: "50%",
+              transform: "translate(-50%, -50%)",
+              padding: "2em",
+              width: "300px",
+              textAlign: "center",
+            }}
+          >
+            <Typography variant="h6" gutterBottom>
+              Confirm Cancellation
+            </Typography>
+            <Typography variant="body1" gutterBottom>
+              Are you sure you want to cancel this order?
+            </Typography>
+            <Grid container spacing={2} justifyContent="center">
+              <Grid item>
+                <Button
+                  variant="contained"
+                  color="primary"
+                  onClick={handleConfirmCancelOrder}
+                >
+                  Yes
+                </Button>
+              </Grid>
+              <Grid item>
+                <Button
+                  variant="contained"
+                  color="secondary"
+                  onClick={() => setCancelModalOpen(false)}
+                >
+                  No
+                </Button>
+              </Grid>
             </Grid>
-          </Grid>
-        </Paper>
-      </Modal>
-      
+          </Paper>
+        </Modal>
+        <Snackbar
+          open={snackbarOpen}
+          autoHideDuration={6000}
+          onClose={handleSnackbarClose}
+        >
+          <Alert
+            onClose={handleSnackbarClose}
+            severity={snackbarSeverity}
+            sx={{ width: "100%" }}
+          >
+            {snackbarMessage}
+          </Alert>
+        </Snackbar>
+      </>
     </GlobalStyles>
   );
 }

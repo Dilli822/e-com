@@ -11,7 +11,7 @@ import AutoLocationInput from "../e-com/location/autoComplete_Location"; // Impo
 import CartDetails from "../e-com/cart/cartDetails";
 
 const UserProfileMaster = () => {
-  const [userData, setUserData] = useState(null);
+  const [userData, setUserData] = useState({});
   const [error, setError] = useState(null);
   const [selectedAddress, setSelectedAddress] = useState(null); // State to hold selected address
   const [newAddress, setNewAddress] = useState(null); // State to hold new address
@@ -24,6 +24,8 @@ const UserProfileMaster = () => {
   useEffect(() => {
     fetchUserProfile();
   }, []);
+
+  console.log(userData)
 
   const [query, setQuery] = useState("");
   const [results, setResults] = useState([]);
@@ -123,6 +125,9 @@ const UserProfileMaster = () => {
               <br />
               Address: {userData.sellers[0].address}
               <br />
+
+
+              <br />
               Phone Number: {userData.sellers[0].phone_number}
               <br />
               Username: {userData.user.username} <br />
@@ -135,6 +140,7 @@ const UserProfileMaster = () => {
               Name: <span id="buyerUserName">{userData.user.username} </span><br />
               Email: <span id="buyerEmail">{userData.user.email} </span> <br />
               Phone Number: <span id="buyerContact">{userData.buyer.phone_number} </span><br />
+              <span id="isSellerI">{userData.user.is_buyer}</span>
               {tagAddress ? (
                 <span variant="h6">
                   Final Shipping Address: <b>{tagAddress}</b>
@@ -206,6 +212,9 @@ const UserProfileMaster = () => {
                     {selectedAddress.address}
                   </b>
                 </Typography>
+
+        
+
                 <br />
                 <Button
                   onClick={handleSetAddress}
@@ -219,6 +228,8 @@ const UserProfileMaster = () => {
           </Collapse>
         </Container>
       )}
+
+
 
     </>
   );
