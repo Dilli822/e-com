@@ -41,20 +41,24 @@ export default function SellerProfile() {
     setShowManageOrders(false);
   };
 
+
   const handleBackButtonClick = () => {
-    setShowProductForm(false);
-    setShowProductEditForm(false);
-    setShowManageOrders(false);
-    setShowProfileUpdate(true);
+    const confirmationMessage =
+      "Are you sure you want to leave this page? Your changes may not be saved.";
+    if (window.confirm(confirmationMessage)) {
+      setShowProductForm(false);
+      setShowProductEditForm(false);
+      setShowManageOrders(false);
+      setShowProfileUpdate(true);
+    }
   };
 
-
-  const handleOrdersEditClick = () =>{
+  const handleOrdersEditClick = () => {
     setShowProductForm(false);
     setShowProductEditForm(false);
     setShowProfileUpdate(false);
     setShowManageOrders(true);
-  }
+  };
 
   const accessToken = localStorage.getItem("accessToken");
   if (!accessToken) {
@@ -82,7 +86,6 @@ export default function SellerProfile() {
       </>
     ); // Don't render form if there's no access token
   }
-  
 
   return (
     <>
@@ -94,11 +97,8 @@ export default function SellerProfile() {
           </Grid>
 
           {showProfileUpdate && (
-            
-          <Grid item xs={8}>
-            
-            <Card className={classes.card}>
-    
+            <Grid item xs={8}>
+              <Card className={classes.card}>
                 <>
                   <Button
                     type="button"
@@ -127,17 +127,12 @@ export default function SellerProfile() {
                     Manage Orders
                   </Button>
                 </>
-            
-            </Card>
-
-            
-          </Grid>
-            )}
+              </Card>
+            </Grid>
+          )}
 
           <Grid item xs={12}>
-
-          {(showProductForm || showProductEditForm || showManageOrders) && (
-          
+            {(showProductForm || showProductEditForm || showManageOrders) && (
               <Button
                 type="button"
                 variant="outlined"
@@ -152,9 +147,6 @@ export default function SellerProfile() {
             {showProductEditForm && <EditProductForm />}
             {showManageOrders && <ManageSellersOrders />}
           </Grid>
-
-
-
         </Grid>
       </Container>
       <AppFooter />

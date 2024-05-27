@@ -86,10 +86,7 @@ class Cart(models.Model):
 class CartItem(models.Model):
     pass 
 
-import uuid
-from django.db import models
-from django.db.models.signals import pre_save
-from django.dispatch import receiver
+
 
 class Order(models.Model):
     id = models.BigAutoField(primary_key=True)
@@ -120,13 +117,24 @@ class Order(models.Model):
     order_delivered = models.BooleanField(default=False)
     order_pending = models.BooleanField(default=True)
     order_shipped = models.BooleanField(default=False)
-    
+    total_order_items_counter = models.BigIntegerField(blank=True, null=True, default=0)
     def __str__(self):
         return f'Order {self.order_id} by {self.buyer_full_name}'
 
     class Meta:
         verbose_name = "Order"
         verbose_name_plural = "Orders"
+    
+    def save(self, *args, **kwargs):
+        # Count the number of unique sellers and categories
+        unique_sellers = set(map(int, self.seller_id.split(', ')))
+        unique_categories = set(map(int, self.product_category.split(', ')))
+        total_order_items_counter = len(unique_sellers) 
+        
+        # Update total_order_items_counter field
+        self.total_order_items_counter = total_order_items_counter
+        
+        super().save(*args, **kwargs)
         
 # Signal to generate a unique UUID for order_id before saving
 @receiver(pre_save, sender=Order)
@@ -164,6 +172,9 @@ class Order_For_Seller(models.Model):
     order_pending = models.BooleanField(default=True)
     order_shipped = models.BooleanField(default=False)
     order_cancelled_by_seller = models.BooleanField(default=False)
+    
+
+    
     
     def __str__(self):
         return f'Order {self.order_id} by {self.buyer_full_name}'
