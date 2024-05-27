@@ -11,6 +11,15 @@ from .models import Review
 from django.db.models.signals import pre_save
 from django.dispatch import receiver
 
+
+
+class IsSellerPermission(BasePermission):
+    message = "Only SELLERS can edit orders."
+
+    def has_permission(self, request, view):
+        return request.user and request.user.is_authenticated and request.user.is_seller 
+
+
 class SellerProductUpload(generics.CreateAPIView):
     permission_classes = [IsAuthenticated]
     queryset = Product.objects.all()
@@ -105,8 +114,9 @@ class SellerProductList(generics.ListAPIView):
 
         return queryset
 
-class SellerProductDetail(generics.RetrieveUpdateAPIView):
-    permission_classes = [IsAuthenticated]
+
+class SellerProductDetail(generics.RetrieveUpdateDestroyAPIView):
+    permission_classes = [IsAuthenticated, IsSellerPermission]
     serializer_class = ProductSerializer
 
     def get_queryset(self):
@@ -126,6 +136,12 @@ class SellerProductDetail(generics.RetrieveUpdateAPIView):
         if instance.seller != request.user:
             raise PermissionDenied("You do not have permission to perform this action.")
         return super().update(request, *args, **kwargs)
+    
+    def destroy(self, request, *args, **kwargs):
+        instance = self.get_object()
+        if instance.seller != request.user:
+            raise PermissionDenied("You do not have permission to perform this action.")
+        return super().destroy(request, *args, **kwargs)
     
     
 class IsBuyerPermission(BasePermission):
@@ -152,12 +168,6 @@ class ReviewDetailView(generics.RetrieveUpdateDestroyAPIView):
     serializer_class = ReviewSerializer
     permission_classes = [IsAuthenticated]
  
-
-class IsSellerPermission(BasePermission):
-    message = "Only SELLERS can edit orders."
-
-    def has_permission(self, request, view):
-        return request.user and request.user.is_authenticated and request.user.is_seller 
 
 
 class OrderListView(generics.ListCreateAPIView):

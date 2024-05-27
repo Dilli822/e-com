@@ -292,7 +292,6 @@ function ManageSellersOrders() {
                   </StyledTableCellContent>
 
                   <StyledTableCellContent>
-                  
                     {order.order_shipped ? (
                       <Tooltip title="Shipped">
                         <IconButton>
@@ -324,36 +323,32 @@ function ManageSellersOrders() {
                   </StyledTableCellContent>
                   <StyledTableCellContent>
                     {order.order_received ? (
-
-<Tooltip title="Not Received">
-<IconButton>
-  <CancelIcon color="error" />
-</IconButton>
-</Tooltip>
-                  
+                      <Tooltip title="Not Received">
+                        <IconButton>
+                          <CancelIcon color="error" />
+                        </IconButton>
+                      </Tooltip>
                     ) : (
                       <Tooltip title="Received">
-                      <IconButton>
-                        <CheckCircleIcon style={{ color: "green" }} />
-                      </IconButton>
-                    </Tooltip>
+                        <IconButton>
+                          <CheckCircleIcon style={{ color: "green" }} />
+                        </IconButton>
+                      </Tooltip>
                     )}
                   </StyledTableCellContent>
                   <StyledTableCellContent>
                     {order.order_cancelled_by_seller ? (
-                              <Tooltip title="Not Cancelled">
-                              <IconButton>
-                                <CheckCircleIcon color="success" />
-                              </IconButton>
-                            </Tooltip>
+                      <Tooltip title="Not Cancelled">
+                        <IconButton>
+                          <CheckCircleIcon color="success" />
+                        </IconButton>
+                      </Tooltip>
                     ) : (
-
                       <Tooltip title="Cancelled">
-                      <IconButton>
-                        <CancelIcon style={{ color: "red" }} />
-                      </IconButton>
-                    </Tooltip>
- 
+                        <IconButton>
+                          <CancelIcon style={{ color: "red" }} />
+                        </IconButton>
+                      </Tooltip>
                     )}
                   </StyledTableCellContent>
 
@@ -383,16 +378,13 @@ function ManageSellersOrders() {
                         </Button>
                       </Grid>
                     </Grid>
-                    
                   </StyledTableCellContent>
                 </StyledTableRow>
-                
               ))}
             </TableBody>
           </Table>
         </StyledTableContainer>
 
-        
         <Modal
           open={confirmModalOpen}
           onClose={() => setConfirmModalOpen(false)}
