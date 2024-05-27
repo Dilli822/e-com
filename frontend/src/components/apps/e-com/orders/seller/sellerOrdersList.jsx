@@ -295,7 +295,7 @@ function ManageSellersOrders() {
                     {order.order_shipped ? (
                       <Tooltip title="Shipped">
                         <IconButton>
-                          <LocalShippingIcon color="primary" />
+                          <LocalShippingIcon style={{ color: "green", fontSize: "2em" }} />
                         </IconButton>
                       </Tooltip>
                     ) : (

@@ -111,13 +111,6 @@ function BuyerProfileUpdate() {
     window.location.href = "/";
   };
 
-  // const handleLogout = () => {
-  //   const confirmed = window.confirm("Are you sure you want to logout?");
-  //   if (confirmed) {
-  //     localStorage.clear();
-  //     window.location.href = "/feed";
-  //   }
-  // };
 
   const handleEditProfile = () => {
     setProfileEditMode(true);

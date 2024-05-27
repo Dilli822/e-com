@@ -21,9 +21,9 @@ def extract_and_store_orders():
             combined_orders[key]['product_prices'].append(order.product_price)
             combined_orders[key]['product_categories'].append(order.product_category)
             combined_orders[key]['product_category_names'].append(order.product_category_name)
-            combined_orders[key]['product_total_units'] += order.product_total_units
+            combined_orders[key]['product_total_units'] += int(order.product_total_units)
             combined_orders[key]['product_units'].append(order.product_units)
-            combined_orders[key]['product_total_price'] += order.product_total_price
+            combined_orders[key]['product_total_price'] += float(order.product_total_price)
         else:
             # If the key doesn't exist, create a new entry in the dictionary
             combined_orders[key] = {
@@ -35,14 +35,14 @@ def extract_and_store_orders():
                 'product_prices': [order.product_price],
                 'product_categories': [order.product_category],
                 'product_category_names': [order.product_category_name],
-                'product_total_units': order.product_total_units,
+                'product_total_units': int(order.product_total_units),
                 'product_units': [order.product_units],
-                'product_total_price': order.product_total_price,
+                'product_total_price': float(order.product_total_price),
                 'delivery_fee': order.delivery_fee,
                 'mode_of_payment': order.mode_of_payment
             }
 
-    # Iterate over combined_orders dictionary and create OrderArchive instances
+    # Iterate over combined_orders dictionary and create OrderArchive instances if the condition is met
     for key, order_data in combined_orders.items():
         # Join product_units with commas while maintaining individual values
         product_names_str = ', '.join(map(str, order_data['product_names']))
@@ -50,20 +50,31 @@ def extract_and_store_orders():
         product_categories_str = ', '.join(map(str, order_data['product_categories']))
         product_prices_str = ', '.join(map(str, order_data['product_prices']))
         seller_id_str = ', '.join(map(str, order_data['seller_id']))
-        
-        print("Debugging product_categories_str:", product_categories_str)  # Debugging statement
-        
-        OrderArchive.objects.create(
-            order_id=order_data['order_id'],
-            seller_id=seller_id_str,
-            product_names=product_names_str,
-            product_descriptions=product_categories_str,
-            product_prices=product_prices_str,
-            product_categories=', '.join(order_data['product_categories']),
-            product_category_names=', '.join(order_data['product_category_names']),
-            product_units=product_units_str,
-            product_total_units=order_data['product_total_units'],
-            product_total_price=order_data['product_total_price'],
-            delivery_fee=order_data['delivery_fee'],
-            mode_of_payment=order_data['mode_of_payment']
-        )
+
+        # Count unique seller IDs
+        unique_seller_count = len(set(order_data['seller_id']))
+
+        # Debugging statement
+        print(f"Order ID: {order_data['order_id']}, Unique Sellers Count: {unique_seller_count}")
+
+        # Check the condition before saving
+        if unique_seller_count == order_data['product_total_units']:
+            print(f"Order ID: {order_data['order_id']} - MATCHED ||| order is completed")
+            OrderArchive.objects.create(
+                order_id=order_data['order_id'],
+                seller_id=seller_id_str,
+                product_names=product_names_str,
+                product_descriptions=product_categories_str,
+                product_prices=product_prices_str,
+                product_categories=', '.join(order_data['product_categories']),
+                product_category_names=', '.join(order_data['product_category_names']),
+                product_units=product_units_str,
+                product_total_units=order_data['product_total_units'],
+                product_total_price=order_data['product_total_price'],
+                delivery_fee=order_data['delivery_fee'],
+                mode_of_payment=order_data['mode_of_payment'],
+                original_ordered_items_count=unique_seller_count
+            )
+        else:
+            print("Order for buyer is not complete --> ")
+

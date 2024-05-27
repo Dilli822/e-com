@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import AppFooter from "../../footer/footer";
 import Header from "../../header/header";
 import BuyerProfileUpdate from "./update_profile";
@@ -6,13 +6,7 @@ import { makeStyles } from "@mui/styles";
 import { useLocation, useNavigate, Link } from "react-router-dom";
 import BuyersOrdersList from "../../orders/buyers/list/buyerOrder_list";
 
-import {
-  Container,
-  Card,
-  Typography,
-  Button,
-  Grid,
-} from "@mui/material";
+import { Container, Card, Typography, Button, Grid } from "@mui/material";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -23,7 +17,7 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(2),
   },
   hidden: {
-    display: 'none',
+    display: "none",
   },
 }));
 
@@ -61,23 +55,31 @@ export default function BuyerProfile() {
       <Header />
       <Container className={classes.root}>
         <Grid container spacing={2}>
-          <Grid item xs={12} md={showOrders ? 0 : 4} className={showOrders ? classes.hidden : ''}>
+          <Grid
+            item
+            xs={12}
+            md={showOrders ? 0 : 4}
+            className={showOrders ? classes.hidden : ""}
+          >
             <BuyerProfileUpdate />
           </Grid>
 
           <Grid item xs={12} md={showOrders ? 12 : 8}>
             <Card className={classes.card}>
-              <h2>Buyer Order & Order History</h2>
               <Button
                 color="primary"
                 variant="contained"
                 onClick={() => setShowOrders(!showOrders)} // Toggle state on button click
               >
-                {showOrders ? "Hide Orders" : "Show Orders"}
+                {showOrders ? "Hide Orders List" : "Show Orders History"}
               </Button>
-              </Card>
-              {showOrders && <BuyersOrdersList/>} {/* Conditionally render BuyersOrdersList */}
-          
+              &nbsp;&nbsp;&nbsp;
+              <Button color="primary" variant="contained">
+                {showOrders ? "Hide Your Review" : "Your Reviews"}
+              </Button>
+              {showOrders && <BuyersOrdersList />}{" "}
+              {/* Conditionally render BuyersOrdersList */}
+            </Card>
           </Grid>
         </Grid>
       </Container>

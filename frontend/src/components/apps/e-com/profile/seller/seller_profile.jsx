@@ -43,14 +43,14 @@ export default function SellerProfile() {
 
 
   const handleBackButtonClick = () => {
-    const confirmationMessage =
-      "Are you sure you want to leave this page? Your changes may not be saved.";
-    if (window.confirm(confirmationMessage)) {
+    // const confirmationMessage =
+    //   "Are you sure you want to leave this page? Your changes may not be saved.";
+    // if (window.confirm(confirmationMessage)) {
       setShowProductForm(false);
       setShowProductEditForm(false);
       setShowManageOrders(false);
       setShowProfileUpdate(true);
-    }
+    // }
   };
 
   const handleOrdersEditClick = () => {

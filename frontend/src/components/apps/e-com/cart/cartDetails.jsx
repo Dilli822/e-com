@@ -132,7 +132,7 @@ export default function CartDetails() {
 
   const handleConfirmOrder = () => {
     const accessToken = localStorage.getItem("accessToken");
-  
+
     if (!accessToken || isSeller) {
       setMustLoginMessage(true);
       return;
@@ -154,9 +154,9 @@ export default function CartDetails() {
   };
 
   const accessToken = localStorage.getItem("accessToken");
-  const isSeller = document.getElementById ("isSellerI");
+  const isSeller = document.getElementById("isSellerI");
   console.log(isSeller);
-  
+
   return (
     <>
       {accessToken ? <Header /> : <HeaderPublic />}

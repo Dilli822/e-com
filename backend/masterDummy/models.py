@@ -86,8 +86,6 @@ class Cart(models.Model):
 class CartItem(models.Model):
     pass 
 
-
-
 class Order(models.Model):
     id = models.BigAutoField(primary_key=True)
     order_id = models.CharField(max_length=16, editable=False)
@@ -118,6 +116,7 @@ class Order(models.Model):
     order_pending = models.BooleanField(default=True)
     order_shipped = models.BooleanField(default=False)
     total_order_items_counter = models.BigIntegerField(blank=True, null=True, default=0)
+    
     def __str__(self):
         return f'Order {self.order_id} by {self.buyer_full_name}'
 
@@ -172,9 +171,7 @@ class Order_For_Seller(models.Model):
     order_pending = models.BooleanField(default=True)
     order_shipped = models.BooleanField(default=False)
     order_cancelled_by_seller = models.BooleanField(default=False)
-    
-
-    
+    total_order_items_counter = models.BigIntegerField(blank=True, null=True, default=0)  
     
     def __str__(self):
         return f'Order {self.order_id} by {self.buyer_full_name}'
@@ -218,6 +215,7 @@ def copy_order_to_order_for_seller(sender, instance, created, **kwargs):
                 order_delivered=instance.order_delivered,
                 order_pending=instance.order_pending,
                 order_shipped=instance.order_shipped,
+                total_order_items_counter=instance.total_order_items_counter
             )
 
 class OrderArchive(models.Model):
@@ -243,6 +241,8 @@ class OrderArchive(models.Model):
 
     delivery_fee = models.CharField(max_length=125,null=True, blank=True)
     mode_of_payment = models.CharField(max_length=125, default="Cash on Delivery")
+    
+    original_ordered_items_count = models.BigIntegerField(null=True, blank=True, default=0)
     
     order_placed_by_buyer = models.BooleanField(default=True)
     order_delivered = models.BooleanField(default=False)
