@@ -90,6 +90,9 @@ export default function CheckOut() {
   const placeFinalOrder = () => {
     setOpenOrderModal(true);
 
+  // Filter out items with null quantities
+  const filteredCheckOutItems = checkOutItems.filter(item => item.quantity !== null);
+
     // Seller information
     const sellerInfo = `Seller Details/Shipped By:\n`;
     const sellerDetails = Object.keys(uniqueSellers)
@@ -112,7 +115,7 @@ export default function CheckOut() {
 
     // Items details
     const itemsDetails = `Items Details:\n`;
-    const items = checkOutItems
+    const items = filteredCheckOutItems
       .map((item, index) => {
         return `${index + 1}. Product Name: ${
           item.product.product_name
@@ -156,7 +159,7 @@ export default function CheckOut() {
           modeOfPayment: paymentMethod,
         },
       },
-      items: checkOutItems.map((item, index) => {
+      items: filteredCheckOutItems.map((item, index) => {
         return {
           productName: item.product.product_name,
           description: item.product.description,
@@ -240,49 +243,58 @@ export default function CheckOut() {
         0
       ),
 
-      product_category_name: checkOutItems
+      product_category_name: filteredCheckOutItems
         .map((item) => item.product.category_name)
         .join(", "),
-      product_category: checkOutItems
+      // product_category: checkOutItems
+      //   .map((item) => item.product.category)
+      //   .join(", "),
+      product_category: filteredCheckOutItems
         .map((item) => item.product.category)
-        .join(", "),
+        .filter(Boolean)
+        .join(", ")
+        .replace(/, $/, ""),
       delivery_fee: deliveryFee,
       mode_of_payment: shipping.details.modeOfPayment,
-      seller_id: seller.details.map((seller) => seller.id).join(", "),
-      order_delivered: false,
-      order_pending: true,
-      order_shipped: false,
+
+      seller_id:
+        seller.details.length === 1
+          ? Array.from(
+              { length: filteredCheckOutItems.length },
+              () => seller.details[0].id
+            ).join(", ")
+          : seller.details.map((seller) => seller.id).join(", "),
       order_placed_by_buyer: true,
     };
 
-    console.log(convertedOrderDetails);
+    console.log("convered details ", convertedOrderDetails);
 
-      // Make API request to post the order details
-  fetch('http://127.0.0.1:8000/e-com/api/orders/', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      Authorization: `Bearer ${localStorage.getItem("accessToken")}`,
-      // Include any required headers, such as authentication token
-    },
-    body: JSON.stringify(convertedOrderDetails),
-  })
-  .then(response => {
-    if (response.ok) {
-      // Handle successful response
-      console.log('Order placed successfully!');
-      setOpenOrderModal(false); // Close the modal or perform any other action
-      navigate("/feed")
-    } else {
-      // Handle error response
-      console.error('Failed to place order:', response.status);
-      // You can display an error message to the user or retry the request
-    }
-  })
-  .catch(error => {
-    console.error('Error placing order:', error);
-    // Handle network errors or other exceptions
-  });
+    // Make API request to post the order details
+    fetch("http://127.0.0.1:8000/e-com/api/orders/", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${localStorage.getItem("accessToken")}`,
+        //   Include any required headers, such as authentication token
+      },
+      body: JSON.stringify(convertedOrderDetails),
+    })
+      .then((response) => {
+        if (response.ok) {
+          // Handle successful response
+          console.log("Order placed successfully!");
+          setOpenOrderModal(false); // Close the modal or perform any other action
+          navigate("/feed");
+        } else {
+          // Handle error response
+          console.error("Failed to place order:", response.status);
+          // You can display an error message to the user or retry the request
+        }
+      })
+      .catch((error) => {
+        console.error("Error placing order:", error);
+        // Handle network errors or other exceptions
+      });
   };
 
   return (

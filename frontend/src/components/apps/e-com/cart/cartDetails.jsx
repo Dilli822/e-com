@@ -105,15 +105,21 @@ export default function CartDetails() {
       setCartItems(updatedCartItems);
     }
   };
-
   const handleSelectAll = (event) => {
     if (event.target.checked) {
-      setSelectedItems(cartItems.map((_, index) => index));
+      const newSelectedItems = cartItems
+        .map((_, index) => index)
+        .filter((index) => !selectedItems.includes(index));
+      if (newSelectedItems.length >= 1) {
+        
+        setSelectedItems([...selectedItems, ...newSelectedItems]);
+      }
     } else {
+      alert("cyk")
       setSelectedItems([]);
     }
   };
-
+  
   const handleSelectItem = (index) => {
     if (selectedItems.includes(index)) {
       setSelectedItems(selectedItems.filter((item) => item !== index));
@@ -123,12 +129,13 @@ export default function CartDetails() {
   };
 
   const handlePlaceOrder = () => {
-    if (selectedItems.length > 0) {
+    if (selectedItems.length >= 1) {
       setOpenOrderDialog(true);
     } else {
       alert("Please select at least one item to place an order.");
     }
   };
+  
 
   const handleConfirmOrder = () => {
     const accessToken = localStorage.getItem("accessToken");
