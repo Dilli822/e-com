@@ -25,7 +25,7 @@ const UserProfileMaster = () => {
     fetchUserProfile();
   }, []);
 
-  console.log(userData)
+  // console.log(userData)
 
   const [query, setQuery] = useState("");
   const [results, setResults] = useState([]);
@@ -109,14 +109,14 @@ const UserProfileMaster = () => {
   const toggleCollapse = () => {
     setCollapsed(!collapsed);
   };
-  console.log(isBuyer)
+  // console.log(isBuyer)
   let isFinalBuyer = isBuyer;
 
   return (
     <>
       {error && <p>Error: {error}</p>}
       {userData && (
-        <Container>
+        <>
           {isSeller && userData.sellers ? (
             <>
               ID: #{userData.sellers[0].seller_id}
@@ -125,8 +125,6 @@ const UserProfileMaster = () => {
               <br />
               Address: {userData.sellers[0].address}
               <br />
-
-
               <br />
               Phone Number: {userData.sellers[0].phone_number}
               <br />
@@ -135,15 +133,22 @@ const UserProfileMaster = () => {
             </>
           ) : isBuyer ? (
             <>
-           Buyer ID: #  <span id="buyerID"> {userData.buyer.buyer_id}  </span>
+              Buyer ID: # <span id="buyerID"> {userData.buyer.buyer_id} </span>
               <br />
-              Name: <span id="buyerUserName">{userData.user.username} </span><br />
+              Name: <span id="buyerUserName">{userData.user.username} </span>
+              <br />
               Email: <span id="buyerEmail">{userData.user.email} </span> <br />
-              Phone Number: <span id="buyerContact">{userData.buyer.phone_number} </span><br />
+              Phone Number:{" "}
+              <span id="buyerContact">{userData.buyer.phone_number} </span>
+              <br />
               <span id="isSellerI">{userData.user.is_buyer}</span>
               {tagAddress ? (
                 <span variant="h6">
-                  Final Shipping Address: <b>{tagAddress}</b>
+                  Final Shipping Address:{" "}
+                  <b>
+                    {" "}
+                    <span id="tagAddress"> {tagAddress} </span>{" "}
+                  </b>
                   <br />
                   <Button
                     onClick={() => {
@@ -163,12 +168,15 @@ const UserProfileMaster = () => {
                   </Button>
                 </span>
               ) : (
-                <>Shipping Address: <span id="buyerDefaultAdress">{userData.buyer.address}</span></>
+                <>
+                  Shipping Address:{" "}
+                  <span id="buyerDefaultAdress">{userData.buyer.address}</span>
+                </>
               )}
             </>
           ) : null}
-          <hr />
-          <Typography variant="body1">
+
+          {/* <Typography variant="body1">
             <b>Update Shipping Address</b>
           </Typography>
 
@@ -202,14 +210,15 @@ const UserProfileMaster = () => {
                   </p>
                 ))}
               </div>
-            </div>
+            </div> */}
 
-            {selectedAddress && !newAddress && (
+          {/* {selectedAddress && !newAddress && (
               <div>
                 <Typography variant="body2">
                   <b>
+
                     Selected Final Customer Delivery Address:{" "}
-                    {selectedAddress.address}
+                   <span id="finalTagAddress"> {selectedAddress.address} </span> 
                   </b>
                 </Typography>
 
@@ -224,13 +233,10 @@ const UserProfileMaster = () => {
                   Set New Address
                 </Button>
               </div>
-            )}
-          </Collapse>
-        </Container>
+            )} */}
+          {/* </Collapse> */}
+        </>
       )}
-
-
-
     </>
   );
 };

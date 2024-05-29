@@ -196,7 +196,7 @@ function BuyerProfileUpdate() {
               : `http://127.0.0.1:8000${profileData.image}`
           }
           alt="Profile Image"
-          style={{ maxWidth: "100%", maxHeight: "200px" }}
+          style={{ maxWidth: "100%", width: "300px" }}
         />
 
         {profileEditMode && (
@@ -278,7 +278,7 @@ function BuyerProfileUpdate() {
             >
               Edit
             </Button>
-            &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; 
             <Button variant="contained" onClick={handleLogout}>
               Logout
             </Button>

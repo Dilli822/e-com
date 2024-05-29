@@ -24,7 +24,7 @@ import { useNavigate } from "react-router-dom";
 import Header from "../header/header";
 import HeaderPublic from "../header/headerPublic";
 import AppFooter from "../footer/footer";
-import { Alert } from "@mui/material";
+import { Alert, AlertTitle } from "@mui/material";
 
 export default function CheckOut() {
   const location = useLocation();
@@ -36,6 +36,11 @@ export default function CheckOut() {
   const [finalOrderDetails, setfinalOrderDetails] = useState({});
   const [openOrderModal, setOpenOrderModal] = useState(false);
   const [buyerValidation, setBuyerValidation] = useState("");
+  const [tagAddress, setTagAddress] = useState(null);
+  const [successMessage, setSuccessMessage] = useState("");
+  const [errorMessage, setErrorMessage] = useState("");
+
+  const [openConfirmationModal, setOpenConfirmationModal] = useState(false);
 
   const navigate = useNavigate();
   useEffect(() => {
@@ -76,22 +81,27 @@ export default function CheckOut() {
 
   console.log(checkOutItems);
 
+  let convertedOrderDetails;
+
   const uniqueSellers = checkOutItems.reduce((acc, item) => {
     const seller = item.product.seller;
-    if (seller && !acc[seller]) {
+    if (seller && item.quantity !== null && item.quantity > 0 && !acc[seller]) {
       acc[seller] = item.product;
     }
     return acc;
   }, {});
 
-  console.log(uniqueSellers);
+  console.log("UNIQUE SELLERS ", uniqueSellers);
   const accessToken = localStorage.getItem("accessToken");
 
   const placeFinalOrder = () => {
-    setOpenOrderModal(true);
-
-  // Filter out items with null quantities
-  const filteredCheckOutItems = checkOutItems.filter(item => item.quantity !== null);
+    setOpenConfirmationModal(true);
+  };
+  const handleConfirmOrder = () => {
+    // Filter out items with null quantities
+    const filteredCheckOutItems = checkOutItems.filter(
+      (item) => item.quantity !== null
+    );
 
     // Seller information
     const sellerInfo = `Seller Details/Shipped By:\n`;
@@ -184,6 +194,8 @@ export default function CheckOut() {
     const orderDetailsJSON = JSON.stringify(orderDetailsJSONFormatter);
     console.log(orderDetailsJSON);
     setfinalOrderDetails(orderDetailsJSON);
+    const tagAddressText = document.getElementById("tagAddress")?.textContent;
+    setTagAddress(tagAddressText);
 
     // Extracted information
     const {
@@ -192,8 +204,13 @@ export default function CheckOut() {
       items: extractedItems,
     } = orderDetailsJSONFormatter;
     const buyer_ID = document.getElementById("buyerID").textContent;
-    const buyer_delivery_address =
+    let buyer_delivery_address;
+
+    buyer_delivery_address =
       document.getElementById("buyerDefaultAdress").textContent;
+    console.log(buyer_delivery_address);
+
+    // }
     const buyer_contact = document.getElementById("buyerContact").textContent;
     const buyer_email = document.getElementById("buyerEmail").textContent;
     const buyer_username = document.getElementById("buyerUserName").textContent;
@@ -209,11 +226,14 @@ export default function CheckOut() {
     ) {
       // If any of the buyer details are missing, show an error message
       setBuyerValidation("Please provide all buyer details.");
+      setErrorMessage(
+        `Failed to place order. Please provide all Your details}`
+      );
       return;
     }
 
     // Construct the desired JSON format
-    const convertedOrderDetails = {
+    convertedOrderDetails = {
       buyer_id: buyer_ID,
       buyer_delivery_address: buyer_delivery_address,
       buyer_contact: buyer_contact,
@@ -282,20 +302,39 @@ export default function CheckOut() {
       .then((response) => {
         if (response.ok) {
           // Handle successful response
+
           console.log("Order placed successfully!");
-          setOpenOrderModal(false); // Close the modal or perform any other action
-          navigate("/feed");
+
+          setSuccessMessage("Order placed successfully!");
+
+          // Hide the success message after 1 minute (60 seconds)
+          setTimeout(() => {
+            setSuccessMessage("");
+            navigate("/feed");
+          }, 5000);
+
+          setOpenConfirmationModal(false); // Close the modal or perform any other action
         } else {
           // Handle error response
           console.error("Failed to place order:", response.status);
+          setErrorMessage(`Failed to place order: ${response}`);
           // You can display an error message to the user or retry the request
         }
       })
       .catch((error) => {
         console.error("Error placing order:", error);
+        setErrorMessage(`Failed to place order: ${error}`);
+
+        // Hide the success message after 1 minute (60 seconds)
+        setTimeout(() => {
+          setErrorMessage("");
+        }, 6000);
+
         // Handle network errors or other exceptions
       });
   };
+
+  console.log("tagaddress ", tagAddress);
 
   return (
     <>
@@ -523,6 +562,22 @@ export default function CheckOut() {
                     <Typography variant="body1">
                       <b>Shipping Details</b>
                     </Typography>
+
+                    <p>
+                      {" "}
+                      Final Shipping Address:{" "}
+                      <b>
+                        {" "}
+                        <span id="">
+                          {" "}
+                          {
+                            document.getElementById("buyerDefaultAdress")
+                              ?.textContent
+                          }{" "}
+                        </span>
+                      </b>{" "}
+                    </p>
+
                     <p>
                       Ordered Date:
                       <b>
@@ -547,10 +602,8 @@ export default function CheckOut() {
                       Mode of Payment:
                       <b> {paymentMethod}</b>
                     </p>
-
                     <p>
-                      OrderID:
-                      <b> {}</b>
+                      OrderID: <b>{"" || `To be filled by system`}</b>
                     </p>
                   </Grid>
                   <hr />
@@ -664,16 +717,17 @@ export default function CheckOut() {
             </Grid>
           </div>
         )}
+
         <Modal
-          open={openOrderModal}
-          onClose={() => setOpenOrderModal(false)} // Fixed function definition
+          open={openConfirmationModal}
+          onClose={() => setOpenConfirmationModal(false)}
           closeAfterTransition
           BackdropComponent={Backdrop}
           BackdropProps={{
             timeout: 500,
           }}
         >
-          <Fade in={openOrderModal}>
+          <Fade in={openConfirmationModal}>
             <div
               style={{
                 display: "flex",
@@ -691,24 +745,40 @@ export default function CheckOut() {
                 <Button
                   variant="contained"
                   color="primary"
-                  onClick={handleConfirm}
+                  onClick={handleConfirmOrder} // Call the new function to handle order confirmation
                 >
                   Confirm
                 </Button>
                 &nbsp;&nbsp;
                 <Button
                   variant="contained"
-                  onClick={() => setOpenOrderModal(false)}
+                  onClick={() => setOpenConfirmationModal(false)}
                 >
-                  {" "}
-                  {/* Fixed function definition */}
                   Cancel
                 </Button>
+                {errorMessage && (
+                  <Alert severity="error">
+                    <AlertTitle>Error</AlertTitle>
+                    {errorMessage}
+                  </Alert>
+                )}
               </div>
             </div>
           </Fade>
         </Modal>
+
+        <br />
+
+        {successMessage && (
+          <Alert severity="success">
+            <AlertTitle>
+              <b>Success</b>
+            </AlertTitle>
+            {successMessage}
+          </Alert>
+        )}
       </Container>
+
       <br />
       <br />
       <AppFooter />
