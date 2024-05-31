@@ -12,6 +12,9 @@ import {
   IconButton,
   Tooltip,
 } from "@mui/material";
+import Pagination from "@mui/material/Pagination";
+import Stack from "@mui/material/Stack";
+
 import LocalShippingIcon from "@mui/icons-material/LocalShipping";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import CancelIcon from "@mui/icons-material/Cancel";
@@ -93,134 +96,146 @@ function BuyersOrdersList() {
     }
   };
 
+  const showPages = () =>{
+
+  }
+
   return (
-    <GlobalStyles>
+    <>
+      <GlobalStyles>
+        <br />
+        <FullPageContainer>
+          <Typography variant="h4" gutterBottom>
+            Buyers Orders Catalog
+          </Typography>
+
+          {error && <Typography color="error">{error}</Typography>}
+          <StyledTableContainer component={Paper} elevation={3}>
+            <Table aria-label="Orders table" style={{ cursor: "pointer" }}>
+              <TableHead>
+                <TableRow>
+                  <StyledTableCell>Order ID</StyledTableCell>
+                  <StyledTableCell>Delivery Address</StyledTableCell>
+                  <StyledTableCell>Product Name</StyledTableCell>
+                  <StyledTableCell>Product Images</StyledTableCell>
+                  <StyledTableCell>Products Price</StyledTableCell>
+                  <StyledTableCell>Total Price</StyledTableCell>
+                  <StyledTableCell>Total Units</StyledTableCell>
+                  <StyledTableCell>Order Placed</StyledTableCell>
+                  <StyledTableCell>Delivery Fee</StyledTableCell>
+                  <StyledTableCell>Mode of Payment</StyledTableCell>
+                  <StyledTableCell>Ordered At</StyledTableCell>
+                  <StyledTableCell>Order Shipped</StyledTableCell>
+
+                  <StyledTableCell>Order Received</StyledTableCell>
+                  <StyledTableCell>Order Placed </StyledTableCell>
+                </TableRow>
+              </TableHead>
+              <TableBody>
+                {orders.map((order) => (
+                  <StyledTableRow key={order.id}>
+                    <StyledTableCellContent>
+                      {order.order_id}
+                    </StyledTableCellContent>
+                    <StyledTableCellContent>
+                      {order.buyer_delivery_address}
+                    </StyledTableCellContent>
+
+                    <StyledTableCellContent>
+                      <img
+                        src={order.product_images}
+                        alt={order.product_name}
+                        style={{
+                          width: "100px",
+                          height: "100px",
+                          objectFit: "cover",
+                        }}
+                      />
+                    </StyledTableCellContent>
+
+                    <StyledTableCellContent>
+                      {order.product_name}
+                    </StyledTableCellContent>
+                    <StyledTableCellContent>
+                      {order.product_price}
+                    </StyledTableCellContent>
+                    <StyledTableCellContent>
+                      {order.product_total_price}
+                    </StyledTableCellContent>
+                    <StyledTableCellContent>
+                      {order.product_total_unit}
+                    </StyledTableCellContent>
+                    <StyledTableCellContent>
+                      {order.order_placed_by_buyer ? "Yes" : "No"}
+                    </StyledTableCellContent>
+                    <StyledTableCellContent>
+                      {order.delivery_fee}
+                    </StyledTableCellContent>
+                    <StyledTableCellContent>
+                      {order.mode_of_payment}
+                    </StyledTableCellContent>
+                    <StyledTableCellContent>
+                      {new Date(order.created_at).toLocaleString()}
+                    </StyledTableCellContent>
+                    <StyledTableCellContent>
+                      {order.order_shipped ? (
+                        <Tooltip title="Shipped">
+                          <IconButton>
+                            <LocalShippingIcon color="primary" />
+                          </IconButton>
+                        </Tooltip>
+                      ) : (
+                        <Tooltip title="Blocked">
+                          <IconButton>
+                            <CancelIcon color="error" />
+                          </IconButton>
+                        </Tooltip>
+                      )}
+                    </StyledTableCellContent>
+                    <StyledTableCellContent>
+                      {order.order_delivered ? (
+                        <Tooltip title="Delivered">
+                          <IconButton>
+                            <CheckCircleIcon style={{ color: "green" }} />
+                          </IconButton>
+                        </Tooltip>
+                      ) : (
+                        <Tooltip title="Blocked">
+                          <IconButton>
+                            <CancelIcon color="error" />
+                          </IconButton>
+                        </Tooltip>
+                      )}
+                    </StyledTableCellContent>
+                    <StyledTableCellContent>
+                      {order.order_placed_by_buyer ? (
+                        <Tooltip title="Placed by Buyer">
+                          <IconButton>
+                            <CheckCircleIcon style={{ color: "green" }} />
+                          </IconButton>
+                        </Tooltip>
+                      ) : (
+                        <Tooltip title="Blocked">
+                          <IconButton>
+                            <CancelIcon color="error" />
+                          </IconButton>
+                        </Tooltip>
+                      )}
+                    </StyledTableCellContent>
+                  </StyledTableRow>
+                ))}
+              </TableBody>
+            </Table>
+          </StyledTableContainer>
+        </FullPageContainer>
+      </GlobalStyles>
+
       <br />
-      <FullPageContainer>
-        <Typography variant="h4" gutterBottom>
-          Buyers Orders Catalog
-        </Typography>
 
-        {error && <Typography color="error">{error}</Typography>}
-        <StyledTableContainer component={Paper} elevation={3}>
-          <Table aria-label="Orders table" style={{ cursor: "pointer" }}>
-            <TableHead>
-              <TableRow>
-                <StyledTableCell>Order ID</StyledTableCell>
-                <StyledTableCell>Delivery Address</StyledTableCell>
-                <StyledTableCell>Product Name</StyledTableCell>
-                <StyledTableCell>Product Images</StyledTableCell>
-                <StyledTableCell>Products Price</StyledTableCell>
-                <StyledTableCell>Total Price</StyledTableCell>
-                <StyledTableCell>Total Units</StyledTableCell>
-                <StyledTableCell>Order Placed</StyledTableCell>
-                <StyledTableCell>Delivery Fee</StyledTableCell>
-                <StyledTableCell>Mode of Payment</StyledTableCell>
-                <StyledTableCell>Ordered At</StyledTableCell>
-                <StyledTableCell>Order Shipped</StyledTableCell>
-
-                <StyledTableCell>Order Received</StyledTableCell>
-                <StyledTableCell>Order Placed </StyledTableCell>
-              </TableRow>
-            </TableHead>
-            <TableBody>
-              {orders.map((order) => (
-                <StyledTableRow key={order.id}>
-                  <StyledTableCellContent>
-                    {order.order_id}
-                  </StyledTableCellContent>
-                  <StyledTableCellContent>
-                    {order.buyer_delivery_address}
-                  </StyledTableCellContent>
-
-                  <StyledTableCellContent>
-                    <img
-                      src={order.product_images}
-                      alt={order.product_name}
-                      style={{
-                        width: "100px",
-                        height: "100px",
-                        objectFit: "cover",
-                      }}
-                    />
-                  </StyledTableCellContent>
-
-                  <StyledTableCellContent>
-                    {order.product_name}
-                  </StyledTableCellContent>
-                  <StyledTableCellContent>
-                    {order.product_price}
-                  </StyledTableCellContent>
-                  <StyledTableCellContent>
-                    {order.product_total_price}
-                  </StyledTableCellContent>
-                  <StyledTableCellContent>
-                    {order.product_total_unit}
-                  </StyledTableCellContent>
-                  <StyledTableCellContent>
-                    {order.order_placed_by_buyer ? "Yes" : "No"}
-                  </StyledTableCellContent>
-                  <StyledTableCellContent>
-                    {order.delivery_fee}
-                  </StyledTableCellContent>
-                  <StyledTableCellContent>
-                    {order.mode_of_payment}
-                  </StyledTableCellContent>
-                  <StyledTableCellContent>
-                    {new Date(order.created_at).toLocaleString()}
-                  </StyledTableCellContent>
-                  <StyledTableCellContent>
-                    {order.order_shipped ? (
-                      <Tooltip title="Shipped">
-                        <IconButton>
-                          <LocalShippingIcon color="primary" />
-                        </IconButton>
-                      </Tooltip>
-                    ) : (
-                      <Tooltip title="Blocked">
-                        <IconButton>
-                          <CancelIcon color="error" />
-                        </IconButton>
-                      </Tooltip>
-                    )}
-                  </StyledTableCellContent>
-                  <StyledTableCellContent>
-                    {order.order_delivered ? (
-                      <Tooltip title="Delivered">
-                        <IconButton>
-                          <CheckCircleIcon style={{ color: "green" }} />
-                        </IconButton>
-                      </Tooltip>
-                    ) : (
-                      <Tooltip title="Blocked">
-                        <IconButton>
-                          <CancelIcon color="error" />
-                        </IconButton>
-                      </Tooltip>
-                    )}
-                  </StyledTableCellContent>
-                  <StyledTableCellContent>
-                    {order.order_placed_by_buyer ? (
-                      <Tooltip title="Placed by Buyer">
-                        <IconButton>
-                          <CheckCircleIcon style={{ color: "green" }} />
-                        </IconButton>
-                      </Tooltip>
-                    ) : (
-                      <Tooltip title="Blocked">
-                        <IconButton>
-                          <CancelIcon color="error" />
-                        </IconButton>
-                      </Tooltip>
-                    )}
-                  </StyledTableCellContent>
-                </StyledTableRow>
-              ))}
-            </TableBody>
-          </Table>
-        </StyledTableContainer>
-      </FullPageContainer>
-    </GlobalStyles>
+      <Stack spacing={10}>
+        <Pagination count={5} color="primary" onClick={showPages} />
+      </Stack>
+    </>
   );
 }
 

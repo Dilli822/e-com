@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Grid, Paper, List, ListItem, ListItemText, Container } from "@mui/material";
-
+import h from "../assets/banner/b10.jpg"
+import shopBag from "../assets/banner/b16.jpg"
+import modelLook from "../assets/banner/b18.jpg"
 export default function Banner() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
@@ -23,6 +25,9 @@ export default function Banner() {
     "https://icms-image.slatic.net/images/ims-web/7984cebf-8a00-475d-bd27-7ef2d3207679.jpg_1200x1200.jpg",
     "https://icms-image.slatic.net/images/ims-web/59a047d8-76f2-41b2-9fd8-ae810cbc4536.jpg",
     "https://icms-image.slatic.net/images/ims-web/1776b263-6917-48cf-898f-3f132f9e3973.jpg",
+    h,
+    shopBag,
+    modelLook
   ];
 
   useEffect(() => {

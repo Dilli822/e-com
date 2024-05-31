@@ -215,7 +215,9 @@ export default function CartDetails() {
                     <TableCell>
                       <img src={item.product.image} alt="Product" width="70" />
                     </TableCell>
-                    <TableCell>{item.product.description}</TableCell>
+                    <TableCell>
+                    {item.product.description.length > 115 ? `${item.product.description.slice(0, 115)}...` : item.product.description}
+                    </TableCell>
                     <TableCell>
                       <b> ${item.product.price}</b>
                     </TableCell>

@@ -241,7 +241,7 @@ const Header = () => {
                   <ShoppingCart className={classes.cartIcon} />
                   <span className={classes.cartText}></span>
                 </Link>
-                <Notifications />
+                {/* <Notifications /> */}
                 &nbsp;
                 {!isMobile && (
                   <IconButton onClick={handleMenuClick}>

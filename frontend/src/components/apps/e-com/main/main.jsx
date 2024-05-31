@@ -7,6 +7,7 @@ import {
   CardContent,
   Typography,
   Container,
+  Button,
 } from "@material-ui/core";
 import { useNavigate } from "react-router-dom";
 import ProductDetails from "../products/details/public_product_details";
@@ -15,7 +16,6 @@ import PeopleProductView from "../products/productViews/peopleProductViews";
 const Main = () => {
   const [products, setProducts] = useState({});
   const [selectedProduct, setSelectedProduct] = useState(null);
-
   const [Peopleproducts, setPeopleProducts] = useState({});
   const navigate = useNavigate();
   useEffect(() => {
@@ -43,15 +43,32 @@ const Main = () => {
     ); // Pass product details as state
   };
 
+  const handleViewMoreClick = (category) => {
+    navigate(`/product/filter/`, {
+      state: { category, products: products[category] },
+    });
+  };
+
   return (
     <Grid container spacing={3}>
       {Object.keys(products).map((category) => (
         <Grid item xs={12} key={category}>
-          <Typography variant="h5" gutterBottom>
-            {category}
-          </Typography>
+          <div style={{ display: "flex", justifyContent: "space-between" }}>
+            <Typography variant="h5" gutterBottom>
+              {category}
+            </Typography>
+            <Button
+              variant="outlined"
+              color="secondary"
+              onClick={() => handleViewMoreClick(category)}
+            >
+              View More
+            </Button>
+          </div>
+          <br />
+
           <Grid container spacing={2}>
-            {products[category].map((product) => (
+            {products[category].slice(0, 6).map((product) => (
               <Grid item xs={6} sm={6} md={2} lg={2} key={product.id}>
                 <Card
                   onClick={() => handleCardClick(product)}
@@ -82,10 +99,14 @@ const Main = () => {
                     </CardMedia>
 
                     <CardContent>
-                      <Typography gutterBottom variant="body1" component="body1">
+                      <Typography
+                        gutterBottom
+                        variant="body1"
+                        component="body1"
+                      >
                         {product.product_name}
                       </Typography>
-                   
+
                       <Typography
                         variant="body2"
                         color="textSecondary"

@@ -242,7 +242,10 @@ export default function SellerProductsList() {
                         style={{ width: "150px" }}
                       />
                     </TableCell>
-                    <TableCell>{product.description}</TableCell>
+                    <TableCell>
+             
+                {product.description.length > 115 ? `${product.description.slice(0, 115)}...` : product.description}
+                    </TableCell>
                     <TableCell>{product.category_name}</TableCell>
                     <TableCell>{product.discount}%</TableCell>
                     <TableCell>${product.price}</TableCell>

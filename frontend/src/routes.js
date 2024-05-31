@@ -24,6 +24,9 @@ import CheckOut from "./components/apps/e-com/checkOut/check_Out";
 import UserProfileMaster from "./components/apps/apiFetcher/fetchUserApi";
 import AutoLocationInput from "./components/apps/e-com/location/autoComplete_Location";
 import BuyersOrdersList from "./components/apps/e-com/orders/buyers/list/buyerOrder_list";
+import ReviewList from "./components/apps/e-com/reviews/list/reviewList";
+import ReviewCRUD from "./components/apps/e-com/reviews/list/reviewCRUD";
+import FilterProducts from "./components/apps/e-com/products/filters/filterProducts";
 
 const MainRouter = () => {
   return (
@@ -43,8 +46,10 @@ const MainRouter = () => {
         {/* <Route path="/product/category/list" element={<CategoryOptions />} /> */}
         <Route path="/product/:str/:id/:str" element={<ProductDetails />} />
         <Route path="/product/review/add/" element={<AddReview />} />
+        <Route path="/product/review/list/" element={<ReviewCRUD />} />
         {/* <Route path="/product/people-view/" element={<PeopleProductView />} /> */}
         <Route path="/cart/details/" element={<CartDetails />} />
+        <Route path="/product/filter/" element={<FilterProducts />} />
         <Route path="/checkout/" element={<CheckOut />} />
         <Route path="/user/apiFetch/" element={<UserProfileMaster />} />
 

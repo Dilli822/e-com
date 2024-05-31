@@ -385,7 +385,9 @@ export default function CheckOut() {
                           <TableCell>
                             <img src={item.product.image} alt="" width={60} />
                           </TableCell>
-                          <TableCell>{item.product.description}</TableCell>
+                          <TableCell>
+                          {item.product.description.length > 115 ? `${item.product.description.slice(0, 115)}...` : item.product.description}
+                          </TableCell>
                           <TableCell>${price.toFixed(2)}</TableCell>
                           <TableCell>{quantity}</TableCell>
                           <TableCell>

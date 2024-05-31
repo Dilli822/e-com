@@ -81,13 +81,15 @@ export default function ProductDetails() {
                 <Typography variant="body1">
                   Product Id: #{product.id}
                 </Typography>
-                <Typography variant="body1">{product.description}</Typography>
+                <Typography variant="body1">
+                {product.description.length > 115 ? `${product.description.slice(0, 115)}...` : product.description}
+                </Typography>
                 <br />
                 <Typography variant="body1">Stock: {product.stock}</Typography>
                 <Typography variant="body1">
                   Category: {product.category_name}
                 </Typography>
-                <br />
+      
 
                 <Typography variant="h5">Price: ${product.price}</Typography>
 
@@ -110,7 +112,7 @@ export default function ProductDetails() {
                   <img
                     src={product.seller_image}
                     alt="Seller Image"
-                    width="100"
+                    width="80"
                   />
                   <br />
                   Supplier's Name:{" "}

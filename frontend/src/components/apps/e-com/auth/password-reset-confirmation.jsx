@@ -24,8 +24,6 @@ const ResetPasswordConfirm = () => {
   useEffect(() => {
     // Fetch additional data or perform any other side effects related to the token if needed
   }, [token]);
-
-
   
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -35,7 +33,7 @@ const ResetPasswordConfirm = () => {
       setErrorMessage("Passwords do not match");
       return;
     }
-
+    
     try {
       setLoading(true);
       const response = await fetch(

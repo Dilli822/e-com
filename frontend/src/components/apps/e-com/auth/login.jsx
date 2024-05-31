@@ -55,14 +55,12 @@ function Login() {
     }
   };
 
-
   useEffect(() => {
     const accessToken = localStorage.getItem("accessToken");
     if (accessToken) {
       navigate("/feed");
     }
   }, [navigate]);
-
 
   return (
     <ThemeProvider theme={createTheme()}>
