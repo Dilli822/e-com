@@ -39,11 +39,16 @@ export default function CheckOut() {
   const [tagAddress, setTagAddress] = useState(null);
   const [successMessage, setSuccessMessage] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
-
+  const [isSeller, setIsSeller] = useState(null);
+  const [isBuyer, setIsBuyer] = useState(null);
   const [openConfirmationModal, setOpenConfirmationModal] = useState(false);
+
+  let sellerElement;
+  // let buyerElement;
 
   const navigate = useNavigate();
   useEffect(() => {
+   
     if (!localStorage.getItem("accessToken")) {
       navigate("/");
       return;
@@ -66,16 +71,19 @@ export default function CheckOut() {
   const totalPrice = subtotal + deliveryFee;
 
   const handlePaymentMethodChange = (method) => {
+ 
     setPaymentMethod(method);
     handleConfirmation();
   };
 
   const handleConfirmation = () => {
     setOpenModal(true);
+
   };
 
   const handleConfirm = () => {
     setConfirmation(true);
+
     setOpenModal(false);
   };
 
@@ -95,9 +103,37 @@ export default function CheckOut() {
   const accessToken = localStorage.getItem("accessToken");
 
   const placeFinalOrder = () => {
-    setOpenConfirmationModal(true);
+    const isBuyerElement = document.getElementById("isBuyer");
+    if (isBuyerElement) {
+      const isBuyer = isBuyerElement.textContent;
+      console.log("Buyer", isBuyer);
+      if (isBuyer === "Yes") {
+        setOpenConfirmationModal(true);
+        return; // Exit the function early if the user is a buyer
+      }
+    }
+  
+    // If the element is not found or the user is not a buyer
+    setOpenConfirmationModal(false);
+    setIsBuyer(null);
+    setErrorMessage("Failed to place order: Buyers only can place orders");
+
+    // Hide the error message after 6 seconds (6000 milliseconds)
+    setTimeout(() => {
+      setErrorMessage("");
+    }, 6000);
   };
+  
+  
+  
+  
+
+
+
   const handleConfirmOrder = () => {
+
+
+
     // Filter out items with null quantities
     const filteredCheckOutItems = checkOutItems.filter(
       (item) => item.quantity !== null
@@ -214,6 +250,8 @@ export default function CheckOut() {
     const buyer_contact = document.getElementById("buyerContact").textContent;
     const buyer_email = document.getElementById("buyerEmail").textContent;
     const buyer_username = document.getElementById("buyerUserName").textContent;
+
+
     const product_total_price =
       document.getElementById("totalPrice").textContent;
 
@@ -335,6 +373,10 @@ export default function CheckOut() {
   };
 
   console.log("tagaddress ", tagAddress);
+
+
+
+
 
   return (
     <>
@@ -716,7 +758,15 @@ export default function CheckOut() {
               >
                 Confirm Order
               </Button>
+             
             </Grid>
+            <br />
+            {errorMessage && (
+                  <Alert severity="error">
+                    <AlertTitle>Error</AlertTitle>
+                    {errorMessage}
+                  </Alert>
+                )}
           </div>
         )}
 

@@ -70,7 +70,11 @@ export default function SellerProductsList() {
       if (!response.ok) {
         throw new Error("Failed to fetch seller products");
       }
-      const data = await response.json();
+      let data = await response.json();
+      // Sort products by date in ascending order
+      data.sort((a, b) => new Date(a.created_at) - new Date(b.created_at));
+      // Reverse the order to make the last item first
+      data.reverse();
       setProducts(data);
       const sellerId = data[0]?.seller;
       setUserId(sellerId);
@@ -219,6 +223,10 @@ export default function SellerProductsList() {
             className={classes.tableContainer}
             style={{ maxHeight: "100%" }}
           >
+            {/* Display total number of items */}
+            <Typography variant="h6">
+              Total Number of Items: {products.length}
+            </Typography>
             <Table stickyHeader aria-label="seller products table">
               <TableHead>
                 <TableRow>
@@ -243,8 +251,9 @@ export default function SellerProductsList() {
                       />
                     </TableCell>
                     <TableCell>
-             
-                {product.description.length > 115 ? `${product.description.slice(0, 115)}...` : product.description}
+                      {product.description.length > 115
+                        ? `${product.description.slice(0, 115)}...`
+                        : product.description}
                     </TableCell>
                     <TableCell>{product.category_name}</TableCell>
                     <TableCell>{product.discount}%</TableCell>

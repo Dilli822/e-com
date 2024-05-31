@@ -112,9 +112,36 @@ const UserProfileMaster = () => {
   // console.log(isBuyer)
   let isFinalBuyer = isBuyer;
 
+
   return (
     <>
       {error && <p>Error: {error}</p>}
+      <br />
+      {isSeller ? (
+        <>
+          Seller: <span id="isSeller"> Yes </span> {/* If true, display "Yes" */}, a seller
+          <br />
+        </>
+      ) : (
+        <>
+          {/* Seller: No ,If false, display "No" */}
+          {/* Not a seller <br /> */}
+        </>
+      )}
+
+
+{isBuyer ? (
+        <>
+          Buyer: <span id="isBuyer">Yes</span> {/* If true, display "Yes" */}, a Buyer
+          <br />
+        </>
+      ) : (
+        <>
+          {/* Seller: No ,If false, display "No" */}
+          {/* Not a seller <br /> */}
+        </>
+      )}
+
       {userData && (
         <>
           {isSeller && userData.sellers ? (
@@ -130,6 +157,7 @@ const UserProfileMaster = () => {
               <br />
               Username: {userData.user.username} <br />
               Email: {userData.user.email}
+              <br />
             </>
           ) : isBuyer ? (
             <>

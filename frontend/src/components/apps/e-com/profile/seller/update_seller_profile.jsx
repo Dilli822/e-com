@@ -282,7 +282,7 @@ function SellerProfileUpdate() {
             >
               Edit
             </Button>
-            &nbsp;  &nbsp;  &nbsp;
+            &nbsp;  &nbsp;  
 
             <Button variant="contained" onClick={handleLogout}>
           Logout

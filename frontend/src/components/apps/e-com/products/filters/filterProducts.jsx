@@ -1,7 +1,9 @@
-import React from "react";
+import {useEffect, useState} from "react";
 import { makeStyles } from "@mui/styles";
 import AppFooter from "../../footer/footer";
+import AppHeader from "../../header/header";
 import HeaderPublic from "../../header/headerPublic";
+import { useNavigate } from "react-router-dom";
 import {
   Grid,
   Card,
@@ -22,32 +24,44 @@ const useStyles = makeStyles((theme) => ({
 const FilterProducts = () => {
   const classes = useStyles();
   const location = useLocation();
+  const navigate = useNavigate();
+  const [selectedProduct, setSelectedProduct] = useState(null);
   const { category, products } = location.state || {
     category: "",
     products: [],
   };
 
+  const handleCardClick = (product) => {
+    setSelectedProduct(product);
+    navigate(
+      `/product/${product.product_name}/${product.id}/${product.category_name}`,
+      { state: { product } }
+    ); // Pass product details as state
+  };
+
+
+  const accessToeken = localStorage.getItem("accessToken");
   return (
     <div>
-      <HeaderPublic />
+      {accessToeken ? <AppHeader /> : <HeaderPublic />}
       <br /> <br />
       <Container>
-        <Grid item md={12}>
-          <Typography variant="h6">
-            {products.length}{" "}
-            {products.length === 1 ? "items found" : "items found"}
-          </Typography>
-        </Grid>
-        <Typography variant="h6" gutterBottom>
-          Category: {category} <br />
-        </Typography>
-
         <Grid container spacing={2}>
           <Grid
             item
             md={3}
             style={{ borderRight: "1px solid #f4f4f4", padding: "10px" }}
           >
+            <Grid item md={12}>
+              <Typography variant="h6">
+                {products.length}{" "}
+                {products.length === 1 ? "items found" : "items found"}
+              </Typography>
+            </Grid>
+            <Typography variant="h6" gutterBottom>
+              Category: {category} <br />
+            </Typography>
+
             <Typography variant="body1" gutterBottom>
               Filter <br />
             </Typography>
@@ -91,6 +105,7 @@ const FilterProducts = () => {
                       display: "flex",
                       flexDirection: "column",
                     }}
+                    onClick={() => handleCardClick(product)}
                   >
                     <CardActionArea style={{ flex: 1 }}>
                       <CardMedia

@@ -72,19 +72,19 @@ const AppFooter = () => {
             </Typography>
             <ul className={classes.listItem}>
               <li>
-                <Typography variant="body1">123 Consectetur at ligula 10660</Typography>
+                <Typography variant="body1">Itahari-20, Tarahara Sunsari Nepal</Typography>
               </li>
               <li>
                 <Typography variant="body1">
-                  <Link href="tel:010-020-0340" className={classes.listItemLink}>
-                    010-020-0340
+                  <Link href="tel:9767776977" className={classes.listItemLink}>
+                    +977-9767776977
                   </Link>
                 </Typography>
               </li>
               <li>
                 <Typography variant="body1">
                   <Link href="mailto:info@company.com" className={classes.listItemLink}>
-                    info@company.com
+                  f25836105@gmail.com
                   </Link>
                 </Typography>
               </li>
@@ -150,10 +150,10 @@ const AppFooter = () => {
         </Grid>
         <div className={classes.borderTop}></div>
         <Typography variant="body2" align="center" gutterBottom>
-          &copy; {new Date().getFullYear()} E-commerce Website. All rights reserved.
+          &copy; {new Date().getFullYear()} e-com Website. All rights reserved.
         </Typography>
         <Typography variant="body2" align="center">
-          Designed Powered By Material-UI
+          Designed Inspired By Material-UI
         </Typography>
       </Container>
     </footer>
