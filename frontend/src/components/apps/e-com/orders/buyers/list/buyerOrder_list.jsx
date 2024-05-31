@@ -11,8 +11,8 @@ import {
   Paper,
   IconButton,
   Tooltip,
+  Button, // Import Button component from MUI
 } from "@mui/material";
-import Pagination from "@mui/material/Pagination";
 import Stack from "@mui/material/Stack";
 
 import LocalShippingIcon from "@mui/icons-material/LocalShipping";
@@ -51,6 +51,20 @@ const StyledTableCell = styled(TableCell)(({ theme }) => ({
   backgroundColor: theme.palette.grey[200],
 }));
 
+const StyledTableHeadCell = styled(TableCell)(({ theme }) => ({
+  fontWeight: "bold",
+  backgroundColor: theme.palette.grey[200],
+}));
+
+// Inside your component
+<TableHead>
+  <TableRow>
+    <StyledTableHeadCell>Column 1</StyledTableHeadCell>
+    <StyledTableHeadCell>Column 2</StyledTableHeadCell>
+    {/* Add more header cells as needed */}
+  </TableRow>
+</TableHead>;
+
 const StyledTableRow = styled(TableRow)(({ theme }) => ({
   "&:nth-of-type(odd)": {
     backgroundColor: theme.palette.action.hover,
@@ -72,6 +86,7 @@ const StyledTableCellContent = styled(TableCell)({
 function BuyersOrdersList() {
   const [orders, setOrders] = useState([]);
   const [error, setError] = useState(null);
+  const [visibleOrders, setVisibleOrders] = useState(4);
 
   useEffect(() => {
     fetchOrders();
@@ -86,7 +101,9 @@ function BuyersOrdersList() {
       });
 
       if (response.ok) {
-        const data = await response.json();
+        let data = await response.json();
+        data.sort((a, b) => new Date(a.created_at) - new Date(b.created_at));
+        data.reverse();
         setOrders(data);
       } else {
         setError("Failed to fetch orders");
@@ -96,15 +113,15 @@ function BuyersOrdersList() {
     }
   };
 
-  const showPages = () =>{
-
-  }
+  const handleViewMore = () => {
+    setVisibleOrders((prev) => prev + 4); // Increase visibleOrders by 4
+  };
 
   return (
     <>
       <GlobalStyles>
         <br />
-        <FullPageContainer>
+        <>
           <Typography variant="h4" gutterBottom>
             Buyers Orders Catalog
           </Typography>
@@ -129,14 +146,17 @@ function BuyersOrdersList() {
 
                   <StyledTableCell>Order Received</StyledTableCell>
                   <StyledTableCell>Order Placed </StyledTableCell>
+                  {/* Other table headers */}
                 </TableRow>
               </TableHead>
               <TableBody>
-                {orders.map((order) => (
+                {orders.slice(0, visibleOrders).map((order) => (
                   <StyledTableRow key={order.id}>
                     <StyledTableCellContent>
+                      {" "}
                       {order.order_id}
                     </StyledTableCellContent>
+
                     <StyledTableCellContent>
                       {order.buyer_delivery_address}
                     </StyledTableCellContent>
@@ -163,7 +183,7 @@ function BuyersOrdersList() {
                       {order.product_total_price}
                     </StyledTableCellContent>
                     <StyledTableCellContent>
-                      {order.product_total_unit}
+                      {order.product_total_units}
                     </StyledTableCellContent>
                     <StyledTableCellContent>
                       {order.order_placed_by_buyer ? "Yes" : "No"}
@@ -175,7 +195,15 @@ function BuyersOrdersList() {
                       {order.mode_of_payment}
                     </StyledTableCellContent>
                     <StyledTableCellContent>
-                      {new Date(order.created_at).toLocaleString()}
+                      {new Date(order.created_at).toLocaleString("en-US", {
+                        month: "long",
+                        day: "numeric",
+                        year: "numeric",
+                        hour: "numeric",
+                        minute: "numeric",
+                        second: "numeric",
+                        hour12: true,
+                      })}
                     </StyledTableCellContent>
                     <StyledTableCellContent>
                       {order.order_shipped ? (
@@ -227,14 +255,18 @@ function BuyersOrdersList() {
               </TableBody>
             </Table>
           </StyledTableContainer>
-        </FullPageContainer>
+        </>
       </GlobalStyles>
 
       <br />
 
-      <Stack spacing={10}>
-        <Pagination count={5} color="primary" onClick={showPages} />
-      </Stack>
+      <div style={{ display: "flex", justifyContent: "center" }}>
+        {orders.length > 6 && (
+          <Button onClick={handleViewMore} variant="contained">
+            View More
+          </Button>
+        )}
+      </div>
     </>
   );
 }

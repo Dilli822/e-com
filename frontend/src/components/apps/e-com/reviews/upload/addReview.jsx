@@ -68,10 +68,10 @@ export default function AddReview() {
 
   return (
     <Box
-      display="flex"
-      justifyContent="center"
-      alignItems="center"
-      minHeight="100vh"
+      // display="flex"
+      // justifyContent="center"
+      // alignItems="center"
+      // minHeight="100vh"
     >
       <Grid container spacing={2} component="form" item xs={12} sm={6} md={4}>
         <Grid item xs={12}>

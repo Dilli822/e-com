@@ -42,7 +42,7 @@ export default function CheckOut() {
   const [isSeller, setIsSeller] = useState(null);
   const [isBuyer, setIsBuyer] = useState(null);
   const [openConfirmationModal, setOpenConfirmationModal] = useState(false);
-
+  const [isOrderPlaced, setIsOrderPlaced] = useState(false);
   let sellerElement;
   // let buyerElement;
 
@@ -122,6 +122,9 @@ export default function CheckOut() {
     setTimeout(() => {
       setErrorMessage("");
     }, 6000);
+
+       // Set the order placed state to true
+       setIsOrderPlaced(true);
   };
   
   
@@ -352,6 +355,8 @@ export default function CheckOut() {
           }, 5000);
 
           setOpenConfirmationModal(false); // Close the modal or perform any other action
+              // Set the order placed state to true
+        setIsOrderPlaced(true);
         } else {
           // Handle error response
           console.error("Failed to place order:", response.status);
@@ -480,8 +485,9 @@ export default function CheckOut() {
                 color={
                   paymentMethod === "cashOnDelivery" ? "primary" : "default"
                 }
-                disabled={paymentMethod !== "cashOnDelivery"}
+             
                 onClick={() => handlePaymentMethodChange("cashOnDelivery")}
+                disabled={isOrderPlaced || paymentMethod !== 'cashOnDelivery'} // Disable if the order is placed or payment method is not cash on delivery
               >
                 Cash on Delivery
               </Button>
@@ -755,6 +761,7 @@ export default function CheckOut() {
                 color="secondary"
                 className="hide-print"
                 onClick={placeFinalOrder}
+                disabled={isOrderPlaced} // Disable if the order is placed
               >
                 Confirm Order
               </Button>

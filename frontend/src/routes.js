@@ -27,6 +27,7 @@ import BuyersOrdersList from "./components/apps/e-com/orders/buyers/list/buyerOr
 import ReviewList from "./components/apps/e-com/reviews/list/reviewList";
 import ReviewCRUD from "./components/apps/e-com/reviews/list/reviewCRUD";
 import FilterProducts from "./components/apps/e-com/products/filters/filterProducts";
+import CategoryFilterProducts from "./components/apps/e-com/products/filters/categoryFilters";
 
 const MainRouter = () => {
   return (
@@ -46,13 +47,13 @@ const MainRouter = () => {
         {/* <Route path="/product/category/list" element={<CategoryOptions />} /> */}
         <Route path="/product/:str/:id/:str" element={<ProductDetails />} />
         <Route path="/product/review/add/" element={<AddReview />} />
-        <Route path="/product/review/list/" element={<ReviewCRUD />} />
+        <Route path="/product/review/crud/" element={<ReviewCRUD />} />
         {/* <Route path="/product/people-view/" element={<PeopleProductView />} /> */}
         <Route path="/cart/details/" element={<CartDetails />} />
         <Route path="/product/filter/" element={<FilterProducts />} />
         <Route path="/checkout/" element={<CheckOut />} />
         <Route path="/user/apiFetch/" element={<UserProfileMaster />} />
-
+        <Route path="/filter-products/:str/" element={<CategoryFilterProducts />} />
         {/* <Route path="/auto-location/" element={<AutoLocationInput />} /> */}
         {/* <Route path="/buyer/order/list/" element={<BuyersOrdersList/>}/> */}
         {/* <Route path="/product/review/edit?:id/" element={<EditReview />} /> */}

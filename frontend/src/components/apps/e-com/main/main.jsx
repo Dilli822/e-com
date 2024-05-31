@@ -12,6 +12,7 @@ import {
 import { useNavigate } from "react-router-dom";
 import ProductDetails from "../products/details/public_product_details";
 import PeopleProductView from "../products/productViews/peopleProductViews";
+import CategoryFilterProducts from "../products/filters/categoryFilters";
 
 const Main = () => {
   const [products, setProducts] = useState({});
@@ -65,7 +66,7 @@ const Main = () => {
               View More
             </Button>
           </div>
-          <br />
+          <br /><br />
 
           <Grid container spacing={2}>
             {products[category].slice(0, 6).map((product) => (
@@ -129,6 +130,12 @@ const Main = () => {
           </Grid>
         </Grid>
       ))}
+
+      <div  style={{ display: "none" }}>
+      <CategoryFilterProducts products={products}/> {/* Pass products as prop */}
+      </div>
+
+
     </Grid>
   );
 };

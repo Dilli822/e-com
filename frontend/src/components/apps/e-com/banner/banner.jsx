@@ -1,18 +1,25 @@
 import React, { useState, useEffect } from "react";
 import { Grid, Paper, List, ListItem, ListItemText, Container } from "@mui/material";
-import h from "../assets/banner/b10.jpg"
-import shopBag from "../assets/banner/b16.jpg"
-import modelLook from "../assets/banner/b18.jpg"
+import { useNavigate, useLocation } from "react-router-dom"; // Import useNavigate and useLocation
+import h from "../assets/banner/b10.jpg";
+import shopBag from "../assets/banner/b16.jpg";
+import modelLook from "../assets/banner/b18.jpg";
+import CategoryFilterProducts from "../products/filters/categoryFilters";
+
 export default function Banner() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const navigate = useNavigate(); // Initialize useNavigate
+  const location = useLocation(); // Get the current location
+
+  // Assuming category is part of the URL, e.g., /banner/:category
+  const category = location.pathname.split("/")[2]; // Extract the category from the URL
 
   const categories = [
+    "Mobile Phones",
+    "Musical Instruments",
+    "Men's Fashion",
     "Electronics",
-    "Clothing",
-    "Books",
-    "Home & Kitchen",
-    "Beauty & Personal Care",
-    "Sports & Outdoors",
+    "Women's Fashion",
     "Electronics",
     "Clothing",
     "Books",
@@ -27,7 +34,7 @@ export default function Banner() {
     "https://icms-image.slatic.net/images/ims-web/1776b263-6917-48cf-898f-3f132f9e3973.jpg",
     h,
     shopBag,
-    modelLook
+    modelLook,
   ];
 
   useEffect(() => {
@@ -53,29 +60,36 @@ export default function Banner() {
 
     return () => clearInterval(intervalId);
   }, [currentImageIndex, imageUrls]);
+  const handleCategoryClick = (category) => {
+    navigate(`/filter-products/${category}/`, {
+      state: { category }, // Pass category and an empty products array as state
+    });
+  };
+  
 
   return (
     <>
       <br />
       <Container>
-      <Grid container spacing={2}>
-        <Grid item xs={12} lg={9} md={8} order={{ xs: 2, md: 2 }}>
-          <Paper id="backgroundPoster" sx={{ height: 300, borderRadius: 5 }} />
+        <Grid container spacing={2}>
+          <Grid item xs={12} lg={9} md={8} order={{ xs: 2, md: 2 }}>
+            <Paper id="backgroundPoster" sx={{ height: 300, borderRadius: 5 }} />
+          </Grid>
+          <Grid item xs={12} lg={3} md={4} order={{ xs: 1, md: 1 }}>
+            <Paper sx={{ height: 300, overflow: "auto" }}>
+              <List>
+                {categories.map((category, index) => (
+                  <ListItem button key={index} onClick={() => handleCategoryClick(category)}> {/* Add onClick handler */}
+                    <ListItemText primary={category} />
+                  </ListItem>
+                ))}
+              </List>
+            </Paper>
+          </Grid>
         </Grid>
-        <Grid item xs={12} lg={3} md={4} order={{ xs: 1, md: 1 }}>
-          <Paper sx={{ height: 300, overflow: "auto" }}>
-            <List>
-              {categories.map((category, index) => (
-                <ListItem key={index}>
-                  <ListItemText primary={category} />
-                </ListItem>
-              ))}
-            </List>
-          </Paper>
-        </Grid>
-      </Grid>
       </Container>
-      <br />
+
+      {category && <CategoryFilterProducts category={category} />} {/* Render CategoryFilterProducts only if category is defined */}
     </>
   );
 }

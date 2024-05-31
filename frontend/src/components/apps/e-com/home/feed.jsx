@@ -86,6 +86,7 @@ export default function Feed() {
     <Header></Header>
     <br />
     <Banner/>
+    <br />    <br /><br />
     <Container>
 
       <Main/>

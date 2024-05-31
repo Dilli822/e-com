@@ -93,7 +93,23 @@ class ProductList(generics.ListAPIView):
 
         return Response(categorized_data)
     
+class ProductPayLoadList(generics.ListAPIView):
+    queryset = Product.objects.all()
+    serializer_class = ProductSerializer
 
+    def list(self, request, *args, **kwargs):
+        queryset = self.filter_queryset(self.get_queryset())
+        serializer = self.get_serializer(queryset, many=True)
+        categorized_data = {}
+
+        for product_data in serializer.data:
+            category_name = product_data['category_name']
+            if category_name not in categorized_data:
+                categorized_data[category_name] = []
+            categorized_data[category_name].append(product_data)
+
+        return Response(categorized_data)
+    
 class CategoryListView(generics.ListAPIView):
     queryset = Category.objects.all()
     serializer_class = CategorySerializer
@@ -151,25 +167,48 @@ class IsBuyerPermission(BasePermission):
         return request.user and request.user.is_authenticated and request.user.is_buyer
     
 class ReviewListCreateView(generics.ListCreateAPIView):
-    queryset = Review.objects.all()
+    permission_classes = [IsAuthenticated, IsBuyerPermission]
     serializer_class = ReviewSerializer
-    permission_classes = [IsAuthenticated, IsBuyerPermission]  # Only authenticated buyers can access this endpoint
+
+    def get_queryset(self):
+        # Only return reviews by the authenticated user
+        return Review.objects.filter(user=self.request.user)
 
     def perform_create(self, serializer):
-        serializer.save(user=self.request.user)  # Set the user field to the currently authenticated user
-
+        if self.request.user != serializer.validated_data['user']:
+            # If the review's user is not the authenticated user, raise a permission denied error
+            raise PermissionDenied("You do not have permission to create reviews for other users.")
+        serializer.save(user=self.request.user)
+        
+        
 class ReviewListView(generics.ListAPIView):
     queryset = Review.objects.all()
     serializer_class = ReviewSerializer # Only authenticated buyers can access this endpoint
 
 
 class ReviewDetailView(generics.RetrieveUpdateDestroyAPIView):
+    permission_classes = [IsAuthenticated, IsBuyerPermission]
     queryset = Review.objects.all()
     serializer_class = ReviewSerializer
-    permission_classes = [IsAuthenticated]
+
+    def get_object(self):
+        obj = super().get_object()
+        user = self.request.user
+        if obj.user != user:
+            raise PermissionDenied("You do not have permission to access this review.")
+        return obj
+
+    def perform_update(self, serializer):
+        obj = self.get_object()
+        if obj.user != self.request.user:
+            raise PermissionDenied("You do not have permission to update this review.")
+        serializer.save()
+
+    def perform_destroy(self, instance):
+        if instance.user != self.request.user:
+            raise PermissionDenied("You do not have permission to delete this review.")
+        instance.delete()
  
-
-
 class OrderListView(generics.ListCreateAPIView):
     queryset = Order.objects.all()
     serializer_class = OrderSerializer

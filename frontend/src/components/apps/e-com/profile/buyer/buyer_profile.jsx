@@ -5,7 +5,7 @@ import BuyerProfileUpdate from "./update_profile";
 import { makeStyles } from "@mui/styles";
 import { useLocation, useNavigate, Link } from "react-router-dom";
 import BuyersOrdersList from "../../orders/buyers/list/buyerOrder_list";
-
+import ReviewCRUD from "../../reviews/list/reviewCRUD";
 import { Container, Card, Typography, Button, Grid } from "@mui/material";
 
 const useStyles = makeStyles((theme) => ({
@@ -23,6 +23,7 @@ const useStyles = makeStyles((theme) => ({
 
 export default function BuyerProfile() {
   const classes = useStyles();
+  const [showReviews, setShowReviews] = useState(false);
   const [showOrders, setShowOrders] = useState(false); // State to manage visibility of BuyersOrdersList
   const accessToken = localStorage.getItem("accessToken");
 
@@ -65,20 +66,42 @@ export default function BuyerProfile() {
           </Grid>
 
           <Grid item xs={12} md={showOrders ? 12 : 8}>
-            <Card className={classes.card}>
-              <Button
-                color="primary"
-                variant="contained"
-                onClick={() => setShowOrders(!showOrders)} // Toggle state on button click
-              >
-                {showOrders ? "Hide Orders List" : "Show Orders History"}
-              </Button>
-              &nbsp;&nbsp;&nbsp;
-              <Button color="primary" variant="contained">
-                {showOrders ? "Hide Your Review" : "Your Reviews"}
-              </Button>
-              {showOrders && <BuyersOrdersList />}{" "}
-              {/* Conditionally render BuyersOrdersList */}
+          <Card className={classes.card}>
+              {!showReviews && (
+                <Button
+                  color="primary"
+                  variant="contained"
+                  
+                  onClick={() => {
+                    setShowOrders(!showOrders);
+                    setShowReviews(false); // Hide reviews when showing orders
+                  }}
+                >
+                  {showOrders ? "Hide Orders List" : "Show Orders History"}
+        
+                </Button>
+                
+              )}
+                                <span>                &nbsp;&nbsp;&nbsp;</span>     
+              {!showOrders && (
+
+                <>
+   
+                <Button
+                  color="primary"
+                  variant="contained"
+
+                  onClick={() => setShowReviews(!showReviews)}
+                >
+                  {showReviews ? "Hide Reviews" : "Show Reviews"}
+                </Button>
+                </>
+                
+              )}
+  
+
+              {showOrders && <BuyersOrdersList />}
+             {showReviews && <ReviewCRUD />}
             </Card>
           </Grid>
         </Grid>
