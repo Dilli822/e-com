@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmation</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h2>Hello, {{ buyer_full_name }}!</h2>
+    <div>
+        <img src="https://i.pinimg.com/originals/74/fb/9d/74fb9d629f3d7dd509a67e9a9b721f05.gif" alt="" style="width: 300px;">
+        <h4>Your order with ID {{ order_id }} has been placed successfully. Order Delivering Soon! </h4>
+        <p>Please check your Order history in the e-commerce app for more details.</p> 
+        <br>
+        <p>From e-com | All Rights Reserved <span id="currentYear"></span></p>
+    </div>
+
+    <script>
+        // Get the current year
+        var currentYear = new Date().getFullYear();
+        // Set the current year in the HTML
+        document.getElementById("currentYear").innerText = currentYear;
+    </script>
+</body>
+</html>

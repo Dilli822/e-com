@@ -1,10 +1,14 @@
 from django.conf import settings
+from django.template.loader import render_to_string
+from django.core.mail import EmailMultiAlternatives
 from django.db import models 
 from account.models import SellerProfile, BuyerProfile, UserData
 import uuid
+from django.utils.html import strip_tags
 from django.db.models.signals import pre_save,post_save
 from django.dispatch import receiver
 from django.utils import timezone
+from django.core.mail import send_mail
 
 class Category(models.Model):
     name = models.CharField(max_length=100, unique=True)
@@ -141,6 +145,19 @@ def generate_order_id(sender, instance, **kwargs):
     if not instance.order_id:
         instance.order_id = uuid.uuid4().hex
 
+# @receiver(post_save, sender=Order)
+# def send_order_confirmation_email(sender, instance, created, **kwargs):
+#     if created:
+#         subject = 'Order Confirmation'
+#         # Render HTML email template
+#         html_message = render_to_string('order_confirmation_email.html', {'buyer_full_name': instance.buyer_full_name, 'order_id': instance.order_id})
+#         # Plain text version of the email (strip HTML tags)
+#         plain_message = strip_tags(html_message)
+#         sender_email = 'f25836105@gmail.com'  # Update with your sender email
+#         recipient_email = instance.buyer_email
+#         # Send email
+#         send_mail(subject, plain_message, sender_email, [recipient_email], html_message=html_message)
+        
 class Order_For_Seller(models.Model):
     id = models.BigAutoField(primary_key=True)
     order_id = models.CharField(max_length=16, editable=False)
