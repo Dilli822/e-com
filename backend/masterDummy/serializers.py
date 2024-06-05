@@ -73,3 +73,9 @@ class OrderHandleBySellerSerializer(serializers.ModelSerializer):
     class Meta:
         model = Order_For_Seller
         fields = '__all__'
+        
+        
+class OrderArchiveSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = OrderArchive
+        fields = '__all__'

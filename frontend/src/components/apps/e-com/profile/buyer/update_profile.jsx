@@ -41,6 +41,7 @@ function BuyerProfileUpdate() {
   const [imageFile, setImageFile] = useState(null);
   const [initialProfileData, setInitialProfileData] = useState({});
   const [buyerEmail, setBuyerEmail] = useState("");
+  const [open, setOpen] = useState(false);
 
   useEffect(() => {
     fetchUserId();
@@ -96,7 +97,6 @@ function BuyerProfileUpdate() {
       setError("Error fetching profile data");
     }
   };
-  const [open, setOpen] = useState(false);
 
   const handleLogout = () => {
     setOpen(true);
@@ -110,7 +110,6 @@ function BuyerProfileUpdate() {
     localStorage.clear();
     window.location.href = "/";
   };
-
 
   const handleEditProfile = () => {
     setProfileEditMode(true);

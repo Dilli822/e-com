@@ -250,6 +250,8 @@ class SellerOrderBulkUpdateDeleteView(APIView):
                     response_data.append(serializer.data)
                 except Order_For_Seller.DoesNotExist:
                     continue
+            # Trigger extraction
+            trigger_extraction(request)
             return Response(response_data, status=status.HTTP_200_OK)
         else:
             return Response({"detail": "Expected a list of items to update."}, status=status.HTTP_400_BAD_REQUEST)
@@ -260,6 +262,8 @@ class SellerOrderBulkUpdateDeleteView(APIView):
             if not order_ids:
                 return Response({"detail": "No valid order IDs provided."}, status=status.HTTP_400_BAD_REQUEST)
             deleted_count, _ = Order_For_Seller.objects.filter(id__in=order_ids, seller_id=request.user.id).delete()
+            # Trigger extraction
+            trigger_extraction(request)
             return Response({"deleted": deleted_count}, status=status.HTTP_204_NO_CONTENT)
         else:
             return Response({"detail": "Expected a list of items to delete."}, status=status.HTTP_400_BAD_REQUEST)
@@ -271,3 +275,13 @@ from .tasks import extract_and_store_orders  # Import the extraction function
 def trigger_extraction(request):
     extract_and_store_orders()
     return HttpResponse("Orders have been extracted and stored.")
+
+
+
+class UserOrderArchiveListView(generics.ListAPIView):
+    serializer_class = OrderArchiveSerializer
+    # permission_classes = [permissions.IsAuthenticated]
+
+    def get_queryset(self):
+        # Ensure that only the orders of the authenticated user are returned
+        return OrderArchive.objects.filter(seller_id=self.request.user.id)

@@ -19,22 +19,23 @@ const Main = () => {
   const [selectedProduct, setSelectedProduct] = useState(null);
   const [Peopleproducts, setPeopleProducts] = useState({});
   const navigate = useNavigate();
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch(
-          "http://127.0.0.1:8000/e-com/api/products/public/list/"
-        );
-        const data = await response.json();
-        setProducts(data);
-        setPeopleProducts(data);
-      } catch (error) {
-        console.error("Error fetching data:", error);
-      }
-    };
 
+  useEffect(() => {
     fetchData();
   }, []);
+
+  const fetchData = async () => {
+    try {
+      const response = await fetch(
+        "http://127.0.0.1:8000/e-com/api/products/public/list/"
+      );
+      const data = await response.json();
+      setProducts(data);
+      setPeopleProducts(data);
+    } catch (error) {
+      console.error("Error fetching data:", error);
+    }
+  };
 
   const handleCardClick = (product) => {
     setSelectedProduct(product);

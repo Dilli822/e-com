@@ -27,6 +27,7 @@ class Product(models.Model):
     product_name = models.CharField(max_length=255, blank=True, null=True, unique=False, default="N/A")  # Optional
     
     description = models.TextField()
+    specifications = models.TextField(null=True, blank=True, default="")
     discount = models.DecimalField(max_digits=10, decimal_places=2)
     stock = models.BigIntegerField(default=0)
     price = models.DecimalField(max_digits=10, decimal_places=2)

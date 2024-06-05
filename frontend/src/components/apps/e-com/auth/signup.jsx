@@ -29,6 +29,8 @@ export default function SignUp() {
   const [errorMessage, setErrorMessage] = useState("");
   const [userType, setUserType] = useState("buyer");
   const navigate = useNavigate();
+
+  
   const onFinish = async (event) => {
     event.preventDefault();
     try {
@@ -99,8 +101,6 @@ export default function SignUp() {
       setLoading(false);
     }
   };
-
-
 
 
   useEffect(() => {
