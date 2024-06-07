@@ -13,10 +13,12 @@ import {
   CircularProgress,
   Button,
   Modal,
+  IconButton,
   TextField,
 } from "@material-ui/core";
 import { Snackbar, Alert } from "@material-ui/core";
-
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 const API_URL = "http://127.0.0.1:8000/e-com/api/seller/products/list/";
 
 const useStyles = makeStyles((theme) => ({
@@ -209,6 +211,36 @@ export default function SellerProductsList() {
     setDeleteConfirmationOpen(false);
   };
 
+
+  const [currentPage, setCurrentPage] = useState(1);
+  // const [totalPages, setTotalPages] = useState(1);
+  const itemsPerPage = 5; // Number of items per page
+
+  const handlePageChange = (event, value) => {
+    setCurrentPage(value);
+  };
+
+  // Calculate the total number of pages
+  const totalPages = Math.ceil(products.length / itemsPerPage);
+
+  // Render the buttons dynamically
+  const renderPageButtons = () => {
+    const buttons = [];
+    for (let i = 1; i <= totalPages; i++) {
+      buttons.push(
+        <IconButton
+        key={i}
+        onClick={() => setCurrentPage(i)}
+        color={currentPage === i ? "primary" : "default"}
+      >
+        {i}
+      </IconButton>
+      );
+    }
+    return buttons;
+  };
+
+
   return (
     <Grid container className={classes.root}>
       <Grid item xs={12}>
@@ -240,7 +272,11 @@ export default function SellerProductsList() {
                 </TableRow>
               </TableHead>
               <TableBody>
-                {products.map((product) => (
+                {products             .slice(
+                  (currentPage - 1) * itemsPerPage,
+                  currentPage * itemsPerPage
+                )
+                .map((product) => (
                   <TableRow key={product.id}>
                     <TableCell>{product.product_name}</TableCell>
                     <TableCell>
@@ -405,6 +441,10 @@ export default function SellerProductsList() {
           </div>
         </Modal>
       </Grid>
+
+      <div style={{ display: "flex", alignItems: "center"}}>
+        <ArrowBackIosIcon/>{renderPageButtons()} <ArrowForwardIosIcon/>
+        </div>
     </Grid>
   );
 }

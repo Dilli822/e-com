@@ -160,9 +160,6 @@ const ProductForm = () => {
     setSnackbarOpen(false);
   };
 
-
-
-
   const accessToken = localStorage.getItem("accessToken");
   if (!accessToken) {
     return (
@@ -201,81 +198,105 @@ const ProductForm = () => {
         // alignItems="center"
         // style={{ minHeight: "100vh" }}
       >
-        <Grid item xs={12} md={4}>
+        <Grid item md={12}>
           <form onSubmit={handleSubmit}>
-            <TextField
-              name="name"
-              label="Name"
-              value={formData.name}
-              onChange={handleFormChange}
-              error={errorMessages.name !== undefined}
-              helperText={errorMessages.name}
-              required
-              fullWidth
-              margin="normal"
-            />
-            <TextField
-              name="description"
-              label="Description"
-              value={formData.description}
-              onChange={handleFormChange}
-              error={errorMessages.description !== undefined}
-              helperText={errorMessages.description}
-              required
-              fullWidth
-              margin="normal"
-            />
-            <TextField
-              name="discount"
-              label="Discount"
-              type="number"
-              value={formData.discount}
-              onChange={handleFormChange}
-              error={errorMessages.discount !== undefined}
-              helperText={errorMessages.discount}
-              required
-              fullWidth
-              margin="normal"
-            />
-            <TextField
-              name="price"
-              label="Price"
-              type="number"
-              value={formData.price}
-              onChange={handleFormChange}
-              error={errorMessages.price !== undefined}
-              helperText={errorMessages.price}
-              required
-              fullWidth
-              margin="normal"
-            />
-            <FormControl fullWidth margin="normal">
-              <InputLabel id="category-select-label">
-                Select Category
-              </InputLabel>
-              <Select
-                labelId="category-select-label"
-                id="category-select"
-                value={selectedCategory}
-                onChange={handleCategoryChange}
-                input={<OutlinedInput label="Select Category" />}
-              >
-                {categories.map((category) => (
-                  <MenuItem key={category.id} value={category.id}>
-                    {category.name}
-                  </MenuItem>
-                ))}
-              </Select>
-            </FormControl>
-            <TextField
-              name="stock"
-              label="Stock"
-              type="number"
-              value={formData.stock}
-              onChange={handleFormChange}
-              fullWidth
-              margin="normal"
-            />
+            <Grid container spacing={3}>
+              <Grid item md={5}>
+                <TextField
+                  name="name"
+                  label="Name"
+                  value={formData.name}
+                  onChange={handleFormChange}
+                  error={errorMessages.name !== undefined}
+                  helperText={errorMessages.name}
+                  required
+                  fullWidth
+                  margin="normal"
+                  variant="outlined"
+                />
+              </Grid>
+              <Grid item md={3}>
+                <TextField
+                  name="discount"
+                  label="Discount"
+                  type="number"
+                  value={formData.discount}
+                  onChange={handleFormChange}
+                  error={errorMessages.discount !== undefined}
+                  helperText={errorMessages.discount}
+                  required
+                  fullWidth
+                  margin="normal"
+                  variant="outlined"
+                />
+              </Grid>
+
+              <Grid item md={3}>
+                <TextField
+                  name="price"
+                  label="Price"
+                  type="number"
+                  value={formData.price}
+                  onChange={handleFormChange}
+                  error={errorMessages.price !== undefined}
+                  helperText={errorMessages.price}
+                  required
+                  fullWidth
+                  margin="normal"
+                  variant="outlined"
+                />
+              </Grid>
+
+              <Grid item md={4}>
+                <FormControl fullWidth margin="normal">
+                  <InputLabel id="category-select-label">
+                    Select Category
+                  </InputLabel>
+                  <Select
+                    labelId="category-select-label"
+                    id="category-select"
+                    value={selectedCategory}
+                    onChange={handleCategoryChange}
+                    input={<OutlinedInput label="Select Category" />}
+                  >
+                    {categories.map((category) => (
+                      <MenuItem key={category.id} value={category.id}>
+                        {category.name}
+                      </MenuItem>
+                    ))}
+                  </Select>
+                </FormControl>
+              </Grid>
+
+              <Grid item md={3}>
+                <TextField
+                  name="stock"
+                  label="Stock"
+                  type="number"
+                  value={formData.stock}
+                  onChange={handleFormChange}
+                  fullWidth
+                  margin="normal"
+                  variant="outlined"
+                />
+              </Grid>
+            </Grid>
+            <Grid item md={11}>
+              <TextField
+                name="description"
+                label="Description"
+                value={formData.description}
+                onChange={handleFormChange}
+                error={errorMessages.description !== undefined}
+                helperText={errorMessages.description}
+                required
+                fullWidth
+                variant="outlined"
+                margin="normal"
+                multiline
+                rows={4} // You can adjust the number of rows as needed
+              />
+            </Grid>
             <Typography variant="body2" gutterBottom>
               Upload Product Images:
             </Typography>
@@ -297,9 +318,17 @@ const ProductForm = () => {
                 }}
               />
             )}
-            <Button type="submit" variant="contained" color="primary" fullWidth>
-              Submit
-            </Button>
+            <br /> <br />
+            <Grid item md={2}>
+              <Button
+                type="submit"
+                variant="contained"
+                color="secondary"
+                fullWidth
+              >
+                Submit
+              </Button>
+            </Grid>
             <Snackbar
               open={snackbarOpen}
               autoHideDuration={6000}

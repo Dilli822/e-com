@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import { Typography, Grid, Card, CardContent } from "@mui/material";
 import Main from "../../main/main";
 import PeopleProductView from "../../products/productViews/peopleProductViews";
+import Pagination from '@mui/material/Pagination';
+import Stack from '@mui/material/Stack';
 
 export default function ReviewList({ productId }) {
   const [reviews, setReviews] = useState([]);
@@ -21,14 +23,10 @@ export default function ReviewList({ productId }) {
 
 
   return (
-    <Grid container spacing={2}>
-      <Grid item xs={12} md={10}>
-        <br />
-        <Typography variant="h5">Reviews</Typography>
-        <hr />
-        <br />
-        <Card>
+    <>
+      <Card>
           <CardContent>
+
           {filteredReviews.length > 0 ? (
               <ul style={{ margin: 0, padding: 0 }}>
                 {filteredReviews.map((review, index) => (
@@ -41,17 +39,11 @@ export default function ReviewList({ productId }) {
               </Typography>
             )}
           </CardContent>
+          <Pagination count={10} />
+          <br />
+          
         </Card>
-      </Grid>
-      <Grid item xs={12} md={2}>
-        <br />
-        {/* Add content for people who have viewed the reviews */}
-        <Typography variant="h6">Peoples Also View</Typography>
-
-        <hr />
-        <PeopleProductView />
-      </Grid>
-    </Grid>
+    </>
   );
 }
 

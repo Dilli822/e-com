@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import {
   Container,
   Typography,
+  Pagination,
   Table,
   TableBody,
   TableCell,
@@ -21,6 +22,9 @@ import LocalShippingIcon from "@mui/icons-material/LocalShipping";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import CancelIcon from "@mui/icons-material/Cancel";
 import { styled } from "@mui/system";
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
+import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 
 const GlobalStyles = styled("div")({
   html: {
@@ -82,6 +86,34 @@ function ManageSellersOrders() {
   const [snackbarMessage, setSnackbarMessage] = useState("");
   const [snackbarSeverity, setSnackbarSeverity] = useState("success"); // "success", "error", "warning", "info"
 
+  const [currentPage, setCurrentPage] = useState(1);
+  // const [totalPages, setTotalPages] = useState(1);
+  const itemsPerPage = 5; // Number of items per page
+
+  const handlePageChange = (event, value) => {
+    setCurrentPage(value);
+  };
+
+  // Calculate the total number of pages
+  const totalPages = Math.ceil(orders.length / itemsPerPage);
+
+  // Render the buttons dynamically
+  const renderPageButtons = () => {
+    const buttons = [];
+    for (let i = 1; i <= totalPages; i++) {
+      buttons.push(
+        <IconButton
+        key={i}
+        onClick={() => setCurrentPage(i)}
+        color={currentPage === i ? "primary" : "default"}
+      >
+        {i}
+      </IconButton>
+      );
+    }
+    return buttons;
+  };
+
   useEffect(() => {
     fetchOrders();
   }, []);
@@ -100,6 +132,8 @@ function ManageSellersOrders() {
       if (response.ok) {
         const data = await response.json();
         setOrders(data);
+        // we must set the the page 1 2 3 .... n depending upon the length of the data
+        // if the data is 50 then we must divide it into 25 pages   and soon
         // console.log(data);
       } else {
         setError("Failed to fetch orders");
@@ -241,6 +275,10 @@ function ManageSellersOrders() {
         <Typography variant="h4" gutterBottom>
           Sellers Orders Catalog
         </Typography>
+        <Typography variant="h5" gutterBottom>
+          Total Orders: {orders.length}
+        </Typography>
+
         {error && <Typography color="error">{error}</Typography>}
         <StyledTableContainer component={Paper} elevation={3}>
           <Table aria-label="Orders table">
@@ -264,123 +302,130 @@ function ManageSellersOrders() {
               </TableRow>
             </TableHead>
             <TableBody>
-              {orders.map((order) => (
-                <StyledTableRow key={order.id}>
-                  <StyledTableCellContent>
-                    {order.order_id}
-                  </StyledTableCellContent>
-                  <StyledTableCellContent>
-                    {order.buyer_delivery_address}
-                  </StyledTableCellContent>
-                  <StyledTableCellContent>
-                    {order.product_name}
-                  </StyledTableCellContent>
-                  <StyledTableCellContent>
-                    {order.product_price}
-                  </StyledTableCellContent>
-                  <StyledTableCellContent>
-                    {order.product_units}
-                  </StyledTableCellContent>
-                  <StyledTableCellContent>
-                    {order.delivery_fee}
-                  </StyledTableCellContent>
-                  <StyledTableCellContent>
-                    {order.mode_of_payment}
-                  </StyledTableCellContent>
-                  <StyledTableCellContent>
-                    {new Date(order.created_at).toLocaleString()}
-                  </StyledTableCellContent>
+              {orders
+                .slice(
+                  (currentPage - 1) * itemsPerPage,
+                  currentPage * itemsPerPage
+                )
+                .map((order) => (
+                  <StyledTableRow key={order.id}>
+                    <StyledTableCellContent>
+                      {order.order_id}
+                    </StyledTableCellContent>
+                    <StyledTableCellContent>
+                      {order.buyer_delivery_address}
+                    </StyledTableCellContent>
+                    <StyledTableCellContent>
+                      {order.product_name}
+                    </StyledTableCellContent>
+                    <StyledTableCellContent>
+                      {order.product_price}
+                    </StyledTableCellContent>
+                    <StyledTableCellContent>
+                      {order.product_units}
+                    </StyledTableCellContent>
+                    <StyledTableCellContent>
+                      {order.delivery_fee}
+                    </StyledTableCellContent>
+                    <StyledTableCellContent>
+                      {order.mode_of_payment}
+                    </StyledTableCellContent>
+                    <StyledTableCellContent>
+                      {new Date(order.created_at).toLocaleString()}
+                    </StyledTableCellContent>
 
-                  <StyledTableCellContent>
-                    {order.order_shipped ? (
-                      <Tooltip title="Shipped">
-                        <IconButton>
-                          <LocalShippingIcon style={{ color: "green", fontSize: "2em" }} />
-                        </IconButton>
-                      </Tooltip>
-                    ) : (
-                      <Tooltip title="Not Shipped">
-                        <IconButton>
-                          <CancelIcon color="error" />
-                        </IconButton>
-                      </Tooltip>
-                    )}
-                  </StyledTableCellContent>
-                  <StyledTableCellContent>
-                    {order.order_delivered ? (
-                      <Tooltip title="Delivered">
-                        <IconButton>
-                          <CheckCircleIcon style={{ color: "green" }} />
-                        </IconButton>
-                      </Tooltip>
-                    ) : (
-                      <Tooltip title="Not Delivered">
-                        <IconButton>
-                          <CancelIcon color="error" />
-                        </IconButton>
-                      </Tooltip>
-                    )}
-                  </StyledTableCellContent>
-                  <StyledTableCellContent>
-                    {order.order_received ? (
-                      <Tooltip title="Not Received">
-                        <IconButton>
-                          <CancelIcon color="error" />
-                        </IconButton>
-                      </Tooltip>
-                    ) : (
-                      <Tooltip title="Received">
-                        <IconButton>
-                          <CheckCircleIcon style={{ color: "green" }} />
-                        </IconButton>
-                      </Tooltip>
-                    )}
-                  </StyledTableCellContent>
-                  <StyledTableCellContent>
-                    {order.order_cancelled_by_seller ? (
-                      <Tooltip title="Not Cancelled">
-                        <IconButton>
-                          <CheckCircleIcon color="success" />
-                        </IconButton>
-                      </Tooltip>
-                    ) : (
-                      <Tooltip title="Cancelled">
-                        <IconButton>
-                          <CancelIcon style={{ color: "red" }} />
-                        </IconButton>
-                      </Tooltip>
-                    )}
-                  </StyledTableCellContent>
+                    <StyledTableCellContent>
+                      {order.order_shipped ? (
+                        <Tooltip title="Shipped">
+                          <IconButton>
+                            <LocalShippingIcon
+                              style={{ color: "green", fontSize: "2em" }}
+                            />
+                          </IconButton>
+                        </Tooltip>
+                      ) : (
+                        <Tooltip title="Not Shipped">
+                          <IconButton>
+                            <CancelIcon color="error" />
+                          </IconButton>
+                        </Tooltip>
+                      )}
+                    </StyledTableCellContent>
+                    <StyledTableCellContent>
+                      {order.order_delivered ? (
+                        <Tooltip title="Delivered">
+                          <IconButton>
+                            <CheckCircleIcon style={{ color: "green" }} />
+                          </IconButton>
+                        </Tooltip>
+                      ) : (
+                        <Tooltip title="Not Delivered">
+                          <IconButton>
+                            <CancelIcon color="error" />
+                          </IconButton>
+                        </Tooltip>
+                      )}
+                    </StyledTableCellContent>
+                    <StyledTableCellContent>
+                      {order.order_received ? (
+                        <Tooltip title="Not Received">
+                          <IconButton>
+                            <CancelIcon color="error" />
+                          </IconButton>
+                        </Tooltip>
+                      ) : (
+                        <Tooltip title="Received">
+                          <IconButton>
+                            <CheckCircleIcon style={{ color: "green" }} />
+                          </IconButton>
+                        </Tooltip>
+                      )}
+                    </StyledTableCellContent>
+                    <StyledTableCellContent>
+                      {order.order_cancelled_by_seller ? (
+                        <Tooltip title="Not Cancelled">
+                          <IconButton>
+                            <CheckCircleIcon color="success" />
+                          </IconButton>
+                        </Tooltip>
+                      ) : (
+                        <Tooltip title="Cancelled">
+                          <IconButton>
+                            <CancelIcon style={{ color: "red" }} />
+                          </IconButton>
+                        </Tooltip>
+                      )}
+                    </StyledTableCellContent>
 
-                  <StyledTableCellContent>
-                    <Grid container spacing={1}>
-                      <Grid item>
-                        <Button
-                          variant="contained"
-                          color="primary"
-                          onClick={() => handleShipOrder(order.id)}
-                          disabled={
-                            order.order_shipped ||
-                            order.order_cancelled_by_seller
-                          }
-                        >
-                          Ship
-                        </Button>
+                    <StyledTableCellContent>
+                      <Grid container spacing={1}>
+                        <Grid item>
+                          <Button
+                            variant="contained"
+                            color="primary"
+                            onClick={() => handleShipOrder(order.id)}
+                            disabled={
+                              order.order_shipped ||
+                              order.order_cancelled_by_seller
+                            }
+                          >
+                            Ship
+                          </Button>
+                        </Grid>
+                        <Grid item>
+                          <Button
+                            variant="contained"
+                            color="secondary"
+                            onClick={() => handleCancelOrder(order.id)}
+                            disabled={order.order_cancelled_by_seller}
+                          >
+                            Cancel
+                          </Button>
+                        </Grid>
                       </Grid>
-                      <Grid item>
-                        <Button
-                          variant="contained"
-                          color="secondary"
-                          onClick={() => handleCancelOrder(order.id)}
-                          disabled={order.order_cancelled_by_seller}
-                        >
-                          Cancel
-                        </Button>
-                      </Grid>
-                    </Grid>
-                  </StyledTableCellContent>
-                </StyledTableRow>
-              ))}
+                    </StyledTableCellContent>
+                  </StyledTableRow>
+                ))}
             </TableBody>
           </Table>
         </StyledTableContainer>
@@ -483,6 +528,13 @@ function ManageSellersOrders() {
             {snackbarMessage}
           </Alert>
         </Snackbar>
+
+        <br />
+
+        <div style={{ display: "flex", alignItems: "center"}}>
+        <ArrowBackIosIcon/>{renderPageButtons()} <ArrowForwardIosIcon/>
+        </div>
+
       </>
     </GlobalStyles>
   );
