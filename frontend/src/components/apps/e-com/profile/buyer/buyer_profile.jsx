@@ -66,42 +66,34 @@ export default function BuyerProfile() {
           </Grid>
 
           <Grid item xs={12} md={showOrders ? 12 : 8}>
-          <Card className={classes.card}>
+            <Card className={classes.card}>
               {!showReviews && (
                 <Button
                   color="primary"
                   variant="contained"
-                  
                   onClick={() => {
                     setShowOrders(!showOrders);
                     setShowReviews(false); // Hide reviews when showing orders
                   }}
                 >
                   {showOrders ? "Hide Orders List" : "Show Orders History"}
-        
                 </Button>
-                
               )}
-                                <span>                &nbsp;&nbsp;&nbsp;</span>     
+              <span> &nbsp;&nbsp;&nbsp;</span>
               {!showOrders && (
-
                 <>
-   
-                <Button
-                  color="primary"
-                  variant="contained"
-
-                  onClick={() => setShowReviews(!showReviews)}
-                >
-                  {showReviews ? "Hide Reviews" : "Show Reviews"}
-                </Button>
+                  <Button
+                    color="primary"
+                    variant="contained"
+                    onClick={() => setShowReviews(!showReviews)}
+                  >
+                    {showReviews ? "Hide Reviews" : "Show Reviews"}
+                  </Button>
                 </>
-                
               )}
-  
 
               {showOrders && <BuyersOrdersList />}
-             {showReviews && <ReviewCRUD />}
+              {showReviews && <ReviewCRUD />}
             </Card>
           </Grid>
         </Grid>

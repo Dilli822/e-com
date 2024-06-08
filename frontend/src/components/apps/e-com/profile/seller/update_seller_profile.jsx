@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Header from "../../header/header";
 import AppFooter from "../../footer/footer";
 import { makeStyles } from "@mui/styles";
-import { Modal, Box } from '@mui/material';
+import { Modal, Box } from "@mui/material";
 import {
   Container,
   Card,
@@ -95,19 +95,17 @@ function SellerProfileUpdate() {
     } catch (error) {
       setError("Error fetching profile data");
     }
-  };const [open, setOpen] = useState(false);
+  };
+  const [open, setOpen] = useState(false);
 
   const handleLogout = () => {
     setOpen(true);
   };
 
-
-
   const handleLogoutConfirm = () => {
     localStorage.clear();
     window.location.href = "/";
   };
-
 
   const handleEditProfile = () => {
     setProfileEditMode(true);
@@ -121,6 +119,7 @@ function SellerProfileUpdate() {
         formData.append("image", imageFile);
       }
       formData.append("address", profileData.address);
+      formData.append("company_name", profileData.company_name);
       formData.append("phone_number", profileData.phone_number);
       formData.append("bio", profileData.bio);
       formData.append("user", userId);
@@ -191,7 +190,7 @@ function SellerProfileUpdate() {
   return (
     <div>
       <Card className={classes.card}>
-      <img
+        <img
           key={profileData.image} // Add key prop here
           src={
             imageFile
@@ -219,10 +218,21 @@ function SellerProfileUpdate() {
         </Typography>
 
         <Typography variant="h6" gutterBottom>
+          Company Name:{" "}
+          {profileEditMode ? (
+            <TextField
+              name="company_name"
+              value={profileData.company_name}
+              onChange={handleInputChange}
+            />
+          ) : (
+            profileData.company_name
+          )}
+        </Typography>
 
+        <Typography variant="h6" gutterBottom>
           address:{" "}
           {profileEditMode ? (
-          
             <TextField
               name="address"
               value={profileData.address}
@@ -282,27 +292,43 @@ function SellerProfileUpdate() {
             >
               Edit
             </Button>
-            &nbsp;  &nbsp;  
-
+            &nbsp; &nbsp;
             <Button variant="contained" onClick={handleLogout}>
-          Logout
-        </Button>
-
+              Logout
+            </Button>
           </div>
         )}
         <Modal open={open} onClose={handleClose}>
-        <Box sx={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', width: 400, bgcolor: 'background.paper', boxShadow: 24, p: 4 }}>
-          <Typography variant="h6" gutterBottom>
-            Are you sure you want to logout?
-          </Typography>
-          <Box sx={{ display: 'flex', justifyContent: 'flex-start', mt: 4
-           }}>
-            <Button variant="contained" onClick={handleClose}>Cancel</Button>
-            &nbsp;
-            <Button variant="contained" color="primary" onClick={handleLogoutConfirm}>Logout</Button>
+          <Box
+            sx={{
+              position: "absolute",
+              top: "50%",
+              left: "50%",
+              transform: "translate(-50%, -50%)",
+              width: 400,
+              bgcolor: "background.paper",
+              boxShadow: 24,
+              p: 4,
+            }}
+          >
+            <Typography variant="h6" gutterBottom>
+              Are you sure you want to logout?
+            </Typography>
+            <Box sx={{ display: "flex", justifyContent: "flex-start", mt: 4 }}>
+              <Button variant="contained" onClick={handleClose}>
+                Cancel
+              </Button>
+              &nbsp;
+              <Button
+                variant="contained"
+                color="primary"
+                onClick={handleLogoutConfirm}
+              >
+                Logout
+              </Button>
+            </Box>
           </Box>
-        </Box>
-      </Modal>
+        </Modal>
       </Card>
     </div>
   );

@@ -28,6 +28,7 @@ class Product(models.Model):
     
     description = models.TextField()
     specifications = models.TextField(null=True, blank=True, default="")
+    rating = models.DecimalField(max_digits=3, decimal_places=1, default=1)  # New field for average rating
     discount = models.DecimalField(max_digits=10, decimal_places=2)
     stock = models.BigIntegerField(default=0)
     price = models.DecimalField(max_digits=10, decimal_places=2)
@@ -74,10 +75,24 @@ class Review(models.Model):
     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     rating = models.IntegerField(choices=[(i, i) for i in range(1, 6)])
     comment = models.TextField()
+    username = models.CharField(max_length=125, default="", null=True, blank=True)
+    # product_image = models.ImageField(upload_to='seller/product_images/', blank=True, null=True)
     created_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
         return f"Review of {self.product.name} by {self.user.username}"
+    
+    def save(self, *args, **kwargs):
+        # Populate the username from UserData if it's not already set
+        if not self.username:
+            try:
+                user_data = UserData.objects.get(id=self.user.id)
+                self.username = user_data.username
+            except UserData.DoesNotExist:
+                # Handle case where UserData does not exist
+                self.username = None
+        
+        super().save(*args, **kwargs)
 
 class Cart(models.Model):
     user = models.OneToOneField(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)

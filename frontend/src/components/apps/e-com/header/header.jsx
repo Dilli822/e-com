@@ -40,7 +40,7 @@ const useStyles = makeStyles((theme) => ({
   cartIcon: {
     marginRight: theme.spacing(1),
     color: "red", // Change color to red
-    border: "1px solid red", // Add border for outline effect
+    // border: "1px solid red", // Add border for outline effect
     borderRadius: "5%", // Optional: To make it circular
     padding: theme.spacing(0.35), // Optional: Adjust padding for spacing
   },
@@ -198,11 +198,12 @@ const Header = () => {
                   to="/feed"
                   style={{ textDecoration: "none", color: "inherit" }}
                 >
-                  <img
+                  Logo
+                  {/* <img
                     src={HeadLogo}
                     alt=""
                     style={{ width: "50px", borderRadius: "15%" }}
-                  />
+                  /> */}
                 </Link>
               </Typography>
             </Grid>

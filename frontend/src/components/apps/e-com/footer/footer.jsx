@@ -1,28 +1,27 @@
-import React from 'react';
-import { Container, Grid, Typography, Link } from '@mui/material';
-import { makeStyles } from '@mui/styles';
+import React from "react";
+import { Container, Grid, Typography, Link } from "@mui/material";
+import { makeStyles } from "@mui/styles";
 
 const useStyles = makeStyles((theme) => ({
   footer: {
-    backgroundColor: '#212121',
-    color: '#fff',
+    backgroundColor: "#212121",
+    color: "#fff",
     padding: theme.spacing(6, 0),
-    
   },
   listItem: {
     marginBottom: theme.spacing(2),
     paddingLeft: "0!important",
   },
   listItemLink: {
-    color: '#fff!important',
-    listStyleType: 'none!important',
-    textDecoration: 'none!important',
-    '&:hover': {
-      textDecoration: 'underline',
+    color: "#fff!important",
+    listStyleType: "none!important",
+    textDecoration: "none!important",
+    "&:hover": {
+      textDecoration: "underline",
     },
   },
   borderTop: {
-    borderTop: '1px solid #fff',
+    borderTop: "1px solid #fff",
     margin: theme.spacing(3, 0),
   },
 }));
@@ -57,7 +56,7 @@ const AppFooter = () => {
   ];
 
   let carty = localStorage.getItem("cartItems");
-  if(!carty){
+  if (!carty) {
     console.log("does not exist need to add");
     localStorage.setItem("cartItems", JSON.stringify(hardcodedArray));
   }
@@ -72,7 +71,9 @@ const AppFooter = () => {
             </Typography>
             <ul className={classes.listItem}>
               <li>
-                <Typography variant="body1">Itahari-20, Tarahara Sunsari Nepal</Typography>
+                <Typography variant="body1">
+                  Itahari-20, Tarahara Sunsari Nepal
+                </Typography>
               </li>
               <li>
                 <Typography variant="body1">
@@ -83,8 +84,11 @@ const AppFooter = () => {
               </li>
               <li>
                 <Typography variant="body1">
-                  <Link href="mailto:info@company.com" className={classes.listItemLink}>
-                  f25836105@gmail.com
+                  <Link
+                    href="mailto:info@company.com"
+                    className={classes.listItemLink}
+                  >
+                    f25836105@gmail.com
                   </Link>
                 </Typography>
               </li>
@@ -96,22 +100,34 @@ const AppFooter = () => {
             </Typography>
             <ul className={classes.listItem}>
               <li>
-                <Link href="#" className={classes.listItemLink}>Clothes</Link>
+                <Link href="#" className={classes.listItemLink}>
+                  Clothes
+                </Link>
               </li>
               <li>
-                <Link href="#" className={classes.listItemLink}>Shoes</Link>
+                <Link href="#" className={classes.listItemLink}>
+                  Shoes
+                </Link>
               </li>
               <li>
-                <Link href="#" className={classes.listItemLink}>Sports</Link>
+                <Link href="#" className={classes.listItemLink}>
+                  Sports
+                </Link>
               </li>
               <li>
-                <Link href="#" className={classes.listItemLink}>Grocery</Link>
+                <Link href="#" className={classes.listItemLink}>
+                  Grocery
+                </Link>
               </li>
               <li>
-                <Link href="#" className={classes.listItemLink}>Home Appliances</Link>
+                <Link href="#" className={classes.listItemLink}>
+                  Home Appliances
+                </Link>
               </li>
               <li>
-                <Link href="#" className={classes.listItemLink}>Electronics</Link>
+                <Link href="#" className={classes.listItemLink}>
+                  Electronics
+                </Link>
               </li>
             </ul>
           </Grid>
@@ -121,19 +137,29 @@ const AppFooter = () => {
             </Typography>
             <ul className={classes.listItem}>
               <li>
-                <Link href="#" className={classes.listItemLink}>Home</Link>
+                <Link href="#" className={classes.listItemLink}>
+                  Home
+                </Link>
               </li>
               <li>
-                <Link href="#" className={classes.listItemLink}>About Us</Link>
+                <Link href="#" className={classes.listItemLink}>
+                  About Us
+                </Link>
               </li>
               <li>
-                <Link href="#" className={classes.listItemLink}>Shop Locations</Link>
+                <Link href="#" className={classes.listItemLink}>
+                  Shop Locations
+                </Link>
               </li>
               <li>
-                <Link href="#" className={classes.listItemLink}>FAQs</Link>
+                <Link href="#" className={classes.listItemLink}>
+                  FAQs
+                </Link>
               </li>
               <li>
-                <Link href="#" className={classes.listItemLink}>Contact</Link>
+                <Link href="#" className={classes.listItemLink}>
+                  Contact
+                </Link>
               </li>
             </ul>
           </Grid>
@@ -142,7 +168,12 @@ const AppFooter = () => {
               Payment Partner
             </Typography>
             <Typography variant="body1">
-              <Link href="https://esewa.com.np" className={classes.listItemLink} target="_blank" rel="noopener">
+              <Link
+                href="https://esewa.com.np"
+                className={classes.listItemLink}
+                target="_blank"
+                rel="noopener"
+              >
                 Coming Soon
               </Link>
             </Typography>
@@ -150,10 +181,12 @@ const AppFooter = () => {
         </Grid>
         <div className={classes.borderTop}></div>
         <Typography variant="body2" align="center" gutterBottom>
-          &copy; {new Date().getFullYear()} e-com Website. All rights reserved.
+          &copy; {new Date().getFullYear()} --- Online E-commerce Website. All
+          Rights Reserved.
         </Typography>
         <Typography variant="body2" align="center">
-          Designed Inspired By Material-UI
+          Developed By: Dilli Hang Rai
+          {/* Designed Inspired By Material-UI */}
         </Typography>
       </Container>
     </footer>

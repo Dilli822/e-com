@@ -134,6 +134,10 @@ export default function SignUp() {
           <Box component="form" onSubmit={onFinish} noValidate sx={{ mt: 3 }}>
             <Grid container spacing={2}>
               <Grid item xs={12} sm={12}>
+                <Typography variant="body2" color="error">
+                  Please Be Carefully,Remember!! You cannot change your username.
+                </Typography>
+                <br />
                 <TextField
                   autoComplete="given-name"
                   name="username"

@@ -53,9 +53,20 @@ function ReviewItem({ review }) {
 
       <Typography variant="body1">Rating: {review.rating}/5</Typography>
       <Typography variant="body1"> {[...Array(5)].map((_, index) => <span key={index} style={{color: index < review.rating ? 'gold' : 'gray'}}>&#9733;</span>)}</Typography>
-      <Typography variant="body1">By: {review.user}</Typography>
-      <Typography variant="body1">Review: {review.comment}</Typography>
-      <Typography variant="body1">Added at: {new Date(review.created_at).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}</Typography>
+      {/* <Typography variant="body1"> {review.user}</Typography> */}
+      <Typography variant="body1">By:{review.username}</Typography>
+      <Typography variant="body1">Comment/Review: {review.comment}</Typography>
+      {/* <Typography variant="body1">Added at: {new Date(review.created_at).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}</Typography> */}
+      <Typography variant="body1">
+  Added: {((new Date() - new Date(review.created_at)) < 1e3 * 60 * 60 * 24) ? 'Today' : 
+         ((new Date() - new Date(review.created_at)) < 1e3 * 60 * 60 * 24 * 7) ? 
+           `${Math.floor((new Date() - new Date(review.created_at)) / (1e3 * 60 * 60 * 24))} days ago` :
+           ((new Date() - new Date(review.created_at)) < 1e3 * 60 * 60 * 24 * 30) ? 
+             `${Math.floor((new Date() - new Date(review.created_at)) / (1e3 * 60 * 60 * 24 * 7))} weeks ago` :
+             ((new Date() - new Date(review.created_at)) < 1e3 * 60 * 60 * 24 * 365) ? 
+               `${Math.floor((new Date() - new Date(review.created_at)) / (1e3 * 60 * 60 * 24 * 30))} months ago` :
+               `${Math.floor((new Date() - new Date(review.created_at)) / (1e3 * 60 * 60 * 24 * 365))} years ago`}
+</Typography>
 
       <hr />
     </li>

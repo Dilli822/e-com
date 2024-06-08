@@ -93,6 +93,7 @@ export default function Feed() {
       </Container>
       <br />
       <br />
+      <br />
       <AppFooter />
     </>
   );

@@ -55,6 +55,7 @@ const Main = () => {
     <Grid container spacing={3}>
       {Object.keys(products).map((category) => (
         <Grid item xs={12} key={category}>
+          <br /> 
           <div style={{ display: "flex", justifyContent: "space-between" }}>
             <Typography variant="h5" gutterBottom>
               {category}
@@ -67,8 +68,8 @@ const Main = () => {
               View More
             </Button>
           </div>
-          <br /><br />
-
+          <br />
+          <br />
           <Grid container spacing={2}>
             {products[category].slice(0, 6).map((product) => (
               <Grid item xs={6} sm={6} md={2} lg={2} key={product.id}>
@@ -123,6 +124,14 @@ const Main = () => {
                       >
                         Stock: {product.stock}
                       </Typography>
+
+                      <Typography
+                        variant="body1"
+                        color="textSecondary"
+                        component="p"
+                      >
+                        Rating: <b> {product.rating}/5 </b>
+                      </Typography>
                     </CardContent>
                   </CardActionArea>
                 </Card>
@@ -132,11 +141,10 @@ const Main = () => {
         </Grid>
       ))}
 
-      <div  style={{ display: "none" }}>
-      <CategoryFilterProducts products={products}/> {/* Pass products as prop */}
+      <div style={{ display: "none" }}>
+        <CategoryFilterProducts products={products} />{" "}
+        {/* Pass products as prop */}
       </div>
-
-
     </Grid>
   );
 };

@@ -1,3 +1,5 @@
 
 -- update the CA certificate
 -- multiple order in a single order list 
+-- making two models of different app talking each other via signals
+-- we use signals.py in both differnts apps to connect them and let them talk to eachother
