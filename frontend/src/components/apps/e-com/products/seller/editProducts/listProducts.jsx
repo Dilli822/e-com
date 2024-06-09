@@ -56,10 +56,18 @@ export default function SellerProductsList() {
   const [deleteConfirmationOpen, setDeleteConfirmationOpen] = useState(false);
   const [deleteSuccessMessage, setDeleteSuccessMessage] = useState("");
   const [deleteErrorMessage, setDeleteErrorMessage] = useState("");
+  const [imageFile, setImageFile] = useState(null);
 
   useEffect(() => {
     fetchData();
   }, []);
+
+
+  const handleImageChange = (event) => {
+    const file = event.target.files[0];
+    setImageFile(file);
+  };
+  
 
   const fetchData = async () => {
     setLoading(true);
@@ -107,6 +115,10 @@ export default function SellerProductsList() {
         discount: editedProduct.discount,
         seller: userId,
       };
+
+   if (imageFile) {
+      requestData.image = imageFile;
+    }
 
       const response = await fetch(
         `http://127.0.0.1:8000/e-com/api/seller/products/edit/${selectedProduct.id}/`,
@@ -265,6 +277,7 @@ export default function SellerProductsList() {
                   <TableCell>Product Name</TableCell>
                   <TableCell>Image</TableCell>
                   <TableCell>Description</TableCell>
+                  <TableCell>Specifications</TableCell>
                   <TableCell>Category</TableCell>
                   <TableCell>Discount</TableCell>
                   <TableCell>Price</TableCell>
@@ -272,7 +285,7 @@ export default function SellerProductsList() {
                 </TableRow>
               </TableHead>
               <TableBody>
-                {products             .slice(
+                {products.slice(
                   (currentPage - 1) * itemsPerPage,
                   currentPage * itemsPerPage
                 )
@@ -291,6 +304,13 @@ export default function SellerProductsList() {
                         ? `${product.description.slice(0, 115)}...`
                         : product.description}
                     </TableCell>
+
+                    <TableCell>
+                      {product.specifications.length > 115
+                        ? `${product.specifications.slice(0, 115)}...`
+                        : product.specifications}
+                    </TableCell>
+
                     <TableCell>{product.category_name}</TableCell>
                     <TableCell>{product.discount}%</TableCell>
                     <TableCell>${product.price}</TableCell>
@@ -366,6 +386,15 @@ export default function SellerProductsList() {
               fullWidth
               margin="normal"
             />
+<TextField
+  type="file"
+  onChange={handleImageChange}
+  fullWidth
+  margin="normal"
+  inputProps={{ accept: "image/*" }}
+/>
+
+
             <TextField
               label="Price"
               name="price"

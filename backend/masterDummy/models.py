@@ -27,7 +27,7 @@ class Product(models.Model):
     product_name = models.CharField(max_length=255, blank=True, null=True, unique=False, default="N/A")  # Optional
     
     description = models.TextField()
-    specifications = models.TextField(null=True, blank=True, default="")
+    specifications = models.TextField(blank=True, default="N/A")
     rating = models.DecimalField(max_digits=3, decimal_places=1, default=1)  # New field for average rating
     discount = models.DecimalField(max_digits=10, decimal_places=2)
     stock = models.BigIntegerField(default=0)

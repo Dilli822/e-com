@@ -240,9 +240,9 @@ export default function ProductDetails() {
             <Card>
             <CardContent>
             <Typography variant="body1">
-              {product.description.length > 115
-                ? `${product.description}`
-                : product.description}
+              {product.specifications.length > 115
+                ? `${product.specifications}`
+                : product.specifications}
             </Typography>
             </CardContent>
             </Card>
