@@ -236,23 +236,37 @@ export default function ProductDetails() {
             <br />
             <Typography variant="h5">Ratings</Typography>
             <hr />
-            <Typography variant="h6"> Description </Typography>
+            <Typography variant="h6"> Specifications </Typography>
             <Card>
-            <CardContent>
-            <Typography variant="body1">
-              {product.specifications.length > 115
+              <CardContent>
+                <Typography variant="body1">
+                  {/* {product.specifications.length > 115
                 ? `${product.specifications}`
-                : product.specifications}
-            </Typography>
-            </CardContent>
+                : product.specifications} */}
+
+                  {product.specifications.split("\r\n").map((line, index) => (
+                    <div key={index}>
+                      {line.split("\t").map((item, itemIndex) => (
+                        <span key={itemIndex}>
+                          {item}
+                          {itemIndex < line.split("\t").length - 1 && "\u00A0"}
+                        </span>
+                      ))}
+                      {index <
+                        product.specifications.split("\r\n").length - 1 && (
+                        <br />
+                      )}
+                    </div>
+                  ))}
+                </Typography>
+              </CardContent>
             </Card>
 
             <Grid>
-
               <br />
-              <Typography variant="h6">              Reviews</Typography>
+              <Typography variant="h6"> Reviews</Typography>
 
-            <ReviewList productId={product.id} />
+              <ReviewList productId={product.id} />
             </Grid>
           </Grid>
           <Grid item xs={12} md={2}>
@@ -263,8 +277,6 @@ export default function ProductDetails() {
             <hr />
             <PeopleProductView />
           </Grid>
-
-       
         </Grid>
       </Container>
       <br />

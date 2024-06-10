@@ -36,14 +36,16 @@ const ProductForm = () => {
   const [categories, setCategories] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState("");
 
-  const handleFormChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prevState) => ({
-      ...prevState,
-      [name]: value,
-    }));
+  const handleFormChange = (event) => {
+    const { name, value } = event.target;
+    // Replace multiple consecutive spaces with a single space
+    const formattedValue = value.replace(/\s+/g, ' ');
+    setFormData({
+      ...formData,
+      [name]: formattedValue,
+    });
   };
-
+  
   const handleImageChange = (e) => {
     setFormData((prevState) => ({
       ...prevState,
@@ -285,6 +287,7 @@ const ProductForm = () => {
               <TextField
                 name="description"
                 label="Description"
+                placeholder={`Introducing the Safety Always 240 mm 8 Pads by Safety, designed for light flow days. With wings for added protection, these straight fluffy pads come in a multi-pack of 8, offering odor neutralizing scent feature and a shelf life of 24 months. The white color and 300g weight make them convenient for on-the-go use. Ideal for feminine hygiene, these sanitary pads cater to women’s health needs.`}
                 value={formData.description}
                 onChange={handleFormChange}
                 error={errorMessages.description !== undefined}
@@ -295,6 +298,44 @@ const ProductForm = () => {
                 margin="normal"
                 multiline
                 rows={4} // You can adjust the number of rows as needed
+              />
+            </Grid>
+            <Grid item md={11}>
+              <TextField
+                name="specifications"
+                label="Specifications"
+                placeholder={`Maintain a clean and organized layout for easy readability for your business.
+Brand Name: \n
+Package Included:\n
+1 x Hair Clipper(Built in 1 Li ion Battey)\n
+4 x Limit Comb\n
+1 x USB Charging Socket\n
+1 x Cleaning Brush\n
+1 x User Manual\n
+Specifications:\n
+Color: As shown in the picture\n
+Material: ABS\n
+Power: 5 (W)\n
+Charging Time: About 2 hours\n
+Use Time: About 2 hours\n
+Charging Type: USB Charging Socket\n
+Battery: Built in 18500 Li ion Battery\n
+Features:\n
+Stainless steel blade can be washed.\n
+Four limit combs(1.5/2/3/4mm) for different length of hair.\n
+Low noise design,low decibels, no serious noise during work.\n
+USB Charging Socket,can be charged by mobile power / laptop / car, convenient and fast.\n
+                  `}
+                value={formData.specifications}
+                onChange={handleFormChange}
+                error={errorMessages.specifications !== undefined}
+                helperText={errorMessages.specifications}
+                required
+                fullWidth
+                variant="outlined"
+                margin="normal"
+                multiline
+                rows={20} // You can adjust the number of rows as needed
               />
             </Grid>
             <Typography variant="body2" gutterBottom>

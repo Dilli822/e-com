@@ -33,12 +33,14 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
+    overflow: "auto"
   },
   modalContent: {
     backgroundColor: theme.palette.background.paper,
     border: "2px solid #000",
     boxShadow: theme.shadows[5],
     padding: theme.spacing(2, 4, 3),
+    
   },
 }));
 
@@ -62,12 +64,14 @@ export default function SellerProductsList() {
     fetchData();
   }, []);
 
-
   const handleImageChange = (event) => {
     const file = event.target.files[0];
     setImageFile(file);
+    setEditedProduct((prevProduct) => ({
+      ...prevProduct,
+      image: URL.createObjectURL(file),
+    }));
   };
-  
 
   const fetchData = async () => {
     setLoading(true);
@@ -106,29 +110,28 @@ export default function SellerProductsList() {
   };
 
   const handleSaveChanges = async () => {
-    try {
-      const requestData = {
-        product_name: editedProduct.product_name,
-        description: editedProduct.description,
-        category: editedProduct.category,
-        price: editedProduct.price,
-        discount: editedProduct.discount,
-        seller: userId,
-      };
+    const formData = new FormData();
+    formData.append("product_name", editedProduct.product_name);
+    formData.append("description", editedProduct.description);
+    formData.append("category", editedProduct.category);
+    formData.append("price", editedProduct.price);
+    formData.append("specifications", editedProduct.specifications);
+    formData.append("discount", editedProduct.discount);
+    formData.append("seller", userId);
 
-   if (imageFile) {
-      requestData.image = imageFile;
+    if (imageFile) {
+      formData.append("image", imageFile);
     }
 
+    try {
       const response = await fetch(
         `http://127.0.0.1:8000/e-com/api/seller/products/edit/${selectedProduct.id}/`,
         {
           method: "PUT",
           headers: {
-            "Content-Type": "application/json",
             Authorization: `Bearer ${localStorage.getItem("accessToken")}`,
           },
-          body: JSON.stringify(requestData),
+          body: formData,
         }
       );
 
@@ -138,7 +141,7 @@ export default function SellerProductsList() {
 
       const updatedProducts = products.map((product) =>
         product.id === selectedProduct.id
-          ? { ...product, ...requestData }
+          ? { ...product, ...editedProduct, image: editedProduct.image }
           : product
       );
       setProducts(updatedProducts);
@@ -223,7 +226,6 @@ export default function SellerProductsList() {
     setDeleteConfirmationOpen(false);
   };
 
-
   const [currentPage, setCurrentPage] = useState(1);
   // const [totalPages, setTotalPages] = useState(1);
   const itemsPerPage = 5; // Number of items per page
@@ -241,17 +243,16 @@ export default function SellerProductsList() {
     for (let i = 1; i <= totalPages; i++) {
       buttons.push(
         <IconButton
-        key={i}
-        onClick={() => setCurrentPage(i)}
-        color={currentPage === i ? "primary" : "default"}
-      >
-        {i}
-      </IconButton>
+          key={i}
+          onClick={() => setCurrentPage(i)}
+          color={currentPage === i ? "primary" : "default"}
+        >
+          <span style={{ fontSize: "20px" }}>{i}</span>
+        </IconButton>
       );
     }
     return buttons;
   };
-
 
   return (
     <Grid container className={classes.root}>
@@ -274,7 +275,9 @@ export default function SellerProductsList() {
             <Table stickyHeader aria-label="seller products table">
               <TableHead>
                 <TableRow>
+                  <TableCell>S.No</TableCell>
                   <TableCell>Product Name</TableCell>
+                  <TableCell>Product ID</TableCell>
                   <TableCell>Image</TableCell>
                   <TableCell>Description</TableCell>
                   <TableCell>Specifications</TableCell>
@@ -288,10 +291,11 @@ export default function SellerProductsList() {
                 {products.slice(
                   (currentPage - 1) * itemsPerPage,
                   currentPage * itemsPerPage
-                )
-                .map((product) => (
+                ).map((product, index) => (
                   <TableRow key={product.id}>
+                    <TableCell>{index + 1}</TableCell>
                     <TableCell>{product.product_name}</TableCell>
+                    <TableCell>#{product.id}</TableCell>
                     <TableCell>
                       <img
                         src={product.image}
@@ -304,13 +308,11 @@ export default function SellerProductsList() {
                         ? `${product.description.slice(0, 115)}...`
                         : product.description}
                     </TableCell>
-
                     <TableCell>
                       {product.specifications.length > 115
                         ? `${product.specifications.slice(0, 115)}...`
                         : product.specifications}
                     </TableCell>
-
                     <TableCell>{product.category_name}</TableCell>
                     <TableCell>{product.discount}%</TableCell>
                     <TableCell>${product.price}</TableCell>
@@ -336,6 +338,7 @@ export default function SellerProductsList() {
                   </TableRow>
                 ))}
               </TableBody>
+              <br />
             </Table>
           </TableContainer>
         )}
@@ -359,6 +362,7 @@ export default function SellerProductsList() {
           open={editModalOpen}
           onClose={handleCloseEditModal}
           className={classes.modal}
+        
         >
           <div className={classes.modalContent}>
             <Typography variant="h6">Edit Product</Typography>
@@ -377,33 +381,39 @@ export default function SellerProductsList() {
               onChange={handleChange}
               fullWidth
               margin="normal"
+              multiline
+              rows={4}
             />
-            <TextField
-              label="Category"
-              name="category_name"
-              value={editedProduct.category_name || ""}
-              onChange={handleChange}
-              fullWidth
-              margin="normal"
-            />
+     
 <TextField
-  type="file"
-  onChange={handleImageChange}
+  label="Specifications"
+  name="specifications"
+  value={editedProduct.specifications || ""}
+  onChange={handleChange}
   fullWidth
   margin="normal"
-  inputProps={{ accept: "image/*" }}
+  multiline
+  rows={14}
 />
 
 
+            <img
+              src={editedProduct.image}
+              alt=""
+              style={{ width: "150px" }}
+            />
+
             <TextField
-              label="Price"
-              name="price"
-              value={editedProduct.price || ""}
-              onChange={handleChange}
+              type="file"
+              onChange={handleImageChange}
               fullWidth
               margin="normal"
+              inputProps={{ accept: "image/*" }}
             />
-            <TextField
+
+  <Grid container>
+    <Grid item md={4}>
+    <TextField
               label="Discount (%)"
               name="discount"
               value={editedProduct.discount || ""}
@@ -411,6 +421,30 @@ export default function SellerProductsList() {
               fullWidth
               margin="normal"
             />
+    </Grid>
+    <Grid item md={4} spacing={2}>
+    <TextField
+              label="Category"
+              name="category_name"
+              value={editedProduct.category_name || ""}
+              onChange={handleChange}
+              fullWidth
+              margin="normal"
+        
+            />
+    </Grid>
+    <Grid item md={4}>
+    <TextField
+              label="Price"
+              name="price"
+              value={editedProduct.price || ""}
+              onChange={handleChange}
+              fullWidth
+              margin="normal"
+            />
+        
+    </Grid>
+  </Grid>
             <br />
             <br />
             <Button
@@ -471,9 +505,9 @@ export default function SellerProductsList() {
         </Modal>
       </Grid>
 
-      <div style={{ display: "flex", alignItems: "center"}}>
-        <ArrowBackIosIcon/>{renderPageButtons()} <ArrowForwardIosIcon/>
-        </div>
+      <div style={{ display: "flex", alignItems: "center" }}>
+        <ArrowBackIosIcon fontSize="small" />{renderPageButtons()} <ArrowForwardIosIcon />
+      </div>
     </Grid>
   );
 }
