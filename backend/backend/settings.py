@@ -174,7 +174,6 @@ import os
 
 # Email settings
 # settings.py
-
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
@@ -282,3 +281,15 @@ import certifi
 # Create SSL context and load CA certs
 context = ssl.create_default_context(cafile=certifi.where())
 
+
+
+from pathlib import Path
+
+BASE_DIR = Path(__file__).resolve().parent.parent
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': str(BASE_DIR / 'db.sqlite3'),  # Ensure this is a string
+    }
+}

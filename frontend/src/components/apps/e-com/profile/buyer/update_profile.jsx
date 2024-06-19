@@ -271,14 +271,15 @@ function BuyerProfileUpdate() {
         ) : (
           <div className={classes.buttonGroup}>
             <Button
-              variant="contained"
+              variant="outlined"
               color="primary"
               onClick={handleEditButtonClick}
+              
             >
               Edit
             </Button>
             &nbsp; &nbsp; 
-            <Button variant="contained" onClick={handleLogout}>
+            <Button variant="outlined" onClick={handleLogout} color="secondary">
               Logout
             </Button>
           </div>

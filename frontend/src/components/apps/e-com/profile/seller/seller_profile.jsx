@@ -8,14 +8,16 @@ import { Container, Card, Button, Grid, Typography } from "@mui/material";
 import EditProductForm from "../../products/seller/editProducts/editProducts";
 import ManageSellersOrders from "../../orders/seller/sellerOrdersList";
 import { useLocation, useNavigate, Link } from "react-router-dom";
+import Chart from "../../analyticsTools/Chart/Chart";
+import AreaLineChart from "../../analyticsTools/Chart/AreaLineChart";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    paddingTop: theme.spacing(4),
-    paddingBottom: theme.spacing(4),
+    paddingTop: theme.spacing(2),
+    paddingBottom: theme.spacing(2),
   },
   card: {
-    padding: theme.spacing(4),
+    padding: theme.spacing(3),
     marginBottom: theme.spacing(2),
   },
 }));
@@ -26,12 +28,16 @@ export default function SellerProfile() {
   const [showProfileUpdate, setShowProfileUpdate] = useState(true);
   const [showProductEditForm, setShowProductEditForm] = useState(false);
   const [showManageOrders, setShowManageOrders] = useState(false);
+  const [showAreaLineChart, setShowAreaLineChart] = useState(true);
+  const [showChart, setShowChart] = useState(true);
 
   const handleAddProductClick = () => {
     setShowProductForm(true);
     setShowProfileUpdate(false);
     setShowProductEditForm(false);
     setShowManageOrders(false);
+    setShowAreaLineChart(false);
+    setShowChart(false);
   };
 
   const handleAddProductEditClick = () => {
@@ -39,17 +45,21 @@ export default function SellerProfile() {
     setShowProfileUpdate(false);
     setShowProductEditForm(true);
     setShowManageOrders(false);
+    setShowAreaLineChart(false);
+    setShowChart(false);
   };
-
 
   const handleBackButtonClick = () => {
     // const confirmationMessage =
     //   "Are you sure you want to leave this page? Your changes may not be saved.";
     // if (window.confirm(confirmationMessage)) {
-      setShowProductForm(false);
-      setShowProductEditForm(false);
-      setShowManageOrders(false);
-      setShowProfileUpdate(true);
+    setShowProductForm(false);
+    setShowProductEditForm(false);
+    setShowManageOrders(false);
+    setShowProfileUpdate(true);
+    setShowChart(true);
+    setShowAreaLineChart(true);
+
     // }
   };
 
@@ -58,6 +68,8 @@ export default function SellerProfile() {
     setShowProductEditForm(false);
     setShowProfileUpdate(false);
     setShowManageOrders(true);
+    setShowAreaLineChart(false);
+    setShowChart(false);
   };
 
   const accessToken = localStorage.getItem("accessToken");
@@ -92,12 +104,11 @@ export default function SellerProfile() {
       <Header />
       <Container className={classes.root}>
         <Grid container spacing={2}>
-          <Grid item xs={4}>
+          <Grid item xs={3.25}>
             {showProfileUpdate && <SellerProfileUpdate />}
           </Grid>
-
-          {showProfileUpdate && (
-            <Grid item xs={8}>
+          <Grid item xs={8.75}>
+            {showProfileUpdate && (
               <Card className={classes.card}>
                 <>
                   <Button
@@ -126,13 +137,25 @@ export default function SellerProfile() {
                   >
                     Manage Orders
                   </Button>
+
+                  <br />
                 </>
               </Card>
-            </Grid>
-          )}
+            )}
+         
+             {showChart && <Chart />}
+             <br />
+             {showAreaLineChart && <AreaLineChart />}
+     
+  
+          </Grid>
 
           <Grid item xs={12}>
-            {(showProductForm || showProductEditForm || showManageOrders) && (
+            {(showProductForm ||
+              showProductEditForm ||
+              showManageOrders ||
+              showAreaLineChart ||
+              showChart) && (
               <Button
                 type="button"
                 variant="outlined"

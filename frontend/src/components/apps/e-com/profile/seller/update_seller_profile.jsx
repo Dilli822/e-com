@@ -286,14 +286,14 @@ function SellerProfileUpdate() {
         ) : (
           <div className={classes.buttonGroup}>
             <Button
-              variant="contained"
+              variant="outlined"
               color="primary"
               onClick={handleEditButtonClick}
             >
               Edit
             </Button>
             &nbsp; &nbsp;
-            <Button variant="contained" onClick={handleLogout}>
+            <Button variant="outlined" onClick={handleLogout}  color="secondary">
               Logout
             </Button>
           </div>
@@ -315,12 +315,12 @@ function SellerProfileUpdate() {
               Are you sure you want to logout?
             </Typography>
             <Box sx={{ display: "flex", justifyContent: "flex-start", mt: 4 }}>
-              <Button variant="contained" onClick={handleClose}>
+              <Button variant="outlined" onClick={handleClose} color="secondary">
                 Cancel
               </Button>
               &nbsp;
               <Button
-                variant="contained"
+                variant="outlined"
                 color="primary"
                 onClick={handleLogoutConfirm}
               >

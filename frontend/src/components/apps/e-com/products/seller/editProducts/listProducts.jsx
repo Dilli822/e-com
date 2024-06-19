@@ -412,7 +412,7 @@ export default function SellerProductsList() {
             />
 
   <Grid container>
-    <Grid item md={4}>
+    <Grid item md={6}>
     <TextField
               label="Discount (%)"
               name="discount"
@@ -422,7 +422,7 @@ export default function SellerProductsList() {
               margin="normal"
             />
     </Grid>
-    <Grid item md={4} spacing={2}>
+    {/* <Grid item md={4} spacing={2}>
     <TextField
               label="Category"
               name="category_name"
@@ -432,8 +432,8 @@ export default function SellerProductsList() {
               margin="normal"
         
             />
-    </Grid>
-    <Grid item md={4}>
+    </Grid> */}
+    <Grid item md={6}>
     <TextField
               label="Price"
               name="price"

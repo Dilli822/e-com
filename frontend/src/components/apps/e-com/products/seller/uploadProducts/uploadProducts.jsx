@@ -297,7 +297,7 @@ const ProductForm = () => {
                 variant="outlined"
                 margin="normal"
                 multiline
-                rows={4} // You can adjust the number of rows as needed
+                rows={7} // You can adjust the number of rows as needed
               />
             </Grid>
             <Grid item md={11}>
