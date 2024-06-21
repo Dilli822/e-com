@@ -1,0 +1,304 @@
+2024-06-20 00:31:28,494 +0545 [INFO] Watching for file changes with StatReloader
+2024-06-20 00:31:47,604 +0545 [INFO] "OPTIONS /account/user/details/ HTTP/1.1" 200 0
+2024-06-20 00:31:47,604 +0545 [INFO] "OPTIONS /account/user/details/ HTTP/1.1" 200 0
+2024-06-20 00:31:47,679 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-20 00:31:47,685 +0545 [INFO] "OPTIONS /account/buyer-profile/1/ HTTP/1.1" 200 0
+2024-06-20 00:31:47,686 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-20 00:31:47,729 +0545 [ERROR] Internal Server Error: /account/buyer-profile/1/
+Traceback (most recent call last):
+  File "/Users/dilli/Desktop/e-com/backend/account/views.py", line 161, in get_object
+    return BuyerProfile.objects.get(pk=pk)
+  File "/Users/dilli/Library/Python/3.9/lib/python/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/dilli/Library/Python/3.9/lib/python/site-packages/django/db/models/query.py", line 637, in get
+    raise self.model.DoesNotExist(
+account.models.BuyerProfile.DoesNotExist: BuyerProfile matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dilli/Library/Python/3.9/lib/python/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/dilli/Library/Python/3.9/lib/python/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/dilli/Library/Python/3.9/lib/python/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/Users/dilli/Library/Python/3.9/lib/python/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/dilli/Library/Python/3.9/lib/python/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/dilli/Library/Python/3.9/lib/python/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/dilli/Library/Python/3.9/lib/python/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/dilli/Library/Python/3.9/lib/python/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/dilli/Desktop/e-com/backend/account/views.py", line 166, in get
+    buyer_profile = self.get_object(pk)
+  File "/Users/dilli/Desktop/e-com/backend/account/views.py", line 163, in get_object
+    raise Http404
+NameError: name 'Http404' is not defined
+2024-06-20 00:31:47,736 +0545 [ERROR] "GET /account/buyer-profile/1/ HTTP/1.1" 500 106665
+2024-06-20 00:31:52,803 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-20 00:31:52,819 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-20 00:31:52,858 +0545 [ERROR] Internal Server Error: /account/buyer-profile/1/
+Traceback (most recent call last):
+  File "/Users/dilli/Desktop/e-com/backend/account/views.py", line 161, in get_object
+    return BuyerProfile.objects.get(pk=pk)
+  File "/Users/dilli/Library/Python/3.9/lib/python/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/dilli/Library/Python/3.9/lib/python/site-packages/django/db/models/query.py", line 637, in get
+    raise self.model.DoesNotExist(
+account.models.BuyerProfile.DoesNotExist: BuyerProfile matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dilli/Library/Python/3.9/lib/python/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/dilli/Library/Python/3.9/lib/python/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/dilli/Library/Python/3.9/lib/python/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/Users/dilli/Library/Python/3.9/lib/python/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/dilli/Library/Python/3.9/lib/python/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/dilli/Library/Python/3.9/lib/python/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/dilli/Library/Python/3.9/lib/python/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/dilli/Library/Python/3.9/lib/python/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/dilli/Desktop/e-com/backend/account/views.py", line 166, in get
+    buyer_profile = self.get_object(pk)
+  File "/Users/dilli/Desktop/e-com/backend/account/views.py", line 163, in get_object
+    raise Http404
+NameError: name 'Http404' is not defined
+2024-06-20 00:31:52,860 +0545 [ERROR] "GET /account/buyer-profile/1/ HTTP/1.1" 500 106665
+2024-06-20 00:31:55,411 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-20 00:31:55,421 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-20 00:31:55,444 +0545 [ERROR] Internal Server Error: /account/buyer-profile/1/
+Traceback (most recent call last):
+  File "/Users/dilli/Desktop/e-com/backend/account/views.py", line 161, in get_object
+    return BuyerProfile.objects.get(pk=pk)
+  File "/Users/dilli/Library/Python/3.9/lib/python/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/dilli/Library/Python/3.9/lib/python/site-packages/django/db/models/query.py", line 637, in get
+    raise self.model.DoesNotExist(
+account.models.BuyerProfile.DoesNotExist: BuyerProfile matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dilli/Library/Python/3.9/lib/python/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/dilli/Library/Python/3.9/lib/python/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/dilli/Library/Python/3.9/lib/python/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/Users/dilli/Library/Python/3.9/lib/python/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/dilli/Library/Python/3.9/lib/python/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/dilli/Library/Python/3.9/lib/python/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/dilli/Library/Python/3.9/lib/python/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/dilli/Library/Python/3.9/lib/python/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/dilli/Desktop/e-com/backend/account/views.py", line 166, in get
+    buyer_profile = self.get_object(pk)
+  File "/Users/dilli/Desktop/e-com/backend/account/views.py", line 163, in get_object
+    raise Http404
+NameError: name 'Http404' is not defined
+2024-06-20 00:31:55,445 +0545 [ERROR] "GET /account/buyer-profile/1/ HTTP/1.1" 500 106665
+2024-06-20 00:32:20,945 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2
+2024-06-20 00:32:20,966 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2
+2024-06-20 00:32:26,511 +0545 [INFO] "OPTIONS /account/auth/login/ HTTP/1.1" 200 0
+2024-06-20 00:32:26,835 +0545 [INFO] "POST /account/auth/login/ HTTP/1.1" 200 483
+2024-06-20 00:32:26,908 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2
+2024-06-20 00:32:26,914 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-20 00:32:26,924 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 2
+2024-06-20 00:32:26,952 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-20 00:32:29,373 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-20 00:32:29,395 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-20 00:32:29,488 +0545 [INFO] "OPTIONS /account/seller-profile/1/ HTTP/1.1" 200 0
+2024-06-20 00:32:29,494 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 198
+2024-06-20 00:32:29,523 +0545 [INFO] "GET /media/seller/profile_images/images_2.jpeg HTTP/1.1" 200 4653
+2024-06-20 00:35:03,137 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 2
+2024-06-20 00:35:03,151 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 2
+2024-06-20 00:35:03,154 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-20 00:35:03,161 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-20 00:35:09,064 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-20 00:35:09,070 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-20 00:35:09,100 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 198
+2024-06-20 00:35:13,861 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-20 00:35:13,872 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-20 00:35:13,896 +0545 [ERROR] Internal Server Error: /account/buyer-profile/1/
+Traceback (most recent call last):
+  File "/Users/dilli/Desktop/e-com/backend/account/views.py", line 161, in get_object
+    return BuyerProfile.objects.get(pk=pk)
+  File "/Users/dilli/Library/Python/3.9/lib/python/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/dilli/Library/Python/3.9/lib/python/site-packages/django/db/models/query.py", line 637, in get
+    raise self.model.DoesNotExist(
+account.models.BuyerProfile.DoesNotExist: BuyerProfile matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dilli/Library/Python/3.9/lib/python/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/dilli/Library/Python/3.9/lib/python/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/dilli/Library/Python/3.9/lib/python/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/Users/dilli/Library/Python/3.9/lib/python/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/dilli/Library/Python/3.9/lib/python/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/dilli/Library/Python/3.9/lib/python/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/dilli/Library/Python/3.9/lib/python/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/dilli/Library/Python/3.9/lib/python/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/dilli/Desktop/e-com/backend/account/views.py", line 166, in get
+    buyer_profile = self.get_object(pk)
+  File "/Users/dilli/Desktop/e-com/backend/account/views.py", line 163, in get_object
+    raise Http404
+NameError: name 'Http404' is not defined
+2024-06-20 00:35:13,897 +0545 [ERROR] "GET /account/buyer-profile/1/ HTTP/1.1" 500 106665
+2024-06-20 00:36:07,502 +0545 [INFO] "OPTIONS /e-com/api/categories/ HTTP/1.1" 200 0
+2024-06-20 00:36:07,512 +0545 [INFO] "POST /e-com/api/categories/ HTTP/1.1" 201 80
+2024-06-20 00:36:10,169 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-20 00:36:10,193 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-20 00:36:10,195 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 198
+2024-06-20 00:36:10,747 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 82
+2024-06-20 00:36:10,756 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 82
+2024-06-20 00:36:10,757 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-20 00:36:10,764 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-20 00:37:28,777 +0545 [INFO] "OPTIONS /e-com/api/products/upload/ HTTP/1.1" 200 0
+2024-06-20 00:37:28,869 +0545 [INFO] "POST /e-com/api/products/upload/ HTTP/1.1" 201 702
+2024-06-20 00:37:33,402 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 722
+2024-06-20 00:37:33,410 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-20 00:37:33,415 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 722
+2024-06-20 00:37:33,419 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-20 00:37:33,449 +0545 [INFO] "GET /media/seller/product_images/Untitled-design-2022-10-11T094010.795.jpg HTTP/1.1" 200 67256
+2024-06-20 00:37:36,574 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-20 00:37:36,582 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-20 00:37:36,631 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 198
+2024-06-20 00:37:38,854 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 722
+2024-06-20 00:37:38,866 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 722
+2024-06-20 00:37:38,884 +0545 [INFO] "GET /media/seller/product_images/Untitled-design-2022-10-11T094010.795.jpg HTTP/1.1" 304 0
+2024-06-20 00:37:42,894 +0545 [WARNING] Bad Request: /account/auth/login/
+2024-06-20 00:37:42,894 +0545 [WARNING] "POST /account/auth/login/ HTTP/1.1" 400 86
+2024-06-20 00:37:44,249 +0545 [WARNING] Bad Request: /account/auth/login/
+2024-06-20 00:37:44,249 +0545 [WARNING] "POST /account/auth/login/ HTTP/1.1" 400 86
+2024-06-20 00:37:59,119 +0545 [INFO] "OPTIONS /account/auth/register/ HTTP/1.1" 200 0
+2024-06-20 00:37:59,466 +0545 [INFO] "POST /account/auth/register/ HTTP/1.1" 200 288
+2024-06-20 00:38:13,683 +0545 [INFO] "POST /account/auth/login/ HTTP/1.1" 200 483
+2024-06-20 00:38:13,763 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 722
+2024-06-20 00:38:13,768 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 288
+2024-06-20 00:38:13,775 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 722
+2024-06-20 00:38:13,780 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 288
+2024-06-20 00:38:13,813 +0545 [INFO] "GET /media/seller/product_images/Untitled-design-2022-10-11T094010.795.jpg HTTP/1.1" 304 0
+2024-06-20 00:38:15,944 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 2
+2024-06-20 00:38:15,944 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 722
+2024-06-20 00:38:15,954 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 722
+2024-06-20 00:38:15,954 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 2
+2024-06-20 00:39:07,384 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 288
+2024-06-20 00:39:07,392 +0545 [INFO] "OPTIONS /account/buyer-profile/2/ HTTP/1.1" 200 0
+2024-06-20 00:39:07,396 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 288
+2024-06-20 00:39:07,400 +0545 [INFO] "GET /account/buyer-profile/2/ HTTP/1.1" 200 78
+2024-06-20 00:39:09,485 +0545 [INFO] "OPTIONS /e-com/api/orders/ HTTP/1.1" 200 0
+2024-06-20 00:39:09,486 +0545 [INFO] "OPTIONS /e-com/api/orders/ HTTP/1.1" 200 0
+2024-06-20 00:39:09,492 +0545 [INFO] "GET /e-com/api/orders/ HTTP/1.1" 200 2
+2024-06-20 00:39:09,498 +0545 [INFO] "GET /e-com/api/orders/ HTTP/1.1" 200 2
+2024-06-20 00:39:11,833 +0545 [INFO] "OPTIONS /e-com/api/reviews/create/ HTTP/1.1" 200 0
+2024-06-20 00:39:11,833 +0545 [INFO] "OPTIONS /e-com/api/reviews/create/ HTTP/1.1" 200 0
+2024-06-20 00:39:11,839 +0545 [INFO] "GET /e-com/api/reviews/create/ HTTP/1.1" 200 2
+2024-06-20 00:39:11,843 +0545 [INFO] "GET /e-com/api/reviews/create/ HTTP/1.1" 200 2
+2024-06-20 00:39:33,725 +0545 [INFO] "PUT /account/buyer-profile/2/ HTTP/1.1" 200 93
+2024-06-20 00:39:38,454 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 722
+2024-06-20 00:39:38,472 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 722
+2024-06-20 00:39:38,490 +0545 [INFO] "GET /media/seller/product_images/Untitled-design-2022-10-11T094010.795.jpg HTTP/1.1" 304 0
+2024-06-20 00:39:44,700 +0545 [WARNING] Unauthorized: /account/auth/login/
+2024-06-20 00:39:44,700 +0545 [WARNING] "POST /account/auth/login/ HTTP/1.1" 401 63
+2024-06-20 00:39:47,838 +0545 [INFO] "POST /account/auth/login/ HTTP/1.1" 200 483
+2024-06-20 00:39:47,895 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 722
+2024-06-20 00:39:47,899 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-20 00:39:47,912 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 722
+2024-06-20 00:39:47,918 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-20 00:39:50,195 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 2
+2024-06-20 00:39:50,195 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 722
+2024-06-20 00:39:50,209 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 2
+2024-06-20 00:39:50,210 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 722
+2024-06-20 00:39:53,268 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-20 00:39:53,285 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-20 00:39:53,348 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 198
+2024-06-20 00:40:22,247 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-20 00:40:22,286 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 198
+2024-06-20 00:40:22,287 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-20 00:40:56,229 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 82
+2024-06-20 00:40:56,236 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 82
+2024-06-20 00:40:56,236 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-20 00:40:56,247 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-20 00:40:58,572 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-20 00:40:58,578 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-20 00:40:58,614 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 198
+2024-06-20 00:40:59,534 +0545 [INFO] "OPTIONS /e-com/api/seller/products/list/ HTTP/1.1" 200 0
+2024-06-20 00:40:59,537 +0545 [INFO] "OPTIONS /e-com/api/seller/products/list/ HTTP/1.1" 200 0
+2024-06-20 00:40:59,538 +0545 [INFO] "OPTIONS /e-com/api/seller/products/list/ HTTP/1.1" 200 0
+2024-06-20 00:40:59,540 +0545 [INFO] "OPTIONS /e-com/api/seller/products/list/ HTTP/1.1" 200 0
+2024-06-20 00:40:59,543 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 704
+2024-06-20 00:40:59,550 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 704
+2024-06-20 00:40:59,556 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 704
+2024-06-20 00:40:59,562 +0545 [INFO] "GET /media/seller/product_images/Untitled-design-2022-10-11T094010.795.jpg HTTP/1.1" 304 0
+2024-06-20 00:40:59,567 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 704
+2024-06-20 00:41:01,337 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-20 00:41:01,342 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-20 00:41:01,373 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 198
+2024-06-20 00:41:26,848 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-20 00:41:26,854 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-20 00:41:26,882 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 198
+2024-06-20 00:41:48,668 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-20 00:41:48,702 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-20 00:41:48,702 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 198
+2024-06-20 00:42:53,732 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-20 00:42:53,745 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-20 00:42:53,745 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 198
+2024-06-20 00:43:00,244 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 82
+2024-06-20 00:43:00,250 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-20 00:43:00,256 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 82
+2024-06-20 00:43:00,261 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-20 00:43:04,018 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-20 00:43:04,024 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-20 00:43:04,049 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 198
+2024-06-20 00:43:04,919 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 704
+2024-06-20 00:43:04,924 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 704
+2024-06-20 00:43:04,932 +0545 [INFO] "GET /media/seller/product_images/Untitled-design-2022-10-11T094010.795.jpg HTTP/1.1" 304 0
+2024-06-20 00:43:04,935 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 704
+2024-06-20 00:43:04,940 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 704
+2024-06-20 00:43:09,378 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-20 00:43:09,384 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-20 00:43:09,407 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 198
+2024-06-20 00:43:10,393 +0545 [INFO] "OPTIONS /e-com/api/sellers/orders/ HTTP/1.1" 200 0
+2024-06-20 00:43:10,394 +0545 [INFO] "OPTIONS /e-com/api/sellers/orders/ HTTP/1.1" 200 0
+2024-06-20 00:43:10,400 +0545 [INFO] "GET /e-com/api/sellers/orders/ HTTP/1.1" 200 2
+2024-06-20 00:43:10,405 +0545 [INFO] "GET /e-com/api/sellers/orders/ HTTP/1.1" 200 2
+2024-06-20 00:43:12,288 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-20 00:43:12,294 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-20 00:43:12,313 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 198
+2024-06-20 00:43:13,240 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 722
+2024-06-20 00:43:13,243 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-20 00:43:13,248 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 722
+2024-06-20 00:43:13,254 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-20 00:43:43,887 +0545 [WARNING] Not Found: /initiate_payment
+2024-06-20 00:43:43,887 +0545 [WARNING] "GET /initiate_payment HTTP/1.1" 404 2470
+2024-06-20 00:44:12,686 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 722
+2024-06-20 00:44:12,699 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-20 00:44:12,700 +0545 [INFO] "GET /media/seller/product_images/Untitled-design-2022-10-11T094010.795.jpg HTTP/1.1" 304 0
+2024-06-20 00:44:12,710 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 722
+2024-06-20 00:44:12,713 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290

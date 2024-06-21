@@ -20,8 +20,6 @@ import {
   CategoryScale,
 } from "chart.js";
 
-
-
 ChartJS.register(
   LineElement,
   PointElement,
@@ -42,10 +40,9 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-
 function Chart() {
   const classes = useStyles();
-  
+
   const data = {
     labels: [
       "Jan",
@@ -65,8 +62,9 @@ function Chart() {
       {
         label: "Sales Growth",
         data: [
-          3000, 4000, 3200, 4500, 5000, 5300, 6000, 5800, 6500, 6200, 7000,
-          7500,
+          // 3000, 4000, 3200, 4500, 5000, 5300, 6000, 5800, 6500, 6200, 7000,
+          // 7500,
+          0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         ],
         borderColor: "#3f51b5",
         backgroundColor: "rgba(63, 81, 181, 0.2)",
@@ -102,45 +100,35 @@ function Chart() {
 
   return (
     <Grid container>
-        
       <Grid item md={12}>
-
-
-        <Card className={classes.card}> 
+        <Card className={classes.card}>
           <Typography variant="h6" component="div" gutterBottom>
-          Sales Growth
-        </Typography>
+            Sales Growth
+          </Typography>
 
-        <Grid item>
-          <FormControl variant="outlined" sx={{ width: "100%" }}>
-            <InputLabel>Year</InputLabel>
-            <Grid container>
-              <Grid item md={1}>
-              <Select
-              label="Year"
-              defaultValue=""
-              fullWidth
-            >
-              <MenuItem value="">
-                <em>None</em>
-              </MenuItem>
-              <MenuItem value="2021">2021</MenuItem>
-              <MenuItem value="2022">2022</MenuItem>
-              <MenuItem value="2023">2023</MenuItem>
-              <MenuItem value="2024">2023</MenuItem>
-            </Select>
+          <Grid item>
+            <FormControl variant="outlined" sx={{ width: "100%" }}>
+              <InputLabel>Year</InputLabel>
+              <Grid container>
+                <Grid item md={1}>
+                  <Select label="Year" defaultValue="" fullWidth>
+                    <MenuItem value="">
+                      <em>None</em>
+                    </MenuItem>
+                    <MenuItem value="2021">2021</MenuItem>
+                    <MenuItem value="2022">2022</MenuItem>
+                    <MenuItem value="2023">2023</MenuItem>
+                    <MenuItem value="2024">2023</MenuItem>
+                  </Select>
+                </Grid>
               </Grid>
-            </Grid>
-  
-          </FormControl>
-          <br />        <br />
-          <Line data={data} options={options} height={70} />
-      
-        </Grid>
+            </FormControl>
+            <br /> <br />
+            <Line data={data} options={options} height={70} />
+          </Grid>
         </Card>
       </Grid>
       <Grid item md={6}></Grid>
-
     </Grid>
   );
 }

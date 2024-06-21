@@ -1,6 +1,6 @@
 import React, { useState, useRef } from "react";
 import { useLocation } from "react-router-dom";
-
+import cartPng from "../assets/logo/shopping-cart.png"
 import { Link, useNavigate } from "react-router-dom";
 import { Close as CloseIcon } from "@material-ui/icons";
 
@@ -243,8 +243,9 @@ const HeaderPublic = () => {
                   alignItems: "center",
                 }}
               >
-                <Link to="/cart/details" className={classes.cartLink}>
-                  <ShoppingCart className={classes.cartIcon} />
+                <Link to="/cart/details" className={classes.cartLink}>  <img src={cartPng} alt="" style={{ width: "30px" }}/>
+
+                  {/* <ShoppingCart className={classes.cartIcon} /> */}
                   <span className={classes.cartText}></span>
                 </Link>
                 &nbsp;

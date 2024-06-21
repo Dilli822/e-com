@@ -1,6 +1,7 @@
 import React, { useState, useRef } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { Close as CloseIcon } from "@material-ui/icons";
+import cartPng from "../assets/logo/shopping-cart.png"
 
 import {
   AppBar,
@@ -187,7 +188,7 @@ const Header = () => {
   return (
     <>
       <AppBar position="sticky" sx={{ bgcolor: "#FFFFFF", color: "#000" }}>
-        <Container>
+        <Container maxWidth="lg">
           <Grid
             container
             style={{ display: "flex", alignItems: "center", padding: "3px 0" }}
@@ -238,12 +239,15 @@ const Header = () => {
                   alignItems: "center",
                 }}
               >
+     
                 <Link to="/cart/details" className={classes.cartLink}>
-                  <ShoppingCart className={classes.cartIcon} />
+                  {/* <ShoppingCart className={classes.cartIcon} /> */}
+                  <img src={cartPng} alt="" style={{ width: "30px" }}/>
                   <span className={classes.cartText}></span>
                 </Link>
-                {/* <Notifications /> */}
-                &nbsp;
+                &nbsp;&nbsp;    &nbsp;&nbsp;
+                <Notifications />
+                &nbsp;           &nbsp;&nbsp;
                 {!isMobile && (
                   <IconButton onClick={handleMenuClick}>
                     <AccountCircleIcon className={classes.largeIcon} />

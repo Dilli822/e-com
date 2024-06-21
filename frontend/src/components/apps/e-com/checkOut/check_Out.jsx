@@ -25,6 +25,8 @@ import Header from "../header/header";
 import HeaderPublic from "../header/headerPublic";
 import AppFooter from "../footer/footer";
 import { Alert, AlertTitle } from "@mui/material";
+import EsewaPayment from "../payment/e-sewa/e-sewa";
+import KhaltiPayment from "../payment/khalti/khalti";
 
 export default function CheckOut() {
   const location = useLocation();
@@ -48,7 +50,6 @@ export default function CheckOut() {
 
   const navigate = useNavigate();
   useEffect(() => {
-   
     if (!localStorage.getItem("accessToken")) {
       navigate("/");
       return;
@@ -71,14 +72,12 @@ export default function CheckOut() {
   const totalPrice = subtotal + deliveryFee;
 
   const handlePaymentMethodChange = (method) => {
- 
     setPaymentMethod(method);
     handleConfirmation();
   };
 
   const handleConfirmation = () => {
     setOpenModal(true);
-
   };
 
   const handleConfirm = () => {
@@ -112,7 +111,7 @@ export default function CheckOut() {
         return; // Exit the function early if the user is a buyer
       }
     }
-  
+
     // If the element is not found or the user is not a buyer
     setOpenConfirmationModal(false);
     setIsBuyer(null);
@@ -123,20 +122,11 @@ export default function CheckOut() {
       setErrorMessage("");
     }, 6000);
 
-       // Set the order placed state to true
-       setIsOrderPlaced(true);
+    // Set the order placed state to true
+    setIsOrderPlaced(true);
   };
-  
-  
-  
-  
-
-
 
   const handleConfirmOrder = () => {
-
-
-
     // Filter out items with null quantities
     const filteredCheckOutItems = checkOutItems.filter(
       (item) => item.quantity !== null
@@ -254,7 +244,6 @@ export default function CheckOut() {
     const buyer_email = document.getElementById("buyerEmail").textContent;
     const buyer_username = document.getElementById("buyerUserName").textContent;
 
-
     const product_total_price =
       document.getElementById("totalPrice").textContent;
 
@@ -355,8 +344,8 @@ export default function CheckOut() {
           }, 5000);
 
           setOpenConfirmationModal(false); // Close the modal or perform any other action
-              // Set the order placed state to true
-        setIsOrderPlaced(true);
+          // Set the order placed state to true
+          setIsOrderPlaced(true);
         } else {
           // Handle error response
           console.error("Failed to place order:", response.status);
@@ -379,453 +368,456 @@ export default function CheckOut() {
 
   console.log("tagaddress ", tagAddress);
 
-
-
-
-
   return (
     <>
       {accessToken ? <Header /> : <HeaderPublic />}
-      <Container>
+      <>
         <br />
-
-        <Grid container spacing={3} className="hide-print">
-          <Grid item md={9} xs={12}>
-            <Typography variant="h5">Order Details</Typography>
-            <Typography variant="body1" color="secondary">
-              Click on the Mode of Payment & Place Your Final Order{" "}
-            </Typography>
-            <br />
-            <TableContainer component={Paper}>
-              <Table>
-                <TableHead>
-                  <TableRow>
-                    <TableCell>Product Name</TableCell>
-                    <TableCell>Image</TableCell>
-                    <TableCell>Description</TableCell>
-                    <TableCell>Price</TableCell>
-                    <TableCell>Quantity</TableCell>
-                    <TableCell>Total</TableCell>
-                  </TableRow>
-                </TableHead>
-                <TableBody>
-                  {checkOutItems.map((item, index) => {
-                    // Debugging: Log item.product.price and item.quantity
-                    // console.log(
-                    //   "Price:",
-                    //   item.product.price,
-                    //   "Quantity:",
-                    //   item.quantity
-                    // );
-
-                    // Convert price and quantity to numbers
-                    const price = parseFloat(item.product.price);
-                    const quantity = parseInt(item.quantity);
-
-                    // Check if price and quantity are valid numbers
-                    if (!isNaN(price) && !isNaN(quantity)) {
-                      // Calculate the total price for the item
-                      const itemTotal = price * quantity;
-                      return (
-                        <TableRow key={index}>
-                          <TableCell>{item.product.product_name}</TableCell>
-                          <TableCell>
-                            <img src={item.product.image} alt="" width={60} />
-                          </TableCell>
-                          <TableCell>
-                          {item.product.description.length > 115 ? `${item.product.description.slice(0, 115)}...` : item.product.description}
-                          </TableCell>
-                          <TableCell>${price.toFixed(2)}</TableCell>
-                          <TableCell>{quantity}</TableCell>
-                          <TableCell>
-                            ${" "}
-                            <span id="totalPrice">{itemTotal.toFixed(2)}</span>{" "}
-                          </TableCell>
-                        </TableRow>
-                      );
-                    } else {
-                      // Handle case where price or quantity is not a valid number
-                      return <></>;
-                    }
-                  })}
-                  <TableRow>
-                    <TableCell colSpan={5}>Delivery Fee</TableCell>
-                    <TableCell>${deliveryFee.toFixed(2)}</TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableCell colSpan={5}>Total Price</TableCell>
-                    <TableCell style={{ fontSize: "18px" }}>
-                      <b>
-                        $
-                        {checkOutItems
-                          .reduce((acc, item) => {
-                            const price = parseFloat(item.product.price);
-                            const quantity = parseInt(item.quantity);
-                            // Add valid item totals to the accumulator
-                            if (!isNaN(price) && !isNaN(quantity)) {
-                              return acc + price * quantity;
-                            } else {
-                              return acc; // Ignore invalid items
-                            }
-                          }, 0)
-                          .toFixed(2)}
-                      </b>
-                    </TableCell>
-                  </TableRow>
-                </TableBody>
-              </Table>
-            </TableContainer>
-          </Grid>
-
-          <Grid item md={3}>
-            <FormControl component="fieldset">
-              <Typography variant="h5">Select Mode of Payment</Typography>
-              <Button
-                variant="contained"
-                color={
-                  paymentMethod === "cashOnDelivery" ? "primary" : "default"
-                }
-             
-                onClick={() => handlePaymentMethodChange("cashOnDelivery")}
-                disabled={isOrderPlaced || paymentMethod !== 'cashOnDelivery'} // Disable if the order is placed or payment method is not cash on delivery
-              >
-                Cash on Delivery
-              </Button>
-              <Button
-                variant="contained"
-                color={paymentMethod === "creditCard" ? "primary" : "default"}
-                disabled={paymentMethod !== "creditCard"}
-                onClick={() => handlePaymentMethodChange("creditCard")}
-              >
-                Credit Card
-              </Button>
-              <Button
-                variant="contained"
-                color={paymentMethod === "Khalti" ? "primary" : "default"}
-                disabled={paymentMethod !== "Khalti"}
-                onClick={() => handlePaymentMethodChange("Khalti")}
-              >
-                Khalti
-              </Button>
-              <Button
-                variant="contained"
-                color={paymentMethod === "e-sewa" ? "primary" : "default"}
-                disabled={paymentMethod !== "e-sewa"}
-                onClick={() => handlePaymentMethodChange("e-sewa")}
-              >
-                e-sewa
-              </Button>
-            </FormControl>
-          </Grid>
-        </Grid>
-        {cartTotalItems && <div>{cartTotalItems}</div>}
-        {/* Confirmation Modal */}
-        <Modal
-          open={openModal}
-          onClose={() => setOpenModal(false)}
-          closeAfterTransition
-          BackdropComponent={Backdrop}
-          BackdropProps={{
-            timeout: 500,
-          }}
-        >
-          <Fade in={openModal}>
-            <div
-              style={{
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                minHeight: "100vh",
-              }}
-            >
-              <div style={{ backgroundColor: "white", padding: 20 }}>
-                <Typography variant="h5">Confirm Payment</Typography>
-                <Typography variant="body1">
-                  Are you sure you want to proceed with the payment?
-                </Typography>
-                <br />
-                <Button
-                  variant="contained"
-                  color="primary"
-                  onClick={handleConfirm}
-                >
-                  Confirm
-                </Button>
-                &nbsp;&nbsp;
-                <Button variant="contained" onClick={() => setOpenModal(false)}>
-                  Cancel
-                </Button>
-              </div>
-            </div>
-          </Fade>
-        </Modal>
-
-        {/* Invoice */}
-        {confirmation && (
-          <div>
-            <Grid item md={12}>
+        <Container maxWidth="xl">
+          <Grid container spacing={3} className="hide-print">
+            <Grid item md={9} xs={12}>
+              <Typography variant="h5">Order Details</Typography>
+              <Typography variant="body1" color="secondary">
+                Click on the Mode of Payment & Place Your Final Order{" "}
+              </Typography>
               <br />
-              <Card>
-                <CardContent>
-                  <Typography variant="h4">Invoice</Typography>
-                  {checkOutItems.length > 0 && (
-                    <Grid container style={{ marginTop: "5px" }}>
-                      <Grid item xs={6}>
-                        <Typography variant="h4">
-                          <Typography variant="body1">
-                            <b> Customer Details/Shipped to:</b>
-                            <UserProfileMaster />
-                          </Typography>
-                        </Typography>
-                      </Grid>
+              <TableContainer component={Paper}>
+                <Table>
+                  <TableHead>
+                    <TableRow>
+                      <TableCell>Product Name</TableCell>
+                      <TableCell>Image</TableCell>
+                      <TableCell>Description</TableCell>
+                      <TableCell>Price</TableCell>
+                      <TableCell>Quantity</TableCell>
+                      <TableCell>Total</TableCell>
+                    </TableRow>
+                  </TableHead>
+                  <TableBody>
+                    {checkOutItems.map((item, index) => {
+                      // Debugging: Log item.product.price and item.quantity
+                      // console.log(
+                      //   "Price:",
+                      //   item.product.price,
+                      //   "Quantity:",
+                      //   item.quantity
+                      // );
 
-                      <Grid item xs={6}>
-                        <Typography variant="h4">
-                          <Typography variant="body1">
-                            <b>Seller Details/Shipped By:</b>
+                      // Convert price and quantity to numbers
+                      const price = parseFloat(item.product.price);
+                      const quantity = parseInt(item.quantity);
 
-                            {Object.keys(uniqueSellers).map((key) => {
-                              const seller = uniqueSellers[key];
-                              return (
-                                <Typography variant="body1" key={key}>
-                                  Id: #{seller.seller}
-                                  &nbsp; | Seller Name: {seller.seller_name}
-                                  <br />
-                                  Company Name:{" "}
-                                  {seller.seller_company_name || "N/A"}
-                                  <br />
-                                  Address: {seller.seller_address}
-                                  &nbsp; | Contact: +
-                                  {seller.seller_phone_number}
-                                  <br />
-                                  <hr />
-                                </Typography>
-                              );
-                            })}
-                          </Typography>
-                        </Typography>
-                      </Grid>
-                    </Grid>
-                  )}
-                  <hr />
-                  <Grid>
-                    <Typography variant="body1">
-                      <b>Shipping Details</b>
-                    </Typography>
-
-                    <p>
-                      {" "}
-                      Final Shipping Address:{" "}
-                      <b>
-                        {" "}
-                        <span id="">
-                          {" "}
-                          {
-                            document.getElementById("buyerDefaultAdress")
-                              ?.textContent
-                          }{" "}
-                        </span>
-                      </b>{" "}
-                    </p>
-
-                    <p>
-                      Ordered Date:
-                      <b>
-                        {" "}
-                        {new Date(
-                          new Date().setDate(new Date().getDate())
-                        ).toDateString()}{" "}
-                      </b>
-                    </p>
-
-                    <p>
-                      Expected Delivery Date:
-                      <b>
-                        {" "}
-                        {new Date(
-                          new Date().setDate(new Date().getDate() + 4)
-                        ).toDateString()}
-                      </b>
-                    </p>
-
-                    <p>
-                      Mode of Payment:
-                      <b> {paymentMethod}</b>
-                    </p>
-                    <p>
-                      OrderID: <b>{"" || `To be filled by system`}</b>
-                    </p>
-                  </Grid>
-                  <hr />
-                  <Grid>
-                    <TableContainer component={Paper}>
-                      <Table>
-                        <TableHead>
-                          <TableRow>
-                            <TableCell>Product Name</TableCell>
-                            <TableCell>Image</TableCell>
-                            <TableCell>Description</TableCell>
-                            <TableCell>Category ID</TableCell>
-                            <TableCell>Category Name</TableCell>
-                            <TableCell>Price</TableCell>
-                            <TableCell>Quantity</TableCell>
-                            <TableCell>Total</TableCell>
-                          </TableRow>
-                        </TableHead>
-                        <TableBody>
-                          {checkOutItems.map((item, index) => {
-                            // Debugging: Log item.product.price and item.quantity
-
-                            // Convert price and quantity to numbers
-                            const price = parseFloat(item.product.price);
-                            const quantity = parseInt(item.quantity);
-
-                            // Check if price and quantity are valid numbers
-                            if (!isNaN(price) && !isNaN(quantity)) {
-                              // Calculate the total price for the item
-                              const itemTotal = price * quantity;
-                              return (
-                                <TableRow key={index}>
-                                  <TableCell>
-                                    {item.product.product_name}
-                                  </TableCell>
-                                  <TableCell>
-                                    <img
-                                      src={item.product.image}
-                                      alt=""
-                                      width={60}
-                                    />
-                                  </TableCell>
-                                  <TableCell>
-                                    {item.product.description.length > 50
-                                      ? item.product.description.substring(
-                                          0,
-                                          50
-                                        ) + "..."
-                                      : item.product.description}
-                                  </TableCell>
-                                  <TableCell>{item.product.category}</TableCell>
-                                  <TableCell>
-                                    {item.product.category_name}
-                                  </TableCell>
-                                  <TableCell>${price.toFixed(2)}</TableCell>
-                                  <TableCell>{quantity}</TableCell>
-                                  <TableCell>${itemTotal.toFixed(2)}</TableCell>
-                                </TableRow>
-                              );
-                            } else {
-                              // Handle case where price or quantity is not a valid number
-                              return <></>;
-                            }
-                          })}
-                          <TableRow>
-                            <TableCell colSpan={7}>Delivery Fee</TableCell>
-                            <TableCell>${deliveryFee.toFixed(2)}</TableCell>
-                          </TableRow>
-                          <TableRow>
-                            <TableCell colSpan={7}>Total Price</TableCell>
-                            <TableCell style={{ fontSize: "18px" }}>
-                              <b>
-                                $
-                                {checkOutItems
-                                  .reduce((acc, item) => {
-                                    const price = parseFloat(
-                                      item.product.price
-                                    );
-                                    const quantity = parseInt(item.quantity);
-                                    // Add valid item totals to the accumulator
-                                    if (!isNaN(price) && !isNaN(quantity)) {
-                                      return acc + price * quantity;
-                                    } else {
-                                      return acc; // Ignore invalid items
-                                    }
-                                  }, 0)
-                                  .toFixed(2)}
-                              </b>
+                      // Check if price and quantity are valid numbers
+                      if (!isNaN(price) && !isNaN(quantity)) {
+                        // Calculate the total price for the item
+                        const itemTotal = price * quantity;
+                        return (
+                          <TableRow key={index}>
+                            <TableCell>{item.product.product_name}</TableCell>
+                            <TableCell>
+                              <img src={item.product.image} alt="" width={60} />
+                            </TableCell>
+                            <TableCell>
+                              {item.product.description.length > 115
+                                ? `${item.product.description.slice(0, 115)}...`
+                                : item.product.description}
+                            </TableCell>
+                            <TableCell>${price.toFixed(2)}</TableCell>
+                            <TableCell>{quantity}</TableCell>
+                            <TableCell>
+                              ${" "}
+                              <span id="totalPrice">
+                                {itemTotal.toFixed(2)}
+                              </span>{" "}
                             </TableCell>
                           </TableRow>
-                        </TableBody>
-                      </Table>
-                    </TableContainer>
-                  </Grid>
-                  <br />
-                  e-com | ©CopyRight | Online Receipt Generated | Date:{" "}
-                  {new Date(
-                    new Date().setDate(new Date().getDate())
-                  ).toDateString()}{" "}
-                </CardContent>
-              </Card>
-              <br />
-              <Button
-                variant="outlined"
-                color="secondary"
-                className="hide-print"
-                onClick={placeFinalOrder}
-                disabled={isOrderPlaced} // Disable if the order is placed
-              >
-                Confirm Order
-              </Button>
-             
+                        );
+                      } else {
+                        // Handle case where price or quantity is not a valid number
+                        return <></>;
+                      }
+                    })}
+                    <TableRow>
+                      <TableCell colSpan={5}>Delivery Fee</TableCell>
+                      <TableCell>${deliveryFee.toFixed(2)}</TableCell>
+                    </TableRow>
+                    <TableRow>
+                      <TableCell colSpan={5}>Total Price</TableCell>
+                      <TableCell style={{ fontSize: "18px" }}>
+                        <b>
+                          $
+                          {checkOutItems
+                            .reduce((acc, item) => {
+                              const price = parseFloat(item.product.price);
+                              const quantity = parseInt(item.quantity);
+                              // Add valid item totals to the accumulator
+                              if (!isNaN(price) && !isNaN(quantity)) {
+                                return acc + price * quantity;
+                              } else {
+                                return acc; // Ignore invalid items
+                              }
+                            }, 0)
+                            .toFixed(2)}
+                        </b>
+                      </TableCell>
+                    </TableRow>
+                  </TableBody>
+                </Table>
+              </TableContainer>
             </Grid>
-            <br />
-            {errorMessage && (
-                  <Alert severity="error">
-                    <AlertTitle>Error</AlertTitle>
-                    {errorMessage}
-                  </Alert>
-                )}
-          </div>
-        )}
 
-        <Modal
-          open={openConfirmationModal}
-          onClose={() => setOpenConfirmationModal(false)}
-          closeAfterTransition
-          BackdropComponent={Backdrop}
-          BackdropProps={{
-            timeout: 500,
-          }}
-        >
-          <Fade in={openConfirmationModal}>
-            <div
-              style={{
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                minHeight: "100vh",
-              }}
-            >
-              <div style={{ backgroundColor: "white", padding: 20 }}>
-                <Typography variant="h5">Confirm Order</Typography>
-                <Typography variant="body1">
-                  Are you sure you want to proceed with the Order?
-                </Typography>
+            <Grid item md={3}>
+              <FormControl component="fieldset">
+                <Typography variant="h5">Select Mode of Payment</Typography>
+                <Button
+                  variant="contained"
+                  color={
+                    paymentMethod === "cashOnDelivery" ? "primary" : "default"
+                  }
+                  onClick={() => handlePaymentMethodChange("cashOnDelivery")}
+                  disabled={isOrderPlaced || paymentMethod !== "cashOnDelivery"} // Disable if the order is placed or payment method is not cash on delivery
+                >
+                  Cash on Delivery
+                </Button>
+                <Button
+                  variant="contained"
+                  color={paymentMethod === "creditCard" ? "primary" : "default"}
+                  disabled={paymentMethod !== "creditCard"}
+                  onClick={() => handlePaymentMethodChange("creditCard")}
+                >
+                  Credit Card
+                </Button>
+
+                <KhaltiPayment />
+
+                <Button variant="contained">
+                  <EsewaPayment />
+                </Button>
+
+                <br />
+                <span> For e-sewa Please Use Dummy Credentials</span>
+                <span>
+                  <b>eSewa ID:</b> 9806800001/2/3/4/5 <br />
+                  <b>Password:</b> Nepal@123 <b>MPIN:</b> 1122 <b>Token:</b>
+                  123456
+                </span>
+              </FormControl>
+            </Grid>
+          </Grid>
+          {cartTotalItems && <div>{cartTotalItems}</div>}
+          {/* Confirmation Modal */}
+          <Modal
+            open={openModal}
+            onClose={() => setOpenModal(false)}
+            closeAfterTransition
+            BackdropComponent={Backdrop}
+            BackdropProps={{
+              timeout: 500,
+            }}
+          >
+            <Fade in={openModal}>
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  minHeight: "100vh",
+                }}
+              >
+                <div style={{ backgroundColor: "white", padding: 20 }}>
+                  <Typography variant="h5">Confirm Payment</Typography>
+                  <Typography variant="body1">
+                    Are you sure you want to proceed with the payment?
+                  </Typography>
+                  <br />
+                  <Button
+                    variant="contained"
+                    color="primary"
+                    onClick={handleConfirm}
+                  >
+                    Confirm
+                  </Button>
+                  &nbsp;&nbsp;
+                  <Button
+                    variant="contained"
+                    onClick={() => setOpenModal(false)}
+                  >
+                    Cancel
+                  </Button>
+                </div>
+              </div>
+            </Fade>
+          </Modal>
+
+          {/* Invoice */}
+          {confirmation && (
+            <div>
+              <Grid item md={12}>
+                <br />
+                <Card>
+                  <CardContent>
+                    <Typography variant="h4">Invoice</Typography>
+                    {checkOutItems.length > 0 && (
+                      <Grid container style={{ marginTop: "5px" }}>
+                        <Grid item xs={6}>
+                          <Typography variant="h4">
+                            <Typography variant="body1">
+                              <b> Customer Details/Shipped to:</b>
+                              <UserProfileMaster />
+                            </Typography>
+                          </Typography>
+                        </Grid>
+
+                        <Grid item xs={6}>
+                          <Typography variant="h4">
+                            <Typography variant="body1">
+                              <b>Seller Details/Shipped By:</b>
+
+                              {Object.keys(uniqueSellers).map((key) => {
+                                const seller = uniqueSellers[key];
+                                return (
+                                  <Typography variant="body1" key={key}>
+                                    Id: #{seller.seller}
+                                    &nbsp; | Seller Name: {seller.seller_name}
+                                    <br />
+                                    Company Name:{" "}
+                                    {seller.seller_company_name || "N/A"}
+                                    <br />
+                                    Address: {seller.seller_address}
+                                    &nbsp; | Contact: +
+                                    {seller.seller_phone_number}
+                                    <br />
+                                    <hr />
+                                  </Typography>
+                                );
+                              })}
+                            </Typography>
+                          </Typography>
+                        </Grid>
+                      </Grid>
+                    )}
+                    <hr />
+                    <Grid>
+                      <Typography variant="body1">
+                        <b>Shipping Details</b>
+                      </Typography>
+
+                      <p>
+                        {" "}
+                        Final Shipping Address:{" "}
+                        <b>
+                          {" "}
+                          <span id="">
+                            {" "}
+                            {
+                              document.getElementById("buyerDefaultAdress")
+                                ?.textContent
+                            }{" "}
+                          </span>
+                        </b>{" "}
+                      </p>
+
+                      <p>
+                        Ordered Date:
+                        <b>
+                          {" "}
+                          {new Date(
+                            new Date().setDate(new Date().getDate())
+                          ).toDateString()}{" "}
+                        </b>
+                      </p>
+
+                      <p>
+                        Expected Delivery Date:
+                        <b>
+                          {" "}
+                          {new Date(
+                            new Date().setDate(new Date().getDate() + 4)
+                          ).toDateString()}
+                        </b>
+                      </p>
+
+                      <p>
+                        Mode of Payment:
+                        <b> {paymentMethod}</b>
+                      </p>
+                      <p>
+                        OrderID: <b>{"" || `To be filled by system`}</b>
+                      </p>
+                    </Grid>
+                    <hr />
+                    <Grid>
+                      <TableContainer component={Paper}>
+                        <Table>
+                          <TableHead>
+                            <TableRow>
+                              <TableCell>Product Name</TableCell>
+                              <TableCell>Image</TableCell>
+                              <TableCell>Description</TableCell>
+                              <TableCell>Category ID</TableCell>
+                              <TableCell>Category Name</TableCell>
+                              <TableCell>Price</TableCell>
+                              <TableCell>Quantity</TableCell>
+                              <TableCell>Total</TableCell>
+                            </TableRow>
+                          </TableHead>
+                          <TableBody>
+                            {checkOutItems.map((item, index) => {
+                              // Debugging: Log item.product.price and item.quantity
+
+                              // Convert price and quantity to numbers
+                              const price = parseFloat(item.product.price);
+                              const quantity = parseInt(item.quantity);
+
+                              // Check if price and quantity are valid numbers
+                              if (!isNaN(price) && !isNaN(quantity)) {
+                                // Calculate the total price for the item
+                                const itemTotal = price * quantity;
+                                return (
+                                  <TableRow key={index}>
+                                    <TableCell>
+                                      {item.product.product_name}
+                                    </TableCell>
+                                    <TableCell>
+                                      <img
+                                        src={item.product.image}
+                                        alt=""
+                                        width={60}
+                                      />
+                                    </TableCell>
+                                    <TableCell>
+                                      {item.product.description.length > 50
+                                        ? item.product.description.substring(
+                                            0,
+                                            50
+                                          ) + "..."
+                                        : item.product.description}
+                                    </TableCell>
+                                    <TableCell>
+                                      {item.product.category}
+                                    </TableCell>
+                                    <TableCell>
+                                      {item.product.category_name}
+                                    </TableCell>
+                                    <TableCell>${price.toFixed(2)}</TableCell>
+                                    <TableCell>{quantity}</TableCell>
+                                    <TableCell>
+                                      ${itemTotal.toFixed(2)}
+                                    </TableCell>
+                                  </TableRow>
+                                );
+                              } else {
+                                // Handle case where price or quantity is not a valid number
+                                return <></>;
+                              }
+                            })}
+                            <TableRow>
+                              <TableCell colSpan={7}>Delivery Fee</TableCell>
+                              <TableCell>${deliveryFee.toFixed(2)}</TableCell>
+                            </TableRow>
+                            <TableRow>
+                              <TableCell colSpan={7}>Total Price</TableCell>
+                              <TableCell style={{ fontSize: "18px" }}>
+                                <b>
+                                  $
+                                  {checkOutItems
+                                    .reduce((acc, item) => {
+                                      const price = parseFloat(
+                                        item.product.price
+                                      );
+                                      const quantity = parseInt(item.quantity);
+                                      // Add valid item totals to the accumulator
+                                      if (!isNaN(price) && !isNaN(quantity)) {
+                                        return acc + price * quantity;
+                                      } else {
+                                        return acc; // Ignore invalid items
+                                      }
+                                    }, 0)
+                                    .toFixed(2)}
+                                </b>
+                              </TableCell>
+                            </TableRow>
+                          </TableBody>
+                        </Table>
+                      </TableContainer>
+                    </Grid>
+                    <br />
+                    e-com | ©CopyRight | Online Receipt Generated | Date:{" "}
+                    {new Date(
+                      new Date().setDate(new Date().getDate())
+                    ).toDateString()}{" "}
+                  </CardContent>
+                </Card>
                 <br />
                 <Button
-                  variant="contained"
-                  color="primary"
-                  onClick={handleConfirmOrder} // Call the new function to handle order confirmation
+                  variant="outlined"
+                  color="secondary"
+                  className="hide-print"
+                  onClick={placeFinalOrder}
+                  disabled={isOrderPlaced} // Disable if the order is placed
                 >
-                  Confirm
+                  Confirm Order
                 </Button>
-                &nbsp;&nbsp;
-                <Button
-                  variant="contained"
-                  onClick={() => setOpenConfirmationModal(false)}
-                >
-                  Cancel
-                </Button>
-                {errorMessage && (
-                  <Alert severity="error">
-                    <AlertTitle>Error</AlertTitle>
-                    {errorMessage}
-                  </Alert>
-                )}
-              </div>
+              </Grid>
+              <br />
+              {errorMessage && (
+                <Alert severity="error">
+                  <AlertTitle>Error</AlertTitle>
+                  {errorMessage}
+                </Alert>
+              )}
             </div>
-          </Fade>
-        </Modal>
+          )}
 
+          <Modal
+            open={openConfirmationModal}
+            onClose={() => setOpenConfirmationModal(false)}
+            closeAfterTransition
+            BackdropComponent={Backdrop}
+            BackdropProps={{
+              timeout: 500,
+            }}
+          >
+            <Fade in={openConfirmationModal}>
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  minHeight: "100vh",
+                }}
+              >
+                <div style={{ backgroundColor: "white", padding: 20 }}>
+                  <Typography variant="h5">Confirm Order</Typography>
+                  <Typography variant="body1">
+                    Are you sure you want to proceed with the Order?
+                  </Typography>
+                  <br />
+                  <Button
+                    variant="contained"
+                    color="primary"
+                    onClick={handleConfirmOrder} // Call the new function to handle order confirmation
+                  >
+                    Confirm
+                  </Button>
+                  &nbsp;&nbsp;
+                  <Button
+                    variant="contained"
+                    onClick={() => setOpenConfirmationModal(false)}
+                  >
+                    Cancel
+                  </Button>
+                  {errorMessage && (
+                    <Alert severity="error">
+                      <AlertTitle>Error</AlertTitle>
+                      {errorMessage}
+                    </Alert>
+                  )}
+                </div>
+              </div>
+            </Fade>
+          </Modal>
+        </Container>
         <br />
 
         {successMessage && (
@@ -836,7 +828,7 @@ export default function CheckOut() {
             {successMessage}
           </Alert>
         )}
-      </Container>
+      </>
 
       <br />
       <br />

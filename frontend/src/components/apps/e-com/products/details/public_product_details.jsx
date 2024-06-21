@@ -60,7 +60,7 @@ export default function ProductDetails() {
     <>
       {accessToeken ? <AppHeader /> : <PublicHeader />}
       <br />
-      <Container>
+      <Container maxWidth="xl">
         {/* <Grid container spacing={1}>
           <Grid item xs={12} md={3}>
             <Grid item xs={12} md={10}>
@@ -239,7 +239,10 @@ export default function ProductDetails() {
             <Typography variant="h6"> Specifications </Typography>
             <Card>
               <CardContent>
-                <Typography variant="body1" style={{ height: "50vh", overflow: "auto"}}>
+                <Typography
+                  variant="body1"
+                  style={{ height: "50vh", overflow: "auto" }}
+                >
                   {/* {product.specifications.length > 115
                 ? `${product.specifications}`
                 : product.specifications} */}

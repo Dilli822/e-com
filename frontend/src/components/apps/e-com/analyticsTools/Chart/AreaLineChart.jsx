@@ -10,7 +10,8 @@ import {
 import { LineChart, lineElementClasses } from "@mui/x-charts";
 import { makeStyles } from "@mui/styles";
 const data = [
-  900, 3000, 2140, 1999, 4500, 3490, 2333, 1500, 3650, 2222, 4622, 6331,
+  // 900, 3000, 2140, 1999, 4500, 3490, 2333, 1500, 3650, 2222, 4622, 6331,
+  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
 ];
 
 const xLabels = [
@@ -45,45 +46,35 @@ function AreaLineChart() {
 
   return (
     <Grid container>
-   
       <Grid item md={12}>
-
-
-
         <Card className={classes.card}>
-        <Typography variant="h5" gutterBottom>
-         Customers Growth
-        </Typography>
+          <Typography variant="h5" gutterBottom>
+            Customers Growth
+          </Typography>
 
-        <FormControl variant="outlined"  sx={{ width: "100%" }}>
-          <InputLabel>Year</InputLabel>
-          <Grid container>
-          <Grid item md={1}>
-          <Select
-            label="Year"
-            defaultValue=""
-            fullWidth
-          >
-                    <MenuItem value="">
-              <em>None</em>
-            </MenuItem>
-            <MenuItem value="2024">2023</MenuItem>
-         
-            <MenuItem value="2022">2022</MenuItem>
-            <MenuItem value="2021">2021</MenuItem>
-   
-          </Select>
-          </Grid>
-          </Grid>
-  
-        </FormControl>
-        <LineChart
-          height={400}
-          series={[{ data: data, area: true, showMark: false }]}
-          xAxis={[{ scaleType: "point", data: xLabels }]}
-          sx={{ [`&.${lineElementClasses.root}`]: { display: "none" } }}
-        ></LineChart>
-              </Card>
+          <FormControl variant="outlined" sx={{ width: "100%" }}>
+            <InputLabel>Year</InputLabel>
+            <Grid container>
+              <Grid item md={1}>
+                <Select label="Year" defaultValue="" fullWidth>
+                  <MenuItem value="">
+                    <em>None</em>
+                  </MenuItem>
+                  <MenuItem value="2024">2023</MenuItem>
+
+                  <MenuItem value="2022">2022</MenuItem>
+                  <MenuItem value="2021">2021</MenuItem>
+                </Select>
+              </Grid>
+            </Grid>
+          </FormControl>
+          <LineChart
+            height={400}
+            series={[{ data: data, area: true, showMark: false }]}
+            xAxis={[{ scaleType: "point", data: xLabels }]}
+            sx={{ [`&.${lineElementClasses.root}`]: { display: "none" } }}
+          ></LineChart>
+        </Card>
       </Grid>
     </Grid>
   );

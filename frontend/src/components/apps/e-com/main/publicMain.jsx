@@ -6,7 +6,7 @@ export default function PublicMain() {
     <>
       <HeaderPublic />
       <br />
-      <Main/>
+      <Main />
       <AppFooter />
     </>
   );

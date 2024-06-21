@@ -111,15 +111,14 @@ export default function CartDetails() {
         .map((_, index) => index)
         .filter((index) => !selectedItems.includes(index));
       if (newSelectedItems.length >= 1) {
-        
         setSelectedItems([...selectedItems, ...newSelectedItems]);
       }
     } else {
-      alert("cyk")
+      alert("cyk");
       setSelectedItems([]);
     }
   };
-  
+
   const handleSelectItem = (index) => {
     if (selectedItems.includes(index)) {
       setSelectedItems(selectedItems.filter((item) => item !== index));
@@ -135,7 +134,6 @@ export default function CartDetails() {
       alert("Please select at least one item to place an order.");
     }
   };
-  
 
   const handleConfirmOrder = () => {
     const accessToken = localStorage.getItem("accessToken");
@@ -167,7 +165,7 @@ export default function CartDetails() {
   return (
     <>
       {accessToken ? <Header /> : <HeaderPublic />}
-      <Container>
+      <Container maxWidth="xl">
         {/* Render cart details based on userType */}
         <br /> <br />
         <Typography variant="h5">Cart Items</Typography>
@@ -216,7 +214,9 @@ export default function CartDetails() {
                       <img src={item.product.image} alt="Product" width="70" />
                     </TableCell>
                     <TableCell>
-                    {item.product.description.length > 115 ? `${item.product.description.slice(0, 115)}...` : item.product.description}
+                      {item.product.description.length > 115
+                        ? `${item.product.description.slice(0, 115)}...`
+                        : item.product.description}
                     </TableCell>
                     <TableCell>
                       <b> ${item.product.price}</b>

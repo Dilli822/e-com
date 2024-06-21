@@ -153,9 +153,7 @@ export default function SellerProfile() {
           <Grid item xs={12}>
             {(showProductForm ||
               showProductEditForm ||
-              showManageOrders ||
-              showAreaLineChart ||
-              showChart) && (
+              showManageOrders ) && (
               <Button
                 type="button"
                 variant="outlined"

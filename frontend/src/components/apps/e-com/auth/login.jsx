@@ -19,7 +19,7 @@ import AppFooter from "../footer/footer";
 function Login() {
   const navigate = useNavigate(); // Access the navigate function
   const [error, setError] = useState(null);
-  
+
   const handleSubmit = async (event) => {
     event.preventDefault();
     const formData = new FormData(event.currentTarget);
@@ -28,7 +28,6 @@ function Login() {
 
     try {
       const response = await fetch(
-
         "http://127.0.0.1:8000/account/auth/login/",
         {
           method: "POST",
