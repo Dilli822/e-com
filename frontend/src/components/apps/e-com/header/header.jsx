@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { Close as CloseIcon } from "@material-ui/icons";
-import cartPng from "../assets/logo/shopping-cart.png"
+import cartPng from "../assets/logo/shopping-cart.png";
 
 import {
   AppBar,
@@ -26,6 +26,7 @@ import {
 
 import { ShoppingCart, Search, Notifications } from "@material-ui/icons";
 import HeadLogo from "../assets/logo/e-com logo.jpg";
+import NotificationIconPng from "../assets/logo/notification.png";
 
 import MenuIcon from "@mui/icons-material/Menu";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
@@ -239,15 +240,19 @@ const Header = () => {
                   alignItems: "center",
                 }}
               >
-     
                 <Link to="/cart/details" className={classes.cartLink}>
                   {/* <ShoppingCart className={classes.cartIcon} /> */}
-                  <img src={cartPng} alt="" style={{ width: "30px" }}/>
+                  <img src={cartPng} alt="" style={{ width: "30px" }} />
                   <span className={classes.cartText}></span>
                 </Link>
-                &nbsp;&nbsp;    &nbsp;&nbsp;
-                <Notifications />
-                &nbsp;           &nbsp;&nbsp;
+                &nbsp;&nbsp; &nbsp;&nbsp;
+                {/* <Notifications /> */}
+                <img
+                  src={NotificationIconPng}
+                  alt=""
+                  style={{ width: "25px" }}
+                />
+                &nbsp; &nbsp;&nbsp;
                 {!isMobile && (
                   <IconButton onClick={handleMenuClick}>
                     <AccountCircleIcon className={classes.largeIcon} />

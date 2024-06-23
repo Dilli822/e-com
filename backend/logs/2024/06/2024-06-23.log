@@ -1,0 +1,318 @@
+2024-06-23 00:45:02,853 +0545 [INFO] Watching for file changes with StatReloader
+2024-06-23 00:45:06,010 +0545 [INFO] "OPTIONS /account/user/details/ HTTP/1.1" 200 0
+2024-06-23 00:45:06,010 +0545 [INFO] "OPTIONS /account/user/details/ HTTP/1.1" 200 0
+2024-06-23 00:45:06,012 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 722
+2024-06-23 00:45:06,017 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 722
+2024-06-23 00:45:06,075 +0545 [INFO] "GET /media/seller/product_images/Untitled-design-2022-10-11T094010.795.jpg HTTP/1.1" 200 67256
+2024-06-23 00:45:06,095 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 288
+2024-06-23 00:45:06,104 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 288
+2024-06-23 00:45:11,254 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 722
+2024-06-23 00:45:11,257 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 288
+2024-06-23 00:45:11,264 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 722
+2024-06-23 00:45:11,267 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 288
+2024-06-23 00:45:13,847 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 288
+2024-06-23 00:45:13,856 +0545 [INFO] "OPTIONS /account/buyer-profile/2/ HTTP/1.1" 200 0
+2024-06-23 00:45:13,858 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 288
+2024-06-23 00:45:13,861 +0545 [INFO] "GET /account/buyer-profile/2/ HTTP/1.1" 200 212
+2024-06-23 00:45:13,868 +0545 [INFO] "GET /media/user/profile_images/two-people-are-talking-with-each-other-and-the-question-mark-above-_7NZkHea.jpeg HTTP/1.1" 200 151999
+2024-06-23 00:45:16,847 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 722
+2024-06-23 00:45:16,853 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 722
+2024-06-23 00:45:24,122 +0545 [INFO] "OPTIONS /account/auth/login/ HTTP/1.1" 200 0
+2024-06-23 00:45:24,440 +0545 [INFO] "POST /account/auth/login/ HTTP/1.1" 200 483
+2024-06-23 00:45:24,488 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 722
+2024-06-23 00:45:24,495 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 00:45:24,499 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 722
+2024-06-23 00:45:24,508 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 00:45:26,230 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 00:45:26,267 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 00:45:26,332 +0545 [INFO] "OPTIONS /account/seller-profile/1/ HTTP/1.1" 200 0
+2024-06-23 00:45:26,339 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 198
+2024-06-23 00:45:26,346 +0545 [INFO] "GET /media/seller/profile_images/images_2.jpeg HTTP/1.1" 200 4653
+2024-06-23 00:46:46,875 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 198
+2024-06-23 00:46:46,876 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 00:48:48,497 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 198
+2024-06-23 00:48:48,498 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 00:48:52,711 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 00:48:52,720 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 00:48:52,731 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 198
+2024-06-23 00:49:18,886 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 722
+2024-06-23 00:49:18,893 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 00:49:18,897 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 722
+2024-06-23 00:49:18,902 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 00:49:20,823 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 00:49:20,829 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 00:49:20,860 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 198
+2024-06-23 00:49:23,377 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 722
+2024-06-23 00:49:23,381 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 722
+2024-06-23 00:59:01,812 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 722
+2024-06-23 00:59:01,818 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 722
+2024-06-23 02:16:35,210 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 722
+2024-06-23 02:16:35,216 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 722
+2024-06-23 02:16:43,457 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 722
+2024-06-23 02:16:43,464 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 722
+2024-06-23 02:16:48,272 +0545 [INFO] "POST /account/auth/login/ HTTP/1.1" 200 483
+2024-06-23 02:16:48,332 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 722
+2024-06-23 02:16:48,344 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 02:16:48,345 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 722
+2024-06-23 02:16:48,350 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 02:17:39,866 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 02:17:39,876 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 02:17:39,957 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 198
+2024-06-23 02:17:45,571 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 02:17:45,590 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 02:17:45,596 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 198
+2024-06-23 02:17:54,474 +0545 [INFO] "OPTIONS /e-com/api/sellers/orders/ HTTP/1.1" 200 0
+2024-06-23 02:17:54,475 +0545 [INFO] "OPTIONS /e-com/api/sellers/orders/ HTTP/1.1" 200 0
+2024-06-23 02:17:54,483 +0545 [INFO] "GET /e-com/api/sellers/orders/ HTTP/1.1" 200 714
+2024-06-23 02:17:54,488 +0545 [INFO] "GET /e-com/api/sellers/orders/ HTTP/1.1" 200 714
+2024-06-23 02:17:56,274 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 02:17:56,280 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 02:17:56,314 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 198
+2024-06-23 02:17:56,997 +0545 [INFO] "OPTIONS /e-com/api/seller/products/list/ HTTP/1.1" 200 0
+2024-06-23 02:17:56,998 +0545 [INFO] "OPTIONS /e-com/api/seller/products/list/ HTTP/1.1" 200 0
+2024-06-23 02:17:57,002 +0545 [INFO] "OPTIONS /e-com/api/seller/products/list/ HTTP/1.1" 200 0
+2024-06-23 02:17:57,003 +0545 [INFO] "OPTIONS /e-com/api/seller/products/list/ HTTP/1.1" 200 0
+2024-06-23 02:17:57,006 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 704
+2024-06-23 02:17:57,012 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 704
+2024-06-23 02:17:57,018 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 704
+2024-06-23 02:17:57,024 +0545 [INFO] "GET /e-com/api/seller/products/list/ HTTP/1.1" 200 704
+2024-06-23 02:17:58,108 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 02:17:58,114 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 02:17:58,150 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 198
+2024-06-23 02:17:59,511 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 82
+2024-06-23 02:17:59,515 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 02:17:59,518 +0545 [INFO] "GET /e-com/api/categories/list/ HTTP/1.1" 200 82
+2024-06-23 02:17:59,523 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 03:03:07,447 +0545 [INFO] Watching for file changes with StatReloader
+2024-06-23 03:03:13,422 +0545 [INFO] "POST /account/auth/login/ HTTP/1.1" 200 483
+2024-06-23 03:03:13,488 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 722
+2024-06-23 03:03:13,500 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 03:03:13,505 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 722
+2024-06-23 03:03:13,510 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 03:03:15,419 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 03:03:15,472 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 03:03:15,559 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 198
+2024-06-23 03:03:42,470 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 03:03:42,493 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 03:03:42,496 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 198
+2024-06-23 03:04:29,411 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 03:04:29,476 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 03:04:29,477 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 198
+2024-06-23 04:00:29,688 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 722
+2024-06-23 04:00:29,718 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 722
+2024-06-23 04:00:29,727 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 04:00:29,785 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 722
+2024-06-23 04:00:29,797 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 04:00:29,798 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 722
+2024-06-23 04:00:33,701 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 04:00:33,736 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 04:00:33,806 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 198
+2024-06-23 04:10:05,007 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 04:10:05,017 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 04:10:05,021 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 198
+2024-06-23 04:10:06,105 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 722
+2024-06-23 04:10:06,115 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 04:10:06,120 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 722
+2024-06-23 04:10:06,124 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 04:14:18,409 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 722
+2024-06-23 04:14:18,416 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 04:14:18,420 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 722
+2024-06-23 04:14:18,425 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 04:14:20,043 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 04:14:20,061 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 04:14:20,129 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 198
+2024-06-23 08:37:54,656 +0545 [INFO] Watching for file changes with StatReloader
+2024-06-23 08:37:57,077 +0545 [INFO] "OPTIONS /account/user/details/ HTTP/1.1" 200 0
+2024-06-23 08:37:57,082 +0545 [INFO] "OPTIONS /account/user/details/ HTTP/1.1" 200 0
+2024-06-23 08:37:57,149 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 08:37:57,156 +0545 [INFO] "OPTIONS /account/buyer-profile/1/ HTTP/1.1" 200 0
+2024-06-23 08:37:57,158 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 08:37:57,212 +0545 [ERROR] Internal Server Error: /account/buyer-profile/1/
+Traceback (most recent call last):
+  File "/Users/dilli/Desktop/e-com/backend/account/views.py", line 161, in get_object
+    return BuyerProfile.objects.get(pk=pk)
+  File "/Users/dilli/Library/Python/3.9/lib/python/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/dilli/Library/Python/3.9/lib/python/site-packages/django/db/models/query.py", line 637, in get
+    raise self.model.DoesNotExist(
+account.models.BuyerProfile.DoesNotExist: BuyerProfile matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dilli/Library/Python/3.9/lib/python/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/dilli/Library/Python/3.9/lib/python/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/dilli/Library/Python/3.9/lib/python/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/Users/dilli/Library/Python/3.9/lib/python/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/dilli/Library/Python/3.9/lib/python/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/dilli/Library/Python/3.9/lib/python/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/dilli/Library/Python/3.9/lib/python/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/dilli/Library/Python/3.9/lib/python/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/dilli/Desktop/e-com/backend/account/views.py", line 166, in get
+    buyer_profile = self.get_object(pk)
+  File "/Users/dilli/Desktop/e-com/backend/account/views.py", line 163, in get_object
+    raise Http404
+NameError: name 'Http404' is not defined
+2024-06-23 08:37:57,221 +0545 [ERROR] "GET /account/buyer-profile/1/ HTTP/1.1" 500 106718
+2024-06-23 08:38:00,874 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 722
+2024-06-23 08:38:00,882 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 722
+2024-06-23 08:38:00,910 +0545 [INFO] "GET /media/seller/product_images/Untitled-design-2022-10-11T094010.795.jpg HTTP/1.1" 200 67256
+2024-06-23 08:38:09,677 +0545 [INFO] "OPTIONS /account/auth/login/ HTTP/1.1" 200 0
+2024-06-23 08:38:09,988 +0545 [WARNING] Unauthorized: /account/auth/login/
+2024-06-23 08:38:09,989 +0545 [WARNING] "POST /account/auth/login/ HTTP/1.1" 401 63
+2024-06-23 08:38:16,628 +0545 [INFO] "POST /account/auth/login/ HTTP/1.1" 200 483
+2024-06-23 08:38:16,688 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 722
+2024-06-23 08:38:16,702 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 08:38:16,702 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 722
+2024-06-23 08:38:16,709 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 08:38:20,025 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 08:38:20,056 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 08:38:20,130 +0545 [INFO] "OPTIONS /account/seller-profile/1/ HTTP/1.1" 200 0
+2024-06-23 08:38:20,137 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 198
+2024-06-23 08:38:20,143 +0545 [INFO] "GET /media/seller/profile_images/images_2.jpeg HTTP/1.1" 200 4653
+2024-06-23 08:39:23,041 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 08:39:23,050 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 08:39:23,097 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 198
+2024-06-23 08:39:29,867 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 08:39:29,907 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 08:39:29,910 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 198
+2024-06-23 08:49:42,976 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 08:49:42,999 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 08:49:43,005 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 198
+2024-06-23 08:50:22,707 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 08:50:22,726 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 08:50:22,746 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 198
+2024-06-23 08:52:23,065 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 08:52:23,140 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 198
+2024-06-23 08:52:23,141 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 08:54:34,166 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 08:54:34,185 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 08:55:08,023 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 08:55:08,031 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 08:55:08,150 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 198
+2024-06-23 08:56:21,147 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 08:56:21,196 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 08:56:21,197 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 198
+2024-06-23 08:57:26,841 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 08:57:26,901 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 08:57:26,904 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 198
+2024-06-23 08:58:25,979 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 08:58:26,037 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 08:58:26,041 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 198
+2024-06-23 08:59:36,013 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 08:59:36,030 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 08:59:36,075 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 198
+2024-06-23 08:59:42,674 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 08:59:42,712 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 08:59:42,716 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 198
+2024-06-23 09:00:06,333 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 09:00:06,349 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 09:00:06,357 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 198
+2024-06-23 09:00:41,132 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 09:00:41,142 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 09:00:41,162 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 198
+2024-06-23 09:01:28,022 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 09:01:28,121 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 09:01:28,156 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 198
+2024-06-23 09:01:40,050 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 09:01:40,170 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 09:01:40,170 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 198
+2024-06-23 09:01:55,120 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 09:01:55,203 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 09:01:55,251 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 198
+2024-06-23 09:02:26,903 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 09:02:26,980 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 09:02:26,987 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 198
+2024-06-23 09:03:19,487 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 09:03:19,540 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 198
+2024-06-23 09:03:19,541 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 09:04:12,156 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 09:04:12,191 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 09:04:12,198 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 198
+2024-06-23 09:07:29,663 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 09:07:29,683 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 09:07:29,693 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 198
+2024-06-23 09:07:34,068 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 09:07:34,102 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 09:07:34,137 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 198
+2024-06-23 09:07:56,775 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 09:07:56,797 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 09:07:56,802 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 198
+2024-06-23 09:12:07,738 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 09:12:07,768 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 09:12:07,790 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 198
+2024-06-23 09:13:56,134 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 09:13:56,176 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 09:13:56,189 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 198
+2024-06-23 09:15:56,622 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 09:15:56,631 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 09:15:56,673 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 198
+2024-06-23 09:16:58,260 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 09:16:58,290 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 09:16:58,295 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 198
+2024-06-23 09:17:26,010 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 09:17:26,030 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 09:17:26,045 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 198
+2024-06-23 09:19:07,846 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 722
+2024-06-23 09:19:07,853 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 09:19:07,857 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 722
+2024-06-23 09:19:07,861 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 09:19:09,139 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 09:19:09,148 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 09:19:09,195 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 198
+2024-06-23 09:20:08,268 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 09:20:08,285 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 09:20:08,294 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 198
+2024-06-23 09:20:18,787 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 09:20:18,802 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 09:20:18,830 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 198
+2024-06-23 09:20:56,953 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 09:20:56,963 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 09:20:56,975 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 198
+2024-06-23 09:22:38,968 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 09:22:38,980 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 09:22:38,994 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 198
+2024-06-23 09:23:06,560 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 09:23:06,578 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 09:23:06,586 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 198
+2024-06-23 09:24:02,249 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 09:24:02,266 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 09:24:02,282 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 198
+2024-06-23 09:28:10,944 +0545 [INFO] "GET /e-com/api/products/public/list/?search=a HTTP/1.1" 200 722
+2024-06-23 09:28:13,255 +0545 [INFO] "GET /e-com/api/products/public/list/?search=a HTTP/1.1" 200 722
+2024-06-23 09:28:14,548 +0545 [INFO] "GET /e-com/api/products/public/list/?search=ah HTTP/1.1" 200 722
+2024-06-23 09:28:14,948 +0545 [INFO] "GET /e-com/api/products/public/list/?search=a HTTP/1.1" 200 722
+2024-06-23 09:28:15,377 +0545 [INFO] "GET /e-com/api/products/public/list/?search=h HTTP/1.1" 200 722
+2024-06-23 09:28:15,583 +0545 [INFO] "GET /e-com/api/products/public/list/?search=hj HTTP/1.1" 200 722
+2024-06-23 09:28:16,391 +0545 [INFO] "GET /e-com/api/products/public/list/?search=h HTTP/1.1" 200 722
+2024-06-23 09:28:18,827 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 722
+2024-06-23 09:28:18,838 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 09:28:18,838 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 722
+2024-06-23 09:28:18,848 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 09:28:21,389 +0545 [INFO] "GET /e-com/api/products/public/list/?search=e HTTP/1.1" 200 722
+2024-06-23 09:28:22,220 +0545 [INFO] "GET /e-com/api/products/public/list/?search=r HTTP/1.1" 200 722
+2024-06-23 09:28:22,327 +0545 [INFO] "GET /e-com/api/products/public/list/?search=re HTTP/1.1" 200 722
+2024-06-23 09:28:22,563 +0545 [INFO] "GET /e-com/api/products/public/list/?search=red HTTP/1.1" 200 722
+2024-06-23 09:28:26,090 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 09:28:26,099 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 09:28:26,150 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 198
+2024-06-23 09:28:27,262 +0545 [INFO] "GET /e-com/api/products/public/list/?search=r HTTP/1.1" 200 722
+2024-06-23 09:28:27,440 +0545 [INFO] "GET /e-com/api/products/public/list/?search=re HTTP/1.1" 200 722
+2024-06-23 09:28:28,730 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 722
+2024-06-23 09:28:28,734 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 2
+2024-06-23 09:28:28,742 +0545 [INFO] "GET /e-com/api/products/public/list/ HTTP/1.1" 200 722
+2024-06-23 09:28:28,743 +0545 [INFO] "GET /e-com/api/reviews/ HTTP/1.1" 200 2
+2024-06-23 09:28:30,642 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 09:28:30,647 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 09:28:30,687 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 198
+2024-06-23 09:28:36,801 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 09:28:36,822 +0545 [INFO] "GET /account/user/details/ HTTP/1.1" 200 290
+2024-06-23 09:28:36,831 +0545 [INFO] "GET /account/seller-profile/1/ HTTP/1.1" 200 198

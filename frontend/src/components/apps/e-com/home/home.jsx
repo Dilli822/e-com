@@ -7,6 +7,7 @@ import AppFooter from "../footer/footer";
 import {
   Container,
 } from "@mui/material";
+import NepalMap from "../map/nepalMap";
 
 export default function Home() {
   const navigate = useNavigate();
@@ -20,6 +21,8 @@ export default function Home() {
   return (
     <>
       <HeaderPublic />
+
+
       <br />
       <Banner />
       <Container>
@@ -27,6 +30,7 @@ export default function Home() {
       </Container>
       <br />
       <br />
+
       <AppFooter />
     </>
   );

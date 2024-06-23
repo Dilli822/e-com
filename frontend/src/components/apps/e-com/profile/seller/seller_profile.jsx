@@ -10,6 +10,7 @@ import ManageSellersOrders from "../../orders/seller/sellerOrdersList";
 import { useLocation, useNavigate, Link } from "react-router-dom";
 import Chart from "../../analyticsTools/Chart/Chart";
 import AreaLineChart from "../../analyticsTools/Chart/AreaLineChart";
+import NepalMap from "../../map/nepalMap";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -146,7 +147,9 @@ export default function SellerProfile() {
              {showChart && <Chart />}
              <br />
              {showAreaLineChart && <AreaLineChart />}
-     
+             <br />
+             <NepalMap/>
+      
   
           </Grid>
 

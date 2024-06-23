@@ -10,8 +10,8 @@ import {
 import { LineChart, lineElementClasses } from "@mui/x-charts";
 import { makeStyles } from "@mui/styles";
 const data = [
-  // 900, 3000, 2140, 1999, 4500, 3490, 2333, 1500, 3650, 2222, 4622, 6331,
-  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+  900, 3000, 2140, 1999, 4500, 3490, 2333, 1500, 3650, 2222, 4622, 6331,
+  // 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
 ];
 
 const xLabels = [
