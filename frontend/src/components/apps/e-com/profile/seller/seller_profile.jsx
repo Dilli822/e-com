@@ -31,6 +31,7 @@ export default function SellerProfile() {
   const [showManageOrders, setShowManageOrders] = useState(false);
   const [showAreaLineChart, setShowAreaLineChart] = useState(true);
   const [showChart, setShowChart] = useState(true);
+  const [showNepalMap, setShowNepalMap] = useState(true);
 
   const handleAddProductClick = () => {
     setShowProductForm(true);
@@ -39,6 +40,8 @@ export default function SellerProfile() {
     setShowManageOrders(false);
     setShowAreaLineChart(false);
     setShowChart(false);
+    setShowNepalMap(false);
+    
   };
 
   const handleAddProductEditClick = () => {
@@ -48,6 +51,7 @@ export default function SellerProfile() {
     setShowManageOrders(false);
     setShowAreaLineChart(false);
     setShowChart(false);
+    setShowNepalMap(false);
   };
 
   const handleBackButtonClick = () => {
@@ -60,6 +64,7 @@ export default function SellerProfile() {
     setShowProfileUpdate(true);
     setShowChart(true);
     setShowAreaLineChart(true);
+    setShowNepalMap(true);
 
     // }
   };
@@ -71,6 +76,7 @@ export default function SellerProfile() {
     setShowManageOrders(true);
     setShowAreaLineChart(false);
     setShowChart(false);
+    setShowNepalMap(false);
   };
 
   const accessToken = localStorage.getItem("accessToken");
@@ -147,10 +153,8 @@ export default function SellerProfile() {
              {showChart && <Chart />}
              <br />
              {showAreaLineChart && <AreaLineChart />}
-             <br />
-             <NepalMap/>
-      
-  
+             <br />     
+              {showNepalMap && <NepalMap />}
           </Grid>
 
           <Grid item xs={12}>
@@ -170,6 +174,7 @@ export default function SellerProfile() {
             {showProductForm && <ProductForm />}
             {showProductEditForm && <EditProductForm />}
             {showManageOrders && <ManageSellersOrders />}
+
           </Grid>
         </Grid>
       </Container>

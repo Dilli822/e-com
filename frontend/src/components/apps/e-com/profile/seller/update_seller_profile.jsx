@@ -41,6 +41,7 @@ function SellerProfileUpdate() {
   const [imageFile, setImageFile] = useState(null);
   const [initialProfileData, setInitialProfileData] = useState({});
   const [buyerEmail, setBuyerEmail] = useState("");
+  
 
   useEffect(() => {
     fetchUserId();
@@ -293,7 +294,7 @@ function SellerProfileUpdate() {
               Edit
             </Button>
             &nbsp; &nbsp;
-            <Button variant="outlined" onClick={handleLogout}  color="secondary">
+            <Button variant="outlined" onClick={handleLogout} color="secondary">
               Logout
             </Button>
           </div>
@@ -315,7 +316,11 @@ function SellerProfileUpdate() {
               Are you sure you want to logout?
             </Typography>
             <Box sx={{ display: "flex", justifyContent: "flex-start", mt: 4 }}>
-              <Button variant="outlined" onClick={handleClose} color="secondary">
+              <Button
+                variant="outlined"
+                onClick={handleClose}
+                color="secondary"
+              >
                 Cancel
               </Button>
               &nbsp;

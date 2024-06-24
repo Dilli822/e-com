@@ -16,6 +16,7 @@ import AppHeader from "../../header/header";
 import PeopleProductView from "../productViews/peopleProductViews";
 import ReviewList from "../../reviews/list/reviewList";
 import CartDetails from "../../cart/cartDetails";
+import { BorderAllRounded } from "@material-ui/icons";
 
 export default function ProductDetails() {
   const location = useLocation();
@@ -61,104 +62,14 @@ export default function ProductDetails() {
       {accessToeken ? <AppHeader /> : <PublicHeader />}
       <br />
       <Container maxWidth="xl">
-        {/* <Grid container spacing={1}>
-          <Grid item xs={12} md={3}>
-            <Grid item xs={12} md={10}>
-              <CardMedia
-                component="img"
-                alt={product.product_name}
-                height="auto"
-                image={product.image}
-                title={product.product_name}
-              />
-            </Grid>
-          </Grid>
-
-          <Grid item xs={12} md={5}>
-            <Card>
-              <CardContent>
-                <Typography variant="h5">{product.product_name}</Typography>
-                <Typography variant="body1">
-                  Product Id: #{product.id}
-                </Typography>
-                <Typography variant="body1">
-                  {product.description.length > 115
-                    ? `${product.description.slice(0, 115)}...`
-                    : product.description}
-                </Typography>
-                <br />
-                <Typography variant="body1">Stock: {product.stock}</Typography>
-                <Typography variant="body1">
-                  Category: {product.category_name}
-                </Typography>
-
-                <Typography variant="h5">Price: ${product.price}</Typography>
-                <br />
-                <Button
-                  variant="contained"
-                  color="secondary"
-                  onClick={handleAddToCart}
-                >
-                  Add to Cart
-                </Button>
-              </CardContent>
-            </Card>
-          </Grid>
-
-          <Grid item xs={12} md={4}>
-            <Card>
-              <CardContent>
-                <Typography variant="h5">Sold By</Typography>
-                <Typography variant="body1">
-                  <img
-                    src={product.seller_image}
-                    alt="Seller Image"
-                    width="80"
-                  />
-                  <br />
-                  Supplier's Name:{" "}
-                  {product.seller_name ? product.seller_name : "N/A"}
-                  &nbsp; | &nbsp; Company:{" "}
-                  {product.seller_company_name
-                    ? product.seller_company_name
-                    : "N/A"}
-                </Typography>
-
-                <Typography variant="body1">
-                  Supplier's ID: # {product.seller}
-                </Typography>
-                <Typography variant="body1">
-                  Supplier's Address: {product.seller_address}
-                </Typography>
-                <Typography variant="body1">
-                  Supplier's Contact: {product.seller_phone_number}
-                </Typography>
-                <Typography variant="body1">
-                  Discount Offer: {product.discount}
-                </Typography>
-
-                <Typography variant="body1">
-                  Seller Bio: {product.seller_bio}
-                </Typography>
-              </CardContent>
-            </Card>
-          </Grid> 
-          <div style={{ display: "none" }}>
-            <CartDetails product={product} />
-          </div>
-          <ReviewList productId={product.id} />
-          <br />
-          <br />
-                  </Grid>*/}
-
         <Grid container spacing={3}>
           <Grid item xs={12} md={3} style={{ display: "flex" }}>
             <CardMedia
               component="img"
               alt={product.product_name}
-              height="auto"
               image={product.image}
               title={product.product_name}
+              style = {{ borderRadius: "5px"}}
             />
           </Grid>
           <Grid item xs={12} md={5} style={{ display: "flex" }}>
@@ -169,8 +80,8 @@ export default function ProductDetails() {
                   Product Id: #{product.id}
                 </Typography>
                 <Typography variant="body1">
-                  {product.description.length > 115
-                    ? `${product.description.slice(0, 115)}...`
+                  {product.description.length > 266
+                    ? `${product.description.slice(0, 266)}...`
                     : product.description}
                 </Typography>
                 <br />
@@ -227,6 +138,35 @@ export default function ProductDetails() {
               </CardContent>
             </Card>
           </Grid>
+
+          {/* <Grid item xs={12} md={2} style={{ display: "flex" }}>
+            <Card style={{ width: "100%" }}>
+              <CardContent>
+                <Typography variant="h5"></Typography>
+                <Typography variant="body1">
+                  <img
+                    src={product.seller_image}
+                    alt="Seller Image"
+                    width="80"
+                  />
+                </Typography>
+                <br />
+                <Typography variant="h6">
+                  Supplier's Name:{" "}
+                  {product.seller_name ? product.seller_name : "N/A"} |
+                </Typography>
+                <br />
+                <Typography variant="h6">
+                  Company:{" "}
+                  {product.seller_company_name
+                    ? product.seller_company_name
+                    : "N/A"}
+                </Typography>
+
+                <Typography variant="h6">Rating: {product.rating}</Typography>
+              </CardContent>
+            </Card>
+          </Grid> */}
 
           <div style={{ display: "none" }}>
             <CartDetails product={product} />

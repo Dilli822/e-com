@@ -48,3 +48,6 @@ li{
   padding: 10px;
   text-align: center;
 }
+.MuiTypography-root{
+  color: #323232;
+}

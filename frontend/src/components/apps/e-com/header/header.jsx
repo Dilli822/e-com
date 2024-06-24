@@ -1,7 +1,9 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { Close as CloseIcon } from "@material-ui/icons";
 import cartPng from "../assets/logo/shopping-cart.png";
+import BellIcon from "../assets/logo/bell.png";
+import Avatar from "@material-ui/core/Avatar";
 
 import {
   AppBar,
@@ -88,13 +90,13 @@ const useStyles = makeStyles((theme) => ({
 
 const Header = () => {
   const classes = useStyles();
-
   const navigate = useNavigate();
   const [drawerOpen, setDrawerOpen] = useState(false);
   const [anchorEl, setAnchorEl] = useState(null);
   const [searchText, setSearchText] = useState("");
   const [searchResults, setSearchResults] = useState([]);
   const isMobile = useMediaQuery((theme) => theme.breakpoints.down("md"));
+  const [userImage, setUserImage] = useState(""); // State for user image URL
 
   const handleMenuClick = (event) => {
     setAnchorEl(event.currentTarget);
@@ -154,6 +156,7 @@ const Header = () => {
   const isBuyer = localStorage.getItem("IsBuyer") === "true";
   const [products, setProducts] = useState({});
   const [selectedProduct, setSelectedProduct] = useState(null);
+  const [isBuyerImage, setIsBuyerImage] = useState(null);
 
   const profileLink = isSeller ? "/profile/seller" : "/profile/buyer";
 
@@ -164,6 +167,39 @@ const Header = () => {
       { state: { product } }
     ); // Pass product details as state
   };
+
+  useEffect(() => {
+    const fetchUserImage = async () => {
+      const token = localStorage.getItem("accessToken"); // Replace with your token retrieval logic
+      try {
+        const response = await fetch(
+          "http://localhost:8000/account/user/profile/",
+          {
+            headers: {
+              Authorization: `Bearer ${token}`, // Use the token in the Authorization header
+            },
+          }
+        );
+
+        const data = await response.json();
+        console.log("data -->", data);
+
+        if (data.sellers && data.sellers.length > 0) {
+          const imageUrl = `http://localhost:8000${data.sellers[0].image}`;
+          setUserImage(imageUrl);
+          console.log("user image is", imageUrl);
+        } else if (data.buyer && data.buyer.image) {
+          const imageUrl = `http://localhost:8000${data.buyer.image}`;
+          setUserImage(imageUrl);
+          console.log("user image is", imageUrl);
+        }
+      } catch (error) {
+        console.error("Error fetching user image:", error);
+      }
+    };
+
+    fetchUserImage();
+  }, []); // Empty dependency array means this useEffect runs only once on mount
 
   const menuItems = (
     <List>
@@ -242,20 +278,23 @@ const Header = () => {
               >
                 <Link to="/cart/details" className={classes.cartLink}>
                   {/* <ShoppingCart className={classes.cartIcon} /> */}
-                  <img src={cartPng} alt="" style={{ width: "30px" }} />
+                  <img src={cartPng} alt="" style={{ width: "25px" }} />
                   <span className={classes.cartText}></span>
                 </Link>
                 &nbsp;&nbsp; &nbsp;&nbsp;
                 {/* <Notifications /> */}
-                <img
-                  src={NotificationIconPng}
-                  alt=""
-                  style={{ width: "25px" }}
-                />
+                <img src={BellIcon} alt="" style={{ width: "20px" }} />
                 &nbsp; &nbsp;&nbsp;
                 {!isMobile && (
                   <IconButton onClick={handleMenuClick}>
-                    <AccountCircleIcon className={classes.largeIcon} />
+                    <Avatar
+                      alt="User Image"
+                      src={userImage}
+                      style={{
+                        border: "1px solid #dedede",
+                        padding: "3px",
+                      }}
+                    />
                   </IconButton>
                 )}
                 <Menu

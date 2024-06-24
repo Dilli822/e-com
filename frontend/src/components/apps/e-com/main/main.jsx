@@ -23,7 +23,7 @@ const Main = () => {
   useEffect(() => {
     fetchData();
   }, []);
-
+  
   const fetchData = async () => {
     try {
       const response = await fetch(
@@ -55,7 +55,7 @@ const Main = () => {
     <Grid container spacing={3}>
       {Object.keys(products).map((category) => (
         <Grid item xs={12} key={category}>
-          <br /> 
+          <br />
           <div style={{ display: "flex", justifyContent: "space-between" }}>
             <Typography variant="h5" gutterBottom>
               {category}

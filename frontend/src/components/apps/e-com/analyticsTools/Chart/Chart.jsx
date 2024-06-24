@@ -110,7 +110,7 @@ function Chart() {
             <FormControl variant="outlined" sx={{ width: "100%" }}>
               <InputLabel>Year</InputLabel>
               <Grid container>
-                <Grid item md={1}>
+                <Grid item md={2}>
                   <Select label="Year" defaultValue="" fullWidth>
                     <MenuItem value="">
                       <em>None</em>
