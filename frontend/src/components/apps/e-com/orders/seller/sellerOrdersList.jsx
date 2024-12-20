@@ -88,7 +88,7 @@ function ManageSellersOrders() {
 
   const [currentPage, setCurrentPage] = useState(1);
   // const [totalPages, setTotalPages] = useState(1);
-  const itemsPerPage = orders.length / 3 ; // Number of items per page
+  const itemsPerPage =  3 ; // Number of items per page
 
   const handlePageChange = (event, value) => {
     setCurrentPage(value);

@@ -106,10 +106,60 @@ class Cart(models.Model):
 class CartItem(models.Model):
     pass 
 
+# class Order(models.Model):
+#     id = models.BigAutoField(primary_key=True)
+#     order_id = models.CharField(max_length=16, editable=False)
+    
+#     product_name = models.TextField()
+#     product_description = models.TextField()
+#     product_price = models.TextField()
+#     product_category = models.TextField()
+#     product_category_name = models.TextField()
+#     product_total_units = models.TextField()
+#     product_units = models.TextField()
+#     product_total_price = models.TextField()
+
+#     buyer_id = models.CharField(max_length=255)
+#     buyer_delivery_address = models.CharField(max_length=255)
+#     buyer_full_name = models.CharField(max_length=255)
+#     buyer_email = models.CharField(max_length=125)
+    
+#     seller_id = models.TextField(default=0, unique=False)
+#     created_at = models.DateTimeField(auto_now_add=True)
+#     updated_at = models.DateTimeField(auto_now=True)
+
+#     delivery_fee = models.CharField(max_length=125)
+#     mode_of_payment = models.CharField(max_length=125, default="Cash on Delivery")
+    
+#     order_placed_by_buyer = models.BooleanField(default=True)
+#     order_delivered = models.BooleanField(default=False)
+#     order_pending = models.BooleanField(default=True)
+#     order_shipped = models.BooleanField(default=False)
+#     total_order_items_counter = models.BigIntegerField(blank=True, null=True, default=0)
+    
+#     def __str__(self):
+#         return f'Order {self.order_id} by {self.buyer_full_name}'
+
+#     class Meta:
+#         verbose_name = "Order"
+#         verbose_name_plural = "Orders"
+    
+#     def save(self, *args, **kwargs):
+#         # Count the number of unique sellers and categories
+#         unique_sellers = set(map(int, self.seller_id.split(', ')))
+#         unique_categories = set(map(int, self.product_category.split(', ')))
+#         total_order_items_counter = len(unique_sellers) 
+        
+#         # Update total_order_items_counter field
+#         self.total_order_items_counter = total_order_items_counter
+        
+#         super().save(*args, **kwargs)
+        
 class Order(models.Model):
     id = models.BigAutoField(primary_key=True)
     order_id = models.CharField(max_length=16, editable=False)
-    
+
+    # Other fields
     product_name = models.TextField()
     product_description = models.TextField()
     product_price = models.TextField()
@@ -123,38 +173,38 @@ class Order(models.Model):
     buyer_delivery_address = models.CharField(max_length=255)
     buyer_full_name = models.CharField(max_length=255)
     buyer_email = models.CharField(max_length=125)
-    
+
     seller_id = models.TextField(default=0, unique=False)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
     delivery_fee = models.CharField(max_length=125)
     mode_of_payment = models.CharField(max_length=125, default="Cash on Delivery")
-    
+
     order_placed_by_buyer = models.BooleanField(default=True)
     order_delivered = models.BooleanField(default=False)
     order_pending = models.BooleanField(default=True)
-    order_shipped = models.BooleanField(default=False)
+    order_shipped = models.BooleanField(default=False)  # Field to synchronize
     total_order_items_counter = models.BigIntegerField(blank=True, null=True, default=0)
-    
+
+    def save(self, *args, **kwargs):
+        # Save the order normally
+        super(Order, self).save(*args, **kwargs)
+        
+        # Synchronize the `order_shipped` field with all related Order_For_Seller instances
+        order_for_seller_objects = Order_For_Seller.objects.filter(order_id=self.order_id)
+        for order_for_seller in order_for_seller_objects:
+            if order_for_seller.order_shipped != self.order_shipped:
+                order_for_seller.order_shipped = self.order_shipped
+                order_for_seller.save()
+
     def __str__(self):
         return f'Order {self.order_id} by {self.buyer_full_name}'
 
     class Meta:
         verbose_name = "Order"
         verbose_name_plural = "Orders"
-    
-    def save(self, *args, **kwargs):
-        # Count the number of unique sellers and categories
-        unique_sellers = set(map(int, self.seller_id.split(', ')))
-        unique_categories = set(map(int, self.product_category.split(', ')))
-        total_order_items_counter = len(unique_sellers) 
-        
-        # Update total_order_items_counter field
-        self.total_order_items_counter = total_order_items_counter
-        
-        super().save(*args, **kwargs)
-        
+
 # Signal to generate a unique UUID for order_id before saving
 @receiver(pre_save, sender=Order)
 def generate_order_id(sender, instance, **kwargs):
@@ -173,11 +223,12 @@ def generate_order_id(sender, instance, **kwargs):
 #         recipient_email = instance.buyer_email
 #         # Send email
 #         send_mail(subject, plain_message, sender_email, [recipient_email], html_message=html_message)
-        
+    
 class Order_For_Seller(models.Model):
     id = models.BigAutoField(primary_key=True)
     order_id = models.CharField(max_length=16, editable=False)
-    
+
+    # Other fields
     product_name = models.TextField()
     product_description = models.TextField()
     product_price = models.TextField()
@@ -191,28 +242,42 @@ class Order_For_Seller(models.Model):
     buyer_delivery_address = models.CharField(max_length=255)
     buyer_full_name = models.CharField(max_length=255)
     buyer_email = models.CharField(max_length=125)
-    
+
     seller_id = models.TextField(default=0, unique=False)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
     delivery_fee = models.CharField(max_length=125)
     mode_of_payment = models.CharField(max_length=125, default="Cash on Delivery")
-    
+
     order_placed_by_buyer = models.BooleanField(default=True)
     order_delivered = models.BooleanField(default=False)
     order_pending = models.BooleanField(default=True)
-    order_shipped = models.BooleanField(default=False)
+    order_shipped = models.BooleanField(default=False)  # Field to synchronize
     order_cancelled_by_seller = models.BooleanField(default=False)
-    total_order_items_counter = models.BigIntegerField(blank=True, null=True, default=0)  
-    
+    total_order_items_counter = models.BigIntegerField(blank=True, null=True, default=0)
+
+    def save(self, *args, **kwargs):
+        # Save the Order_For_Seller normally
+        super(Order_For_Seller, self).save(*args, **kwargs)
+
+        # Synchronize the `order_shipped` field with the related Order instance
+        try:
+            order = Order.objects.get(order_id=self.order_id)
+            if order.order_shipped != self.order_shipped:
+                order.order_shipped = self.order_shipped
+                order.save()
+        except Order.DoesNotExist:
+            # Handle case where the related Order does not exist
+            pass
+
     def __str__(self):
         return f'Order {self.order_id} by {self.buyer_full_name}'
 
     class Meta:
         verbose_name = "Order for Seller"
         verbose_name_plural = "Orders for Sellers"
-
+        
 # Signal to copy data from Order to Order_For_Seller based on seller_id
 @receiver(post_save, sender=Order)
 def copy_order_to_order_for_seller(sender, instance, created, **kwargs):

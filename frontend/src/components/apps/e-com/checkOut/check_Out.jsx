@@ -45,6 +45,10 @@ export default function CheckOut() {
   const [isBuyer, setIsBuyer] = useState(null);
   const [openConfirmationModal, setOpenConfirmationModal] = useState(false);
   const [isOrderPlaced, setIsOrderPlaced] = useState(false);
+  const [currentPaymentMethod, setCurrentPaymentMethod] = useState(null);
+  const [paymentComponent, setPaymentComponent] = useState(null);
+
+
   let sellerElement;
   // let buyerElement;
 
@@ -71,11 +75,19 @@ export default function CheckOut() {
   const deliveryFee = 110; // Example delivery fee
   const totalPrice = subtotal + deliveryFee;
 
-  const handlePaymentMethodChange = (method) => {
-    setPaymentMethod(method);
-    handleConfirmation();
-  };
 
+  const handlePaymentMethodChange = (method) => {
+    setCurrentPaymentMethod(method);
+    setOpenModal(true);
+
+    if (method === "esewa") {
+      navigate("/feed")
+      // setPaymentComponent(<EsewaPayment />);
+    } else if (method === "khalti") {
+      // setPaymentComponent(<KhaltiPayment />);
+    }
+  };
+  
   const handleConfirmation = () => {
     setOpenModal(true);
   };
@@ -84,6 +96,7 @@ export default function CheckOut() {
     setConfirmation(true);
 
     setOpenModal(false);
+    
   };
 
   console.log(checkOutItems);
@@ -467,42 +480,50 @@ export default function CheckOut() {
             </Grid>
 
             <Grid item md={3}>
-              <FormControl component="fieldset">
-                <Typography variant="h5">Select Mode of Payment</Typography>
-                <Button
-                  variant="contained"
-                  color={
-                    paymentMethod === "cashOnDelivery" ? "primary" : "default"
-                  }
-                  onClick={() => handlePaymentMethodChange("cashOnDelivery")}
-                  disabled={isOrderPlaced || paymentMethod !== "cashOnDelivery"} // Disable if the order is placed or payment method is not cash on delivery
-                >
-                  Cash on Delivery
-                </Button>
-                <Button
-                  variant="contained"
-                  color={paymentMethod === "creditCard" ? "primary" : "default"}
-                  disabled={paymentMethod !== "creditCard"}
-                  onClick={() => handlePaymentMethodChange("creditCard")}
-                >
-                  Credit Card
-                </Button>
+  <FormControl component="fieldset">
+    <Typography variant="h5">Select Mode of Payment</Typography>
+    <Button
+      variant="contained"
+      color={paymentMethod === "cashOnDelivery" ? "primary" : "default"}
+      onClick={() => handlePaymentMethodChange("cashOnDelivery")}
+      disabled={isOrderPlaced || (currentPaymentMethod && currentPaymentMethod !== "cashOnDelivery")}
+    >
+      Cash on Delivery
+    </Button>
+    <Button
+      variant="contained"
+      color={paymentMethod === "creditCard" ? "primary" : "default"}
+      disabled={currentPaymentMethod && currentPaymentMethod !== "creditCard"}
+      onClick={() => handlePaymentMethodChange("creditCard")}
+    >
+      Credit Card
+    </Button>
+    <Button
+      variant="contained"
+      color={paymentMethod === "khalti" ? "primary" : "default"}
+      disabled={currentPaymentMethod && currentPaymentMethod !== "khalti"}
+      onClick={() => handlePaymentMethodChange("khalti")}
+    >
+      Khalti
+    </Button>
+    <Button
+      variant="contained"
+      color={paymentMethod === "eSewa" ? "primary" : "default"}
+      disabled={currentPaymentMethod && currentPaymentMethod !== "eSewa"}
+      onClick={() => handlePaymentMethodChange("eSewa")}
+    >
+      eSewa
+    </Button>
 
-                <KhaltiPayment />
+    <br />
+    <span>For e-sewa Please Use Dummy Credentials</span>
+    <span>
+      <b>eSewa ID:</b> 9806800001/2/3/4/5 <br />
+      <b>Password:</b> Nepal@123 <b>MPIN:</b> 1122 <b>Token:</b> 123456
+    </span>
+  </FormControl>
+</Grid>
 
-                <Button variant="contained">
-                  <EsewaPayment />
-                </Button>
-
-                <br />
-                <span> For e-sewa Please Use Dummy Credentials</span>
-                <span>
-                  <b>eSewa ID:</b> 9806800001/2/3/4/5 <br />
-                  <b>Password:</b> Nepal@123 <b>MPIN:</b> 1122 <b>Token:</b>
-                  123456
-                </span>
-              </FormControl>
-            </Grid>
           </Grid>
           {cartTotalItems && <div>{cartTotalItems}</div>}
           {/* Confirmation Modal */}
